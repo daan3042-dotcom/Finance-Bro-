@@ -1,8 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
+import * as Crypto from 'expo-crypto';
 
+import { LoadErrorState } from '../../../../components/LoadErrorState';
+import { SaveWarningBanner } from '../../../../components/SaveWarningBanner';
 import { conceptsById } from '../../../../lib/concepts';
+import { toUserMessage } from '../../../../lib/networkError';
 import {
   createEmptyProgress,
   getConceptProgress,
@@ -13,13 +17,20 @@ import {
   type ProgressState,
 } from '../../../../lib/progress';
 import { getQuestionPool, pickNextQuestionIndex, QUESTIONS_PER_LESSON } from '../../../../lib/questions';
+import { elapsedMs, logQuestionResponse, nowMs } from '../../../../lib/questionResponses';
+import { useAutoHideFlag } from '../../../../lib/useAutoHideFlag';
 
-async function pickAndPersistNext(
+// Kiest de volgende vraag lokaal (heeft geen netwerk nodig) en probeert de
+// "gezien"-status op de achtergrond op te slaan. Optie 2 (C6): lukt die
+// save niet, dan gaat de les gewoon door — `onSaveError` toont alleen een
+// kort bannertje, en blokkeert de navigatie naar de volgende vraag niet.
+function pickAndPersistNext(
   progress: ProgressState,
   conceptId: string,
   poolSize: number,
-  excludeIndex: number | null
-): Promise<{ index: number; progress: ProgressState }> {
+  excludeIndex: number | null,
+  onSaveError: () => void
+): { index: number; progress: ProgressState } {
   const conceptProgress = getConceptProgress(progress, conceptId);
   const { index, seenAfter } = pickNextQuestionIndex(
     conceptProgress.seenQuestionIndices,
@@ -27,7 +38,7 @@ async function pickAndPersistNext(
     excludeIndex
   );
   const updated = withSeenQuestions(progress, conceptId, seenAfter);
-  await saveProgress(updated);
+  saveProgress(updated).catch(onSaveError);
   return { index, progress: updated };
 }
 
@@ -39,12 +50,17 @@ export default function LessonScreen() {
   const pool = conceptId ? getQuestionPool(conceptId) : [];
 
   const [isLoading, setIsLoading] = useState(() => Boolean(conceptId) && pool.length > 0);
+  const [loadErrorMessage, setLoadErrorMessage] = useState<string | null>(null);
+  const [reloadToken, setReloadToken] = useState(0);
   const [progress, setProgress] = useState<ProgressState>(createEmptyProgress());
   const [poolIndex, setPoolIndex] = useState<number | null>(null);
   const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
   const [answeredCount, setAnsweredCount] = useState(0);
   const [correctInLesson, setCorrectInLesson] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
+  const [sessionId, setSessionId] = useState<string | null>(null);
+  const [saveWarningVisible, showSaveWarning] = useAutoHideFlag(4000);
+  const questionStartedAtRef = useRef<number | null>(null);
 
   useEffect(() => {
     if (!conceptId || pool.length === 0) {
@@ -52,23 +68,41 @@ export default function LessonScreen() {
     }
     let isActive = true;
     (async () => {
-      const loaded = await loadProgress();
-      const { index, progress: updated } = await pickAndPersistNext(
-        loaded,
-        conceptId,
-        pool.length,
-        null
-      );
-      if (!isActive) return;
-      setProgress(updated);
-      setPoolIndex(index);
-      setIsLoading(false);
+      setIsLoading(true);
+      setLoadErrorMessage(null);
+      try {
+        const loaded = await loadProgress();
+        if (!isActive) return;
+        const { index, progress: updated } = pickAndPersistNext(
+          loaded,
+          conceptId,
+          pool.length,
+          null,
+          () => {
+            if (isActive) showSaveWarning();
+          }
+        );
+        setProgress(updated);
+        setPoolIndex(index);
+        setSessionId(Crypto.randomUUID());
+        setIsLoading(false);
+      } catch (error) {
+        if (!isActive) return;
+        setLoadErrorMessage(toUserMessage(error));
+        setIsLoading(false);
+      }
     })();
     return () => {
       isActive = false;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [conceptId]);
+  }, [conceptId, reloadToken]);
+
+  useEffect(() => {
+    if (poolIndex !== null) {
+      questionStartedAtRef.current = nowMs();
+    }
+  }, [poolIndex]);
 
   if (!conceptId || !concept || pool.length === 0) {
     return (
@@ -100,27 +134,43 @@ export default function LessonScreen() {
   const hasAnswered = selectedOptionId !== null;
   const isCorrect = selectedOptionId === question.correct_option_id;
 
-  const handleNext = async () => {
+  const handleNext = () => {
     const justCorrect = selectedOptionId === question.correct_option_id;
+
+    if (sessionId && selectedOptionId) {
+      logQuestionResponse({
+        questionId: question.id,
+        lessonId: null,
+        track: null,
+        conceptIds: [conceptId],
+        isCorrect: justCorrect,
+        selectedAnswer: selectedOptionId,
+        responseTimeMs:
+          questionStartedAtRef.current !== null ? elapsedMs(questionStartedAtRef.current) : null,
+        sessionId,
+      });
+    }
+
     const updatedAfterAnswer = withAnswer(progress, conceptId, justCorrect);
-    await saveProgress(updatedAfterAnswer);
+    setProgress(updatedAfterAnswer);
+    saveProgress(updatedAfterAnswer).catch(showSaveWarning);
 
     const newAnsweredCount = answeredCount + 1;
     const newCorrectInLesson = correctInLesson + (justCorrect ? 1 : 0);
 
     if (newAnsweredCount >= QUESTIONS_PER_LESSON) {
-      setProgress(updatedAfterAnswer);
       setAnsweredCount(newAnsweredCount);
       setCorrectInLesson(newCorrectInLesson);
       setIsFinished(true);
       return;
     }
 
-    const { index, progress: updatedAfterPick } = await pickAndPersistNext(
+    const { index, progress: updatedAfterPick } = pickAndPersistNext(
       updatedAfterAnswer,
       conceptId,
       pool.length,
-      poolIndex
+      poolIndex,
+      showSaveWarning
     );
     setProgress(updatedAfterPick);
     setPoolIndex(index);
@@ -131,22 +181,42 @@ export default function LessonScreen() {
 
   const handleRestart = async () => {
     setIsLoading(true);
+    setLoadErrorMessage(null);
     setIsFinished(false);
     setAnsweredCount(0);
     setCorrectInLesson(0);
     setSelectedOptionId(null);
 
-    const loaded = await loadProgress();
-    const { index, progress: updated } = await pickAndPersistNext(
-      loaded,
-      conceptId,
-      pool.length,
-      poolIndex
-    );
-    setProgress(updated);
-    setPoolIndex(index);
-    setIsLoading(false);
+    try {
+      const loaded = await loadProgress();
+      const { index, progress: updated } = pickAndPersistNext(
+        loaded,
+        conceptId,
+        pool.length,
+        poolIndex,
+        showSaveWarning
+      );
+      setProgress(updated);
+      setPoolIndex(index);
+      setSessionId(Crypto.randomUUID());
+      setIsLoading(false);
+    } catch (error) {
+      setLoadErrorMessage(toUserMessage(error));
+      setIsLoading(false);
+    }
   };
+
+  if (loadErrorMessage) {
+    return (
+      <View style={styles.container}>
+        <Stack.Screen options={{ title: concept.name }} />
+        <LoadErrorState
+          message={loadErrorMessage}
+          onRetry={() => (poolIndex !== null ? handleRestart() : setReloadToken((t) => t + 1))}
+        />
+      </View>
+    );
+  }
 
   if (isFinished) {
     return (
@@ -174,6 +244,7 @@ export default function LessonScreen() {
     <View style={styles.container}>
       <Stack.Screen options={{ title: concept.name }} />
       <ScrollView contentContainerStyle={styles.scrollContent}>
+        <SaveWarningBanner visible={saveWarningVisible} />
         <Text style={styles.progressLabel}>
           Vraag {answeredCount + 1} van {QUESTIONS_PER_LESSON}
         </Text>

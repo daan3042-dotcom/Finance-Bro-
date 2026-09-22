@@ -11,6 +11,7 @@ export type QuestionOption = {
 };
 
 export type Question = {
+  id: string;
   format: string;
   question: string;
   options: QuestionOption[];
@@ -21,6 +22,8 @@ export type Question = {
 export type ModuleTrack = 'beginner' | 'gevorderd' | 'expert';
 
 export type ModuleQuestion = Question & {
+  concepts: string[];
+  difficulty_prior: number;
   disclaimer?: string;
 };
 

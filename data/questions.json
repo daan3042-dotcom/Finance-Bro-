@@ -3,6 +3,7 @@
   "questions_by_concept": {
     "geld_waarde": [
       {
+        "id": "geld_waarde_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat is de belangrijkste functie van geld in een economie?",
         "options": [
@@ -15,6 +16,7 @@
         "explanation": "Geld dient vooral als ruilmiddel: het vervangt het onhandige ruilen van goederen (ruilhandel) door een algemeen geaccepteerd betaalmiddel."
       },
       {
+        "id": "geld_waarde_q2",
         "format": "scenario-redenering",
         "question": "Op een afgelegen eiland gebruiken bewoners kokosnoten om spullen te kopen, omdat iedereen kokosnoten waardevol en makkelijk deelbaar vindt. Welk principe van geld illustreert dit het beste?",
         "options": [
@@ -27,6 +29,7 @@
         "explanation": "Geld hoeft geen munt of biljet te zijn — zodra een gemeenschap iets algemeen accepteert als ruilmiddel en waardedrager, vervult het de functie van geld."
       },
       {
+        "id": "geld_waarde_q3",
         "format": "wat-hoort-er-niet-bij",
         "question": "Welke van deze eigenschappen hoort NIET bij goed functionerend geld?",
         "options": [
@@ -41,6 +44,7 @@
     ],
     "sparen_vs_beleggen": [
       {
+        "id": "sparen_vs_beleggen_q1",
         "format": "vergelijking",
         "question": "Wat is het belangrijkste verschil tussen sparen en beleggen?",
         "options": [
@@ -53,6 +57,7 @@
         "explanation": "Sparen is veilig maar levert doorgaans weinig op; beleggen brengt meer risico met zich mee, maar biedt op de lange termijn kans op een hoger rendement."
       },
       {
+        "id": "sparen_vs_beleggen_q2",
         "format": "scenario-redenering",
         "question": "Sanne wil over 6 maanden een nieuwe laptop kopen en wil zeker weten dat het bedrag er dan volledig staat. Wat is voor haar de verstandigste keuze?",
         "options": [
@@ -65,6 +70,7 @@
         "explanation": "Voor geld dat je op korte termijn nodig hebt, is sparen verstandiger dan beleggen, omdat beleggingen op korte termijn in waarde kunnen dalen."
       },
       {
+        "id": "sparen_vs_beleggen_q3",
         "format": "welk-voorbeeld-past",
         "question": "Welke situatie past het beste bij 'beleggen' in plaats van 'sparen'?",
         "options": [
@@ -79,6 +85,7 @@
     ],
     "rendement": [
       {
+        "id": "rendement_q1",
         "format": "berekening",
         "question": "Je koopt een aandeel voor €50. Na een jaar verkoop je het voor €55. Wat is je rendement?",
         "options": [
@@ -91,6 +98,7 @@
         "explanation": "Rendement is winst gedeeld door inleg: €5 winst op €50 inleg is 10%."
       },
       {
+        "id": "rendement_q2",
         "format": "scenario-redenering",
         "question": "Twee vrienden beleggen allebei €1.000. Bij de een groeit dit naar €1.100, bij de ander naar €1.050. Wie heeft het hoogste rendement behaald?",
         "options": [
@@ -103,6 +111,7 @@
         "explanation": "De eerste vriend behaalde €100 winst op €1.000, oftewel 10% rendement, tegenover 5% bij de tweede vriend."
       },
       {
+        "id": "rendement_q3",
         "format": "wat-hoort-er-niet-bij",
         "question": "Welke van deze factoren hoort NIET direct bij het berekenen van rendement?",
         "options": [
@@ -117,6 +126,7 @@
     ],
     "risico": [
       {
+        "id": "risico_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat betekent 'risico' in financiële zin het beste?",
         "options": [
@@ -129,6 +139,7 @@
         "explanation": "Risico verwijst naar de onzekerheid rond het toekomstige rendement van een investering — de waarde kan meevallen, maar ook tegenvallen of dalen."
       },
       {
+        "id": "risico_q2",
         "format": "vergelijking",
         "question": "Wat heeft doorgaans een hoger risico: geld op een spaarrekening of geld belegd in aandelen van één klein bedrijf?",
         "options": [
@@ -141,6 +152,7 @@
         "explanation": "Een spaarrekening is relatief veilig, terwijl een aandeel in één klein bedrijf sterk in waarde kan schommelen en zelfs volledig waardeloos kan worden bij een faillissement."
       },
       {
+        "id": "risico_q3",
         "format": "scenario-redenering",
         "question": "Een belegger stopt al zijn geld in slechts één aandeel. Waarom wordt dit gezien als een hoog risico?",
         "options": [
@@ -155,6 +167,7 @@
     ],
     "inflatie": [
       {
+        "id": "inflatie_q1",
         "format": "berekening",
         "question": "Een brood kost dit jaar €2,00. Door 5% inflatie kost hetzelfde brood volgend jaar meer. Wat is de nieuwe prijs, ongeveer?",
         "options": [
@@ -167,6 +180,7 @@
         "explanation": "Bij 5% inflatie stijgt de prijs met 5% van €2,00, dat is €0,10, dus wordt het brood ongeveer €2,10."
       },
       {
+        "id": "inflatie_q2",
         "format": "scenario-redenering",
         "question": "Je loon blijft dit jaar precies gelijk, maar de inflatie is 4%. Wat betekent dit voor je koopkracht?",
         "options": [
@@ -179,6 +193,7 @@
         "explanation": "Als prijzen stijgen door inflatie maar je inkomen gelijk blijft, kun je met datzelfde geld minder producten kopen — je koopkracht daalt."
       },
       {
+        "id": "inflatie_q3",
         "format": "definitie-met-afleiders",
         "question": "Wat is inflatie?",
         "options": [
@@ -193,6 +208,7 @@
     ],
     "tijdswaarde_geld": [
       {
+        "id": "tijdswaarde_geld_q1",
         "format": "scenario-redenering",
         "question": "Je mag kiezen: nu €100 ontvangen, of over 5 jaar €100 ontvangen. Welke keuze is financieel gezien beter en waarom?",
         "options": [
@@ -205,6 +221,7 @@
         "explanation": "Geld dat je nu hebt, kan je laten renderen (bijvoorbeeld door te sparen of beleggen), waardoor het meer waard is dan hetzelfde nominale bedrag dat je pas later ontvangt."
       },
       {
+        "id": "tijdswaarde_geld_q2",
         "format": "definitie-met-afleiders",
         "question": "Wat houdt het principe 'tijdswaarde van geld' in?",
         "options": [
@@ -217,6 +234,7 @@
         "explanation": "Doordat geld dat je nu bezit rendement kan opleveren door sparen of beleggen, is het meer waard dan hetzelfde bedrag dat je pas later ontvangt."
       },
       {
+        "id": "tijdswaarde_geld_q3",
         "format": "welk-voorbeeld-past",
         "question": "Welke situatie is een goed voorbeeld van tijdswaarde van geld?",
         "options": [
@@ -231,6 +249,7 @@
     ],
     "liquiditeit": [
       {
+        "id": "liquiditeit_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat betekent 'liquiditeit' van een bezitting?",
         "options": [
@@ -243,6 +262,7 @@
         "explanation": "Liquiditeit geeft aan hoe snel en eenvoudig je iets kunt verkopen of omzetten in geld zonder dat je daarbij veel waarde verliest."
       },
       {
+        "id": "liquiditeit_q2",
         "format": "vergelijking",
         "question": "Wat is doorgaans liquider: geld op een betaalrekening of een huis?",
         "options": [
@@ -255,6 +275,7 @@
         "explanation": "Geld op een betaalrekening is direct beschikbaar, terwijl de verkoop van een huis weken tot maanden kan duren — een huis is dus veel minder liquide."
       },
       {
+        "id": "liquiditeit_q3",
         "format": "scenario-redenering",
         "question": "Een ondernemer heeft veel bezittingen, zoals machines en voorraad, maar weinig geld op de bankrekening om deze maand de lonen te betalen. Welk probleem speelt hier?",
         "options": [
@@ -269,6 +290,7 @@
     ],
     "vraag_en_aanbod": [
       {
+        "id": "vraag_en_aanbod_q1",
         "format": "welk-voorbeeld-past",
         "question": "Welk voorbeeld illustreert het beste een daling van de prijs door vraag en aanbod?",
         "options": [
@@ -281,6 +303,7 @@
         "explanation": "Een overschot aan aanbod ten opzichte van de vraag zorgt er doorgaans voor dat verkopers de prijs verlagen om de voorraad alsnog te verkopen."
       },
       {
+        "id": "vraag_en_aanbod_q2",
         "format": "scenario-redenering",
         "question": "Een nieuw, populair concertkaartje heeft een beperkt aantal plekken, maar heel veel mensen willen het kopen. Wat gebeurt er waarschijnlijk met de prijs?",
         "options": [
@@ -293,6 +316,7 @@
         "explanation": "Wanneer de vraag naar een schaars product groter is dan het aanbod, stijgt de prijs doorgaans, omdat mensen bereid zijn meer te betalen om het product te bemachtigen."
       },
       {
+        "id": "vraag_en_aanbod_q3",
         "format": "wat-hoort-er-niet-bij",
         "question": "Welke factor bepaalt NIET direct de marktprijs via vraag en aanbod?",
         "options": [
@@ -307,6 +331,7 @@
     ],
     "bruto_netto": [
       {
+        "id": "bruto_netto_q1",
         "format": "berekening",
         "question": "Je bruto maandsalaris is €3.000. Na aftrek van €600 belasting en premies houd je netto over. Hoeveel is dat?",
         "options": [
@@ -319,6 +344,7 @@
         "explanation": "Netto is bruto min de inhoudingen: €3.000 - €600 = €2.400, het bedrag dat daadwerkelijk op je rekening komt."
       },
       {
+        "id": "bruto_netto_q2",
         "format": "definitie-met-afleiders",
         "question": "Wat is het verschil tussen bruto en netto loon?",
         "options": [
@@ -331,6 +357,7 @@
         "explanation": "Bruto loon is het afgesproken bedrag vóór inhoudingen; netto loon is wat er na aftrek van belasting en premies daadwerkelijk wordt uitbetaald."
       },
       {
+        "id": "bruto_netto_q3",
         "format": "scenario-redenering",
         "question": "Een vacature vermeldt een 'bruto jaarsalaris van €40.000'. Waarom kun je hieruit niet direct afleiden hoeveel je maandelijks op je rekening krijgt?",
         "options": [
@@ -345,6 +372,7 @@
     ],
     "omzet_winst_marge": [
       {
+        "id": "omzet_winst_marge_q1",
         "format": "berekening",
         "question": "Een winkel verkoopt voor €10.000 aan producten (omzet) en heeft €7.000 aan kosten. Wat is de winst?",
         "options": [
@@ -357,6 +385,7 @@
         "explanation": "Winst is omzet minus kosten: €10.000 - €7.000 = €3.000."
       },
       {
+        "id": "omzet_winst_marge_q2",
         "format": "definitie-met-afleiders",
         "question": "Wat betekent 'marge' voor een bedrijf?",
         "options": [
@@ -369,6 +398,7 @@
         "explanation": "Marge drukt de winst uit als percentage van de omzet en laat zien hoe winstgevend een bedrijf is ten opzichte van wat het verkoopt."
       },
       {
+        "id": "omzet_winst_marge_q3",
         "format": "wat-hoort-er-niet-bij",
         "question": "Welke van deze begrippen hoort NIET direct bij het berekenen van winst?",
         "options": [
@@ -383,6 +413,7 @@
     ],
     "balans": [
       {
+        "id": "balans_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat toont de balans van een bedrijf?",
         "options": [
@@ -395,6 +426,7 @@
         "explanation": "De balans is een momentopname op een bepaald moment van wat een bedrijf bezit (activa) en hoe dat is gefinancierd met eigen en vreemd vermogen."
       },
       {
+        "id": "balans_q2",
         "format": "scenario-redenering",
         "question": "Een bedrijf koopt een bedrijfspand met een banklening. Wat gebeurt er op de balans?",
         "options": [
@@ -407,6 +439,7 @@
         "explanation": "Het pand wordt een bezitting (activa), terwijl de lening waarmee het is gefinancierd een schuld (vreemd vermogen) is — beide kanten van de balans nemen toe en blijven in evenwicht."
       },
       {
+        "id": "balans_q3",
         "format": "welk-voorbeeld-past",
         "question": "Welk van de volgende is een voorbeeld van eigen vermogen op de balans?",
         "options": [
@@ -421,6 +454,7 @@
     ],
     "resultatenrekening": [
       {
+        "id": "resultatenrekening_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat laat de resultatenrekening zien?",
         "options": [
@@ -433,6 +467,7 @@
         "explanation": "De resultatenrekening geeft de omzet en kosten over een periode weer en laat zien of dit heeft geleid tot winst of verlies."
       },
       {
+        "id": "resultatenrekening_q2",
         "format": "wat-hoort-er-niet-bij",
         "question": "Welke post hoort NIET thuis op de resultatenrekening?",
         "options": [
@@ -445,6 +480,7 @@
         "explanation": "De waarde van een bezitting zoals een pand op een bepaald moment hoort op de balans, niet op de resultatenrekening, die inkomsten en kosten over een periode toont."
       },
       {
+        "id": "resultatenrekening_q3",
         "format": "scenario-redenering",
         "question": "Een bedrijf heeft dit jaar €500.000 omzet en €520.000 aan kosten. Wat laat de resultatenrekening zien?",
         "options": [
@@ -459,6 +495,7 @@
     ],
     "cashflow": [
       {
+        "id": "cashflow_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat is cashflow?",
         "options": [
@@ -471,6 +508,7 @@
         "explanation": "Cashflow gaat over het werkelijke geld dat binnenkomt en uitgaat, in tegenstelling tot winst, die ook nog niet ontvangen bedragen kan bevatten."
       },
       {
+        "id": "cashflow_q2",
         "format": "scenario-redenering",
         "question": "Een bedrijf verstuurt een factuur van €10.000, maar de klant heeft nog niet betaald. Telt dit bedrag al mee in de cashflow van deze maand?",
         "options": [
@@ -483,6 +521,7 @@
         "explanation": "Cashflow meet alleen het geld dat echt binnenkomt of uitgaat; een verstuurde maar onbetaalde factuur telt pas mee zodra de betaling daadwerkelijk is ontvangen."
       },
       {
+        "id": "cashflow_q3",
         "format": "welk-voorbeeld-past",
         "question": "Welke gebeurtenis is een voorbeeld van een positieve cashflow voor een bedrijf?",
         "options": [
@@ -497,6 +536,7 @@
     ],
     "bbp": [
       {
+        "id": "bbp_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat meet het Bruto Binnenlands Product (BBP)?",
         "options": [
@@ -509,6 +549,7 @@
         "explanation": "Het BBP geeft de totale waarde weer van alle goederen en diensten die binnen een land in een bepaalde periode (meestal een jaar) worden geproduceerd."
       },
       {
+        "id": "bbp_q2",
         "format": "scenario-redenering",
         "question": "Het BBP van een land daalt twee kwartalen achter elkaar. Wat wordt dit doorgaans genoemd, en wat zegt het over de economie?",
         "options": [
@@ -521,6 +562,7 @@
         "explanation": "Twee opeenvolgende kwartalen van BBP-daling wordt algemeen gezien als een recessie, wat wijst op een krimpende economie."
       },
       {
+        "id": "bbp_q3",
         "format": "wat-hoort-er-niet-bij",
         "question": "Welke van deze factoren telt NIET rechtstreeks mee in het BBP van een land?",
         "options": [
@@ -535,6 +577,7 @@
     ],
     "begroten": [
       {
+        "id": "begroten_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat houdt begroten (budgetteren) in?",
         "options": [
@@ -547,6 +590,7 @@
         "explanation": "Begroten betekent vooraf een plan maken van verwachte inkomsten en uitgaven, zodat je grip houdt op je financiën."
       },
       {
+        "id": "begroten_q2",
         "format": "scenario-redenering",
         "question": "Aan het begin van de maand maakt Tom een overzicht van zijn verwachte inkomsten en de bedragen die hij wil uitgeven aan huur, boodschappen en sparen. Wat doet Tom hier?",
         "options": [
@@ -559,6 +603,7 @@
         "explanation": "Tom plant vooraf zijn inkomsten en uitgaven per categorie — dat is precies wat begroten (budgetteren) inhoudt."
       },
       {
+        "id": "begroten_q3",
         "format": "welk-voorbeeld-past",
         "question": "Welke actie is een goed voorbeeld van begroten?",
         "options": [
@@ -573,6 +618,7 @@
     ],
     "rente_samengestelde_interest": [
       {
+        "id": "rente_samengestelde_interest_q1",
         "format": "berekening",
         "question": "Je zet €1.000 op een rekening met 10% samengestelde rente per jaar. Hoeveel heb je na 2 jaar (rente op rente meegerekend)?",
         "options": [
@@ -585,6 +631,7 @@
         "explanation": "Bij samengestelde rente ontvang je ook rente over de al bijgeschreven rente: na jaar 1 heb je €1.100, na jaar 2 groeit dat met 10% naar €1.210."
       },
       {
+        "id": "rente_samengestelde_interest_q2",
         "format": "definitie-met-afleiders",
         "question": "Wat is het verschil tussen enkelvoudige en samengestelde rente?",
         "options": [
@@ -597,6 +644,7 @@
         "explanation": "Enkelvoudige rente wordt steeds berekend over het startbedrag, terwijl samengestelde rente ook over eerder bijgeschreven rente wordt berekend, waardoor het bedrag sneller groeit."
       },
       {
+        "id": "rente_samengestelde_interest_q3",
         "format": "scenario-redenering",
         "question": "Twee spaarders zetten allebei €1.000 in voor 20 jaar tegen 5% rente. Spaarder A laat de rente elk jaar meegroeien (samengestelde rente), spaarder B haalt de rente er elk jaar uit. Wie heeft na 20 jaar het meeste geld?",
         "options": [
@@ -611,6 +659,7 @@
     ],
     "aandelen": [
       {
+        "id": "aandelen_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat krijg je wanneer je een aandeel van een bedrijf koopt?",
         "options": [
@@ -623,6 +672,7 @@
         "explanation": "Een aandeel maakt je mede-eigenaar van het bedrijf; je deelt daardoor in de winst (bijvoorbeeld via koersstijging of dividend), maar ook in het risico als het slecht gaat."
       },
       {
+        "id": "aandelen_q2",
         "format": "welk-voorbeeld-past",
         "question": "Welke situatie past het beste bij het eigenaarschap-karakter van een aandeel?",
         "options": [
@@ -635,6 +685,7 @@
         "explanation": "Als mede-eigenaar deel je mee in het resultaat van het bedrijf: gaat het goed, dan stijgt de waarde van je aandeel of ontvang je dividend; gaat het slecht, dan kan je aandeel in waarde dalen."
       },
       {
+        "id": "aandelen_q3",
         "format": "scenario-redenering",
         "question": "Een bedrijf waarin je aandelen bezit, maakt dit jaar veel meer winst dan verwacht. Wat is het meest waarschijnlijke gevolg voor jouw belegging?",
         "options": [
@@ -649,6 +700,7 @@
     ],
     "obligaties": [
       {
+        "id": "obligaties_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat ontvangt de koper van een obligatie doorgaans gedurende de looptijd?",
         "options": [
@@ -661,6 +713,7 @@
         "explanation": "Een obligatie is een lening: de uitgever betaalt periodiek rente (coupon) en betaalt de hoofdsom terug aan het einde van de looptijd."
       },
       {
+        "id": "obligaties_q2",
         "format": "vergelijking",
         "question": "Wat is het belangrijkste verschil tussen het kopen van een obligatie en het kopen van een aandeel van hetzelfde bedrijf?",
         "options": [
@@ -673,6 +726,7 @@
         "explanation": "Een obligatie maakt je schuldeiser met recht op vaste rente en terugbetaling, terwijl een aandeel je mede-eigenaar maakt met een onzekere, variabele uitkomst."
       },
       {
+        "id": "obligaties_q3",
         "format": "scenario-redenering",
         "question": "Een bedrijf gaat failliet. Bij de afwikkeling worden eerst schuldeisers (waaronder obligatiehouders) betaald, en pas daarna aandeelhouders als er nog iets overblijft. Wat zegt dit over het risico van obligaties versus aandelen bij hetzelfde bedrijf?",
         "options": [
@@ -687,6 +741,7 @@
     ],
     "diversificatie": [
       {
+        "id": "diversificatie_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat is het doel van diversificatie bij beleggen?",
         "options": [
@@ -699,6 +754,7 @@
         "explanation": "Diversificatie spreidt risico over verschillende beleggingen, zodat een slecht presterende belegging minder invloed heeft op je totale portefeuille."
       },
       {
+        "id": "diversificatie_q2",
         "format": "scenario-redenering",
         "question": "Een belegger heeft zijn geld verdeeld over tien verschillende aandelen uit verschillende sectoren. Eén van die bedrijven gaat failliet. Wat is het gevolg voor zijn totale portefeuille, vergeleken met iemand die alles in dat ene bedrijf had gestoken?",
         "options": [
@@ -711,6 +767,7 @@
         "explanation": "Door te spreiden over meerdere beleggingen blijft het verlies beperkt tot het aandeel dat faalt, terwijl de rest van de portefeuille ongemoeid blijft — dat is precies het voordeel van diversificatie."
       },
       {
+        "id": "diversificatie_q3",
         "format": "wat-hoort-er-niet-bij",
         "question": "Welke van deze acties draagt NIET bij aan diversificatie?",
         "options": [
@@ -725,6 +782,7 @@
     ],
     "beurzen_indices": [
       {
+        "id": "beurzen_indices_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat is een beursindex, zoals de AEX of de S&P 500?",
         "options": [
@@ -737,6 +795,7 @@
         "explanation": "Een beursindex volgt de gezamenlijke koersontwikkeling van een geselecteerde groep aandelen en geeft zo een samenvattend beeld van hoe die markt presteert."
       },
       {
+        "id": "beurzen_indices_q2",
         "format": "welk-voorbeeld-past",
         "question": "Welk voorbeeld past het beste bij het beleggen 'via een index' in plaats van in één los aandeel?",
         "options": [
@@ -749,6 +808,7 @@
         "explanation": "Beleggen via een index betekent dat je in één keer blootstelling krijgt aan alle aandelen die in die index zitten, in plaats van in één individueel bedrijf."
       },
       {
+        "id": "beurzen_indices_q3",
         "format": "scenario-redenering",
         "question": "De AEX-index daalt vandaag met 2%. Wat zegt dit het meest waarschijnlijk over de Nederlandse aandelenmarkt als geheel?",
         "options": [
@@ -763,6 +823,7 @@
     ],
     "rentabiliteit": [
       {
+        "id": "rentabiliteit_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat meet rentabiliteit (rendement op eigen vermogen)?",
         "options": [
@@ -775,6 +836,7 @@
         "explanation": "Rentabiliteit drukt de winst uit als percentage van het eigen vermogen dat is ingezet, en laat zien hoe efficiënt een bedrijf met dat vermogen winst maakt."
       },
       {
+        "id": "rentabiliteit_q2",
         "format": "vergelijking",
         "question": "Bedrijf A behaalt €100.000 winst met €1.000.000 eigen vermogen. Bedrijf B behaalt ook €100.000 winst, maar met €2.000.000 eigen vermogen. Welk bedrijf heeft de hogere rentabiliteit?",
         "options": [
@@ -787,6 +849,7 @@
         "explanation": "Rentabiliteit is winst gedeeld door eigen vermogen: Bedrijf A haalt 10% (100.000/1.000.000), Bedrijf B slechts 5% (100.000/2.000.000) — A gebruikt zijn vermogen dus efficiënter."
       },
       {
+        "id": "rentabiliteit_q3",
         "format": "berekening",
         "question": "Een bedrijf maakt €50.000 winst met €500.000 eigen vermogen. Wat is de rentabiliteit?",
         "options": [
@@ -801,6 +864,7 @@
     ],
     "solvabiliteit": [
       {
+        "id": "solvabiliteit_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat geeft solvabiliteit van een bedrijf aan?",
         "options": [
@@ -813,6 +877,7 @@
         "explanation": "Solvabiliteit laat zien of een bedrijf op de lange termijn genoeg eigen vermogen heeft om aan al zijn verplichtingen (schulden) te kunnen voldoen."
       },
       {
+        "id": "solvabiliteit_q2",
         "format": "scenario-redenering",
         "question": "Twee bedrijven hebben evenveel bezittingen, maar bedrijf X is voor 80% gefinancierd met schulden en bedrijf Y voor slechts 20%. Welk bedrijf is financieel kwetsbaarder bij tegenvallende resultaten?",
         "options": [
@@ -825,6 +890,7 @@
         "explanation": "Een hoog aandeel schuld betekent een lagere solvabiliteit: bedrijf X heeft minder eigen vermogen als buffer, waardoor het kwetsbaarder is als de resultaten tegenvallen."
       },
       {
+        "id": "solvabiliteit_q3",
         "format": "wat-hoort-er-niet-bij",
         "question": "Welke van deze factoren speelt NIET direct een rol bij het beoordelen van de solvabiliteit van een bedrijf?",
         "options": [
@@ -839,6 +905,7 @@
     ],
     "obligatiekoersen_rente": [
       {
+        "id": "obligatiekoersen_rente_q1",
         "format": "scenario-redenering",
         "question": "Je bezit een obligatie met een vaste rente van 3%. De marktrente stijgt naar 6% voor nieuwe obligaties. Wat gebeurt er met de koers van jouw obligatie als je die nu zou verkopen?",
         "options": [
@@ -851,6 +918,7 @@
         "explanation": "Doordat nieuwe obligaties nu een hogere rente (6%) bieden, wordt jouw obligatie met de lagere vaste rente (3%) minder aantrekkelijk, waardoor de koers moet dalen om alsnog een marktconform rendement te bieden."
       },
       {
+        "id": "obligatiekoersen_rente_q2",
         "format": "vergelijking",
         "question": "Rente stijgt sterk. Vergelijk twee spaarders: spaarder A heeft geld op een spaarrekening staan, spaarder B heeft een vastrentende obligatie gekocht vlak vóór de rentestijging. Wie ondervindt direct nadeel van de rentestijging?",
         "options": [
@@ -863,6 +931,7 @@
         "explanation": "Spaarrente kan meestijgen met de marktrente, maar de vaste coupon van een bestaande obligatie niet — daardoor daalt de koers van obligatie B zodra nieuwe obligaties een hogere rente bieden."
       },
       {
+        "id": "obligatiekoersen_rente_q3",
         "format": "keten-redenering",
         "question": "Een obligatie met een vaste coupon van 3% heeft nog 5 jaar looptijd. De marktrente voor nieuwe obligaties stijgt naar 6%. Waarom moet de koers van de bestaande obligatie dalen om over de resterende looptijd alsnog een marktconform (effectief) rendement te bieden?",
         "options": [
@@ -877,6 +946,7 @@
     ],
     "pe_ratio": [
       {
+        "id": "pe_ratio_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat geeft de P/E-ratio (koers-winstverhouding) van een aandeel ruwweg aan?",
         "options": [
@@ -889,6 +959,7 @@
         "explanation": "De P/E-ratio deelt de aandelenkoers door de winst per aandeel en laat zo zien hoeveel keer de winst beleggers bereid zijn te betalen voor het aandeel."
       },
       {
+        "id": "pe_ratio_q2",
         "format": "vergelijking",
         "question": "Aandeel A heeft een P/E van 10, aandeel B van 40, terwijl beide bedrijven een vergelijkbare winst maken. Wat zegt dit waarschijnlijk over de verwachtingen van beleggers voor beide aandelen?",
         "options": [
@@ -901,6 +972,7 @@
         "explanation": "Een hogere P/E-ratio betekent dat beleggers meer betalen per euro winst, wat vaak duidt op hogere verwachte winstgroei of meer vertrouwen in het bedrijf vergeleken met een aandeel met een lagere P/E."
       },
       {
+        "id": "pe_ratio_q3",
         "format": "scenario-redenering",
         "question": "Een bedrijf heeft een aandelenkoers van €60 en een winst per aandeel van €3. Een vergelijkbaar bedrijf in dezelfde sector heeft een P/E van 10. Is het eerste aandeel relatief duur of goedkoop ten opzichte van de sectorgenoot?",
         "options": [
@@ -915,6 +987,7 @@
     ],
     "volatiliteit": [
       {
+        "id": "volatiliteit_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat betekent een hoge volatiliteit van een belegging?",
         "options": [
@@ -927,6 +1000,7 @@
         "explanation": "Volatiliteit meet hoe sterk de prijs van een belegging schommelt; een hoge volatiliteit betekent grote koersuitslagen in beide richtingen, wat samenhangt met een hoger risico."
       },
       {
+        "id": "volatiliteit_q2",
         "format": "scenario-redenering",
         "question": "Een belegger met een zeer volatiele portefeuille van losse techaandelen besluit een deel van zijn geld te verdelen over obligaties en aandelen uit verschillende sectoren. Wat is het waarschijnlijke effect op de volatiliteit van zijn totale portefeuille?",
         "options": [
@@ -939,6 +1013,7 @@
         "explanation": "Door te diversifiëren over verschillende activaklassen en sectoren dempt hij de impact van sterke koersschommelingen in één specifieke belegging, waardoor de volatiliteit van de totale portefeuille doorgaans afneemt."
       },
       {
+        "id": "volatiliteit_q3",
         "format": "vergelijking",
         "question": "Portefeuille A bestaat volledig uit aandelen van één volatiele sector. Portefeuille B is breed gespreid over aandelen, obligaties en meerdere sectoren, met hetzelfde totale risicobudget. Welke portefeuille zal doorgaans minder sterke koersschommelingen (volatiliteit) vertonen?",
         "options": [
@@ -953,6 +1028,7 @@
     ],
     "dividend": [
       {
+        "id": "dividend_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat is dividend?",
         "options": [
@@ -965,6 +1041,7 @@
         "explanation": "Dividend is een (periodieke) uitkering van een deel van de winst van een bedrijf aan zijn aandeelhouders, als beloning voor hun eigenaarschap."
       },
       {
+        "id": "dividend_q2",
         "format": "scenario-redenering",
         "question": "Een bedrijf waarin je aandelen bezit, keert dit jaar voor het eerst dividend uit in plaats van alle winst te herinvesteren. Naast een mogelijke koersstijging, welk extra voordeel heb je hierdoor als aandeelhouder?",
         "options": [
@@ -977,6 +1054,7 @@
         "explanation": "Dividend geeft aandeelhouders een directe geldelijke uitkering uit de winst, los van of naast een eventuele stijging van de aandelenkoers."
       },
       {
+        "id": "dividend_q3",
         "format": "vergelijking",
         "question": "Bedrijf X keert een groot deel van zijn winst uit als dividend, bedrijf Y herinvesteert vrijwel alle winst in groei en keert geen dividend uit. Wat is een logisch gevolg van dit verschil voor beleggers?",
         "options": [
@@ -991,6 +1069,7 @@
     ],
     "asset_allocation": [
       {
+        "id": "asset_allocation_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat wordt bedoeld met 'asset allocation'?",
         "options": [
@@ -1003,6 +1082,7 @@
         "explanation": "Asset allocation gaat over hoe je een portefeuille verdeelt over verschillende soorten beleggingen (activaklassen), wat een grote invloed heeft op het risico en rendement van de totale portefeuille."
       },
       {
+        "id": "asset_allocation_q2",
         "format": "scenario-redenering",
         "question": "Een jonge belegger met een lange beleggingshorizon kiest voor 90% aandelen en 10% obligaties, terwijl iemand die bijna met pensioen gaat kiest voor 30% aandelen en 70% obligaties. Waarom verschilt hun asset allocation zo sterk, gegeven wat je weet over risico en diversificatie?",
         "options": [
@@ -1015,6 +1095,7 @@
         "explanation": "Een lange horizon geeft ruimte om het hogere risico (en verwachte rendement) van aandelen te dragen, terwijl iemand dicht bij pensioen meer zekerheid zoekt via het stabielere, minder volatiele karakter van obligaties."
       },
       {
+        "id": "asset_allocation_q3",
         "format": "welk-voorbeeld-past",
         "question": "Welk voorbeeld illustreert het beste een verstandige asset allocation die zowel diversificatie als een mix van aandelen en obligaties toepast?",
         "options": [
@@ -1029,6 +1110,7 @@
     ],
     "lange_termijn_compounding": [
       {
+        "id": "lange_termijn_compounding_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat is het belangrijkste voordeel van lange termijn beleggen in combinatie met compounding (rente-op-rente)?",
         "options": [
@@ -1041,6 +1123,7 @@
         "explanation": "Door rendement telkens te herbeleggen, groeit niet alleen je oorspronkelijke inleg maar ook eerder behaald rendement verder mee, waardoor het totaal op lange termijn exponentieel toeneemt."
       },
       {
+        "id": "lange_termijn_compounding_q2",
         "format": "scenario-redenering",
         "question": "Twee beleggers beleggen allebei €5.000 tegen een gemiddeld rendement van 7% per jaar. Belegger A begint op zijn 25e, belegger B pas op zijn 45e, en beiden laten het bedrag ongemoeid tot hun 65e. Wie heeft waarschijnlijk het grootste eindbedrag, en waarom?",
         "options": [
@@ -1053,6 +1136,7 @@
         "explanation": "Hoe langer geld kan compounden, hoe groter het exponentiële effect van rente-op-rente; de extra 20 jaar geven belegger A's inleg veel meer tijd om te groeien dan bij belegger B."
       },
       {
+        "id": "lange_termijn_compounding_q3",
         "format": "vergelijking",
         "question": "Vergelijk twee scenario's met hetzelfde jaarlijkse rendement van 6%: in scenario 1 wordt het rendement elk jaar herbelegd (compounding), in scenario 2 wordt het rendement er elk jaar uitgehaald en niet herbelegd. Welk scenario levert op de lange termijn het hoogste eindbedrag op?",
         "options": [
@@ -1067,6 +1151,7 @@
     ],
     "cashflow_vs_winst": [
       {
+        "id": "cashflow_vs_winst_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat is het kernverschil tussen winst (op de resultatenrekening) en cashflow?",
         "options": [
@@ -1079,6 +1164,7 @@
         "explanation": "Winst op de resultatenrekening kan nog niet-geïnde vorderingen bevatten, terwijl cashflow uitsluitend het geld meet dat daadwerkelijk is binnengekomen of uitgegeven."
       },
       {
+        "id": "cashflow_vs_winst_q2",
         "format": "scenario-redenering",
         "question": "Een bedrijf verkoopt in december voor €200.000 aan producten op rekening (de klant betaalt pas in februari). Op de resultatenrekening van dit jaar telt deze verkoop mee als omzet en winst. Telt dit bedrag ook mee in de cashflow van dit jaar?",
         "options": [
@@ -1091,6 +1177,7 @@
         "explanation": "De resultatenrekening boekt de winst zodra de verkoop plaatsvindt, maar de cashflow registreert het bedrag pas op het moment dat het geld daadwerkelijk wordt ontvangen — in dit geval in februari."
       },
       {
+        "id": "cashflow_vs_winst_q3",
         "format": "welk-voorbeeld-past",
         "question": "Welke situatie is een goed voorbeeld van een bedrijf dat winstgevend is volgens de resultatenrekening, maar toch een cashflowprobleem heeft?",
         "options": [
@@ -1105,6 +1192,7 @@
     ],
     "macro_indicatoren": [
       {
+        "id": "macro_indicatoren_q1",
         "format": "keten-redenering",
         "question": "De inflatie daalt sterk onder de doelstelling van de centrale bank, richting deflatie. Wat is de meest waarschijnlijke reactie van de centrale bank op de rente, en wat betekent dat voor bestaande vastrentende obligaties?",
         "options": [
@@ -1117,6 +1205,7 @@
         "explanation": "Bij te lage inflatie verlaagt de centrale bank doorgaans de rente om de economie te stimuleren; nieuwe obligaties bieden dan minder rente, waardoor bestaande obligaties met een hogere vaste coupon relatief aantrekkelijker worden en in koers stijgen."
       },
       {
+        "id": "macro_indicatoren_q2",
         "format": "scenario-redenering",
         "question": "De rente staat al twee jaar historisch laag en de inflatie begint plotseling snel op te lopen. Combineer beide signalen: wat is het meest waarschijnlijke beleid van de centrale bank, en welk tweede-orde-effect heeft dit op de obligatiemarkt?",
         "options": [
@@ -1129,6 +1218,7 @@
         "explanation": "Oplopende inflatie zet centrale banken doorgaans aan tot renteverhogingen om de prijsstijgingen af te remmen; dat maakt nieuwe obligaties aantrekkelijker en drukt de koers van bestaande, lager-rentende obligaties."
       },
       {
+        "id": "macro_indicatoren_q3",
         "format": "vergelijking",
         "question": "Land X heeft een hoge inflatie en een sterk stijgende rente, land Y heeft een lage, stabiele inflatie en een stabiele rente. In welk land zullen bestaande vastrentende obligaties naar verwachting sterker in koers dalen?",
         "options": [
@@ -1143,6 +1233,7 @@
     ],
     "duration_risk": [
       {
+        "id": "duration_risk_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat beschrijft 'duration' bij een obligatie?",
         "options": [
@@ -1155,6 +1246,7 @@
         "explanation": "Duration meet hoe gevoelig de koers van een obligatie is voor renteveranderingen; hoe langer de resterende looptijd, hoe sterker de koers doorgaans reageert op een renteverandering."
       },
       {
+        "id": "duration_risk_q2",
         "format": "scenario-redenering",
         "question": "De rente stijgt onverwacht met 1 procentpunt. Een belegger heeft de helft van zijn obligatieportefeuille in kortlopende obligaties (2 jaar) en de helft in langlopende obligaties (25 jaar), beide met een vergelijkbare coupon. Welk deel van zijn portefeuille verliest naar verwachting het meeste waarde, en waarom?",
         "options": [
@@ -1167,6 +1259,7 @@
         "explanation": "Een langere resterende looptijd betekent een hogere duration, waardoor de koers van de langlopende obligaties sterker daalt bij eenzelfde rentestijging dan die van de kortlopende obligaties."
       },
       {
+        "id": "duration_risk_q3",
         "format": "vergelijking",
         "question": "Twee beleggers willen hun obligatieportefeuille beschermen tegen een verwachte rentestijging. Belegger A verkort de gemiddelde looptijd van zijn obligaties, belegger B verlengt die juist. Wie loopt na de rentestijging waarschijnlijk het minste koersverlies op zijn obligaties, gebaseerd op het principe van duration?",
         "options": [
@@ -1181,6 +1274,7 @@
     ],
     "portfolio_risicometrics": [
       {
+        "id": "portfolio_risicometrics_q1",
         "format": "definitie-met-afleiders",
         "question": "Wat probeert de Sharpe ratio te meten?",
         "options": [
@@ -1193,6 +1287,7 @@
         "explanation": "De Sharpe ratio zet het behaalde rendement af tegen het genomen risico (volatiliteit), zodat je portefeuilles met verschillende risiconiveaus eerlijker kunt vergelijken."
       },
       {
+        "id": "portfolio_risicometrics_q2",
         "format": "scenario-redenering",
         "question": "Een belegger past zijn asset allocation aan: hij verlaagt het aandelenpercentage en verhoogt het obligatiepercentage. Hierdoor daalt zowel zijn verwachte rendement als de volatiliteit van zijn portefeuille, maar de volatiliteit daalt relatief sterker. Wat gebeurt er waarschijnlijk met zijn Sharpe ratio?",
         "options": [
@@ -1205,6 +1300,7 @@
         "explanation": "Omdat de Sharpe ratio rendement afzet tegen risico, kan een relatief sterkere daling van de volatiliteit ten opzichte van het rendement de verhouding tussen beide juist verbeteren, ook al daalt het absolute rendement."
       },
       {
+        "id": "portfolio_risicometrics_q3",
         "format": "vergelijking",
         "question": "Portefeuille A heeft een asset allocation van 90% aandelen en behaalt 12% rendement met hoge volatiliteit. Portefeuille B heeft een gespreide allocatie van 50% aandelen en 50% obligaties en behaalt 8% rendement met veel lagere volatiliteit. Welke portefeuille heeft waarschijnlijk de hogere Sharpe ratio?",
         "options": [

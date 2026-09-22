@@ -1,4 +1,4 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { supabase } from './supabase';
 
 export type ConceptProgress = {
   correctCount: number;
@@ -12,8 +12,6 @@ export type ProgressState = {
   concepts: Record<string, ConceptProgress>;
 };
 
-const STORAGE_KEY = 'financebro:progress:v1';
-
 // Aantal opeenvolgende goede antwoorden waarna een concept als voltooid geldt.
 const COMPLETION_STREAK = 3;
 
@@ -25,26 +23,72 @@ const emptyConceptProgress: ConceptProgress = {
   seenQuestionIndices: [],
 };
 
+type ConceptProgressRow = {
+  concept_id: string;
+  correct_count: number;
+  incorrect_count: number;
+  consecutive_correct: number;
+  completed: boolean;
+  seen_question_indices: number[] | null;
+};
+
 export function createEmptyProgress(): ProgressState {
   return { concepts: {} };
 }
 
+async function getUserId(): Promise<string | null> {
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  return user?.id ?? null;
+}
+
 export async function loadProgress(): Promise<ProgressState> {
-  try {
-    const raw = await AsyncStorage.getItem(STORAGE_KEY);
-    if (!raw) return createEmptyProgress();
-    const parsed = JSON.parse(raw);
-    if (!parsed || typeof parsed !== 'object' || !parsed.concepts) {
-      return createEmptyProgress();
-    }
-    return parsed as ProgressState;
-  } catch {
-    return createEmptyProgress();
+  const userId = await getUserId();
+  if (!userId) return createEmptyProgress();
+
+  const { data, error } = await supabase
+    .from('concept_progress')
+    .select('concept_id, correct_count, incorrect_count, consecutive_correct, completed, seen_question_indices')
+    .eq('user_id', userId);
+
+  if (error) throw error;
+
+  const concepts: Record<string, ConceptProgress> = {};
+  for (const row of (data ?? []) as ConceptProgressRow[]) {
+    concepts[row.concept_id] = {
+      correctCount: row.correct_count,
+      incorrectCount: row.incorrect_count,
+      consecutiveCorrect: row.consecutive_correct,
+      completed: row.completed,
+      seenQuestionIndices: row.seen_question_indices ?? [],
+    };
   }
+  return { concepts };
 }
 
 export async function saveProgress(state: ProgressState): Promise<void> {
-  await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  const userId = await getUserId();
+  if (!userId) throw new Error('Niet ingelogd: kan voortgang niet opslaan.');
+
+  const rows = Object.entries(state.concepts).map(([conceptId, progress]) => ({
+    user_id: userId,
+    concept_id: conceptId,
+    correct_count: progress.correctCount,
+    incorrect_count: progress.incorrectCount,
+    consecutive_correct: progress.consecutiveCorrect,
+    completed: progress.completed,
+    seen_question_indices: progress.seenQuestionIndices,
+    updated_at: new Date().toISOString(),
+  }));
+
+  if (rows.length === 0) return;
+
+  const { error } = await supabase
+    .from('concept_progress')
+    .upsert(rows, { onConflict: 'user_id,concept_id' });
+
+  if (error) throw error;
 }
 
 export function getConceptProgress(state: ProgressState, conceptId: string): ConceptProgress {

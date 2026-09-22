@@ -2,7 +2,9 @@ import { useCallback, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Stack, useFocusEffect, useRouter } from 'expo-router';
 
+import { LoadErrorState } from '../../../components/LoadErrorState';
 import { getConceptsByTier, getConceptStatus, getMissingPrerequisiteNames } from '../../../lib/concepts';
+import { toUserMessage } from '../../../lib/networkError';
 import { createEmptyProgress, getConceptProgress, loadProgress, type ProgressState } from '../../../lib/progress';
 import type { Concept } from '../../../lib/types';
 
@@ -16,21 +18,31 @@ export default function OverviewScreen() {
   const router = useRouter();
   const [progress, setProgress] = useState<ProgressState>(createEmptyProgress());
   const [isLoading, setIsLoading] = useState(true);
+  const [loadErrorMessage, setLoadErrorMessage] = useState<string | null>(null);
+  const [reloadToken, setReloadToken] = useState(0);
   const tiers = getConceptsByTier();
 
   useFocusEffect(
     useCallback(() => {
       let isActive = true;
-      loadProgress().then((loaded) => {
-        if (isActive) {
+      setIsLoading(true);
+      setLoadErrorMessage(null);
+      loadProgress()
+        .then((loaded) => {
+          if (!isActive) return;
           setProgress(loaded);
           setIsLoading(false);
-        }
-      });
+        })
+        .catch((error: unknown) => {
+          if (!isActive) return;
+          setLoadErrorMessage(toUserMessage(error));
+          setIsLoading(false);
+        });
       return () => {
         isActive = false;
       };
-    }, [])
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [reloadToken])
   );
 
   if (isLoading) {
@@ -38,6 +50,18 @@ export default function OverviewScreen() {
       <View style={styles.loadingContainer}>
         <Stack.Screen options={{ title: 'Concept-oefeningen' }} />
         <Text style={styles.loadingText}>Voortgang laden…</Text>
+      </View>
+    );
+  }
+
+  if (loadErrorMessage) {
+    return (
+      <View style={styles.loadingContainer}>
+        <Stack.Screen options={{ title: 'Concept-oefeningen' }} />
+        <LoadErrorState
+          message={loadErrorMessage}
+          onRetry={() => setReloadToken((token) => token + 1)}
+        />
       </View>
     );
   }

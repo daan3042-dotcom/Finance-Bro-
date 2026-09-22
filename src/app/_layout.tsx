@@ -2,15 +2,25 @@ import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+import { LoadErrorState } from '../components/LoadErrorState';
+import { OfflineBanner } from '../components/OfflineBanner';
 import { AuthProvider, useAuth } from '../lib/auth-context';
 
 function RootNavigator() {
-  const { session, isLoading } = useAuth();
+  const { session, isLoading, loadErrorMessage, retryLoadSession } = useAuth();
 
   if (isLoading) {
     return (
       <View style={styles.loadingContainer}>
         <Text style={styles.loadingText}>Laden…</Text>
+      </View>
+    );
+  }
+
+  if (loadErrorMessage) {
+    return (
+      <View style={styles.loadingContainer}>
+        <LoadErrorState message={loadErrorMessage} onRetry={retryLoadSession} />
       </View>
     );
   }
@@ -31,6 +41,7 @@ export default function RootLayout() {
   return (
     <AuthProvider>
       <StatusBar style="auto" />
+      <OfflineBanner />
       <RootNavigator />
     </AuthProvider>
   );

@@ -1,17 +1,24 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
+import * as Crypto from 'expo-crypto';
 
+import { LoadErrorState } from '../../../../../components/LoadErrorState';
+import { SaveWarningBanner } from '../../../../../components/SaveWarningBanner';
 import { getLesson, getModule, TRACK_LABELS } from '../../../../../lib/modules';
 import {
   createEmptyModuleProgress,
   loadModuleProgress,
   saveModuleProgress,
+  withLessonAnswer,
   withLessonCompleted,
   withLessonQuestionSeen,
   type ModuleProgressState,
 } from '../../../../../lib/moduleProgress';
+import { toUserMessage } from '../../../../../lib/networkError';
+import { elapsedMs, logQuestionResponse, nowMs } from '../../../../../lib/questionResponses';
 import type { ModuleTrack } from '../../../../../lib/types';
+import { useAutoHideFlag } from '../../../../../lib/useAutoHideFlag';
 
 function firstOf<T extends string>(value: T | T[] | undefined): T | undefined {
   return Array.isArray(value) ? value[0] : value;
@@ -30,24 +37,43 @@ export default function ModuleLessonScreen() {
   const lesson = moduleId && track && lessonId ? getLesson(moduleId, track, lessonId) : undefined;
 
   const [isLoading, setIsLoading] = useState(true);
+  const [loadErrorMessage, setLoadErrorMessage] = useState<string | null>(null);
+  const [reloadToken, setReloadToken] = useState(0);
   const [progress, setProgress] = useState<ModuleProgressState>(createEmptyModuleProgress());
   const [phase, setPhase] = useState<Phase>('explanation');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
   const [correctCount, setCorrectCount] = useState(0);
+  const [sessionId, setSessionId] = useState<string | null>(null);
+  const [saveWarningVisible, showSaveWarning] = useAutoHideFlag(4000);
+  const questionStartedAtRef = useRef<number | null>(null);
 
   useEffect(() => {
     let isActive = true;
-    loadModuleProgress().then((loaded) => {
-      if (isActive) {
+    (async () => {
+      setIsLoading(true);
+      setLoadErrorMessage(null);
+      try {
+        const loaded = await loadModuleProgress();
+        if (!isActive) return;
         setProgress(loaded);
         setIsLoading(false);
+      } catch (error) {
+        if (!isActive) return;
+        setLoadErrorMessage(toUserMessage(error));
+        setIsLoading(false);
       }
-    });
+    })();
     return () => {
       isActive = false;
     };
-  }, []);
+  }, [reloadToken]);
+
+  useEffect(() => {
+    if (phase === 'questions') {
+      questionStartedAtRef.current = nowMs();
+    }
+  }, [phase, currentIndex]);
 
   if (!moduleId || !track || !lessonId || !module || !lesson) {
     return (
@@ -74,11 +100,32 @@ export default function ModuleLessonScreen() {
     );
   }
 
-  const handleStart = async () => {
+  if (loadErrorMessage) {
+    return (
+      <View style={styles.container}>
+        <Stack.Screen options={{ title: lesson.title }} />
+        <LoadErrorState
+          message={loadErrorMessage}
+          onRetry={() => setReloadToken((token) => token + 1)}
+        />
+      </View>
+    );
+  }
+
+  // Optie 2 (C6): opslaan gebeurt op de achtergrond en blokkeert nooit de
+  // les. Lukt het niet, dan verschijnt alleen een kort bannertje — de
+  // lokale voortgang (`updated`) is al bijgewerkt, dus een latere geslaagde
+  // save haalt dit gewoon weer in.
+  const persistProgress = (state: ModuleProgressState) => {
+    saveModuleProgress(state).catch(() => showSaveWarning());
+  };
+
+  const handleStart = () => {
     const updated = withLessonQuestionSeen(progress, moduleId, track, lessonId, 0);
-    await saveModuleProgress(updated);
     setProgress(updated);
+    setSessionId(Crypto.randomUUID());
     setPhase('questions');
+    persistProgress(updated);
   };
 
   const handleRestart = () => {
@@ -86,6 +133,7 @@ export default function ModuleLessonScreen() {
     setCurrentIndex(0);
     setSelectedOptionId(null);
     setCorrectCount(0);
+    setSessionId(null);
   };
 
   if (phase === 'explanation') {
@@ -136,30 +184,47 @@ export default function ModuleLessonScreen() {
   const hasAnswered = selectedOptionId !== null;
   const isCorrect = selectedOptionId === question.correct_option_id;
 
-  const handleNext = async () => {
+  const handleNext = () => {
     const justCorrect = selectedOptionId === question.correct_option_id;
     setCorrectCount((count) => count + (justCorrect ? 1 : 0));
 
+    if (sessionId && selectedOptionId) {
+      logQuestionResponse({
+        questionId: question.id,
+        lessonId: lesson.id,
+        track,
+        conceptIds: question.concepts,
+        isCorrect: justCorrect,
+        selectedAnswer: selectedOptionId,
+        responseTimeMs:
+          questionStartedAtRef.current !== null ? elapsedMs(questionStartedAtRef.current) : null,
+        sessionId,
+      });
+    }
+
+    let updated = withLessonAnswer(progress, moduleId, track, lessonId, justCorrect);
+
     if (isLastQuestion) {
-      const updated = withLessonCompleted(progress, moduleId, track, lessonId);
-      await saveModuleProgress(updated);
+      updated = withLessonCompleted(updated, moduleId, track, lessonId);
       setProgress(updated);
       setPhase('finished');
+      persistProgress(updated);
       return;
     }
 
     const nextIndex = currentIndex + 1;
-    const updated = withLessonQuestionSeen(progress, moduleId, track, lessonId, nextIndex);
-    await saveModuleProgress(updated);
+    updated = withLessonQuestionSeen(updated, moduleId, track, lessonId, nextIndex);
     setProgress(updated);
     setCurrentIndex(nextIndex);
     setSelectedOptionId(null);
+    persistProgress(updated);
   };
 
   return (
     <View style={styles.container}>
       <Stack.Screen options={{ title: lesson.title }} />
       <ScrollView contentContainerStyle={styles.scrollContent}>
+        <SaveWarningBanner visible={saveWarningVisible} />
         <Text style={styles.progressLabel}>
           Vraag {currentIndex + 1} van {totalQuestions}
         </Text>
