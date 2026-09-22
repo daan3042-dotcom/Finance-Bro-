@@ -1,0 +1,487 @@
+{
+  "description": "Module 1: Macro-economie. Eerste onderwerp van Duo Lingo Voor Markten — de expliciete uitzondering op de beginner-only regel (meerdere niveaus, zie §4 van docs/project-instructions.md) en de basis van de freemium-laag (diepere niveaus betaald, zie §9). De beginner-track bouwt dieper voort op de losse tier-1/tier-4-concepten uit data/concepts.json (geld_waarde, inflatie, bbp, rente_samengestelde_interest, macro_indicatoren), maar dan als samenhangende module met uitlegscherm per les.",
+  "id": "macro",
+  "name": "Macro-economie",
+  "order": 1,
+  "tracks": ["beginner", "gevorderd", "expert"],
+  "lessons": {
+    "beginner": [
+      {
+        "id": "wat_is_macro_economie_bbp",
+        "title": "Wat is macro-economie & hoe meet je de economie (BBP)",
+        "order": 1,
+        "explanation": "Macro-economie kijkt niet naar één bedrijf, maar naar de hele economie van een land: hoeveel er wordt geproduceerd, wat spullen kosten, hoeveel mensen werk hebben en hoe duur lenen is. Het is het grote plaatje achter nieuws als 'de economie groeit' of 'de economie krimpt'.\n\nDe belangrijkste meetlat hiervoor is het bruto binnenlands product, oftewel BBP: de totale waarde van alles wat een land in een jaar produceert, van brood tot software. Stijgt het BBP? Dan produceert en verdient een land meer — de economie groeit. Daalt het BBP twee kwartalen op rij? Dan spreken economen van een recessie.\n\nIn de komende lessen duik je in de andere pijlers van macro-economie: inflatie, werkloosheid en rente. Samen vertellen ze het volledige verhaal van hoe een economie ervoor staat.",
+        "questions": [
+          {
+            "format": "definitie-met-afleiders",
+            "question": "Wat bestudeert macro-economie?",
+            "options": [
+              { "id": "a", "text": "De economie van een land als geheel: groei, prijzen, werk en rente" },
+              { "id": "b", "text": "Alleen de financiële cijfers van één specifiek bedrijf" },
+              { "id": "c", "text": "Alleen de koers van één aandeel" },
+              { "id": "d", "text": "Alleen het spaargedrag van één huishouden" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Macro-economie kijkt naar de economie als geheel, niet naar individuele bedrijven, aandelen of huishoudens."
+          },
+          {
+            "format": "wat-hoort-er-niet-bij",
+            "question": "Wat hoort NIET bij de pijlers van macro-economie die in deze module aan bod komen (BBP, inflatie, werkloosheid, rente)?",
+            "options": [
+              { "id": "a", "text": "Het bruto binnenlands product van een land" },
+              { "id": "b", "text": "De inflatie in een land" },
+              { "id": "c", "text": "De winstmarge van één specifiek bedrijf" },
+              { "id": "d", "text": "De rente die een centrale bank vaststelt" }
+            ],
+            "correct_option_id": "c",
+            "explanation": "De winstmarge van één bedrijf is een bedrijfseconomisch (micro-)gegeven, geen macro-economische pijler die iets zegt over de hele economie."
+          },
+          {
+            "format": "berekening",
+            "question": "Land X produceert in jaar 1 voor €500 miljard aan goederen en diensten. In jaar 2 is dat €520 miljard. Wat is er gebeurd met het BBP?",
+            "options": [
+              { "id": "a", "text": "Het BBP is gestegen, de economie is gegroeid" },
+              { "id": "b", "text": "Het BBP is gedaald" },
+              { "id": "c", "text": "Het BBP is precies gelijk gebleven" },
+              { "id": "d", "text": "BBP zegt niets over groei" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Een stijging in de totale waarde van geproduceerde goederen en diensten betekent economische groei."
+          },
+          {
+            "format": "scenario-redenering",
+            "question": "Het BBP van een land daalt twee kwartalen achter elkaar. Hoe noemen economen deze situatie?",
+            "options": [
+              { "id": "a", "text": "Een recessie" },
+              { "id": "b", "text": "Een hausse" },
+              { "id": "c", "text": "Hyperinflatie" },
+              { "id": "d", "text": "Een deviezencrisis" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Twee opeenvolgende kwartalen van krimpend BBP is de klassieke definitie van een recessie."
+          },
+          {
+            "format": "welk-voorbeeld-past",
+            "question": "Welke van deze activiteiten telt mee in het BBP van een land?",
+            "options": [
+              { "id": "a", "text": "Een kapper die een klant knipt en daarvoor betaald krijgt" },
+              { "id": "b", "text": "Het schoonmaken van je eigen huis, zonder dat je ervoor betaalt" },
+              { "id": "c", "text": "Een tweedehands fiets die je doorverkoopt aan een buurman" },
+              { "id": "d", "text": "Onbetaald vrijwilligerswerk" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Het BBP telt betaalde diensten net zo goed mee als fysieke goederen. Onbetaalde activiteiten zoals zelf schoonmaken of vrijwilligerswerk, en de doorverkoop van iets dat al bestond (geen nieuwe productie), tellen niet mee."
+          },
+          {
+            "format": "vergelijking",
+            "question": "Land A heeft een groeiend BBP, land B een krimpend BBP. Welk land produceert relatief meer waarde ten opzichte van vorig jaar?",
+            "options": [
+              { "id": "a", "text": "Land A" },
+              { "id": "b", "text": "Land B" },
+              { "id": "c", "text": "Beide evenveel" },
+              { "id": "d", "text": "BBP zegt hier niets over" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Een groeiend BBP betekent dat een land meer waarde produceert dan het jaar ervoor; bij land B is dat juist minder."
+          },
+          {
+            "format": "keten-redenering",
+            "question": "Een land ziet zijn BBP twee kwartalen dalen. Winkels verkopen minder en bedrijven draaien minder productie. Wat volgt hieruit binnen de macro-economie?",
+            "options": [
+              { "id": "a", "text": "Het land bevindt zich waarschijnlijk in een recessie: de economie als geheel krimpt" },
+              { "id": "b", "text": "Dit betekent dat één specifiek bedrijf slecht wordt geleid" },
+              { "id": "c", "text": "Dit heeft geen enkel verband met macro-economische indicatoren" },
+              { "id": "d", "text": "Het BBP is hierbij niet relevant" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Een dalend BBP gedurende twee kwartalen, samen met minder verkoop en productie, is precies het patroon dat economen als recessie bestempelen — een macro-economisch signaal, geen bedrijfsspecifiek probleem."
+          }
+        ]
+      },
+      {
+        "id": "inflatie_koopkracht",
+        "title": "Inflatie: waarom prijzen stijgen",
+        "order": 2,
+        "explanation": "Je merkt inflatie in de supermarkt: hetzelfde boodschappenmandje kost dit jaar meer dan vorig jaar. Inflatie is de gemiddelde prijsstijging van goederen en diensten in een land over een bepaalde periode, meestal gemeten per jaar.\n\nWaardoor ontstaat het? Vaak doordat de vraag naar producten groter is dan het aanbod — winkels kunnen dan hogere prijzen vragen. Ook stijgende kosten, zoals duurdere energie of grondstoffen, werken door in prijzen.\n\nHet gevolg is dat je koopkracht daalt: met hetzelfde bedrag kun je minder kopen dan voorheen. Een beetje inflatie (rond 2% per jaar) zien centrale banken als teken van een gezond groeiende economie. Te hoge inflatie holt spaargeld snel uit; te lage of negatieve inflatie (deflatie) brengt weer andere problemen met zich mee.",
+        "questions": [
+          {
+            "format": "definitie-met-afleiders",
+            "question": "Wat is inflatie?",
+            "options": [
+              { "id": "a", "text": "De gemiddelde stijging van prijzen in een land over een periode" },
+              { "id": "b", "text": "De daling van de rente door de centrale bank" },
+              { "id": "c", "text": "De groei van het BBP" },
+              { "id": "d", "text": "Het totale bedrag dat een land uitgeeft aan importgoederen" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Inflatie is de gemiddelde prijsstijging van goederen en diensten, meestal gemeten per jaar."
+          },
+          {
+            "format": "scenario-redenering",
+            "question": "Je verdient dit jaar hetzelfde salaris als vorig jaar, maar de gemiddelde prijzen zijn met 5% gestegen. Wat gebeurt er met je koopkracht?",
+            "options": [
+              { "id": "a", "text": "Je koopkracht daalt, want je kunt met hetzelfde geld minder kopen" },
+              { "id": "b", "text": "Je koopkracht stijgt" },
+              { "id": "c", "text": "Je koopkracht blijft precies gelijk" },
+              { "id": "d", "text": "Koopkracht heeft niets met prijzen te maken" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Als prijzen stijgen terwijl je inkomen gelijk blijft, kun je met hetzelfde bedrag minder kopen — je koopkracht daalt."
+          },
+          {
+            "format": "welk-voorbeeld-past",
+            "question": "Welke situatie leidt het meest waarschijnlijk tot inflatie?",
+            "options": [
+              { "id": "a", "text": "Veel mensen willen een product kopen, terwijl winkels er te weinig van hebben" },
+              { "id": "b", "text": "Een winkel verlaagt haar prijzen tijdens de uitverkoop" },
+              { "id": "c", "text": "Een land importeert goedkopere producten uit het buitenland" },
+              { "id": "d", "text": "Een bedrijf verhoogt zijn productie zonder dat de vraag stijgt" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Wanneer de vraag naar een product groter is dan het aanbod, kunnen verkopers hogere prijzen vragen — een klassieke oorzaak van inflatie."
+          },
+          {
+            "format": "berekening",
+            "question": "Een brood kostte vorig jaar €2,00. Door inflatie van 10% kost hetzelfde brood dit jaar meer. Wat is de nieuwe prijs?",
+            "options": [
+              { "id": "a", "text": "€2,20" },
+              { "id": "b", "text": "€2,10" },
+              { "id": "c", "text": "€2,00" },
+              { "id": "d", "text": "€3,00" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "10% van €2,00 is €0,20 extra, dus de nieuwe prijs is €2,00 + €0,20 = €2,20."
+          },
+          {
+            "format": "wat-hoort-er-niet-bij",
+            "question": "Wat hoort NIET bij de gevolgen van hoge inflatie?",
+            "options": [
+              { "id": "a", "text": "Je koopkracht daalt" },
+              { "id": "b", "text": "Spaargeld is na verloop van tijd minder waard" },
+              { "id": "c", "text": "Het BBP daalt hierdoor automatisch mee" },
+              { "id": "d", "text": "Centrale banken grijpen vaak in met rentebeleid" }
+            ],
+            "correct_option_id": "c",
+            "explanation": "Hoge inflatie zegt op zichzelf niets zeker over het BBP — een economie kan tegelijk groeien én hoge inflatie hebben. De andere drie zijn wel directe gevolgen van inflatie."
+          },
+          {
+            "format": "vergelijking",
+            "question": "Land A heeft een inflatie van 2% per jaar, land B van 15% per jaar. In welk land daalt de koopkracht van spaargeld het snelst?",
+            "options": [
+              { "id": "a", "text": "Land A" },
+              { "id": "b", "text": "Land B" },
+              { "id": "c", "text": "In beide landen even snel" },
+              { "id": "d", "text": "Inflatie heeft geen effect op koopkracht van spaargeld" }
+            ],
+            "correct_option_id": "b",
+            "explanation": "Hoe hoger de inflatie, hoe sneller geld zijn waarde verliest — bij 15% inflatie daalt de koopkracht van spaargeld veel sneller dan bij 2%."
+          },
+          {
+            "format": "keten-redenering",
+            "question": "De vraag naar chips explodeert wereldwijd, maar fabrieken kunnen niet snel genoeg meer produceren. Wat is de meest waarschijnlijke keten van gevolgen?",
+            "options": [
+              { "id": "a", "text": "Chips worden schaars, prijzen stijgen, en dit draagt bij aan hogere inflatie" },
+              { "id": "b", "text": "Chips worden vanzelf goedkoper door de hogere vraag" },
+              { "id": "c", "text": "De rente daalt automatisch als reactie" },
+              { "id": "d", "text": "Er is geen enkel effect op prijzen" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Een tekort ten opzichte van de vraag (schaarste) drijft de prijs omhoog; wanneer dit voor veel producten tegelijk gebeurt, draagt het bij aan de algehele inflatie."
+          }
+        ]
+      },
+      {
+        "id": "werkloosheid",
+        "title": "Werkloosheid: de vierde pijler van macro-economie",
+        "order": 3,
+        "explanation": "Werkloosheid is de vierde pijler van macro-economie: het percentage van de beroepsbevolking dat kan en wil werken, maar geen betaalde baan heeft. Dit heet het werkloosheidspercentage.\n\nWerkloosheid hangt nauw samen met hoe het met de economie gaat. Groeit het BBP, dan produceren bedrijven meer en hebben ze vaak extra personeel nodig — de werkloosheid daalt. Krimpt de economie, dan verkopen bedrijven minder, en worden er soms mensen ontslagen — de werkloosheid stijgt.\n\nEen beetje werkloosheid is normaal: mensen wisselen van baan, studeren af, of zoeken bewust een tijdje. Economen noemen dit 'frictiewerkloosheid'. Pas wanneer werkloosheid structureel hoog is, wijst dat op een zwakke economie waar te weinig banen worden gecreëerd voor iedereen die wil werken.",
+        "questions": [
+          {
+            "format": "definitie-met-afleiders",
+            "question": "Wat is werkloosheid, zoals gemeten in macro-economische cijfers?",
+            "options": [
+              { "id": "a", "text": "Het percentage van de beroepsbevolking dat kan en wil werken, maar geen baan heeft" },
+              { "id": "b", "text": "Het aantal mensen dat met pensioen is" },
+              { "id": "c", "text": "Het aantal bedrijven dat failliet gaat" },
+              { "id": "d", "text": "Het percentage van het BBP dat naar lonen gaat" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Werkloosheid meet specifiek mensen die beschikbaar zijn voor werk en actief zoeken, maar geen betaalde baan hebben."
+          },
+          {
+            "format": "scenario-redenering",
+            "question": "Een economie groeit sterk: bedrijven draaien op volle toeren en verkopen recordaantallen producten. Wat gebeurt er waarschijnlijk met de werkloosheid?",
+            "options": [
+              { "id": "a", "text": "De werkloosheid daalt, want bedrijven hebben meer personeel nodig" },
+              { "id": "b", "text": "De werkloosheid stijgt automatisch mee met groei" },
+              { "id": "c", "text": "Werkloosheid heeft geen relatie met economische groei" },
+              { "id": "d", "text": "De werkloosheid blijft altijd exact gelijk" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Bij economische groei hebben bedrijven vaak meer mensen nodig om aan de vraag te voldoen, waardoor de werkloosheid doorgaans daalt."
+          },
+          {
+            "format": "wat-hoort-er-niet-bij",
+            "question": "Wat hoort NIET bij een normale, gezonde vorm van werkloosheid (frictiewerkloosheid)?",
+            "options": [
+              { "id": "a", "text": "Iemand die net is afgestudeerd en op zoek is naar een eerste baan" },
+              { "id": "b", "text": "Iemand die tussen twee banen in bewust een paar weken pauze neemt" },
+              { "id": "c", "text": "Iemand die van baan wisselt omdat een betere kans zich voordoet" },
+              { "id": "d", "text": "Duizenden mensen die hun baan verliezen omdat een hele sector instort tijdens een recessie" }
+            ],
+            "correct_option_id": "d",
+            "explanation": "De eerste drie zijn voorbeelden van normale, tijdelijke frictiewerkloosheid. Grootschalig banenverlies door een instortende sector wijst juist op een dieper economisch probleem, niet op gewone frictiewerkloosheid."
+          },
+          {
+            "format": "berekening",
+            "question": "Een land heeft een beroepsbevolking van 1.000.000 mensen, waarvan er 40.000 geen baan hebben maar wel actief op zoek zijn. Wat is het werkloosheidspercentage?",
+            "options": [
+              { "id": "a", "text": "4%" },
+              { "id": "b", "text": "40%" },
+              { "id": "c", "text": "0,4%" },
+              { "id": "d", "text": "25%" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "40.000 gedeeld door 1.000.000 is 0,04, oftewel 4%."
+          },
+          {
+            "format": "welk-voorbeeld-past",
+            "question": "Welk voorbeeld past het beste bij structureel hoge werkloosheid, in plaats van normale frictiewerkloosheid?",
+            "options": [
+              { "id": "a", "text": "Een fabriekswerker die drie jaar lang geen vergelijkbare baan kan vinden nadat zijn hele sector is verdwenen" },
+              { "id": "b", "text": "Een student die tijdens de zomervakantie geen baan zoekt" },
+              { "id": "c", "text": "Iemand die twee weken tussen twee banen in zit" },
+              { "id": "d", "text": "Iemand die net is verhuisd en nog op zoek is naar werk in de nieuwe stad" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Langdurig geen vergelijkbaar werk kunnen vinden nadat een hele sector is verdwenen wijst op een dieper, structureel probleem in de economie — niet op de korte, normale overgangsperiode van frictiewerkloosheid."
+          },
+          {
+            "format": "vergelijking",
+            "question": "Land A heeft een werkloosheidspercentage van 3%, land B van 12%. In welk land vinden relatief meer mensen die willen werken géén baan?",
+            "options": [
+              { "id": "a", "text": "Land A" },
+              { "id": "b", "text": "Land B" },
+              { "id": "c", "text": "In beide landen evenveel" },
+              { "id": "d", "text": "Werkloosheidspercentages zijn niet vergelijkbaar tussen landen" }
+            ],
+            "correct_option_id": "b",
+            "explanation": "Een hoger werkloosheidspercentage betekent dat een groter deel van de beroepsbevolking geen baan heeft, ondanks dat ze willen en kunnen werken."
+          },
+          {
+            "format": "keten-redenering",
+            "question": "Een recessie zorgt ervoor dat bedrijven minder verkopen. Wat is de meest waarschijnlijke keten van gevolgen voor de werkloosheid?",
+            "options": [
+              { "id": "a", "text": "Bedrijven verkopen minder, hebben minder personeel nodig, en ontslaan mensen, waardoor de werkloosheid stijgt" },
+              { "id": "b", "text": "Bedrijven verkopen minder, maar nemen juist extra personeel aan" },
+              { "id": "c", "text": "Werkloosheid daalt automatisch tijdens een recessie" },
+              { "id": "d", "text": "Er is geen enkel verband tussen verkopen en personeel" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Minder verkopen betekent vaak minder productie en dus minder behoefte aan personeel, wat bedrijven ertoe kan brengen mensen te ontslaan — de werkloosheid stijgt."
+          }
+        ]
+      },
+      {
+        "id": "rente_centrale_bank",
+        "title": "Rente en de rol van de centrale bank",
+        "order": 4,
+        "explanation": "Rente is de prijs van geld lenen: hoeveel je extra betaalt (of ontvangt) boven op een geleend of gespaard bedrag. Een groot deel van deze prijs wordt beïnvloed door de centrale bank, zoals de Europese Centrale Bank (ECB) in de eurozone.\n\nDe centrale bank stelt een beleidsrente vast en gebruikt die als knop om de economie bij te sturen. Is de inflatie te hoog? Dan verhoogt de centrale bank de rente. Lenen wordt duurder, mensen en bedrijven geven minder uit, en de vraag — en daarmee de prijsdruk — neemt af.\n\nDreigt juist een recessie met hoge werkloosheid? Dan verlaagt de centrale bank de rente. Lenen wordt goedkoper, mensen besteden en investeren meer, en de economie krijgt een duwtje in de rug. Rente is zo het belangrijkste sturingsinstrument van de centrale bank.",
+        "questions": [
+          {
+            "format": "definitie-met-afleiders",
+            "question": "Wat is de rol van de beleidsrente van een centrale bank?",
+            "options": [
+              { "id": "a", "text": "Een instrument om de economie bij te sturen door lenen duurder of goedkoper te maken" },
+              { "id": "b", "text": "Een belasting die bedrijven betalen over hun winst" },
+              { "id": "c", "text": "Het percentage van het BBP dat de overheid uitgeeft" },
+              { "id": "d", "text": "De waarde van de nationale munt ten opzichte van de dollar" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "De beleidsrente is het belangrijkste instrument waarmee een centrale bank leningen duurder of goedkoper maakt om de economie te sturen."
+          },
+          {
+            "format": "scenario-redenering",
+            "question": "De inflatie in een land loopt sterk op. Wat is de meest waarschijnlijke reactie van de centrale bank?",
+            "options": [
+              { "id": "a", "text": "De rente verhogen, om lenen en uitgeven af te remmen" },
+              { "id": "b", "text": "De rente verlagen, om de inflatie verder aan te wakkeren" },
+              { "id": "c", "text": "Niets doen, rente heeft geen effect op inflatie" },
+              { "id": "d", "text": "Belastingen verlagen in plaats van de rente aan te passen" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Centrale banken verhogen doorgaans de rente om inflatie af te remmen: duurder lenen betekent minder bestedingen en dus minder opwaartse prijsdruk."
+          },
+          {
+            "format": "wat-hoort-er-niet-bij",
+            "question": "Wat hoort NIET bij het effect van een rentestijging door de centrale bank?",
+            "options": [
+              { "id": "a", "text": "Lenen wordt duurder voor consumenten en bedrijven" },
+              { "id": "b", "text": "Mensen en bedrijven geven gemiddeld minder uit" },
+              { "id": "c", "text": "De inflatie wordt doorgaans afgeremd" },
+              { "id": "d", "text": "De werkloosheid daalt automatisch en direct" }
+            ],
+            "correct_option_id": "d",
+            "explanation": "Een rentestijging remt juist de economie af, wat eerder tot hogere dan tot lagere werkloosheid kan leiden — het is geen automatisch effect dat werkloosheid laat dalen."
+          },
+          {
+            "format": "berekening",
+            "question": "Je leent €10.000 tegen een rente van 5% per jaar. Hoeveel rente betaal je in het eerste jaar (zonder aflossing)?",
+            "options": [
+              { "id": "a", "text": "€500" },
+              { "id": "b", "text": "€50" },
+              { "id": "c", "text": "€5.000" },
+              { "id": "d", "text": "€100" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "5% van €10.000 is €500."
+          },
+          {
+            "format": "welk-voorbeeld-past",
+            "question": "Welke situatie past het beste bij een centrale bank die de rente verlaagt?",
+            "options": [
+              { "id": "a", "text": "Een recessie met hoge werkloosheid, waarbij de economie een impuls nodig heeft" },
+              { "id": "b", "text": "Snel oplopende inflatie die moet worden afgeremd" },
+              { "id": "c", "text": "Een oververhitte economie met te veel bestedingen" },
+              { "id": "d", "text": "Een sterk stijgend BBP dat afgekoeld moet worden" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Bij een recessie en hoge werkloosheid verlaagt de centrale bank de rente om lenen goedkoper te maken en de economie te stimuleren."
+          },
+          {
+            "format": "vergelijking",
+            "question": "Land A verhoogt de rente, land B verlaagt de rente. In welk land wordt lenen voor consumenten en bedrijven duurder?",
+            "options": [
+              { "id": "a", "text": "Land A" },
+              { "id": "b", "text": "Land B" },
+              { "id": "c", "text": "In beide landen even duur" },
+              { "id": "d", "text": "Renteveranderingen hebben geen invloed op leenkosten" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Een hogere rente betekent direct hogere kosten voor het lenen van geld; in land A wordt lenen dus duurder dan in land B."
+          },
+          {
+            "format": "keten-redenering",
+            "question": "De centrale bank verhoogt de rente fors om hoge inflatie te bestrijden. Wat is de meest waarschijnlijke keten van gevolgen op de langere termijn?",
+            "options": [
+              { "id": "a", "text": "Lenen wordt duurder, bestedingen en investeringen nemen af, de economie groeit trager en de inflatie koelt af — maar de werkloosheid kan oplopen" },
+              { "id": "b", "text": "Lenen wordt goedkoper en de economie groeit sneller" },
+              { "id": "c", "text": "Er is geen enkel effect op bestedingen of werkgelegenheid" },
+              { "id": "d", "text": "De inflatie stijgt hierdoor juist verder" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Een hogere rente remt bestedingen en investeringen af, wat de inflatie doorgaans laat dalen, maar als bijeffect ook de economische groei vertraagt en de werkloosheid kan doen oplopen — de klassieke afweging bij renteverhogingen."
+          }
+        ]
+      },
+      {
+        "id": "economische_cyclus",
+        "title": "De economische cyclus: hoe alles samenhangt",
+        "order": 5,
+        "explanation": "De vier pijlers die je nu kent — BBP, inflatie, werkloosheid en rente — bewegen niet los van elkaar. Samen vormen ze de economische cyclus: het min of meer terugkerende patroon van groei en krimp dat elke economie doormaakt.\n\nIn de expansiefase groeit het BBP, daalt de werkloosheid en stijgt het consumentenvertrouwen. Groeit de economie te snel, dan kan de inflatie oplopen — de centrale bank verhoogt dan de rente om af te koelen. Groeit de economie te langzaam, of krimpt het BBP twee kwartalen op rij, dan spreken we van een recessie: bedrijven verkopen minder, werkloosheid stijgt, en de centrale bank verlaagt juist de rente om de economie weer aan te jagen.\n\nZo grijpen BBP, inflatie, werkloosheid en rente voortdurend op elkaar in — dat samenspel ís de economische cyclus.",
+        "questions": [
+          {
+            "format": "definitie-met-afleiders",
+            "question": "Wat is de economische cyclus?",
+            "options": [
+              { "id": "a", "text": "Het terugkerende patroon van groei en krimp, waarbij BBP, inflatie, werkloosheid en rente op elkaar inspelen" },
+              { "id": "b", "text": "Een vaste jaarlijkse stijging van het BBP" },
+              { "id": "c", "text": "Het proces waarbij een land altijd blijft groeien" },
+              { "id": "d", "text": "Een systeem waarbij de rente nooit verandert" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "De economische cyclus is het patroon van afwisselende groei en krimp waarin BBP, inflatie, werkloosheid en rente elkaar beïnvloeden."
+          },
+          {
+            "format": "scenario-redenering",
+            "question": "Een economie bevindt zich in een expansiefase: het BBP groeit hard en de werkloosheid is laag. Wat is een mogelijk risico dat hierbij kan ontstaan?",
+            "options": [
+              { "id": "a", "text": "Oplopende inflatie, doordat de vraag het aanbod overtreft" },
+              { "id": "b", "text": "Een directe recessie zonder enige aanleiding" },
+              { "id": "c", "text": "Een blijvend dalende rente zonder ingrijpen" },
+              { "id": "d", "text": "Werkloosheid die vanzelf verder daalt tot 0%" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Snelle groei en lage werkloosheid kunnen de vraag naar producten en diensten flink opdrijven, wat het risico op oplopende inflatie vergroot."
+          },
+          {
+            "format": "keten-redenering",
+            "question": "Een economie groeit te snel en de inflatie loopt op. De centrale bank verhoogt de rente flink. Wat is de meest waarschijnlijke keten van gevolgen voor BBP en werkloosheid op de langere termijn?",
+            "options": [
+              { "id": "a", "text": "Bestedingen en investeringen nemen af, de BBP-groei vertraagt, en de werkloosheid kan oplopen" },
+              { "id": "b", "text": "Het BBP blijft ongewijzigd groeien en de werkloosheid daalt verder" },
+              { "id": "c", "text": "De inflatie loopt juist verder op door de renteverhoging" },
+              { "id": "d", "text": "Er is geen enkel effect op BBP of werkloosheid" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Een hogere rente remt bestedingen en investeringen af, wat de BBP-groei vertraagt en de werkloosheid kan doen oplopen — de vier pijlers werken hier samen."
+          },
+          {
+            "format": "wat-hoort-er-niet-bij",
+            "question": "Wat hoort NIET bij de kenmerken van een recessiefase in de economische cyclus?",
+            "options": [
+              { "id": "a", "text": "Het BBP krimpt twee kwartalen op rij" },
+              { "id": "b", "text": "De werkloosheid stijgt doorgaans" },
+              { "id": "c", "text": "De centrale bank verlaagt vaak de rente" },
+              { "id": "d", "text": "De inflatie loopt doorgaans sterk op" }
+            ],
+            "correct_option_id": "d",
+            "explanation": "Tijdens een recessie neemt de vraag juist af, waardoor de inflatie doorgaans afzwakt in plaats van sterk oploopt — de andere drie kenmerken horen wél bij een typische recessiefase."
+          },
+          {
+            "format": "welk-voorbeeld-past",
+            "question": "Welke combinatie van signalen past het beste bij het begin van een recessie?",
+            "options": [
+              { "id": "a", "text": "Dalend BBP, stijgende werkloosheid, een centrale bank die de rente verlaagt" },
+              { "id": "b", "text": "Stijgend BBP, dalende werkloosheid, oplopende inflatie" },
+              { "id": "c", "text": "Stabiel BBP, stabiele werkloosheid, ongewijzigde rente" },
+              { "id": "d", "text": "Dalende inflatie zonder enige verandering in BBP of werkloosheid" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Een dalend BBP samen met stijgende werkloosheid en een rentverlaging door de centrale bank is precies het samenspel dat een beginnende recessie kenmerkt."
+          },
+          {
+            "format": "vergelijking",
+            "question": "Vergelijk twee fases van de economische cyclus: expansie versus recessie. In welke fase is de werkloosheid doorgaans lager?",
+            "options": [
+              { "id": "a", "text": "Expansie" },
+              { "id": "b", "text": "Recessie" },
+              { "id": "c", "text": "In beide fases even hoog" },
+              { "id": "d", "text": "Werkloosheid hangt niet samen met de economische cyclus" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Tijdens een expansiefase groeien bedrijven en hebben ze meer personeel nodig, waardoor de werkloosheid doorgaans lager is dan tijdens een recessie."
+          },
+          {
+            "format": "berekening",
+            "question": "Het BBP van een land was €800 miljard, en daalt twee kwartalen op rij met in totaal 3% naar €776 miljard. Hoe zou een econoom deze situatie het meest waarschijnlijk noemen?",
+            "options": [
+              { "id": "a", "text": "Een recessie, want het BBP krimpt twee kwartalen op rij" },
+              { "id": "b", "text": "Een sterke expansiefase" },
+              { "id": "c", "text": "Hyperinflatie" },
+              { "id": "d", "text": "Een renteverlaging" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Een BBP-daling gedurende twee opeenvolgende kwartalen is de klassieke definitie van een recessie."
+          }
+        ]
+      }
+    ],
+    "gevorderd": [],
+    "expert": []
+  },
+  "format_rules": {
+    "explanation_length": "100-150 woorden per uitlegscherm, gewone taal, elk jargon wordt uitgelegd (filosofie.md: 'simpel, maar nooit dom')",
+    "questions_per_lesson": "6-8",
+    "options_per_question": 4,
+    "correct_answers": "exactly one",
+    "question_explanation_length": "1-2 zinnen, legt uit WAAROM het antwoord correct is",
+    "disclaimer_field": "Optioneel veld 'disclaimer' op vraagniveau, verplicht zodra de vraag een concreet voorbeeld noemt (bijv. een specifiek aandeel of index). Vaste tekst conform §10: 'Dit is geen beleggingsadvies.'",
+    "format_variety": [
+      "berekening", "scenario-redenering", "definitie-met-afleiders", "wat-hoort-er-niet-bij",
+      "welk-voorbeeld-past", "vergelijking", "keten-redenering"
+    ],
+    "instructie_voor_generatie": "Gebruik nooit twee keer achter elkaar hetzelfde format binnen dezelfde les. Toon: speels in interface/taalgebruik, maar feitelijk en serieus zodra het over risico, verlies of onzekerheid gaat (filosofie.md).",
+    "content_epistemologie": "Beginner-track: heldere, vereenvoudigde basisprincipes zonder verzwijging van nuance (filosofie.md, 'Content-epistemologie per niveau'). Gevorderd/expert-tracks (later toe te voegen): concurrerende theorieën expliciet tegen elkaar afwegen."
+  }
+}

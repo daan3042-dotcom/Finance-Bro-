@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { useLocalSearchParams, useRouter } from 'expo-router';
+import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 
-import { conceptsById } from '../../lib/concepts';
+import { conceptsById } from '../../../lib/concepts';
 import {
   createEmptyProgress,
   getConceptProgress,
@@ -11,8 +11,8 @@ import {
   withAnswer,
   withSeenQuestions,
   type ProgressState,
-} from '../../lib/progress';
-import { getQuestionPool, pickNextQuestionIndex, QUESTIONS_PER_LESSON } from '../../lib/questions';
+} from '../../../lib/progress';
+import { getQuestionPool, pickNextQuestionIndex, QUESTIONS_PER_LESSON } from '../../../lib/questions';
 
 async function pickAndPersistNext(
   progress: ProgressState,
@@ -73,6 +73,7 @@ export default function LessonScreen() {
   if (!conceptId || !concept || pool.length === 0) {
     return (
       <View style={styles.container}>
+        <Stack.Screen options={{ title: 'Les' }} />
         <View style={styles.completeContent}>
           <Text style={styles.completeTitle}>Les niet gevonden</Text>
           <Pressable style={styles.restartButton} onPress={() => router.back()}>
@@ -86,6 +87,7 @@ export default function LessonScreen() {
   if (isLoading || poolIndex === null) {
     return (
       <View style={styles.container}>
+        <Stack.Screen options={{ title: concept.name }} />
         <View style={styles.completeContent}>
           <Text style={styles.loadingText}>Vraag laden…</Text>
         </View>
@@ -149,6 +151,7 @@ export default function LessonScreen() {
   if (isFinished) {
     return (
       <View style={styles.container}>
+        <Stack.Screen options={{ title: concept.name }} />
         <View style={styles.completeContent}>
           <Text style={styles.completeEmoji}>🎉</Text>
           <Text style={styles.completeTitle}>Les voltooid!</Text>
@@ -169,6 +172,7 @@ export default function LessonScreen() {
 
   return (
     <View style={styles.container}>
+      <Stack.Screen options={{ title: concept.name }} />
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <Text style={styles.progressLabel}>
           Vraag {answeredCount + 1} van {QUESTIONS_PER_LESSON}

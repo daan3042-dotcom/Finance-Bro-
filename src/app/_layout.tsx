@@ -13,10 +13,7 @@ export default function RootLayout() {
           headerShadowVisible: false,
           contentStyle: { backgroundColor: '#F4F6FB' },
         }}
-      >
-        <Stack.Screen name="index" options={{ title: 'Finance Bro' }} />
-        <Stack.Screen name="lesson/[conceptId]" options={{ title: 'Les' }} />
-      </Stack>
+      />
     </>
   );
 }
