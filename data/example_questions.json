@@ -186,6 +186,7 @@
     }
   ],
   "format_rules": {
+    "scope_note": "Finance Bro behandelt algemene financiele educatie (persoonlijke financien, bedrijfseconomie, macro-economie, reguliere beleggingstheorie), maar NOOIT trading, day trading, technische analyse of specifieke trading-methodologieen zoals ICT.",
     "options_per_question": 4,
     "correct_answers": "exactly one",
     "explanation_length": "1-2 zinnen, legt uit WAAROM het antwoord correct is, niet alleen WAT het antwoord is",

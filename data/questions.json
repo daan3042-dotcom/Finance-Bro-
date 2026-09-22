@@ -1141,44 +1141,6 @@
         "explanation": "De combinatie van hoge inflatie en stijgende rente in land X drukt de koers van bestaande obligaties sterker, omdat nieuwe obligaties daar een steeds hogere rente bieden ten opzichte van de vaste coupon van bestaande obligaties."
       }
     ],
-    "technische_analyse_basis": [
-      {
-        "format": "definitie-met-afleiders",
-        "question": "Wat is het uitgangspunt van technische analyse bij het beleggen in aandelen of indices?",
-        "options": [
-          { "id": "a", "text": "Alleen de winstcijfers en balans van een bedrijf worden bestudeerd" },
-          { "id": "b", "text": "Koerspatronen en handelsvolumes uit het verleden worden bestudeerd om mogelijke toekomstige koersbewegingen in te schatten" },
-          { "id": "c", "text": "De rente van de centrale bank bepaalt volledig de koers" },
-          { "id": "d", "text": "Technische analyse voorspelt met 100% zekerheid toekomstige koersen" }
-        ],
-        "correct_option_id": "b",
-        "explanation": "Technische analyse gaat uit van het bestuderen van historische koerspatronen en volumes, in de veronderstelling dat deze aanwijzingen geven over mogelijke toekomstige bewegingen."
-      },
-      {
-        "format": "scenario-redenering",
-        "question": "Een index vertoont de afgelopen weken sterk toenemende koersschommelingen (hoge volatiliteit) rond een belangrijk prijsniveau dat historisch vaak als omslagpunt fungeerde. Hoe zou een technisch analist deze combinatie van signalen waarschijnlijk interpreteren?",
-        "options": [
-          { "id": "a", "text": "Als volledig irrelevant, technische analyse kijkt nooit naar volatiliteit" },
-          { "id": "b", "text": "Als een mogelijk belangrijk moment waarop de markt een nieuwe richting kan kiezen, omdat toegenomen volatiliteit rond een bekend niveau vaak duidt op besluitvorming door veel marktpartijen tegelijk" },
-          { "id": "c", "text": "Als bewijs dat de index nooit meer zal bewegen" },
-          { "id": "d", "text": "Als een garantie dat de koers zal blijven stijgen" }
-        ],
-        "correct_option_id": "b",
-        "explanation": "Technisch analisten combineren prijsniveaus met volatiliteit: toegenomen schommelingen rond een niveau dat in het verleden vaak als omslagpunt diende, wordt vaak gezien als signaal dat veel marktpartijen tegelijk aan het beslissen zijn over de volgende richting."
-      },
-      {
-        "format": "welk-voorbeeld-past",
-        "question": "Welk voorbeeld past het beste bij het combineren van beursindex-gedrag en volatiliteit binnen technische analyse?",
-        "options": [
-          { "id": "a", "text": "Het bestuderen van alleen de jaarcijfers van één bedrijf in de index" },
-          { "id": "b", "text": "Het analyseren hoe een index reageert (in koers en schommelingen) rond eerdere hoogte- of dieptepunten, om mogelijke toekomstige bewegingen in te schatten" },
-          { "id": "c", "text": "Het uitsluitend kijken naar de rentestand van de centrale bank" },
-          { "id": "d", "text": "Het random kopen en verkopen zonder enige koersanalyse" }
-        ],
-        "correct_option_id": "b",
-        "explanation": "Technische analyse combineert het historische koersgedrag van een index met de mate van schommeling (volatiliteit) rond belangrijke niveaus, om zo mogelijke toekomstige bewegingen te duiden."
-      }
-    ],
     "duration_risk": [
       {
         "format": "definitie-met-afleiders",
@@ -1254,44 +1216,7 @@
         "correct_option_id": "b",
         "explanation": "Een lagere volatiliteit door bredere spreiding kan, ondanks een lager absoluut rendement, alsnog een hogere Sharpe ratio opleveren als het risico verhoudingsgewijs sterker daalt dan het rendement."
       }
-    ],
-    "ict_methodologie_basics": [
-      {
-        "format": "definitie-met-afleiders",
-        "question": "Wat wordt binnen de ICT-methodologie bedoeld met 'liquidity' (liquiditeit) op de grafiek, in aanvulling op technische analyse?",
-        "options": [
-          { "id": "a", "text": "Hoeveel geld een belegger op zijn spaarrekening heeft staan" },
-          { "id": "b", "text": "Zones op de grafiek waar veel opgehoopte koop- of verkooporders liggen, die de koers kunnen aantrekken doordat grote partijen daar willen handelen" },
-          { "id": "c", "text": "De rentestand van de centrale bank" },
-          { "id": "d", "text": "Het dividendrendement van een aandeel" }
-        ],
-        "correct_option_id": "b",
-        "explanation": "In deze methodologie verwijst 'liquidity' naar concentraties van orders op bepaalde prijsniveaus, die de koers kunnen aantrekken omdat grote marktpartijen daar makkelijker grote posities kunnen innemen of afbouwen."
-      },
-      {
-        "format": "scenario-redenering",
-        "question": "Een index nadert, na een periode van toenemende volatiliteit, een prijsniveau waar volgens de ICT-methodologie veel liquiditeit ligt opgehoopt (market structure-signaal). Hoe zou dit binnen deze aanpak worden geïnterpreteerd, voortbouwend op de basisprincipes van technische analyse?",
-        "options": [
-          { "id": "a", "text": "Als volledig toeval, market structure en liquiditeit hebben geen relatie met koersbewegingen" },
-          { "id": "b", "text": "Als een zone waar de koers mogelijk naartoe beweegt en kan omkeren, omdat grote partijen daar orders kunnen uitvoeren, vergelijkbaar met hoe technische analyse belangrijke niveaus duidt" },
-          { "id": "c", "text": "Als bewijs dat de index nooit meer zal dalen" },
-          { "id": "d", "text": "Als een garantie voor een directe koersstijging zonder enig risico" }
-        ],
-        "correct_option_id": "b",
-        "explanation": "Net als technische analyse belangrijke koersniveaus identificeert, gaat de ICT-methodologie ervan uit dat zones met opgehoopte liquiditeit de koers kunnen aantrekken en vaak samenvallen met mogelijke omkeerpunten in de market structure."
-      },
-      {
-        "format": "vergelijking",
-        "question": "Vergelijk klassieke technische analyse met de ICT-methodologie: beide bestuderen historische koersinformatie, maar waarin verschilt de ICT-aanpak specifiek door het extra meewegen van 'liquidity' en 'market structure'?",
-        "options": [
-          { "id": "a", "text": "ICT kijkt uitsluitend naar dividenden en jaarcijfers, net als klassieke analyse" },
-          { "id": "b", "text": "ICT voegt aan de klassieke koerspatronen een analyse toe van waar orders zich ophopen (liquidity) en hoe de markt structureel beweegt, om zo mogelijke omkeerpunten preciezer te duiden" },
-          { "id": "c", "text": "Er is geen enkel verschil tussen beide benaderingen" },
-          { "id": "d", "text": "ICT gebruikt uitsluitend macro-economische indicatoren, zonder naar koersen te kijken" }
-        ],
-        "correct_option_id": "b",
-        "explanation": "Waar klassieke technische analyse zich vooral richt op koerspatronen, voegt de ICT-methodologie een extra laag toe door specifiek te kijken naar zones met opgehoopte liquiditeit en de bredere market structure, om potentiële omkeerpunten scherper te kunnen duiden."
-      }
     ]
-  }
+  },
+  "scope_note": "Finance Bro behandelt algemene financiele educatie (persoonlijke financien, bedrijfseconomie, macro-economie, reguliere beleggingstheorie), maar NOOIT trading, day trading, technische analyse of specifieke trading-methodologieen zoals ICT."
 }

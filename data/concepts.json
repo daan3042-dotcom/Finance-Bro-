@@ -1,5 +1,6 @@
 {
   "description": "Conceptgraaf voor Finance Bro. Tier 1 dekt brede financiele/bedrijfseconomische basisbegrippen (vergelijkbaar met jaar 1 HBO Bedrijfseconomie), zonder enige voorkennis. Tier 2-4 bouwen daarop voort richting beleggen.",
+  "scope_note": "Finance Bro behandelt algemene financiele educatie (persoonlijke financien, bedrijfseconomie, macro-economie, reguliere beleggingstheorie), maar NOOIT trading, day trading, technische analyse of specifieke trading-methodologieen zoals ICT.",
   "concepts": [
     { "id": "geld_waarde", "name": "Wat is geld / waarde", "tier": 1, "prerequisites": [] },
     { "id": "sparen_vs_beleggen", "name": "Sparen vs beleggen", "tier": 1, "prerequisites": [] },
@@ -34,9 +35,7 @@
     { "id": "cashflow_vs_winst", "name": "Cashflow vs winst (het verschil)", "tier": 3, "prerequisites": ["cashflow", "resultatenrekening"] },
 
     { "id": "macro_indicatoren", "name": "Macro-economische indicatoren", "tier": 4, "prerequisites": ["rente_samengestelde_interest", "inflatie"] },
-    { "id": "technische_analyse_basis", "name": "Technische analyse basis", "tier": 4, "prerequisites": ["beurzen_indices", "volatiliteit"] },
     { "id": "duration_risk", "name": "Duration risk", "tier": 4, "prerequisites": ["obligatiekoersen_rente"] },
-    { "id": "portfolio_risicometrics", "name": "Portfolio-risicometrics (Sharpe ratio, drawdown)", "tier": 4, "prerequisites": ["volatiliteit", "asset_allocation"] },
-    { "id": "ict_methodologie_basics", "name": "ICT-methodologie basics (market structure, liquidity)", "tier": 4, "prerequisites": ["technische_analyse_basis"] }
+    { "id": "portfolio_risicometrics", "name": "Portfolio-risicometrics (Sharpe ratio, drawdown)", "tier": 4, "prerequisites": ["volatiliteit", "asset_allocation"] }
   ]
 }
