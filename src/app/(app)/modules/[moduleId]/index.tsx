@@ -1,8 +1,8 @@
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 
-import { getModule, isTrackAvailable, TRACK_LABELS } from '../../../lib/modules';
-import type { ModuleTrack } from '../../../lib/types';
+import { getModule, isTrackAvailable, TRACK_LABELS } from '../../../../lib/modules';
+import type { ModuleTrack } from '../../../../lib/types';
 
 const TRACKS: ModuleTrack[] = ['beginner', 'gevorderd', 'expert'];
 

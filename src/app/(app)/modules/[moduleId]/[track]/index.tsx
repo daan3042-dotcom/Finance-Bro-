@@ -2,13 +2,13 @@ import { useCallback, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Stack, useFocusEffect, useLocalSearchParams, useRouter } from 'expo-router';
 
-import { getModule, getLessonStatus, getTrackLessons, TRACK_LABELS, type LessonStatus } from '../../../../lib/modules';
+import { getModule, getLessonStatus, getTrackLessons, TRACK_LABELS, type LessonStatus } from '../../../../../lib/modules';
 import {
   createEmptyModuleProgress,
   loadModuleProgress,
   type ModuleProgressState,
-} from '../../../../lib/moduleProgress';
-import type { ModuleTrack } from '../../../../lib/types';
+} from '../../../../../lib/moduleProgress';
+import type { ModuleTrack } from '../../../../../lib/types';
 
 const STATUS_LABEL: Record<LessonStatus, string> = {
   completed: 'Voltooid',

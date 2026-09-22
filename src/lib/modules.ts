@@ -22,8 +22,15 @@ export function getTrackLessons(moduleId: string, track: ModuleTrack): ModuleLes
   return getModule(moduleId)?.lessons[track] ?? [];
 }
 
+/**
+ * Een track is pas speelbaar zodra de eerste les daadwerkelijk inhoud heeft
+ * (uitleg + vragen). Een track met alleen lesskeletten (id/title/order,
+ * nog geen explanation/questions) telt als "binnenkort beschikbaar".
+ */
 export function isTrackAvailable(moduleId: string, track: ModuleTrack): boolean {
-  return getTrackLessons(moduleId, track).length > 0;
+  const lessons = getTrackLessons(moduleId, track);
+  const firstLesson = lessons[0];
+  return Boolean(firstLesson && firstLesson.explanation && firstLesson.questions.length > 0);
 }
 
 export function getLesson(

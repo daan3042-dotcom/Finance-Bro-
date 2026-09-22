@@ -2,9 +2,9 @@ import { useCallback, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Stack, useFocusEffect, useRouter } from 'expo-router';
 
-import { getConceptsByTier, getConceptStatus, getMissingPrerequisiteNames } from '../../lib/concepts';
-import { createEmptyProgress, getConceptProgress, loadProgress, type ProgressState } from '../../lib/progress';
-import type { Concept } from '../../lib/types';
+import { getConceptsByTier, getConceptStatus, getMissingPrerequisiteNames } from '../../../lib/concepts';
+import { createEmptyProgress, getConceptProgress, loadProgress, type ProgressState } from '../../../lib/progress';
+import type { Concept } from '../../../lib/types';
 
 const STATUS_LABEL: Record<'completed' | 'unlocked' | 'locked', string> = {
   completed: 'Voltooid',

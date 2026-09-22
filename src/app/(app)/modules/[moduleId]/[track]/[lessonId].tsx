@@ -2,197 +2,183 @@ import { useEffect, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 
-import { conceptsById } from '../../../lib/concepts';
+import { getLesson, getModule, TRACK_LABELS } from '../../../../../lib/modules';
 import {
-  createEmptyProgress,
-  getConceptProgress,
-  loadProgress,
-  saveProgress,
-  withAnswer,
-  withSeenQuestions,
-  type ProgressState,
-} from '../../../lib/progress';
-import { getQuestionPool, pickNextQuestionIndex, QUESTIONS_PER_LESSON } from '../../../lib/questions';
+  createEmptyModuleProgress,
+  loadModuleProgress,
+  saveModuleProgress,
+  withLessonCompleted,
+  withLessonQuestionSeen,
+  type ModuleProgressState,
+} from '../../../../../lib/moduleProgress';
+import type { ModuleTrack } from '../../../../../lib/types';
 
-async function pickAndPersistNext(
-  progress: ProgressState,
-  conceptId: string,
-  poolSize: number,
-  excludeIndex: number | null
-): Promise<{ index: number; progress: ProgressState }> {
-  const conceptProgress = getConceptProgress(progress, conceptId);
-  const { index, seenAfter } = pickNextQuestionIndex(
-    conceptProgress.seenQuestionIndices,
-    poolSize,
-    excludeIndex
-  );
-  const updated = withSeenQuestions(progress, conceptId, seenAfter);
-  await saveProgress(updated);
-  return { index, progress: updated };
+function firstOf<T extends string>(value: T | T[] | undefined): T | undefined {
+  return Array.isArray(value) ? value[0] : value;
 }
 
-export default function LessonScreen() {
-  const router = useRouter();
-  const { conceptId: rawConceptId } = useLocalSearchParams<{ conceptId: string }>();
-  const conceptId = Array.isArray(rawConceptId) ? rawConceptId[0] : rawConceptId;
-  const concept = conceptId ? conceptsById[conceptId] : undefined;
-  const pool = conceptId ? getQuestionPool(conceptId) : [];
+type Phase = 'explanation' | 'questions' | 'finished';
 
-  const [isLoading, setIsLoading] = useState(() => Boolean(conceptId) && pool.length > 0);
-  const [progress, setProgress] = useState<ProgressState>(createEmptyProgress());
-  const [poolIndex, setPoolIndex] = useState<number | null>(null);
+export default function ModuleLessonScreen() {
+  const router = useRouter();
+  const params = useLocalSearchParams<{ moduleId: string; track: string; lessonId: string }>();
+  const moduleId = firstOf(params.moduleId);
+  const track = firstOf(params.track) as ModuleTrack | undefined;
+  const lessonId = firstOf(params.lessonId);
+
+  const module = moduleId ? getModule(moduleId) : undefined;
+  const lesson = moduleId && track && lessonId ? getLesson(moduleId, track, lessonId) : undefined;
+
+  const [isLoading, setIsLoading] = useState(true);
+  const [progress, setProgress] = useState<ModuleProgressState>(createEmptyModuleProgress());
+  const [phase, setPhase] = useState<Phase>('explanation');
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
-  const [answeredCount, setAnsweredCount] = useState(0);
-  const [correctInLesson, setCorrectInLesson] = useState(0);
-  const [isFinished, setIsFinished] = useState(false);
+  const [correctCount, setCorrectCount] = useState(0);
 
   useEffect(() => {
-    if (!conceptId || pool.length === 0) {
-      return;
-    }
     let isActive = true;
-    (async () => {
-      const loaded = await loadProgress();
-      const { index, progress: updated } = await pickAndPersistNext(
-        loaded,
-        conceptId,
-        pool.length,
-        null
-      );
-      if (!isActive) return;
-      setProgress(updated);
-      setPoolIndex(index);
-      setIsLoading(false);
-    })();
+    loadModuleProgress().then((loaded) => {
+      if (isActive) {
+        setProgress(loaded);
+        setIsLoading(false);
+      }
+    });
     return () => {
       isActive = false;
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [conceptId]);
+  }, []);
 
-  if (!conceptId || !concept || pool.length === 0) {
+  if (!moduleId || !track || !lessonId || !module || !lesson) {
     return (
       <View style={styles.container}>
         <Stack.Screen options={{ title: 'Les' }} />
         <View style={styles.completeContent}>
           <Text style={styles.completeTitle}>Les niet gevonden</Text>
           <Pressable style={styles.restartButton} onPress={() => router.back()}>
-            <Text style={styles.restartButtonText}>Terug naar overzicht</Text>
+            <Text style={styles.restartButtonText}>Terug naar lessen</Text>
           </Pressable>
         </View>
       </View>
     );
   }
 
-  if (isLoading || poolIndex === null) {
+  if (isLoading) {
     return (
       <View style={styles.container}>
-        <Stack.Screen options={{ title: concept.name }} />
+        <Stack.Screen options={{ title: lesson.title }} />
         <View style={styles.completeContent}>
-          <Text style={styles.loadingText}>Vraag laden…</Text>
+          <Text style={styles.loadingText}>Voortgang laden…</Text>
         </View>
       </View>
     );
   }
 
-  const question = pool[poolIndex];
-  const isLastQuestion = answeredCount + 1 >= QUESTIONS_PER_LESSON;
-  const hasAnswered = selectedOptionId !== null;
-  const isCorrect = selectedOptionId === question.correct_option_id;
-
-  const handleNext = async () => {
-    const justCorrect = selectedOptionId === question.correct_option_id;
-    const updatedAfterAnswer = withAnswer(progress, conceptId, justCorrect);
-    await saveProgress(updatedAfterAnswer);
-
-    const newAnsweredCount = answeredCount + 1;
-    const newCorrectInLesson = correctInLesson + (justCorrect ? 1 : 0);
-
-    if (newAnsweredCount >= QUESTIONS_PER_LESSON) {
-      setProgress(updatedAfterAnswer);
-      setAnsweredCount(newAnsweredCount);
-      setCorrectInLesson(newCorrectInLesson);
-      setIsFinished(true);
-      return;
-    }
-
-    const { index, progress: updatedAfterPick } = await pickAndPersistNext(
-      updatedAfterAnswer,
-      conceptId,
-      pool.length,
-      poolIndex
-    );
-    setProgress(updatedAfterPick);
-    setPoolIndex(index);
-    setSelectedOptionId(null);
-    setAnsweredCount(newAnsweredCount);
-    setCorrectInLesson(newCorrectInLesson);
-  };
-
-  const handleRestart = async () => {
-    setIsLoading(true);
-    setIsFinished(false);
-    setAnsweredCount(0);
-    setCorrectInLesson(0);
-    setSelectedOptionId(null);
-
-    const loaded = await loadProgress();
-    const { index, progress: updated } = await pickAndPersistNext(
-      loaded,
-      conceptId,
-      pool.length,
-      poolIndex
-    );
+  const handleStart = async () => {
+    const updated = withLessonQuestionSeen(progress, moduleId, track, lessonId, 0);
+    await saveModuleProgress(updated);
     setProgress(updated);
-    setPoolIndex(index);
-    setIsLoading(false);
+    setPhase('questions');
   };
 
-  if (isFinished) {
+  const handleRestart = () => {
+    setPhase('explanation');
+    setCurrentIndex(0);
+    setSelectedOptionId(null);
+    setCorrectCount(0);
+  };
+
+  if (phase === 'explanation') {
     return (
       <View style={styles.container}>
-        <Stack.Screen options={{ title: concept.name }} />
+        <Stack.Screen options={{ title: lesson.title }} />
+        <ScrollView contentContainerStyle={styles.scrollContent}>
+          <View style={styles.badge}>
+            <Text style={styles.badgeText}>
+              {module.name} · {TRACK_LABELS[track]} · Les {lesson.order}
+            </Text>
+          </View>
+          <Text style={styles.question}>{lesson.title}</Text>
+          <Text style={styles.explanationText}>{lesson.explanation}</Text>
+          <Pressable style={styles.nextButton} onPress={handleStart}>
+            <Text style={styles.nextButtonText}>Start de vragen</Text>
+          </Pressable>
+        </ScrollView>
+      </View>
+    );
+  }
+
+  const totalQuestions = lesson.questions.length;
+
+  if (phase === 'finished') {
+    return (
+      <View style={styles.container}>
+        <Stack.Screen options={{ title: lesson.title }} />
         <View style={styles.completeContent}>
           <Text style={styles.completeEmoji}>🎉</Text>
           <Text style={styles.completeTitle}>Les voltooid!</Text>
           <Text style={styles.completeSubtitle}>
-            Je had {correctInLesson} van de {QUESTIONS_PER_LESSON} vragen goed over{' '}
-            {concept.name}.
+            Je had {correctCount} van de {totalQuestions} vragen goed over {lesson.title}.
           </Text>
           <Pressable style={styles.restartButton} onPress={handleRestart}>
             <Text style={styles.restartButtonText}>Nog een keer</Text>
           </Pressable>
           <Pressable style={styles.secondaryButton} onPress={() => router.back()}>
-            <Text style={styles.secondaryButtonText}>Terug naar overzicht</Text>
+            <Text style={styles.secondaryButtonText}>Terug naar lessen</Text>
           </Pressable>
         </View>
       </View>
     );
   }
 
+  const question = lesson.questions[currentIndex];
+  const isLastQuestion = currentIndex === totalQuestions - 1;
+  const hasAnswered = selectedOptionId !== null;
+  const isCorrect = selectedOptionId === question.correct_option_id;
+
+  const handleNext = async () => {
+    const justCorrect = selectedOptionId === question.correct_option_id;
+    setCorrectCount((count) => count + (justCorrect ? 1 : 0));
+
+    if (isLastQuestion) {
+      const updated = withLessonCompleted(progress, moduleId, track, lessonId);
+      await saveModuleProgress(updated);
+      setProgress(updated);
+      setPhase('finished');
+      return;
+    }
+
+    const nextIndex = currentIndex + 1;
+    const updated = withLessonQuestionSeen(progress, moduleId, track, lessonId, nextIndex);
+    await saveModuleProgress(updated);
+    setProgress(updated);
+    setCurrentIndex(nextIndex);
+    setSelectedOptionId(null);
+  };
+
   return (
     <View style={styles.container}>
-      <Stack.Screen options={{ title: concept.name }} />
+      <Stack.Screen options={{ title: lesson.title }} />
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <Text style={styles.progressLabel}>
-          Vraag {answeredCount + 1} van {QUESTIONS_PER_LESSON}
+          Vraag {currentIndex + 1} van {totalQuestions}
         </Text>
         <View style={styles.progressTrack}>
           <View
-            style={[
-              styles.progressFill,
-              { width: `${((answeredCount + 1) / QUESTIONS_PER_LESSON) * 100}%` },
-            ]}
+            style={[styles.progressFill, { width: `${((currentIndex + 1) / totalQuestions) * 100}%` }]}
           />
         </View>
 
         <View style={styles.badge}>
           <Text style={styles.badgeText}>
-            {concept.name} · Tier {concept.tier}
+            {module.name} · {TRACK_LABELS[track]} · Les {lesson.order}
           </Text>
         </View>
 
         <Text style={styles.question}>{question.question}</Text>
+        {question.disclaimer ? (
+          <Text style={styles.disclaimer}>⚠️ {question.disclaimer}</Text>
+        ) : null}
 
         <View style={styles.options}>
           {question.options.map((option) => {
@@ -305,7 +291,19 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     color: '#1A1F36',
     lineHeight: 32,
+    marginBottom: 12,
+  },
+  explanationText: {
+    fontSize: 16,
+    lineHeight: 24,
+    color: '#3C4257',
     marginBottom: 28,
+  },
+  disclaimer: {
+    fontSize: 13,
+    fontStyle: 'italic',
+    color: '#946200',
+    marginBottom: 16,
   },
   options: {
     gap: 12,
