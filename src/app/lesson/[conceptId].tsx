@@ -1,48 +1,166 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 
-import questionsData from './data/example_questions.json';
+import { conceptsById } from '../../lib/concepts';
+import {
+  createEmptyProgress,
+  getConceptProgress,
+  loadProgress,
+  saveProgress,
+  withAnswer,
+  withSeenQuestions,
+  type ProgressState,
+} from '../../lib/progress';
+import { getQuestionPool, pickNextQuestionIndex, QUESTIONS_PER_LESSON } from '../../lib/questions';
 
-const tier1Questions = questionsData.anchor_questions.filter((q) => q.tier === 1);
+async function pickAndPersistNext(
+  progress: ProgressState,
+  conceptId: string,
+  poolSize: number,
+  excludeIndex: number | null
+): Promise<{ index: number; progress: ProgressState }> {
+  const conceptProgress = getConceptProgress(progress, conceptId);
+  const { index, seenAfter } = pickNextQuestionIndex(
+    conceptProgress.seenQuestionIndices,
+    poolSize,
+    excludeIndex
+  );
+  const updated = withSeenQuestions(progress, conceptId, seenAfter);
+  await saveProgress(updated);
+  return { index, progress: updated };
+}
 
-export default function App() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+export default function LessonScreen() {
+  const router = useRouter();
+  const { conceptId: rawConceptId } = useLocalSearchParams<{ conceptId: string }>();
+  const conceptId = Array.isArray(rawConceptId) ? rawConceptId[0] : rawConceptId;
+  const concept = conceptId ? conceptsById[conceptId] : undefined;
+  const pool = conceptId ? getQuestionPool(conceptId) : [];
+
+  const [isLoading, setIsLoading] = useState(() => Boolean(conceptId) && pool.length > 0);
+  const [progress, setProgress] = useState<ProgressState>(createEmptyProgress());
+  const [poolIndex, setPoolIndex] = useState<number | null>(null);
   const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
+  const [answeredCount, setAnsweredCount] = useState(0);
+  const [correctInLesson, setCorrectInLesson] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
 
-  const question = tier1Questions[currentIndex];
-  const isLastQuestion = currentIndex === tier1Questions.length - 1;
+  useEffect(() => {
+    if (!conceptId || pool.length === 0) {
+      return;
+    }
+    let isActive = true;
+    (async () => {
+      const loaded = await loadProgress();
+      const { index, progress: updated } = await pickAndPersistNext(
+        loaded,
+        conceptId,
+        pool.length,
+        null
+      );
+      if (!isActive) return;
+      setProgress(updated);
+      setPoolIndex(index);
+      setIsLoading(false);
+    })();
+    return () => {
+      isActive = false;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [conceptId]);
+
+  if (!conceptId || !concept || pool.length === 0) {
+    return (
+      <View style={styles.container}>
+        <View style={styles.completeContent}>
+          <Text style={styles.completeTitle}>Les niet gevonden</Text>
+          <Pressable style={styles.restartButton} onPress={() => router.back()}>
+            <Text style={styles.restartButtonText}>Terug naar overzicht</Text>
+          </Pressable>
+        </View>
+      </View>
+    );
+  }
+
+  if (isLoading || poolIndex === null) {
+    return (
+      <View style={styles.container}>
+        <View style={styles.completeContent}>
+          <Text style={styles.loadingText}>Vraag laden…</Text>
+        </View>
+      </View>
+    );
+  }
+
+  const question = pool[poolIndex];
+  const isLastQuestion = answeredCount + 1 >= QUESTIONS_PER_LESSON;
   const hasAnswered = selectedOptionId !== null;
   const isCorrect = selectedOptionId === question.correct_option_id;
 
-  const handleNext = () => {
-    if (isLastQuestion) {
+  const handleNext = async () => {
+    const justCorrect = selectedOptionId === question.correct_option_id;
+    const updatedAfterAnswer = withAnswer(progress, conceptId, justCorrect);
+    await saveProgress(updatedAfterAnswer);
+
+    const newAnsweredCount = answeredCount + 1;
+    const newCorrectInLesson = correctInLesson + (justCorrect ? 1 : 0);
+
+    if (newAnsweredCount >= QUESTIONS_PER_LESSON) {
+      setProgress(updatedAfterAnswer);
+      setAnsweredCount(newAnsweredCount);
+      setCorrectInLesson(newCorrectInLesson);
       setIsFinished(true);
       return;
     }
-    setCurrentIndex((index) => index + 1);
+
+    const { index, progress: updatedAfterPick } = await pickAndPersistNext(
+      updatedAfterAnswer,
+      conceptId,
+      pool.length,
+      poolIndex
+    );
+    setProgress(updatedAfterPick);
+    setPoolIndex(index);
     setSelectedOptionId(null);
+    setAnsweredCount(newAnsweredCount);
+    setCorrectInLesson(newCorrectInLesson);
   };
 
-  const handleRestart = () => {
-    setCurrentIndex(0);
-    setSelectedOptionId(null);
+  const handleRestart = async () => {
+    setIsLoading(true);
     setIsFinished(false);
+    setAnsweredCount(0);
+    setCorrectInLesson(0);
+    setSelectedOptionId(null);
+
+    const loaded = await loadProgress();
+    const { index, progress: updated } = await pickAndPersistNext(
+      loaded,
+      conceptId,
+      pool.length,
+      poolIndex
+    );
+    setProgress(updated);
+    setPoolIndex(index);
+    setIsLoading(false);
   };
 
   if (isFinished) {
     return (
       <View style={styles.container}>
-        <StatusBar style="auto" />
         <View style={styles.completeContent}>
           <Text style={styles.completeEmoji}>🎉</Text>
           <Text style={styles.completeTitle}>Les voltooid!</Text>
           <Text style={styles.completeSubtitle}>
-            Je hebt alle {tier1Questions.length} tier 1-vragen doorlopen.
+            Je had {correctInLesson} van de {QUESTIONS_PER_LESSON} vragen goed over{' '}
+            {concept.name}.
           </Text>
           <Pressable style={styles.restartButton} onPress={handleRestart}>
-            <Text style={styles.restartButtonText}>Begin opnieuw</Text>
+            <Text style={styles.restartButtonText}>Nog een keer</Text>
+          </Pressable>
+          <Pressable style={styles.secondaryButton} onPress={() => router.back()}>
+            <Text style={styles.secondaryButtonText}>Terug naar overzicht</Text>
           </Pressable>
         </View>
       </View>
@@ -51,22 +169,23 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <StatusBar style="auto" />
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <Text style={styles.progressLabel}>
-          Vraag {currentIndex + 1} van {tier1Questions.length}
+          Vraag {answeredCount + 1} van {QUESTIONS_PER_LESSON}
         </Text>
         <View style={styles.progressTrack}>
           <View
             style={[
               styles.progressFill,
-              { width: `${((currentIndex + 1) / tier1Questions.length) * 100}%` },
+              { width: `${((answeredCount + 1) / QUESTIONS_PER_LESSON) * 100}%` },
             ]}
           />
         </View>
 
         <View style={styles.badge}>
-          <Text style={styles.badgeText}>{question.concept} · Tier {question.tier}</Text>
+          <Text style={styles.badgeText}>
+            {concept.name} · Tier {concept.tier}
+          </Text>
         </View>
 
         <Text style={styles.question}>{question.question}</Text>
@@ -136,10 +255,14 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#F4F6FB',
   },
+  loadingText: {
+    fontSize: 15,
+    color: '#6B7190',
+  },
   scrollContent: {
     flexGrow: 1,
     paddingHorizontal: 24,
-    paddingTop: 72,
+    paddingTop: 24,
     paddingBottom: 40,
   },
   progressLabel: {
@@ -289,5 +412,15 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 16,
     fontWeight: '700',
+  },
+  secondaryButton: {
+    marginTop: 12,
+    paddingHorizontal: 28,
+    paddingVertical: 14,
+  },
+  secondaryButtonText: {
+    color: '#3B4FD9',
+    fontSize: 15,
+    fontWeight: '600',
   },
 });
