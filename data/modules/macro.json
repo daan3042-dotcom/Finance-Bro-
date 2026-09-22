@@ -537,8 +537,1176 @@
         ]
       }
     ],
-    "gevorderd": [],
-    "expert": []
+    "gevorderd": [
+      {
+        "id": "bbp_reeel_vs_nominaal",
+        "title": "BBP dieper: reëel vs. nominaal BBP en BBP per hoofd",
+        "order": 1,
+        "explanation": "Het BBP dat je in de beginner-track leerde kennen, is eigenlijk het nominale BBP: de totale waarde van alles wat een land produceert, gemeten in de prijzen van dit moment. Het probleem? Als de prijzen stijgen door inflatie, lijkt het BBP te groeien, ook al wordt er niet meer geproduceerd.\n\nOm dat te corrigeren, gebruiken economen het reële BBP: het BBP herberekend met vaste prijzen uit een basisjaar, zodat je alleen de echte productiegroei overhoudt, los van inflatie. Reëel BBP is daarom de eerlijkere maatstaf om economische groei tussen jaren te vergelijken.\n\nEen derde verfijning is BBP per hoofd van de bevolking: het totale BBP gedeeld door het aantal inwoners. Een land met een enorm totaal-BBP maar ook heel veel inwoners kan alsnog een lage welvaart per persoon hebben — BBP per hoofd laat dat verschil zien.",
+        "questions": [
+          {
+            "format": "definitie-met-afleiders",
+            "concepts": ["reëel BBP"],
+            "difficulty_prior": 1,
+            "question": "Wat is het verschil tussen nominaal en reëel BBP?",
+            "options": [
+              { "id": "a", "text": "Reëel BBP is gecorrigeerd voor inflatie, nominaal BBP niet" },
+              { "id": "b", "text": "Nominaal BBP is altijd hoger dan reëel BBP" },
+              { "id": "c", "text": "Reëel BBP meet alleen de export van een land" },
+              { "id": "d", "text": "Er is geen verschil, beide termen betekenen hetzelfde" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Reëel BBP wordt herberekend met vaste prijzen uit een basisjaar om het effect van inflatie eruit te halen; nominaal BBP gebruikt de actuele prijzen."
+          },
+          {
+            "format": "wat-hoort-er-niet-bij",
+            "concepts": ["reëel BBP"],
+            "difficulty_prior": 1,
+            "question": "Wat hoort NIET bij de redenen om reëel BBP te gebruiken in plaats van nominaal BBP?",
+            "options": [
+              { "id": "a", "text": "Reëel BBP filtert het effect van prijsstijgingen eruit" },
+              { "id": "b", "text": "Reëel BBP maakt groei tussen jaren eerlijker vergelijkbaar" },
+              { "id": "c", "text": "Reëel BBP toont de werkelijke productiegroei, los van inflatie" },
+              { "id": "d", "text": "Reëel BBP is altijd hoger dan nominaal BBP" }
+            ],
+            "correct_option_id": "d",
+            "explanation": "Reëel BBP kan zowel hoger als lager zijn dan nominaal BBP, afhankelijk van het gekozen basisjaar; er is geen vaste regel dat het altijd hoger is. De andere drie zijn wel echte redenen om reëel BBP te gebruiken."
+          },
+          {
+            "format": "welk-voorbeeld-past",
+            "concepts": ["nominaal BBP"],
+            "difficulty_prior": 2,
+            "question": "Welk voorbeeld illustreert het beste waarom nominaal BBP misleidend kan zijn?",
+            "options": [
+              { "id": "a", "text": "Een land waar de prijzen dit jaar met 8% zijn gestegen, maar de productie exact gelijk is gebleven, ziet toch een stijging in het nominale BBP" },
+              { "id": "b", "text": "Een land waar de productie met 5% groeit zonder enige prijsverandering" },
+              { "id": "c", "text": "Een land waar zowel productie als prijzen precies gelijk blijven" },
+              { "id": "d", "text": "Een land dat zijn BBP nooit meet" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Als alleen de prijzen stijgen zonder dat er meer geproduceerd wordt, stijgt het nominale BBP toch — dat is precies waarom reëel BBP een eerlijkere maatstaf is."
+          },
+          {
+            "format": "scenario-redenering",
+            "concepts": ["BBP per hoofd"],
+            "difficulty_prior": 2,
+            "question": "Land X heeft een veel hoger totaal-BBP dan land Y, maar land Y heeft veel minder inwoners. Waarom zegt het totale BBP alleen niet genoeg over de welvaart van de gemiddelde inwoner?",
+            "options": [
+              { "id": "a", "text": "Omdat een land met veel inwoners een hoger totaal-BBP kan hebben zonder dat individuele inwoners rijker zijn — BBP per hoofd corrigeert hiervoor" },
+              { "id": "b", "text": "Omdat totaal-BBP nooit iets zegt over productie" },
+              { "id": "c", "text": "Omdat welvaart alleen van inflatie afhangt, niet van BBP" },
+              { "id": "d", "text": "Omdat kleinere landen altijd rijker zijn dan grotere landen" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Een groter totaal-BBP kan simpelweg het gevolg zijn van meer inwoners, niet van meer welvaart per persoon; BBP per hoofd (totaal-BBP gedeeld door bevolking) geeft een eerlijker beeld van individuele welvaart."
+          },
+          {
+            "format": "vergelijking",
+            "concepts": ["nominaal BBP", "reëel BBP"],
+            "difficulty_prior": 3,
+            "question": "Land A had dit jaar 3% prijsstijging en 3% extra productie. Land B had ook 3% prijsstijging, maar 0% extra productie. Beide landen tonen dus eenzelfde stijging in nominaal BBP. Welk land heeft een hogere groei in reëel BBP?",
+            "options": [
+              { "id": "a", "text": "Land A" },
+              { "id": "b", "text": "Land B" },
+              { "id": "c", "text": "Beide evenveel" },
+              { "id": "d", "text": "Dat is niet te bepalen" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Land A's nominale groei komt zowel uit prijsstijging als uit extra productie, terwijl land B's nominale groei volledig door prijsstijging komt — het reële BBP van land A groeit dus wél, dat van land B nauwelijks."
+          },
+          {
+            "format": "berekening",
+            "concepts": ["reëel BBP", "BBP per hoofd"],
+            "difficulty_prior": 3,
+            "question": "Land Q heeft een reëel BBP van €600 miljard en 20 miljoen inwoners. Wat is het reële BBP per hoofd?",
+            "options": [
+              { "id": "a", "text": "€30.000" },
+              { "id": "b", "text": "€3.000" },
+              { "id": "c", "text": "€300.000" },
+              { "id": "d", "text": "€12.000" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "€600 miljard gedeeld door 20 miljoen inwoners is €30.000 per hoofd."
+          },
+          {
+            "format": "keten-redenering",
+            "concepts": ["nominaal BBP", "reëel BBP", "inflatie"],
+            "difficulty_prior": 5,
+            "question": "Land Z heeft dit jaar 6% inflatie, en het nominale BBP steeg ook met 6%. Wat vertelt dit, stap voor stap, over de reële productie van het land?",
+            "options": [
+              { "id": "a", "text": "Aangezien de volledige nominale groei van 6% overeenkomt met de inflatie van 6%, is de reële BBP-groei ongeveer 0% — het land heeft dus niet daadwerkelijk meer geproduceerd, ook al lijkt het nominale cijfer op groei te wijzen" },
+              { "id": "b", "text": "Het land heeft zeker 6% meer geproduceerd, los van de inflatie" },
+              { "id": "c", "text": "Inflatie en nominaal BBP hebben niets met elkaar te maken" },
+              { "id": "d", "text": "Reëel BBP is in dit geval niet te bepalen" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Wanneer de nominale BBP-groei precies gelijk is aan de inflatie, betekent dit dat er geen echte (reële) productiegroei heeft plaatsgevonden — het lijkt alleen alsof de economie groeit door hogere prijzen. Dit is precies waarom economen reëel BBP gebruiken om economische groei te beoordelen."
+          }
+        ]
+      },
+      {
+        "id": "inflatie_cpi_kernindex",
+        "title": "Inflatie meten: CPI, kernindex en het prijzenmandje",
+        "order": 2,
+        "explanation": "In de beginner-track leerde je dat inflatie de gemiddelde prijsstijging is. Maar hoe meten economen dat precies? Ze volgen een vast prijzenmandje: een representatieve verzameling producten en diensten die een gemiddeld huishouden koopt, van brood tot huur tot benzine. Elke maand wordt gekeken hoeveel dat mandje kost, en de procentuele verandering is de consumentenprijsindex, oftewel CPI.\n\nNiet alle prijzen bewegen even grillig. Energie- en voedselprijzen schommelen sterk door tijdelijke factoren zoals weer of geopolitiek. Daarom kijken economen ook naar de kerninflatie: de CPI zonder deze volatiele componenten, die een stabieler beeld geeft van de onderliggende prijstrend.\n\nHet verschil is beleidsrelevant: een korte piek in energieprijzen laat de totale CPI stijgen, terwijl de kerninflatie laat zien of de prijsdruk breder en hardnekkiger is.",
+        "questions": [
+          {
+            "format": "definitie-met-afleiders",
+            "concepts": ["prijzenmandje"],
+            "difficulty_prior": 1,
+            "question": "Wat is het prijzenmandje binnen de CPI-berekening?",
+            "options": [
+              { "id": "a", "text": "Een representatieve verzameling producten en diensten waarvan de prijsverandering wordt gevolgd om inflatie te meten" },
+              { "id": "b", "text": "Een lijst van alleen luxeproducten" },
+              { "id": "c", "text": "Het totale BBP van een land" },
+              { "id": "d", "text": "De rente die banken hanteren" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Het prijzenmandje bevat een representatieve set producten/diensten (voeding, huur, energie, etc.) waarvan de gecombineerde prijsverandering de CPI vormt."
+          },
+          {
+            "format": "wat-hoort-er-niet-bij",
+            "concepts": ["kerninflatie"],
+            "difficulty_prior": 1,
+            "question": "Wat hoort NIET bij de reden waarom economen kerninflatie apart bijhouden naast de gewone CPI?",
+            "options": [
+              { "id": "a", "text": "Energie- en voedselprijzen schommelen sterk door tijdelijke factoren" },
+              { "id": "b", "text": "Kerninflatie laat zien of prijsdruk breder en hardnekkiger is" },
+              { "id": "c", "text": "Kerninflatie vervangt de CPI volledig en wordt als enige gepubliceerd" },
+              { "id": "d", "text": "Kerninflatie helpt onderscheid maken tussen tijdelijke pieken en structurele trends" }
+            ],
+            "correct_option_id": "c",
+            "explanation": "Kerninflatie vervangt de CPI niet — beide cijfers worden naast elkaar gepubliceerd en gebruikt; de CPI blijft de headline-maatstaf, kerninflatie is een aanvullend signaal."
+          },
+          {
+            "format": "welk-voorbeeld-past",
+            "concepts": ["CPI", "kerninflatie"],
+            "difficulty_prior": 3,
+            "question": "Welk voorbeeld illustreert het beste waarom kerninflatie soms een ander beeld geeft dan de totale CPI?",
+            "options": [
+              { "id": "a", "text": "Een plotselinge oliecrisis laat de energieprijzen (en dus de totale CPI) fors stijgen, terwijl de prijzen van de meeste andere producten stabiel blijven" },
+              { "id": "b", "text": "Alle prijzen in het prijzenmandje stijgen exact even hard" },
+              { "id": "c", "text": "De huurprijzen dalen terwijl alle andere prijzen ook dalen" },
+              { "id": "d", "text": "Er verandert niets aan enige prijs in het mandje" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Een geïsoleerde energieschok raakt vooral de totale CPI, terwijl de kerninflatie (zonder energie) een stabieler beeld van de onderliggende trend laat zien."
+          },
+          {
+            "format": "vergelijking",
+            "concepts": ["CPI", "kerninflatie"],
+            "difficulty_prior": 3,
+            "question": "Land A heeft een totale CPI-inflatie van 6%, waarvan het grootste deel door een tijdelijke energieprijsstijging komt; de kerninflatie is 2%. Land B heeft een totale CPI van 4% én een kerninflatie van 4%. In welk land is de onderliggende, structurele prijsdruk waarschijnlijk het hoogst?",
+            "options": [
+              { "id": "a", "text": "Land B, want daar is de kerninflatie (zonder tijdelijke energie-effecten) hoger dan in land A" },
+              { "id": "b", "text": "Land A, want de totale CPI is daar hoger" },
+              { "id": "c", "text": "Beide landen hebben evenveel structurele prijsdruk" },
+              { "id": "d", "text": "Kerninflatie zegt niets over structurele prijsdruk" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Land A's hoge totale CPI komt grotendeels door een tijdelijke energieschok (kerninflatie blijft laag), terwijl land B's inflatie breder gedragen wordt — de kerninflatie van 4% wijst op hardnekkigere onderliggende prijsdruk."
+          },
+          {
+            "format": "scenario-redenering",
+            "concepts": ["CPI", "kerninflatie"],
+            "difficulty_prior": 3,
+            "question": "De prijzen van voedsel en energie in een land dalen dit kwartaal sterk door een goede oogst en lagere olieprijzen, terwijl de prijzen van de meeste andere producten en diensten gelijk blijven. Wat gebeurt er waarschijnlijk met de kerninflatie ten opzichte van de totale CPI?",
+            "options": [
+              { "id": "a", "text": "De kerninflatie blijft relatief stabiel, terwijl de totale CPI daalt door de goedkopere energie en voeding" },
+              { "id": "b", "text": "De kerninflatie daalt sterker dan de totale CPI" },
+              { "id": "c", "text": "Kerninflatie en totale CPI bewegen altijd exact gelijk" },
+              { "id": "d", "text": "De kerninflatie stijgt als reactie" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Omdat kerninflatie energie en voeding uitsluit, blijft die relatief onaangetast door deze prijsdaling, terwijl de totale CPI wel daalt — een goed voorbeeld van waarom de twee cijfers uiteen kunnen lopen."
+          },
+          {
+            "format": "berekening",
+            "concepts": ["CPI", "prijzenmandje"],
+            "difficulty_prior": 3,
+            "question": "Het prijzenmandje van een land kost dit jaar €2.500 per maand voor een gemiddeld huishouden. Vorig jaar kostte hetzelfde mandje €2.400. Wat is de CPI-inflatie (procentuele stijging), afgerond?",
+            "options": [
+              { "id": "a", "text": "Ongeveer 4,2%" },
+              { "id": "b", "text": "41,7%" },
+              { "id": "c", "text": "0,42%" },
+              { "id": "d", "text": "10%" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "(€2.500 − €2.400) / €2.400 = 0,0417, oftewel ongeveer 4,2% CPI-inflatie."
+          },
+          {
+            "format": "keten-redenering",
+            "concepts": ["kerninflatie", "rente"],
+            "difficulty_prior": 5,
+            "question": "Energieprijzen stijgen fors door een internationale crisis. Dit duwt de totale CPI flink omhoog, maar de kerninflatie blijft nagenoeg stabiel. Wat betekent dit, stap voor stap, voor hoe een centraal bankier deze inflatie zou moeten interpreteren?",
+            "options": [
+              { "id": "a", "text": "Omdat de kerninflatie stabiel blijft, wijst dit erop dat de prijsdruk vooral tijdelijk en energie-gedreven is, niet structureel — een centraal bankier zou dit signaal meewegen bij het besluit om al dan niet de rente te verhogen" },
+              { "id": "b", "text": "De centrale bank moet de rente sowieso verhogen zodra de totale CPI stijgt, ongeacht de kerninflatie" },
+              { "id": "c", "text": "Kerninflatie is irrelevant voor rentebeleid" },
+              { "id": "d", "text": "Een stabiele kerninflatie betekent dat er geen enkele inflatie is" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit is precies waarom kerninflatie relevant is voor beleid: een tijdelijke energieschok met stabiele kerninflatie vraagt om een andere beleidsreactie dan brede, structurele inflatie — dit verbindt de CPI/kerninflatie-onderscheiding aan het rentebeleid uit een eerdere les."
+          }
+        ]
+      },
+      {
+        "id": "werkloosheid_natuurlijke_voet",
+        "title": "Werkloosheid dieper: conjuncturele werkloosheid en de natuurlijke werkloosheidsvoet",
+        "order": 3,
+        "explanation": "In de beginner-track leerde je frictiewerkloosheid kennen: de normale, tijdelijke werkloosheid van mensen die van baan wisselen. Er is een derde type: conjuncturele werkloosheid, die ontstaat wanneer de economie krimpt en bedrijven massaal minder personeel nodig hebben. Dit type stijgt tijdens een recessie en daalt weer tijdens herstel — het beweegt dus mee met de economische cyclus.\n\nAls je frictiewerkloosheid en structurele werkloosheid optelt, maar conjuncturele werkloosheid weglaat, kom je uit op de natuurlijke werkloosheidsvoet: het werkloosheidsniveau dat overblijft wanneer de economie op volle capaciteit draait, zonder dat dit extra prijsdruk veroorzaakt.\n\nWerkloosheid onder de natuurlijke voet duwen door de economie extra op te stuwen, leidt doorgaans vooral tot oplopende inflatie, niet tot blijvend minder werkloosheid — een spanning die in de expert-track verder wordt uitgediept.",
+        "questions": [
+          {
+            "format": "definitie-met-afleiders",
+            "concepts": ["conjuncturele werkloosheid"],
+            "difficulty_prior": 1,
+            "question": "Wat is conjuncturele werkloosheid?",
+            "options": [
+              { "id": "a", "text": "Werkloosheid die ontstaat doordat de economie krimpt en bedrijven massaal minder personeel nodig hebben" },
+              { "id": "b", "text": "Werkloosheid van mensen die vrijwillig tussen twee banen in zitten" },
+              { "id": "c", "text": "Werkloosheid door een tekort aan geschikte vaardigheden op de arbeidsmarkt" },
+              { "id": "d", "text": "Werkloosheid die nooit verandert, ongeacht de economie" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Conjuncturele werkloosheid hangt samen met de economische cyclus: ze stijgt tijdens een recessie en daalt tijdens herstel."
+          },
+          {
+            "format": "wat-hoort-er-niet-bij",
+            "concepts": ["natuurlijke werkloosheidsvoet"],
+            "difficulty_prior": 1,
+            "question": "Wat hoort NIET bij de natuurlijke werkloosheidsvoet?",
+            "options": [
+              { "id": "a", "text": "Frictiewerkloosheid telt hierin mee" },
+              { "id": "b", "text": "Structurele werkloosheid telt hierin mee" },
+              { "id": "c", "text": "Conjuncturele werkloosheid telt hierin mee" },
+              { "id": "d", "text": "Het is het werkloosheidsniveau bij een economie op volle capaciteit" }
+            ],
+            "correct_option_id": "c",
+            "explanation": "De natuurlijke werkloosheidsvoet bestaat uit frictie- en structurele werkloosheid, maar sluit conjuncturele werkloosheid juist uit — die verdwijnt immers zodra de economie weer op volle capaciteit draait."
+          },
+          {
+            "format": "welk-voorbeeld-past",
+            "concepts": ["conjuncturele werkloosheid"],
+            "difficulty_prior": 2,
+            "question": "Welk voorbeeld illustreert het beste conjuncturele werkloosheid?",
+            "options": [
+              { "id": "a", "text": "Duizenden mensen raken hun baan kwijt doordat de economie in een recessie belandt en bedrijven minder verkopen" },
+              { "id": "b", "text": "Iemand die net is afgestudeerd en nog op zoek is naar een eerste baan" },
+              { "id": "c", "text": "Iemand die van baan wisselt voor een betere kans" },
+              { "id": "d", "text": "Een fabrieksarbeider die na de sluiting van zijn hele sector jarenlang geen vergelijkbaar werk vindt" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit is het schoolvoorbeeld van conjuncturele werkloosheid: banenverlies dat direct samenhangt met een krimpende economie, niet met individuele baanwisselingen (frictie) of blijvende sectorveranderingen (structureel)."
+          },
+          {
+            "format": "vergelijking",
+            "concepts": ["natuurlijke werkloosheidsvoet", "conjuncturele werkloosheid"],
+            "difficulty_prior": 3,
+            "question": "Land A heeft een werkloosheidspercentage van 6%, waarvan naar schatting 4 procentpunt structureel/frictie is en 2 procentpunt conjunctureel (door een recessie). Land B heeft een werkloosheidspercentage van 5%, allemaal structureel/frictie, geen conjunctureel aandeel. Welk land zit dichter bij zijn natuurlijke werkloosheidsvoet?",
+            "options": [
+              { "id": "a", "text": "Land B, want daar bestaat de volledige 5% uit frictie/structurele werkloosheid — dat ís de natuurlijke voet in dat land" },
+              { "id": "b", "text": "Land A, want het totale percentage is daar hoger" },
+              { "id": "c", "text": "Beide landen zitten even ver van hun natuurlijke voet" },
+              { "id": "d", "text": "De natuurlijke werkloosheidsvoet is niet te schatten uit deze gegevens" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Land B's werkloosheid bestaat volledig uit frictie/structurele werkloosheid — dat is per definitie de natuurlijke voet. Land A zit daar met zijn conjuncturele component juist boven, door de recessie."
+          },
+          {
+            "format": "scenario-redenering",
+            "concepts": ["natuurlijke werkloosheidsvoet", "conjuncturele werkloosheid"],
+            "difficulty_prior": 3,
+            "question": "Een economie krimpt sterk. Wat gebeurt er waarschijnlijk met het conjuncturele deel van de werkloosheid, en hoe verhoudt het totale werkloosheidspercentage zich dan tot de natuurlijke werkloosheidsvoet?",
+            "options": [
+              { "id": "a", "text": "Het conjuncturele deel stijgt, waardoor het totale werkloosheidspercentage boven de natuurlijke werkloosheidsvoet uitkomt" },
+              { "id": "b", "text": "Het conjuncturele deel daalt, waardoor het totaal onder de natuurlijke voet zakt" },
+              { "id": "c", "text": "Alleen de frictiewerkloosheid verandert, de rest blijft gelijk" },
+              { "id": "d", "text": "De natuurlijke werkloosheidsvoet stijgt automatisch mee met een recessie" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Tijdens een krimpende economie neemt de conjuncturele werkloosheid toe, wat het totale werkloosheidspercentage boven de (relatief stabiele) natuurlijke voet duwt."
+          },
+          {
+            "format": "berekening",
+            "concepts": ["natuurlijke werkloosheidsvoet", "conjuncturele werkloosheid"],
+            "difficulty_prior": 3,
+            "question": "Het totale werkloosheidspercentage van een land is 9%. Economen schatten de natuurlijke werkloosheidsvoet (frictie + structureel) op 5%. Hoeveel procentpunt van de werkloosheid is waarschijnlijk conjunctureel?",
+            "options": [
+              { "id": "a", "text": "4 procentpunt" },
+              { "id": "b", "text": "5 procentpunt" },
+              { "id": "c", "text": "9 procentpunt" },
+              { "id": "d", "text": "14 procentpunt" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "9% totaal min 5% natuurlijke voet laat 4 procentpunt over dat waarschijnlijk conjunctureel is, dus samenhangt met de huidige stand van de economie."
+          },
+          {
+            "format": "keten-redenering",
+            "concepts": ["natuurlijke werkloosheidsvoet", "inflatie"],
+            "difficulty_prior": 5,
+            "question": "Een overheid probeert de werkloosheid via stimuleringsbeleid structureel onder de natuurlijke werkloosheidsvoet te duwen. Wat is, volgens veel economen, de meest waarschijnlijke keten van gevolgen op de langere termijn?",
+            "options": [
+              { "id": "a", "text": "De economie raakt oververhit: de vraag naar arbeid overtreft het aanbod, lonen en prijzen komen onder opwaartse druk, en de inflatie loopt op zonder dat de werkloosheid blijvend onder de natuurlijke voet blijft" },
+              { "id": "b", "text": "De werkloosheid blijft voor altijd onder de natuurlijke voet, zonder enig ander effect" },
+              { "id": "c", "text": "Er is geen enkel effect op inflatie of lonen" },
+              { "id": "d", "text": "De natuurlijke werkloosheidsvoet daalt automatisch mee" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Structureel beleid om werkloosheid onder de natuurlijke voet te duwen, leidt volgens de gangbare macro-economische theorie vooral tot oplopende inflatie op de langere termijn, niet tot blijvend lagere werkloosheid — dit is een kernthema dat in de expert-track (de Phillips-curve) verder wordt uitgediept."
+          }
+        ]
+      },
+      {
+        "id": "rente_rentecurve",
+        "title": "Rente dieper: de rentecurve (kort vs. lang)",
+        "order": 4,
+        "explanation": "Rente is niet één getal: de rente op een lening van 3 maanden verschilt meestal van die op een lening van 10 jaar. Zet je de rente tegen verschillende looptijden in een grafiek, dan krijg je de rentecurve. Normaal gesproken loopt deze curve omhoog: hoe langer de looptijd, hoe hoger de rente, omdat beleggers een vergoeding willen voor het extra risico van geld langer vastzetten.\n\nSoms draait dit om: de rente op kortlopende leningen wordt hoger dan op langlopende. Dit heet een geïnverteerde rentecurve, en het gebeurt vaak wanneer beleggers verwachten dat de centrale bank de rente op korte termijn verder verhoogt, maar die op langere termijn weer moet verlagen omdat een economische vertraging eraan komt.\n\nBeleggers en economen volgen de rentecurve daarom nauwlettend als vroeg signaal voor de economische cyclus.",
+        "questions": [
+          {
+            "format": "definitie-met-afleiders",
+            "concepts": ["rentecurve"],
+            "difficulty_prior": 1,
+            "question": "Wat is de rentecurve?",
+            "options": [
+              { "id": "a", "text": "De grafiek die laat zien hoe de rente varieert met de looptijd van een lening, van kort tot lang" },
+              { "id": "b", "text": "Het verschil tussen de rente van twee verschillende landen" },
+              { "id": "c", "text": "De rente die een bank rekent aan zijn beste klanten" },
+              { "id": "d", "text": "Een grafiek van de inflatie over tijd" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "De rentecurve toont de rente voor verschillende looptijden, van kortlopend tot langlopend."
+          },
+          {
+            "format": "wat-hoort-er-niet-bij",
+            "concepts": ["rentecurve"],
+            "difficulty_prior": 1,
+            "question": "Wat hoort NIET bij een normale (niet-geïnverteerde) rentecurve?",
+            "options": [
+              { "id": "a", "text": "De rente op langlopende leningen ligt hoger dan op kortlopende" },
+              { "id": "b", "text": "Beleggers krijgen een vergoeding voor het langer vastzetten van geld" },
+              { "id": "c", "text": "De curve loopt over het algemeen omhoog naarmate de looptijd stijgt" },
+              { "id": "d", "text": "De rente op kortlopende leningen ligt hoger dan op langlopende" }
+            ],
+            "correct_option_id": "d",
+            "explanation": "Dat kenmerkt juist een geïnverteerde rentecurve, niet een normale. Bij een normale curve ligt de rente op langere looptijden hoger."
+          },
+          {
+            "format": "welk-voorbeeld-past",
+            "concepts": ["geïnverteerde rentecurve"],
+            "difficulty_prior": 2,
+            "question": "Welke situatie past het beste bij een geïnverteerde rentecurve?",
+            "options": [
+              { "id": "a", "text": "Beleggers verwachten dat de centrale bank de rente op korte termijn nog verder verhoogt, maar op langere termijn weer moet verlagen vanwege een naderende economische vertraging" },
+              { "id": "b", "text": "Beleggers verwachten jarenlange, gestage economische groei zonder verrassingen" },
+              { "id": "c", "text": "De centrale bank heeft de rente al jaren niet aangepast" },
+              { "id": "d", "text": "Er is geen enkel verschil tussen korte en lange rente" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Een geïnverteerde rentecurve ontstaat doorgaans uit de verwachting dat de rente op langere termijn weer omlaag moet — vaak vanwege een verwachte economische vertraging."
+          },
+          {
+            "format": "vergelijking",
+            "concepts": ["rentecurve", "geïnverteerde rentecurve"],
+            "difficulty_prior": 3,
+            "question": "Land A heeft een korte rente van 5% en een lange rente van 3%. Land B heeft een korte rente van 3% en een lange rente van 5%. Welk land heeft een geïnverteerde rentecurve?",
+            "options": [
+              { "id": "a", "text": "Land A, want daar ligt de korte rente hoger dan de lange" },
+              { "id": "b", "text": "Land B, want daar ligt de korte rente lager" },
+              { "id": "c", "text": "Beide landen hebben een geïnverteerde curve" },
+              { "id": "d", "text": "Geen van beide landen heeft een geïnverteerde curve" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Een geïnverteerde rentecurve betekent dat de korte rente hoger ligt dan de lange — dat is het geval in land A."
+          },
+          {
+            "format": "scenario-redenering",
+            "concepts": ["rentecurve", "geïnverteerde rentecurve"],
+            "difficulty_prior": 3,
+            "question": "Beleggers verwachten steeds vaker dat een recessie nadert. Wat gebeurt er, op basis daarvan, waarschijnlijk met de vorm van de rentecurve?",
+            "options": [
+              { "id": "a", "text": "De curve kan invers gaan lopen, doordat beleggers een toekomstige renteverlaging (bij een recessie) inprijzen in de lange rente, terwijl de korte rente nog hoog blijft" },
+              { "id": "b", "text": "De curve wordt altijd steiler bij een naderende recessie" },
+              { "id": "c", "text": "De rentecurve reageert nooit op verwachtingen over de economie" },
+              { "id": "d", "text": "Alleen de korte rente verandert, de lange rente blijft altijd gelijk" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Verwachtingen over toekomstig rentebeleid werken door in de lange rente; als beleggers een recessie (en dus toekomstige renteverlagingen) verwachten, kan dit de curve doen inverteren."
+          },
+          {
+            "format": "berekening",
+            "concepts": ["rentecurve", "geïnverteerde rentecurve"],
+            "difficulty_prior": 3,
+            "question": "De korte rente van een land is 4,5%. De lange rente is 4,5% min 1,2 procentpunt. Wat is de lange rente, en is de curve hiermee geïnverteerd?",
+            "options": [
+              { "id": "a", "text": "3,3%, en ja, de curve is geïnverteerd (korte rente hoger dan lange)" },
+              { "id": "b", "text": "5,7%, en nee, de curve is niet geïnverteerd" },
+              { "id": "c", "text": "3,3%, en nee, de curve is niet geïnverteerd" },
+              { "id": "d", "text": "5,7%, en ja, de curve is geïnverteerd" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "4,5% − 1,2% = 3,3%. Omdat de lange rente (3,3%) lager is dan de korte rente (4,5%), is de curve geïnverteerd."
+          },
+          {
+            "format": "keten-redenering",
+            "concepts": ["geïnverteerde rentecurve", "BBP"],
+            "difficulty_prior": 5,
+            "question": "De rentecurve van een land inverteert. Historisch gezien gaat dit vaak een recessie vooraf. Wat is, stap voor stap, de meest waarschijnlijke keten van gebeurtenissen die hieraan ten grondslag ligt?",
+            "options": [
+              { "id": "a", "text": "Beleggers verwachten een economische vertraging, prijzen toekomstige renteverlagingen in via een lagere lange rente, de curve inverteert, en als de verwachte vertraging zich vervolgens voordoet, daalt het BBP en kan een recessie volgen" },
+              { "id": "b", "text": "De inversie van de rentecurve veroorzaakt rechtstreeks en automatisch een recessie, los van economische verwachtingen" },
+              { "id": "c", "text": "De rentecurve heeft geen enkel verband met toekomstige economische ontwikkelingen" },
+              { "id": "d", "text": "Een geïnverteerde curve betekent dat de economie zeker blijft groeien" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "De rentecurve is een verwachtingensignaal, geen directe oorzaak: ze weerspiegelt wat beleggers over de toekomst denken, en die verwachtingen blijken historisch vaak (niet altijd) een voorbode van een naderende recessie."
+          }
+        ]
+      },
+      {
+        "id": "cyclus_indicatoren",
+        "title": "De cyclus herkennen: leidende, samenlopende en achterlopende indicatoren",
+        "order": 5,
+        "explanation": "Om te bepalen waar een economie zich in de cyclus bevindt, gebruiken economen drie soorten indicatoren, ingedeeld naar hún timing ten opzichte van de economie zelf.\n\nLeidende indicatoren veranderen vóórdat de economie zelf omslaat — ze geven een vroeg signaal. De rentecurve is hier een bekend voorbeeld van, net als het aantal afgegeven bouwvergunningen of het consumentenvertrouwen.\n\nSamenlopende indicatoren bewegen ongeveer gelijktijdig met de economie. Het BBP zelf is de bekendste: het meet de economie terwijl die gebeurt, niet ervoor of erna.\n\nAchterlopende indicatoren veranderen pas nadat de economie al is omgeslagen. Werkloosheid is hiervan het bekendste voorbeeld: bedrijven ontslaan pas personeel nadat de vraag al een tijd is teruggelopen, en nemen pas weer aan nadat het herstel al is begonnen.",
+        "questions": [
+          {
+            "format": "definitie-met-afleiders",
+            "concepts": ["leidende indicator"],
+            "difficulty_prior": 1,
+            "question": "Wat is een leidende indicator binnen de economische cyclus?",
+            "options": [
+              { "id": "a", "text": "Een indicator die verandert vóórdat de economie zelf omslaat, en zo een vroeg signaal geeft" },
+              { "id": "b", "text": "Een indicator die pas verandert nadat de economie al is omgeslagen" },
+              { "id": "c", "text": "Een indicator die nooit verandert" },
+              { "id": "d", "text": "Een indicator die alleen voor het BBP wordt gebruikt" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Leidende indicatoren bewegen vóór de rest van de economie en worden daarom gebruikt als vroegtijdig signaal voor een aankomende omslag."
+          },
+          {
+            "format": "wat-hoort-er-niet-bij",
+            "concepts": ["achterlopende indicator"],
+            "difficulty_prior": 1,
+            "question": "Wat hoort NIET bij een achterlopende indicator?",
+            "options": [
+              { "id": "a", "text": "Werkloosheid, omdat bedrijven pas ontslaan nadat de vraag al is teruggelopen" },
+              { "id": "b", "text": "Het verandert pas nadat de economie al is omgeslagen" },
+              { "id": "c", "text": "Het geeft een vroeg waarschuwingssignaal vóórdat de economie omslaat" },
+              { "id": "d", "text": "Het bevestigt achteraf dat een omslag heeft plaatsgevonden" }
+            ],
+            "correct_option_id": "c",
+            "explanation": "Een vroeg waarschuwingssignaal is juist het kenmerk van een leidende indicator, niet van een achterlopende — achterlopende indicatoren bevestigen een omslag pas achteraf."
+          },
+          {
+            "format": "welk-voorbeeld-past",
+            "concepts": ["samenlopende indicator"],
+            "difficulty_prior": 2,
+            "question": "Welk voorbeeld past het beste bij een samenlopende indicator?",
+            "options": [
+              { "id": "a", "text": "Het BBP, dat de omvang van de economie meet terwijl die zich voordoet" },
+              { "id": "b", "text": "De rentecurve, die vaak maanden vóór een omslag al verandert" },
+              { "id": "c", "text": "Werkloosheid, die pas na een omslag reageert" },
+              { "id": "d", "text": "Het aantal afgegeven bouwvergunningen, dat vooruitloopt op bouwactiviteit" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Het BBP beweegt ongeveer gelijktijdig met de economie zelf — vandaar de term 'samenlopend'. De rentecurve en bouwvergunningen zijn juist leidend, werkloosheid is achterlopend."
+          },
+          {
+            "format": "vergelijking",
+            "concepts": ["leidende indicator", "achterlopende indicator"],
+            "difficulty_prior": 3,
+            "question": "Vergelijk twee indicatoren binnen de economische cyclus: de rentecurve en werkloosheid. Welke van de twee geeft doorgaans het VROEGSTE signaal van een aankomende economische omslag?",
+            "options": [
+              { "id": "a", "text": "De rentecurve, want die is een leidende indicator" },
+              { "id": "b", "text": "Werkloosheid, want die is een leidende indicator" },
+              { "id": "c", "text": "Beide geven precies even vroeg een signaal" },
+              { "id": "d", "text": "Geen van beide zegt iets over de timing van een omslag" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "De rentecurve is een leidende indicator (vroeg signaal), terwijl werkloosheid een achterlopende indicator is (reageert pas na de omslag) — de rentecurve geeft dus het vroegste signaal."
+          },
+          {
+            "format": "scenario-redenering",
+            "concepts": ["achterlopende indicator", "samenlopende indicator"],
+            "difficulty_prior": 3,
+            "question": "Een economie is net een recessie ingegaan. Volgens het raamwerk van leidende, samenlopende en achterlopende indicatoren, wanneer zal het werkloosheidscijfer waarschijnlijk pas duidelijk gaan stijgen ten opzichte van het moment waarop het BBP al begint te dalen?",
+            "options": [
+              { "id": "a", "text": "Pas enige tijd NA het begin van de BBP-daling, omdat werkloosheid een achterlopende indicator is" },
+              { "id": "b", "text": "Al vóór het BBP begint te dalen" },
+              { "id": "c", "text": "Op precies hetzelfde moment als het BBP" },
+              { "id": "d", "text": "Werkloosheid reageert nooit op een recessie" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Omdat werkloosheid een achterlopende indicator is en het BBP een samenlopende indicator, stijgt de werkloosheid doorgaans pas een tijd nadat het BBP al is beginnen te dalen."
+          },
+          {
+            "format": "berekening",
+            "concepts": ["leidende indicator", "achterlopende indicator"],
+            "difficulty_prior": 3,
+            "question": "Een leidende indicator begint gemiddeld 6 maanden vóór een omslag te veranderen. Een achterlopende indicator reageert gemiddeld 9 maanden NA een omslag. Hoeveel maanden verschil zit er tussen het moment waarop de leidende indicator begint te bewegen en het moment waarop de achterlopende indicator reageert?",
+            "options": [
+              { "id": "a", "text": "15 maanden" },
+              { "id": "b", "text": "3 maanden" },
+              { "id": "c", "text": "9 maanden" },
+              { "id": "d", "text": "6 maanden" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "6 maanden vóór de omslag plus 9 maanden erna is een totale spanne van 15 maanden tussen het eerste signaal (leidend) en de late bevestiging (achterlopend)."
+          },
+          {
+            "format": "keten-redenering",
+            "concepts": ["leidende indicator", "samenlopende indicator", "achterlopende indicator"],
+            "difficulty_prior": 4,
+            "question": "De rentecurve van een land begint te inverteren. Volgens het raamwerk van leidende/samenlopende/achterlopende indicatoren, wat is de meest waarschijnlijke keten van signalen die hierna volgt als de rentecurve gelijk heeft over een aankomende vertraging?",
+            "options": [
+              { "id": "a", "text": "Eerst reageert de leidende indicator (de rentecurve inverteert), vervolgens vertraagt de samenlopende indicator (het BBP begint te dalen), en pas daarna reageert de achterlopende indicator (de werkloosheid stijgt merkbaar)" },
+              { "id": "b", "text": "Eerst stijgt de werkloosheid, daarna inverteert pas de rentecurve" },
+              { "id": "c", "text": "Alle drie de indicatoren reageren altijd op exact hetzelfde moment" },
+              { "id": "d", "text": "De volgorde van indicatoren is willekeurig en voorspelt niets" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit is precies de logica achter het onderscheid tussen leidende, samenlopende en achterlopende indicatoren: ze bewegen in een voorspelbare volgorde ten opzichte van de economische omslag zelf, wat analisten helpt inschatten waar in de cyclus een economie zich bevindt."
+          }
+        ]
+      }
+    ],
+    "expert": [
+      {
+        "id": "bbp_grenzen_welvaartsmaatstaf",
+        "title": "Meet het BBP wel wat we denken? De grenzen van BBP als welvaartsmaatstaf",
+        "order": 1,
+        "explanation": "BBP is de standaardmaatstaf voor de omvang van een economie, maar economen zijn het oneens over hoe goed het ook welvaart meet. Voorstanders wijzen erop dat BBP objectief en internationaal vergelijkbaar is: het telt simpelweg de waarde van alles wat geproduceerd wordt, zonder subjectieve oordelen.\n\nCritici wijzen op forse gaten. BBP telt geen onbetaalde arbeid mee, zoals mantelzorg of huishoudelijk werk, terwijl die wel degelijk waarde creëren. Het houdt ook geen rekening met milieuschade: een land dat zijn bossen kapt en verkoopt, ziet zijn BBP stijgen, ook al wordt het land armer aan hulpbronnen. En een groeiend BBP zegt niets over hoe die welvaart verdeeld is — een land kan groeien terwijl de meeste inwoners er niets van merken.\n\nDit debat leidde tot alternatieve maatstaven zoals de Human Development Index, die naast inkomen ook gezondheid en onderwijs meeweegt — al blijft BBP wereldwijd de meest gebruikte maatstaf.",
+        "questions": [
+          {
+            "format": "definitie-met-afleiders",
+            "concepts": ["welvaartsmaatstaf"],
+            "difficulty_prior": 1,
+            "question": "Wat is de kern van de kritiek die critici op BBP als welvaartsmaatstaf hebben?",
+            "options": [
+              { "id": "a", "text": "BBP telt zaken als onbetaalde arbeid en milieuschade niet mee, terwijl die wel bijdragen aan (of afbreuk doen aan) welvaart" },
+              { "id": "b", "text": "BBP is te ingewikkeld om te berekenen" },
+              { "id": "c", "text": "BBP wordt door te weinig landen gebruikt om vergelijkbaar te zijn" },
+              { "id": "d", "text": "BBP meet uitsluitend de export van een land" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit is de kern van de kritiek op BBP als welvaartsmaatstaf. Voorstanders van BBP brengen hier tegenin dat juist de eenvoud en vergelijkbaarheid van BBP zijn waarde vormen — dit blijft een openstaand debat, geen vaststaand feit."
+          },
+          {
+            "format": "wat-hoort-er-niet-bij",
+            "concepts": ["welvaartsmaatstaf"],
+            "difficulty_prior": 1,
+            "question": "Wat hoort NIET bij de kritiekpunten die critici op BBP als welvaartsmaatstaf inbrengen?",
+            "options": [
+              { "id": "a", "text": "BBP telt onbetaalde arbeid zoals mantelzorg niet mee" },
+              { "id": "b", "text": "BBP houdt geen rekening met milieuschade" },
+              { "id": "c", "text": "BBP zegt niets over hoe welvaart verdeeld is tussen inwoners" },
+              { "id": "d", "text": "BBP wordt nooit gebruikt om economieën met elkaar te vergelijken" }
+            ],
+            "correct_option_id": "d",
+            "explanation": "BBP wordt juist wél veel gebruikt om economieën internationaal te vergelijken — dat is zelfs een van de argumenten van voorstanders vóór BBP. De andere drie zijn wel genoemde kritiekpunten van critici; ook dat blijft onderdeel van een lopend debat, geen vaststaand oordeel."
+          },
+          {
+            "format": "scenario-redenering",
+            "concepts": ["welvaartsmaatstaf", "milieukosten"],
+            "difficulty_prior": 3,
+            "question": "Een land voert beleid door waarbij de lucht- en waterkwaliteit sterk verslechtert, maar de industriële productie fors toeneemt. Wat zou volgens critici van BBP als welvaartsmaatstaf het probleem zijn met alleen naar het BBP-cijfer kijken in dit geval?",
+            "options": [
+              { "id": "a", "text": "Het cijfer stijgt door de hogere productie, maar zegt niets over de milieuschade die de werkelijke welvaart kan aantasten" },
+              { "id": "b", "text": "Het cijfer daalt automatisch bij milieuschade" },
+              { "id": "c", "text": "BBP en milieukwaliteit zijn volgens alle economen exact hetzelfde" },
+              { "id": "d", "text": "Milieuschade wordt altijd apart van het BBP-cijfer gepubliceerd, dus dit is geen probleem" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit is het standpunt van critici: BBP registreert productie, niet de bijkomende schade aan het milieu. Voorstanders van BBP zouden zeggen dat dit oplosbaar is met aparte milieu-indicatoren náást BBP, niet door BBP zelf te herzien — welke aanpak beter is, is precies waar het debat over gaat."
+            },
+          {
+            "format": "vergelijking",
+            "concepts": ["welvaartsmaatstaf", "verdeling"],
+            "difficulty_prior": 3,
+            "question": "Land A heeft een groeiend BBP, waarbij de welvaartswinst vrijwel volledig bij de rijkste 5% terechtkomt. Land B heeft een iets lager groeiend BBP, maar de welvaartswinst is breder verdeeld. Volgens critici van BBP als welvaartsmaatstaf, welk land laat het beste zien waarom BBP-groei alleen niet genoeg zegt?",
+            "options": [
+              { "id": "a", "text": "Land A, omdat het groeicijfer weinig zegt over hoe die groei verdeeld is over de bevolking" },
+              { "id": "b", "text": "Land B, omdat een lager groeicijfer altijd slechter is" },
+              { "id": "c", "text": "Beide landen laten precies hetzelfde zien" },
+              { "id": "d", "text": "BBP-groei zegt volgens iedereen altijd genoeg over verdeling" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit is het standpunt van critici: BBP-groei zegt niets over verdeling. Voorstanders van BBP zouden hier tegenin brengen dat verdeling een apart beleidsvraagstuk is, los van wat BBP hoort te meten — of dat een geldig verweer is, is onderdeel van het lopende debat, geen uitgemaakte zaak."
+          },
+          {
+            "format": "welk-voorbeeld-past",
+            "concepts": ["BBP", "milieukosten"],
+            "difficulty_prior": 5,
+            "question": "Welk voorbeeld illustreert het beste de kritiek dat BBP geen rekening houdt met milieuschade?",
+            "options": [
+              { "id": "a", "text": "Een land verkoopt hout uit zijn bossen; het BBP stijgt, terwijl het land feitelijk armer wordt aan natuurlijke hulpbronnen" },
+              { "id": "b", "text": "Een land bouwt een nieuwe fabriek en het BBP stijgt door de extra productie" },
+              { "id": "c", "text": "Een land verhoogt de lonen en het BBP stijgt" },
+              { "id": "d", "text": "Een land importeert meer goederen en het BBP daalt" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit voorbeeld laat zien hoe BBP een vorm van 'productie' registreert (de verkoop van hout) terwijl het onderliggende natuurlijke kapitaal afneemt — een kernpunt in de kritiek van critici. Voorstanders van BBP ontkennen dit effect niet per se, maar zien het als iets dat buiten de reikwijdte van BBP hoort, niet als een fout in BBP zelf."
+          },
+          {
+            "format": "berekening",
+            "concepts": ["BBP", "onbetaalde arbeid"],
+            "difficulty_prior": 5,
+            "question": "Land P had vorig jaar een BBP van €400 miljard. Schattingen wijzen erop dat onbetaalde huishoudelijke arbeid (zoals mantelzorg) een waarde van €40 miljard zou vertegenwoordigen als die werd meegeteld. Met hoeveel procent zou het officieel gemeten BBP van land P stijgen als deze arbeid werd meegerekend?",
+            "options": [
+              { "id": "a", "text": "10%" },
+              { "id": "b", "text": "4%" },
+              { "id": "c", "text": "40%" },
+              { "id": "d", "text": "1%" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "€40 miljard gedeeld door €400 miljard is 0,10, oftewel 10%. Dit cijfer illustreert concreet hoe groot het verschil kan zijn tussen wat BBP meet en wat critici zeggen dat het zou moeten meten. Of onbetaalde arbeid daadwerkelijk zou moeten worden meegeteld, is zelf onderdeel van het debat — dit is een schattingsoefening, geen consensuscijfer."
+          },
+          {
+            "format": "keten-redenering",
+            "concepts": ["BBP", "milieukosten"],
+            "difficulty_prior": 5,
+            "question": "Een land kapt een groot bos en verkoopt het hout voor de export. Wat gebeurt er, stap voor stap, met het BBP-cijfer en de daadwerkelijke welvaart van het land, volgens critici van BBP als welvaartsmaatstaf?",
+            "options": [
+              { "id": "a", "text": "Het BBP stijgt door de verkoop van het hout, maar de daadwerkelijke welvaart daalt mogelijk doordat een niet-hernieuwbare hulpbron verdwijnt zonder dat dit in het cijfer terugkomt — critici zien dit als bewijs dat BBP welvaart en productie met elkaar verwart" },
+              { "id": "b", "text": "Het BBP daalt, want er wordt hout weggehaald" },
+              { "id": "c", "text": "De daadwerkelijke welvaart stijgt exact even veel als het BBP" },
+              { "id": "d", "text": "Er is volgens iedereen geen enkel verschil tussen BBP-groei en welvaartsgroei in dit voorbeeld" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit is het kernargument van critici. Voorstanders van BBP zouden zeggen dat dit soort correcties voor hulpbronnenverbruik een apart vraagstuk zijn, geen fout in BBP zelf. Beide posities bestaan naast elkaar in de vakliteratuur; er is geen consensus over welke visie 'juist' is."
+          }
+        ]
+      },
+      {
+        "id": "werkloosheid_juiste_maatstaf",
+        "title": "Is werkloosheid wel de juiste maatstaf?",
+        "order": 2,
+        "explanation": "Het officiële werkloosheidscijfer telt mensen die geen betaald werk hebben, maar wel actief zoeken. Voorstanders van deze definitie wijzen op de duidelijke, objectieve afbakening: je zoekt actief of niet.\n\nCritici stellen dat dit cijfer de werkelijkheid onderschat. Het telt geen ontmoedigde werkzoekenden mee: mensen die zijn gestopt met zoeken omdat ze denken toch geen baan te vinden, en daardoor officieel niet meer 'werkloos' zijn. Het telt ook onvrijwillige deeltijdwerkers niet apart, terwijl zij eigenlijk meer uren zouden willen werken.\n\nEconomen zijn het bovendien fundamenteel oneens over de oorzaak van werkloosheid. Keynesianen zien het vooral als een tekort aan vraag in de economie, op te lossen met overheidsbeleid. Klassieke en Oostenrijkse economen zien werkloosheid eerder als een gevolg van marktverstoringen, zoals een te hoog minimumloon, die de markt zelf zou oplossen als je die met rust laat.",
+        "questions": [
+          {
+            "format": "definitie-met-afleiders",
+            "concepts": ["werkloosheidsmaatstaf"],
+            "difficulty_prior": 1,
+            "question": "Wat is de kern van de kritiek dat het officiële werkloosheidscijfer de werkelijkheid onderschat?",
+            "options": [
+              { "id": "a", "text": "Het telt geen ontmoedigde werkzoekenden en onvrijwillige deeltijdwerkers apart mee, terwijl zij ook een onbenut arbeidspotentieel vertegenwoordigen" },
+              { "id": "b", "text": "Het cijfer is te ingewikkeld om te berekenen" },
+              { "id": "c", "text": "Het cijfer wordt nooit internationaal gepubliceerd" },
+              { "id": "d", "text": "Het cijfer telt te veel mensen mee die wel een baan hebben" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit is de kern van de meetkritiek. Voorstanders van de officiële definitie brengen hier tegenin dat een duidelijke, objectieve afbakening (actief zoekend, geen baan) nodig is om het cijfer maandelijks consistent te kunnen meten — dit blijft een openstaand debat."
+          },
+          {
+            "format": "wat-hoort-er-niet-bij",
+            "concepts": ["werkloosheidsmaatstaf"],
+            "difficulty_prior": 1,
+            "question": "Wat hoort NIET bij de kritiekpunten op het officiële werkloosheidscijfer?",
+            "options": [
+              { "id": "a", "text": "Het telt ontmoedigde werkzoekenden niet mee" },
+              { "id": "b", "text": "Het telt onvrijwillige deeltijdwerkers niet apart mee" },
+              { "id": "c", "text": "Het cijfer wordt door critici gezien als een onderschatting van het werkelijke onbenutte arbeidspotentieel" },
+              { "id": "d", "text": "Het cijfer overschat het aantal werklozen doordat het te veel mensen meetelt" }
+            ],
+            "correct_option_id": "d",
+            "explanation": "De kritiek gaat juist over onderschatting, niet overschatting — critici stellen dat het officiële cijfer te LAAG uitvalt doordat bepaalde groepen niet worden meegeteld."
+          },
+          {
+            "format": "welk-voorbeeld-past",
+            "concepts": ["vraagtekort-visie"],
+            "difficulty_prior": 2,
+            "question": "Welk standpunt past het beste bij de Keynesiaanse visie op de oorzaak van werkloosheid?",
+            "options": [
+              { "id": "a", "text": "Werkloosheid ontstaat vooral door een tekort aan totale vraag in de economie, en de overheid kan dit oplossen door de bestedingen te stimuleren" },
+              { "id": "b", "text": "Werkloosheid ontstaat vooral doordat het minimumloon de markt verstoort" },
+              { "id": "c", "text": "Werkloosheid lost zichzelf altijd op zonder enig overheidsingrijpen" },
+              { "id": "d", "text": "Werkloosheid heeft geen enkele economische oorzaak" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit is de kern van de Keynesiaanse visie. Klassieke en Oostenrijkse economen zouden hier tegenin brengen dat het probleem juist ligt bij marktverstoringen zoals regelgeving of een te hoog minimumloon, niet bij een gebrek aan vraag — beide visies bestaan naast elkaar in de vakliteratuur."
+          },
+          {
+            "format": "scenario-redenering",
+            "concepts": ["werkloosheidsmaatstaf", "ontmoedigde werkzoekenden"],
+            "difficulty_prior": 3,
+            "question": "Iemand heeft een jaar lang actief naar werk gezocht zonder succes, en stopt vervolgens met zoeken omdat hij ervan overtuigd is geen baan te zullen vinden. Wat gebeurt er met zijn status in het officiële werkloosheidscijfer, en waarom is dit een punt van kritiek?",
+            "options": [
+              { "id": "a", "text": "Hij telt niet langer mee als werkloze, omdat hij niet meer actief zoekt — critici zien dit als een onderschatting, omdat hij feitelijk nog steeds geen baan heeft" },
+              { "id": "b", "text": "Hij blijft altijd meetellen als werkloze, ongeacht of hij nog zoekt" },
+              { "id": "c", "text": "Hij telt automatisch mee als werkende" },
+              { "id": "d", "text": "Zijn status heeft geen enkel effect op het officiële cijfer" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit is het mechanisme achter de 'ontmoedigde werkzoekenden'-kritiek: zodra iemand stopt met actief zoeken, verdwijnt hij uit de officiële telling, ook al heeft hij nog steeds geen werk. Voorstanders van de officiële definitie zouden zeggen dat 'actief zoekend zijn' nu eenmaal de enige meetbare, consistente afbakening is."
+          },
+          {
+            "format": "vergelijking",
+            "concepts": ["vraagtekort-visie", "marktverstoring-visie"],
+            "difficulty_prior": 3,
+            "question": "Vergelijk twee verklaringen voor aanhoudend hoge werkloosheid in een land: verklaring A wijt dit aan te weinig totale bestedingen in de economie; verklaring B wijt dit aan een minimumloon dat boven het punt ligt waar vraag en aanbod van arbeid elkaar zouden ontmoeten. Welke economische school associeert het sterkst met verklaring B?",
+            "options": [
+              { "id": "a", "text": "De klassieke/Oostenrijkse school, die werkloosheid vooral ziet als gevolg van marktverstoringen zoals een te hoog minimumloon" },
+              { "id": "b", "text": "De Keynesiaanse school, die dit zou toeschrijven aan te weinig vraag" },
+              { "id": "c", "text": "Beide scholen zouden verklaring B onderschrijven" },
+              { "id": "d", "text": "Geen enkele economische school gebruikt deze redenering" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Verklaring B is de klassieke/Oostenrijkse positie: werkloosheid als gevolg van marktverstoring door regelgeving. De Keynesiaanse school (verklaring A) zou het probleem juist zoeken in onvoldoende vraag — dit is een van de fundamentele, onopgeloste geschillen in de economische wetenschap."
+          },
+          {
+            "format": "berekening",
+            "concepts": ["werkloosheidsmaatstaf", "ontmoedigde werkzoekenden"],
+            "difficulty_prior": 3,
+            "question": "In een land met een beroepsbevolking van 10 miljoen mensen telt het officiële cijfer 500.000 werklozen (een officieel percentage van 5%). Onderzoekers schatten dat daarnaast nog 200.000 ontmoedigde werkzoekenden zijn die niet in dit cijfer meetellen. Als je deze groep wél zou meetellen bij zowel de werklozen als de beroepsbevolking, wat zou het aangepaste werkloosheidspercentage dan ongeveer zijn?",
+            "options": [
+              { "id": "a", "text": "Ongeveer 6,9%" },
+              { "id": "b", "text": "Precies 5%" },
+              { "id": "c", "text": "20%" },
+              { "id": "d", "text": "2%" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Tel je de ontmoedigde werkzoekenden mee bij zowel de werklozen als de beroepsbevolking, dan stijgt het percentage van 5% naar (500.000+200.000)/(10.000.000+200.000) ≈ 6,9% — een concrete illustratie van hoeveel de keuze in meetmethode uitmaakt. Of deze bredere telling \"juister\" is, blijft onderdeel van het debat."
+          },
+          {
+            "format": "keten-redenering",
+            "concepts": ["marktverstoring-visie", "vraagtekort-visie"],
+            "difficulty_prior": 4,
+            "question": "Een overheid verhoogt het minimumloon fors. Volgens de klassieke/Oostenrijkse visie op werkloosheid, wat is de meest waarschijnlijke keten van gevolgen op de arbeidsmarkt, en hoe zou een Keynesiaans econoom dit weerleggen?",
+            "options": [
+              { "id": "a", "text": "Klassieke/Oostenrijkse economen verwachten dat een hoger minimumloon de vraag naar laagbetaalde arbeid doet dalen, wat werkloosheid onder deze groep verhoogt; Keynesianen zouden hiertegen inbrengen dat hogere lonen ook de totale bestedingen (en dus de vraag naar arbeid) kunnen stimuleren, wat het effect kan compenseren of zelfs omkeren" },
+              { "id": "b", "text": "Beide economische scholen zijn het er volledig over eens dat een hoger minimumloon geen enkel effect heeft" },
+              { "id": "c", "text": "Een hoger minimumloon lost werkloosheid volgens alle economen automatisch op" },
+              { "id": "d", "text": "Er bestaat geen enkel economisch debat over de effecten van het minimumloon" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit is een van de meest onderzochte en nog altijd omstreden vraagstukken in de arbeidseconomie: het effect van het minimumloon op werkloosheid hangt af van welk mechanisme (marktverstoring vs. vraagimpuls) in de praktijk domineert — empirisch onderzoek geeft gemengde uitkomsten, en er is geen consensus."
+          }
+        ]
+      },
+      {
+        "id": "inflatie_oorzaken_theorieen",
+        "title": "Wat veroorzaakt inflatie nu echt?",
+        "order": 3,
+        "explanation": "In de beginner-track leerde je dat inflatie ontstaat wanneer vraag het aanbod overtreft. Dat klopt, maar economen zijn het oneens over wat de dieperliggende, dominante oorzaak van aanhoudende inflatie is.\n\nMonetaristen, met Milton Friedman voorop, stellen dat inflatie 'altijd en overal een monetair fenomeen' is: als de geldhoeveelheid in een economie sneller groeit dan de productie, stijgen de prijzen vroeg of laat, ongeacht andere factoren.\n\nAndere economen benadrukken kosten-inflatie: stijgende lonen, energie- of grondstofprijzen die bedrijven doorberekenen in hun verkoopprijzen, los van hoeveel geld er in omloop is.\n\nWeer anderen wijzen op de verwachtingen-theorie: als mensen en bedrijven verwachten dat prijzen zullen stijgen, vragen werknemers hogere lonen en verhogen bedrijven vast hun prijzen — waardoor de verwachte inflatie zichzelf gedeeltelijk waarmaakt.",
+        "questions": [
+          {
+            "format": "definitie-met-afleiders",
+            "concepts": ["monetaristische visie"],
+            "difficulty_prior": 1,
+            "question": "Wat stelt de monetaristische visie op inflatie, zoals verwoord door Milton Friedman?",
+            "options": [
+              { "id": "a", "text": "Inflatie is altijd en overal een monetair fenomeen: als de geldhoeveelheid sneller groeit dan de productie, ontstaat vroeg of laat inflatie" },
+              { "id": "b", "text": "Inflatie ontstaat uitsluitend door stijgende lonen" },
+              { "id": "c", "text": "Inflatie heeft nooit iets met de hoeveelheid geld in omloop te maken" },
+              { "id": "d", "text": "Inflatie is altijd het gevolg van overheidsbeleid, nooit van de geldhoeveelheid" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit is Friedmans bekende these. Andere economen relativeren dit door te wijzen op kosten-inflatie en verwachtingen als eigenstandige of aanvullende oorzaken — dit blijft een van de langstlopende debatten in de macro-economie."
+          },
+          {
+            "format": "wat-hoort-er-niet-bij",
+            "concepts": ["kosten-inflatie"],
+            "difficulty_prior": 1,
+            "question": "Wat hoort NIET bij de kosten-inflatie-verklaring van prijsstijgingen?",
+            "options": [
+              { "id": "a", "text": "Stijgende energieprijzen die bedrijven doorberekenen in hun verkoopprijzen" },
+              { "id": "b", "text": "Stijgende lonen die bedrijven doorberekenen in hun prijzen" },
+              { "id": "c", "text": "Een sneller groeiende geldhoeveelheid dan de productie" },
+              { "id": "d", "text": "Hogere grondstofprijzen die de productiekosten opdrijven" }
+            ],
+            "correct_option_id": "c",
+            "explanation": "Een snel groeiende geldhoeveelheid is de monetaristische verklaring, niet de kosten-inflatie-verklaring. Kosten-inflatie gaat specifiek over stijgende productiekosten (lonen, energie, grondstoffen) die worden doorberekend."
+          },
+          {
+            "format": "welk-voorbeeld-past",
+            "concepts": ["verwachtingen-theorie"],
+            "difficulty_prior": 2,
+            "question": "Welk voorbeeld illustreert het beste de verwachtingen-theorie van inflatie?",
+            "options": [
+              { "id": "a", "text": "Werknemers eisen hogere lonen omdat ze verwachten dat de prijzen volgend jaar zullen stijgen, en bedrijven verhogen uit voorzorg alvast hun prijzen — waardoor de verwachte inflatie gedeeltelijk werkelijkheid wordt" },
+              { "id": "b", "text": "Een fabriek verhoogt haar prijzen enkel omdat de energierekening is gestegen" },
+              { "id": "c", "text": "De centrale bank verhoogt de geldhoeveelheid fors" },
+              { "id": "d", "text": "De vraag naar een product stijgt plotseling door een tijdelijke trend" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit is het kernmechanisme van de verwachtingen-theorie: verwachtingen over toekomstige inflatie beïnvloeden het huidige gedrag van werknemers en bedrijven, waardoor die verwachtingen zichzelf gedeeltelijk bevestigen."
+          },
+          {
+            "format": "scenario-redenering",
+            "concepts": ["verwachtingen-theorie"],
+            "difficulty_prior": 2,
+            "question": "Een centrale bank kondigt aan de inflatie voortaan zeer serieus te zullen bestrijden, en bouwt hiermee jarenlang geloofwaardigheid op. Hoe zou dit, volgens de verwachtingen-theorie, het gedrag van bedrijven en werknemers bij het vaststellen van lonen en prijzen kunnen beïnvloeden?",
+            "options": [
+              { "id": "a", "text": "Doordat mensen een lage toekomstige inflatie verwachten, vragen werknemers minder hoge looneisen en zijn bedrijven terughoudender met prijsverhogingen — de lage verwachting helpt daadwerkelijk lage inflatie te realiseren" },
+              { "id": "b", "text": "Verwachtingen over de centrale bank hebben volgens deze theorie geen enkele invloed op loon- of prijsbeslissingen" },
+              { "id": "c", "text": "Werknemers en bedrijven negeren aankondigingen van de centrale bank altijd volledig" },
+              { "id": "d", "text": "Dit zou de inflatie juist onvermijdelijk doen stijgen" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit is precies waarom centrale banken zoveel waarde hechten aan 'geloofwaardigheid': volgens de verwachtingen-theorie kunnen goed verankerde lage inflatieverwachtingen zichzelf waarmaken, net zoals hoge verwachtingen dat kunnen."
+          },
+          {
+            "format": "vergelijking",
+            "concepts": ["monetaristische visie", "kosten-inflatie"],
+            "difficulty_prior": 3,
+            "question": "Een land ziet de prijzen fors stijgen. Verklaring A wijt dit aan een centrale bank die de afgelopen jaren de geldhoeveelheid veel sneller liet groeien dan de productie. Verklaring B wijt dit aan een internationale energiecrisis die de productiekosten van vrijwel alle bedrijven opdrijft. Welke verklaring past bij de monetaristische visie, en welke bij kosten-inflatie?",
+            "options": [
+              { "id": "a", "text": "Verklaring A is monetaristisch, verklaring B is kosten-inflatie" },
+              { "id": "b", "text": "Verklaring A is kosten-inflatie, verklaring B is monetaristisch" },
+              { "id": "c", "text": "Beide verklaringen zijn monetaristisch" },
+              { "id": "d", "text": "Beide verklaringen zijn kosten-inflatie" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Verklaring A wijst naar de geldhoeveelheid (monetaristisch), verklaring B naar stijgende productiekosten (kosten-inflatie) — in de praktijk kunnen beide mechanismen tegelijk spelen, en economen verschillen van mening over welke doorgaans dominant is."
+          },
+          {
+            "format": "berekening",
+            "concepts": ["monetaristische visie", "kosten-inflatie"],
+            "difficulty_prior": 3,
+            "question": "De geldhoeveelheid in een land groeit dit jaar met 8%, terwijl de productie (reëel BBP) met 3% groeit — volgens de eenvoudige monetaristische vuistregel (geldgroei min productiegroei ≈ inflatie) is de monetaire inflatiebijdrage dus ongeveer 5%. Als daarnaast stijgende energieprijzen (kosten-inflatie) nog eens voor 1,5 procentpunt extra prijsdruk zorgen, wat is de totale verwachte inflatie ongeveer volgens beide mechanismen samen?",
+            "options": [
+              { "id": "a", "text": "Ongeveer 6,5%" },
+              { "id": "b", "text": "Ongeveer 5%" },
+              { "id": "c", "text": "Ongeveer 9,5%" },
+              { "id": "d", "text": "Ongeveer 3%" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "5% (monetair) + 1,5% (kosten-inflatie) = 6,5% gecombineerde geschatte inflatie. In de praktijk is zo'n optelsom een vereenvoudiging — economen zijn het oneens over hoeveel deze mechanismen elkaar versterken of juist overlappen."
+          },
+          {
+            "format": "keten-redenering",
+            "concepts": ["monetaristische visie", "verwachtingen-theorie"],
+            "difficulty_prior": 4,
+            "question": "Een centrale bank laat de geldhoeveelheid jarenlang sterk groeien. Tegelijk beginnen mensen, na een tijd van stijgende prijzen, structureel hogere inflatie te verwachten. Wat is, volgens de combinatie van de monetaristische visie en de verwachtingen-theorie, de meest waarschijnlijke keten van gevolgen op de langere termijn?",
+            "options": [
+              { "id": "a", "text": "De snelle geldgroei zet de eerste prijsstijgingen in gang; naarmate mensen vervolgens hogere inflatie gaan verwachten, eisen ze hogere lonen en verhogen bedrijven uit voorzorg hun prijzen, wat de inflatie verder aanwakkert en hardnekkiger maakt dan de geldgroei alleen zou verklaren" },
+              { "id": "b", "text": "Geldgroei en verwachtingen hebben nooit een versterkend effect op elkaar" },
+              { "id": "c", "text": "Verwachtingen zijn de enige echte oorzaak van inflatie, geldgroei speelt geen rol" },
+              { "id": "d", "text": "Dit leidt gegarandeerd tot lagere inflatie" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit illustreert hoe de monetaristische visie en de verwachtingen-theorie elkaar kunnen versterken: aanhoudende geldgroei kan de eerste trigger zijn, waarna zelfversterkende verwachtingen de inflatie hardnekkiger maken. Andere economen zouden benadrukken dat kosten-inflatie in deze keten een net zo grote rol kan spelen — welk mechanisme domineert, blijft omstreden."
+          }
+        ]
+      },
+      {
+        "id": "phillips_curve_geldigheid",
+        "title": "Is de Phillips-curve nog geldig?",
+        "order": 4,
+        "explanation": "De klassieke Phillips-curve stelt een ruil voor tussen inflatie en werkloosheid: lage werkloosheid gaat gepaard met hoge inflatie, en andersom. Beleidsmakers gebruikten dit decennialang als vuistregel om te kiezen tussen meer banen of stabiele prijzen.\n\nMilton Friedman en Edmund Phelps bekritiseerden dit: volgens hen bestaat de ruil alleen op de korte termijn. Op de lange termijn keert werkloosheid volgens hen altijd terug naar zijn natuurlijke voet, ongeacht het inflatieniveau — een blijvend lagere werkloosheid afdwingen leidt dan alleen tot steeds hogere inflatie, niet tot blijvend meer banen.\n\nDe stagflatie van de jaren zeventig — hoge inflatie én hoge werkloosheid tegelijk — leek deze kritiek te bevestigen en de simpele Phillips-curve te weerleggen.\n\nToch blijft het debat levend: sommige economen zien recent een 'platte' Phillips-curve, waarbij inflatie nauwelijks nog reageert op veranderingen in werkloosheid — wat weer nieuwe vragen oproept.",
+        "questions": [
+          {
+            "format": "definitie-met-afleiders",
+            "concepts": ["Phillips-curve"],
+            "difficulty_prior": 1,
+            "question": "Wat stelt de klassieke Phillips-curve?",
+            "options": [
+              { "id": "a", "text": "Een omgekeerd verband tussen inflatie en werkloosheid: lage werkloosheid gaat gepaard met hoge inflatie, en andersom" },
+              { "id": "b", "text": "Een direct, één-op-één verband tussen BBP en rente" },
+              { "id": "c", "text": "Dat inflatie en werkloosheid nooit iets met elkaar te maken hebben" },
+              { "id": "d", "text": "Dat werkloosheid altijd nul is bij lage inflatie" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "De Phillips-curve beschrijft een historisch waargenomen omgekeerd verband tussen inflatie en werkloosheid — of dit verband stabiel en bruikbaar voor beleid is, is precies waar het debat in deze les over gaat."
+          },
+          {
+            "format": "wat-hoort-er-niet-bij",
+            "concepts": ["verticale lange-termijn Phillips-curve"],
+            "difficulty_prior": 1,
+            "question": "Wat hoort NIET bij de kritiek van Friedman en Phelps op de klassieke Phillips-curve?",
+            "options": [
+              { "id": "a", "text": "De ruil tussen inflatie en werkloosheid bestaat volgens hen alleen op de korte termijn" },
+              { "id": "b", "text": "Op de lange termijn keert werkloosheid terug naar de natuurlijke werkloosheidsvoet, ongeacht het inflatieniveau" },
+              { "id": "c", "text": "Een blijvend lagere werkloosheid afdwingen leidt vooral tot hogere inflatie, niet tot blijvend meer banen" },
+              { "id": "d", "text": "Zij bevestigden dat de klassieke Phillips-curve ook op de lange termijn volledig standhoudt" }
+            ],
+            "correct_option_id": "d",
+            "explanation": "Friedman en Phelps bekritiseerden juist de lange-termijngeldigheid van de klassieke Phillips-curve — zij stelden dat de ruil alleen kortetermijn bestaat, niet dat de curve op lange termijn standhoudt."
+          },
+          {
+            "format": "welk-voorbeeld-past",
+            "concepts": ["stagflatie"],
+            "difficulty_prior": 2,
+            "question": "Welke historische gebeurtenis wordt vaak aangehaald als empirisch tegenbewijs voor de klassieke Phillips-curve?",
+            "options": [
+              { "id": "a", "text": "De stagflatie van de jaren zeventig, toen hoge inflatie en hoge werkloosheid tegelijk voorkwamen" },
+              { "id": "b", "text": "Een periode met lage inflatie en lage werkloosheid tegelijk" },
+              { "id": "c", "text": "Een periode waarin inflatie en werkloosheid exact de klassieke ruil volgden" },
+              { "id": "d", "text": "Een periode zonder enige verandering in inflatie of werkloosheid" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Stagflatie (hoge inflatie mét hoge werkloosheid) is precies het patroon dat de klassieke Phillips-curve uitsluit — volgens die curve zou hoge werkloosheid gepaard moeten gaan met lage inflatie, niet met hoge."
+          },
+          {
+            "format": "vergelijking",
+            "concepts": ["Phillips-curve", "stagflatie"],
+            "difficulty_prior": 3,
+            "question": "Vergelijk twee periodes: periode A vertoont lage werkloosheid samen met hoge inflatie (klassiek Phillips-patroon); periode B vertoont hoge werkloosheid samen met hoge inflatie. Welke periode past bij stagflatie, en welke bij de klassieke Phillips-curve?",
+            "options": [
+              { "id": "a", "text": "Periode A past bij de klassieke Phillips-curve, periode B is een voorbeeld van stagflatie" },
+              { "id": "b", "text": "Periode A is stagflatie, periode B past bij de klassieke Phillips-curve" },
+              { "id": "c", "text": "Beide periodes zijn voorbeelden van stagflatie" },
+              { "id": "d", "text": "Geen van beide periodes heeft iets met de Phillips-curve te maken" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Periode A (lage werkloosheid + hoge inflatie) volgt het klassieke Phillips-patroon; periode B (hoge werkloosheid + hoge inflatie tegelijk) is precies de combinatie die de klassieke curve uitsluit — en die stagflatie kenmerkt."
+          },
+          {
+            "format": "scenario-redenering",
+            "concepts": ["verticale lange-termijn Phillips-curve", "natuurlijke werkloosheidsvoet"],
+            "difficulty_prior": 5,
+            "question": "Een overheid probeert de werkloosheid via aanhoudend stimuleringsbeleid structureel onder de natuurlijke werkloosheidsvoet te houden. Volgens Friedman en Phelps' kritiek op de Phillips-curve, wat gebeurt er dan waarschijnlijk op de lange termijn?",
+            "options": [
+              { "id": "a", "text": "De werkloosheid keert alsnog terug naar de natuurlijke voet, maar de inflatie blijft wel structureel hoger — het beleid 'koopt' geen blijvende banenwinst, alleen hogere inflatie" },
+              { "id": "b", "text": "De werkloosheid blijft voor altijd onder de natuurlijke voet, zonder enig neveneffect" },
+              { "id": "c", "text": "De inflatie daalt juist door dit beleid" },
+              { "id": "d", "text": "Er is volgens deze kritiek geen enkel effect op inflatie" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit is de kern van de Friedman/Phelps-kritiek: op de lange termijn levert het proberen vast te houden aan lage werkloosheid vooral hogere inflatie op, geen blijvend lagere werkloosheid — de natuurlijke voet is bepalend, niet het inflatiebeleid."
+          },
+          {
+            "format": "berekening",
+            "concepts": ["Phillips-curve", "stagflatie"],
+            "difficulty_prior": 3,
+            "question": "In 1975 was de inflatie in een land 9% en de werkloosheid 8%. Volgens de klassieke Phillips-curve zou je bij 8% werkloosheid een relatief lage inflatie verwachten (bijvoorbeeld rond 2%). Hoeveel procentpunt hoger dan deze 'klassieke verwachting' lag de daadwerkelijke inflatie?",
+            "options": [
+              { "id": "a", "text": "Ongeveer 7 procentpunt hoger" },
+              { "id": "b", "text": "Ongeveer 2 procentpunt lager" },
+              { "id": "c", "text": "Precies gelijk aan de verwachting" },
+              { "id": "d", "text": "Ongeveer 17 procentpunt hoger" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "9% werkelijke inflatie tegenover een klassiek verwachte inflatie van ongeveer 2% bij die werkloosheid, is een verschil van ongeveer 7 procentpunt — een concrete illustratie van hoe sterk stagflatie afweek van wat de klassieke Phillips-curve voorspelde."
+          },
+          {
+            "format": "keten-redenering",
+            "concepts": ["Phillips-curve", "verwachtingen-theorie"],
+            "difficulty_prior": 5,
+            "question": "Sommige economen stellen dat de Phillips-curve de afgelopen decennia 'platter' is geworden: inflatie reageert nauwelijks nog op veranderingen in werkloosheid. Wat zou, stap voor stap, een mogelijke verklaring hiervoor kunnen zijn, en hoe verhoudt dit zich tot de klassieke en de Friedman/Phelps-visie?",
+            "options": [
+              { "id": "a", "text": "Als centrale banken door hun geloofwaardigheid de inflatieverwachtingen stabiel weten te houden (zie de verwachtingen-theorie), reageert inflatie minder sterk op schommelingen in werkloosheid dan de klassieke curve voorspelt — dit weerlegt de klassieke Phillips-curve niet per se, maar suggereert dat verwachtingen een grotere rol spelen dan het model oorspronkelijk veronderstelde" },
+              { "id": "b", "text": "Een platte Phillips-curve bewijst dat er nooit enig verband tussen inflatie en werkloosheid heeft bestaan" },
+              { "id": "c", "text": "Een platte curve betekent dat werkloosheid niet meer bestaat" },
+              { "id": "d", "text": "Dit fenomeen wordt door alle economen op precies dezelfde manier verklaard, er is geen debat" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "De 'platte Phillips-curve'-discussie is zelf al onderdeel van een lopend debat: sommige economen zien het als bewijs dat verwachtingen (en centrale bank-geloofwaardigheid) belangrijker zijn geworden, anderen betwisten of de curve wel echt platter is geworden of dat de meting zelf misleidt. Er is geen consensus."
+          }
+        ]
+      },
+      {
+        "id": "rente_transmissiemechanisme",
+        "title": "Het transmissiemechanisme van rentebeleid: werkt het echt zo simpel?",
+        "order": 5,
+        "explanation": "In de beginner- en gevorderd-tracks leerde je dat de centrale bank de rente verhoogt of verlaagt om de economie te sturen. Maar hóe dat precies doorwerkt, is een van de minst begrepen onderdelen van de economie.\n\nHet schoolboek-kanaal, het rentekanaal, stelt dat een hogere rente lenen direct duurder maakt, waardoor consumenten en bedrijven minder uitgeven. Maar economen wijzen ook op het kredietkanaal: banken worden bij een hogere rente voorzichtiger met uitlenen, onafhankelijk van de rente zelf — ze verscherpen simpelweg hun acceptatiecriteria.\n\nDaarnaast speelt het signaalkanaal: een renteverhoging verandert hoe mensen over de toekomst denken, wat hun gedrag nu al beïnvloedt, los van de daadwerkelijke leenkosten.\n\nOm het extra lastig te maken: economen weten niet precies hoe lang het duurt — vaak genoemd tussen de 12 en 24 maanden, met grote onzekerheidsmarges — voordat een renteverandering volledig doorwerkt in de economie.",
+        "questions": [
+          {
+            "format": "definitie-met-afleiders",
+            "concepts": ["rentekanaal"],
+            "difficulty_prior": 1,
+            "question": "Wat is het rentekanaal, het schoolboek-mechanisme van rentebeleid?",
+            "options": [
+              { "id": "a", "text": "Een hogere rente maakt lenen direct duurder, waardoor consumenten en bedrijven minder uitgeven" },
+              { "id": "b", "text": "Een hogere rente heeft nooit enig effect op bestedingen" },
+              { "id": "c", "text": "Een hogere rente maakt lenen juist goedkoper" },
+              { "id": "d", "text": "Het rentekanaal beschrijft alleen effecten op de wisselkoers" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit is het meest bekende, directe mechanisme: hogere leenkosten remmen bestedingen en investeringen af. Economen zijn het erover eens dat dit kanaal bestaat, maar oneens over hoe dominant het is ten opzichte van andere kanalen."
+          },
+          {
+            "format": "wat-hoort-er-niet-bij",
+            "concepts": ["kredietkanaal"],
+            "difficulty_prior": 1,
+            "question": "Wat hoort NIET bij het kredietkanaal van rentebeleid?",
+            "options": [
+              { "id": "a", "text": "Banken worden voorzichtiger met uitlenen bij een hogere rente" },
+              { "id": "b", "text": "Banken verscherpen hun acceptatiecriteria, onafhankelijk van de rente zelf" },
+              { "id": "c", "text": "Dit kanaal loopt via de bereidheid van banken om krediet te verstrekken, niet via de directe leenkosten" },
+              { "id": "d", "text": "Dit kanaal is precies hetzelfde als het rentekanaal" }
+            ],
+            "correct_option_id": "d",
+            "explanation": "Het kredietkanaal is een apart mechanisme: het gaat over de bereidheid van banken om te lenen, niet over de directe kosten van lenen (dat is het rentekanaal). Economen erkennen beide kanalen, maar zijn het oneens over hun relatieve gewicht."
+          },
+          {
+            "format": "welk-voorbeeld-past",
+            "concepts": ["signaalkanaal"],
+            "difficulty_prior": 2,
+            "question": "Welk voorbeeld illustreert het beste het signaalkanaal van rentebeleid?",
+            "options": [
+              { "id": "a", "text": "Een bedrijf stelt een investering uit zodra de centrale bank aankondigt de rente te gaan verhogen, nog vóórdat de daadwerkelijke leenkosten zijn gestegen" },
+              { "id": "b", "text": "Een bedrijf leent geld tegen de actuele, al hogere rente" },
+              { "id": "c", "text": "Een bank weigert een lening puur op basis van de kredietwaardigheid van de klant" },
+              { "id": "d", "text": "Een consument koopt een huis ondanks de hogere rente" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit voorbeeld laat zien hoe alleen al de aankondiging (het signaal) van toekomstig rentebeleid gedrag kan veranderen, nog vóórdat de daadwerkelijke rente is aangepast — een apart mechanisme naast het directe rentekanaal."
+          },
+          {
+            "format": "scenario-redenering",
+            "concepts": ["transmissievertraging"],
+            "difficulty_prior": 2,
+            "question": "De centrale bank verhoogt de rente. Onderzoek laat zien dat de economie hierop pas na 18 maanden volledig reageert, met een onzekerheidsmarge van meerdere maanden. Wat betekent deze 'transmissievertraging' voor de moeilijkheid van het voeren van rentebeleid?",
+            "options": [
+              { "id": "a", "text": "De centrale bank moet beslissingen nemen op basis van een verwachting van de economie over anderhalf jaar, niet op basis van de huidige stand — wat het beleid foutgevoelig maakt als die verwachting niet uitkomt" },
+              { "id": "b", "text": "De transmissievertraging betekent dat rentebeleid altijd exact voorspelbaar is" },
+              { "id": "c", "text": "De vertraging heeft geen enkele invloed op hoe lastig het is om rentebeleid te voeren" },
+              { "id": "d", "text": "De economie reageert altijd onmiddellijk op een renteverandering, zonder vertraging" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Doordat het effect van een renteverandering pas na maanden (met onzekerheid) volledig doorwerkt, moet de centrale bank vooruitkijken in plaats van reageren op actuele cijfers — een fundamentele bron van onzekerheid in het beleid waar economen het niet over eens zijn hoe je die het beste ondervangt."
+          },
+          {
+            "format": "vergelijking",
+            "concepts": ["rentekanaal", "kredietkanaal"],
+            "difficulty_prior": 3,
+            "question": "Vergelijk twee mechanismen waarmee een renteverhoging de economie afremt: het rentekanaal (directe leenkosten) en het kredietkanaal (voorzichtigere banken). Welk van de twee loopt NIET via de daadwerkelijke prijs van lenen, maar via de bereidheid van banken om te lenen?",
+            "options": [
+              { "id": "a", "text": "Het kredietkanaal" },
+              { "id": "b", "text": "Het rentekanaal" },
+              { "id": "c", "text": "Beide kanalen werken via exact hetzelfde mechanisme" },
+              { "id": "d", "text": "Geen van beide kanalen heeft iets met bankgedrag te maken" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Het kredietkanaal loopt specifiek via de striktheid van banken bij het verstrekken van leningen, los van de rente zelf; het rentekanaal loopt via de directe leenkosten."
+          },
+          {
+            "format": "berekening",
+            "concepts": ["transmissievertraging", "rentekanaal"],
+            "difficulty_prior": 3,
+            "question": "Een centrale bank verhoogt de rente in januari. Economen schatten dat het effect met een vertraging van 12 tot 24 maanden volledig doorwerkt. Als de centrale bank wil weten of het volledige effect uiterlijk in januari over twee jaar zichtbaar is, binnen welke marge (in maanden na de renteverhoging) moet de daadwerkelijke transmissie dan vallen?",
+            "options": [
+              { "id": "a", "text": "Tussen de 12 en 24 maanden" },
+              { "id": "b", "text": "Tussen de 1 en 6 maanden" },
+              { "id": "c", "text": "Tussen de 24 en 36 maanden" },
+              { "id": "d", "text": "Precies 18 maanden, nooit anders" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "'Januari over twee jaar' is 24 maanden na de renteverhoging — dat valt precies binnen de door economen genoemde bandbreedte van 12 tot 24 maanden, wat illustreert hoe ruim en onzeker die marge in de praktijk is."
+          },
+          {
+            "format": "keten-redenering",
+            "concepts": ["rentekanaal", "kredietkanaal", "signaalkanaal"],
+            "difficulty_prior": 4,
+            "question": "Een centrale bank verhoogt de rente stevig om inflatie te bestrijden. Beschrijf, stap voor stap, hoe de drie kanalen (rentekanaal, kredietkanaal, signaalkanaal) hier gecombineerd aan zouden kunnen bijdragen, en waarom economen het oneens zijn over welk kanaal het zwaarst weegt.",
+            "options": [
+              { "id": "a", "text": "Het rentekanaal maakt lenen direct duurder, het kredietkanaal maakt banken voorzichtiger met uitlenen (los van de rente zelf), en het signaalkanaal verandert nu al het gedrag van bedrijven en consumenten die anticiperen op de aankondiging — economen zijn het oneens over de relatieve omvang van elk kanaal, mede omdat ze moeilijk afzonderlijk te meten zijn" },
+              { "id": "b", "text": "Alleen het rentekanaal bestaat, de andere twee zijn verzonnen" },
+              { "id": "c", "text": "Alle drie de kanalen werken altijd even sterk en zijn nooit omstreden" },
+              { "id": "d", "text": "De kanalen werken elkaar altijd tegen, nooit versterkend" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit is de kern van waarom het transmissiemechanisme zo lastig te doorgronden is: de drie kanalen werken vaak tegelijk, zijn moeilijk afzonderlijk te isoleren in data, en economen verschillen van mening over hun relatieve gewicht — een nog altijd actief onderzoeksgebied zonder consensus."
+          }
+        ]
+      },
+      {
+        "id": "beleid_onder_onzekerheid",
+        "title": "Beleid maken onder onzekerheid: hoe wegen centrale bankiers deze debatten in de praktijk af?",
+        "order": 6,
+        "explanation": "Centrale bankiers moeten elke paar maanden een rentebesluit nemen, terwijl geen van de debatten uit deze track is opgelost. Ze weten niet zeker of BBP en het officiële werkloosheidscijfer de werkelijke economische gezondheid goed weerspiegelen (lessen 1-2). Ze weten niet zeker welk deel van de inflatie monetair, kosten-gedreven of verwachtingen-gedreven is (les 3), noch of de Phillips-curve nog een betrouwbare vuistregel is (les 4). En ze weten niet precies hoe of wanneer hun rentebesluit via de verschillende kanalen zal doorwerken (les 5).\n\nToch moeten ze beslissen. In de praktijk combineren centrale bankiers meerdere modellen en indicatoren tegelijk, wegen ze scenario's tegen elkaar af, en passen ze koers eerder geleidelijk dan abrupt aan — juist om de risico's van al deze onzekerheden te beperken, niet omdat één theorie gelijk heeft gekregen.",
+        "questions": [
+          {
+            "format": "definitie-met-afleiders",
+            "concepts": ["beleid onder onzekerheid"],
+            "difficulty_prior": 1,
+            "question": "Waarom is het voor centrale bankiers lastig om met zekerheid te bepalen hoe gezond een economie is?",
+            "options": [
+              { "id": "a", "text": "Omdat zelfs de basismaatstaven (zoals BBP en het werkloosheidscijfer) volgens critici beperkingen hebben, en de onderliggende oorzaken van inflatie en het effect van rentebeleid zelf ook omstreden zijn" },
+              { "id": "b", "text": "Omdat er te weinig economische data bestaat" },
+              { "id": "c", "text": "Omdat centrale bankiers geen toegang hebben tot BBP-cijfers" },
+              { "id": "d", "text": "Omdat er geen enkel debat bestaat binnen de economische wetenschap" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit vat de kern van de hele expert-track samen: op praktisch elk niveau — van de maatstaven tot de mechanismen — bestaat er legitieme onzekerheid en debat onder economen."
+          },
+          {
+            "format": "wat-hoort-er-niet-bij",
+            "concepts": ["beleid onder onzekerheid"],
+            "difficulty_prior": 1,
+            "question": "Wat hoort NIET bij de bronnen van onzekerheid die in deze track aan bod zijn gekomen?",
+            "options": [
+              { "id": "a", "text": "Onzekerheid over of BBP en werkloosheidscijfers de werkelijke economische gezondheid goed weerspiegelen" },
+              { "id": "b", "text": "Onzekerheid over welk deel van inflatie monetair, kosten-gedreven of verwachtingen-gedreven is" },
+              { "id": "c", "text": "Onzekerheid over hoe en wanneer rentebeleid volledig doorwerkt" },
+              { "id": "d", "text": "Volledige consensus onder economen over elk van deze vraagstukken" }
+            ],
+            "correct_option_id": "d",
+            "explanation": "Het tegenovergestelde is waar: over vrijwel elk vraagstuk in deze track bestaat juist WEL onenigheid tussen economen — dat is precies waarom beleid maken onder onzekerheid zo lastig is."
+          },
+          {
+            "format": "welk-voorbeeld-past",
+            "concepts": ["beleid onder onzekerheid", "geleidelijk beleid"],
+            "difficulty_prior": 3,
+            "question": "Welk voorbeeld illustreert het beste hoe centrale bankiers in de praktijk met fundamentele onzekerheid omgaan?",
+            "options": [
+              { "id": "a", "text": "Ze passen de rente meestal in kleine, geleidelijke stappen aan in plaats van grote, abrupte sprongen, om de risico's van al die onzekerheden te beperken" },
+              { "id": "b", "text": "Ze wachten met besluiten tot alle economische debatten volledig zijn opgelost" },
+              { "id": "c", "text": "Ze gebruiken altijd precies één enkel model, zonder ooit iets anders mee te wegen" },
+              { "id": "d", "text": "Ze negeren onzekerheid volledig bij het nemen van besluiten" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Geleidelijke aanpassingen zijn een directe praktische reactie op de onzekerheden die in deze hele track aan bod kwamen: kleine stappen beperken de schade als een aanname achteraf verkeerd blijkt."
+          },
+          {
+            "format": "vergelijking",
+            "concepts": ["geleidelijk beleid", "beleid onder onzekerheid"],
+            "difficulty_prior": 3,
+            "question": "Vergelijk twee centrale bankiers: bankier A past de rente in kleine, geleidelijke stappen aan en observeert tussentijds de effecten; bankier B verandert de rente in één keer drastisch op basis van één enkel model. Welke aanpak past beter bij de onzekerheden die in deze track zijn besproken (over maatstaven, inflatie-oorzaken en transmissiemechanismen)?",
+            "options": [
+              { "id": "a", "text": "Bankier A, omdat kleine stappen ruimte geven om bij te sturen als de onderliggende aannames (bijvoorbeeld over welke inflatietheorie dominant is) achteraf niet blijken te kloppen" },
+              { "id": "b", "text": "Bankier B, omdat één groot besluit altijd effectiever is" },
+              { "id": "c", "text": "Beide aanpakken zijn precies even goed onderbouwd" },
+              { "id": "d", "text": "Geen van beide aanpakken houdt rekening met onzekerheid" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Gezien de aanhoudende onzekerheid over maatstaven, inflatie-oorzaken en transmissiekanalen die in deze track zijn behandeld, biedt bankier A's geleidelijke aanpak meer ruimte om fouten te corrigeren dan het rigide, model-afhankelijke besluit van bankier B."
+          },
+          {
+            "format": "scenario-redenering",
+            "concepts": ["monetaristische visie", "kosten-inflatie"],
+            "difficulty_prior": 3,
+            "question": "Een centrale bankier moet een rentebesluit nemen, maar weet niet zeker of de huidige inflatie vooral door kosten-inflatie (bijvoorbeeld een energieschok) of door aanhoudende monetaire groei wordt gedreven — de twee vragen om een verschillende beleidsreactie. Wat is een verstandige aanpak, gegeven deze onzekerheid?",
+            "options": [
+              { "id": "a", "text": "Voorzichtig reageren en de ontwikkeling van meerdere signalen (waaronder kerninflatie en geldgroei) blijven volgen, in plaats van blindelings op één verklaring te vertrouwen" },
+              { "id": "b", "text": "Meteen de rente drastisch verhogen, ervan uitgaand dat het altijd monetair is" },
+              { "id": "c", "text": "Helemaal niet reageren, want er is toch onzekerheid" },
+              { "id": "d", "text": "Wachten tot economen het volledig eens zijn, wat nooit gebeurt, en dus nooit ingrijpen" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit combineert de kosten-inflatie- en monetaristische visies uit een eerdere les: omdat centrale bankiers niet zeker weten welk mechanisme dominant is, is voorzichtig reageren op meerdere signalen tegelijk de praktische middenweg tussen de theorieën."
+          },
+          {
+            "format": "berekening",
+            "concepts": ["welvaartsmaatstaf", "BBP"],
+            "difficulty_prior": 5,
+            "question": "Een land publiceert een BBP-groei van 3%. Critici van BBP als welvaartsmaatstaf wijzen erop dat een deel van deze groei welvaartsverlies verhult, bijvoorbeeld doordat de export van niet-hernieuwbare grondstoffen meetelt als positieve productie. Als economen schatten dat 1 procentpunt van de 3% groei op deze manier 'welvaart verhullende' groei is, hoeveel procentpunt reële welvaartswinst blijft er dan volgens deze kritiek over?",
+            "options": [
+              { "id": "a", "text": "Ongeveer 2 procentpunt" },
+              { "id": "b", "text": "Ongeveer 1 procentpunt" },
+              { "id": "c", "text": "Ongeveer 4 procentpunt" },
+              { "id": "d", "text": "0 procentpunt" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Volgens de kritiek zou je 1 procentpunt van de gerapporteerde 3% BBP-groei moeten aftrekken om een zuiverder beeld van de daadwerkelijke welvaartswinst te krijgen — dit is een schattingsoefening die de spanning tussen BBP-groei en 'echte' welvaart concreet maakt, geen officiële berekeningsmethode."
+          },
+          {
+            "format": "keten-redenering",
+            "concepts": ["werkloosheidsmaatstaf", "monetaristische visie", "transmissievertraging"],
+            "difficulty_prior": 5,
+            "question": "Een centrale bank moet een rentebesluit nemen tijdens een periode met: (1) twijfel of de officiële werkloosheidscijfers de arbeidsmarkt goed weerspiegelen, (2) onduidelijkheid of de inflatie vooral monetair of kosten-gedreven is, en (3) onzekerheid over hoe snel een renteverandering zal doorwerken. Beschrijf, stap voor stap, waarom dit de bank ertoe zou kunnen brengen om voorzichtig en geleidelijk te handelen in plaats van drastisch.",
+            "options": [
+              { "id": "a", "text": "Omdat elk van deze drie onzekerheden (meetkwesties, inflatie-oorzaken, en transmissietiming) apart al foutmarges met zich meebrengt, vergroot een drastische ingreep het risico dat de bank te hard of juist te weinig bijstuurt — geleidelijke stappen geven ruimte om onderweg bij te sturen als een van deze aannames niet blijkt te kloppen" },
+              { "id": "b", "text": "Deze onzekerheden hebben geen enkele invloed op hoe een centrale bank zou moeten handelen" },
+              { "id": "c", "text": "Drastisch ingrijpen is altijd veiliger bij meer onzekerheid" },
+              { "id": "d", "text": "De centrale bank kan wachten tot alle drie de onzekerheden volledig zijn opgelost, wat in de praktijk altijd gebeurt" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit combineert drie kernspanningen uit deze track — meetonzekerheid over werkloosheid, onduidelijkheid over inflatie-oorzaken, en onzekere transmissietiming — tot de praktische conclusie dat geleidelijk beleid een manier is om met opgestapelde onzekerheid om te gaan, niet omdat één van de onderliggende debatten is opgelost."
+          }
+        ]
+      }
+    ]
   },
   "format_rules": {
     "explanation_length": "100-150 woorden per uitlegscherm, gewone taal, elk jargon wordt uitgelegd (filosofie.md: 'simpel, maar nooit dom')",
@@ -559,7 +1727,7 @@
       "beschrijving": "difficulty_prior (1-5) wordt mechanisch afgeleid uit format + concepts-array, niet uit een losse inschatting van hoe moeilijk de vraag aanvoelt. Een concept telt als 'geïntroduceerd' in de les waar het voor het eerst wordt uitgelegd in het uitlegscherm (het 'thuisles'), ook als een latere les er kort naar terugverwijst.",
       "1": "format is 'definitie-met-afleiders' of 'wat-hoort-er-niet-bij', concepts-array bevat precies 1 label",
       "2": "format is 'berekening' of 'welk-voorbeeld-past', concepts-array bevat precies 1 label. Geldt ook als tie-breaker voor 'vergelijking'/'scenario-redenering' met slechts 1 label (geen tweede concept relevant).",
-      "3": "format is 'vergelijking' of 'scenario-redenering', concepts-array bevat precies 2 labels uit dezelfde les",
+      "3": "format is 'vergelijking' of 'scenario-redenering', concepts-array bevat precies 2 labels uit dezelfde les. Geldt ook wanneer format 'berekening' is en concepts-array precies 2 labels uit dezelfde les bevat → 3 (zelfde niveau als vergelijking/scenario-redenering met 2 labels).",
       "4": "format is 'keten-redenering' (ongeacht aantal labels, mits alle labels uit dezelfde les), of 'scenario-redenering' met 3 labels uit dezelfde les",
       "5": "concepts-array bevat labels die in verschillende lessen zijn geïntroduceerd (synthese-vragen / retentie over lessen heen) — deze regel gaat vóór de format-regels hierboven en geldt ongeacht format"
     }
