@@ -17,9 +17,17 @@ export default function ModulesOverviewScreen() {
           <Text style={styles.title}>Finance Bro</Text>
           <Text style={styles.subtitle}>Kies een module om te starten.</Text>
         </View>
-        <Pressable style={styles.signOutButton} onPress={signOut}>
-          <Text style={styles.signOutButtonText}>Uitloggen</Text>
-        </Pressable>
+        <View style={styles.headerActions}>
+          <Pressable
+            style={styles.accountButton}
+            onPress={() => router.push('/account')}
+          >
+            <Text style={styles.accountButtonText}>Account</Text>
+          </Pressable>
+          <Pressable style={styles.signOutButton} onPress={signOut}>
+            <Text style={styles.signOutButtonText}>Uitloggen</Text>
+          </Pressable>
+        </View>
       </View>
       {session?.user.email && (
         <Text style={styles.sessionEmail}>Ingelogd als {session.user.email}</Text>
@@ -70,6 +78,21 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: '#6B7190',
     marginTop: 4,
+  },
+  headerActions: {
+    flexDirection: 'row',
+    gap: 8,
+  },
+  accountButton: {
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    borderRadius: 999,
+    backgroundColor: '#E4E9FF',
+  },
+  accountButtonText: {
+    fontSize: 13,
+    fontWeight: '600',
+    color: '#3B4FD9',
   },
   signOutButton: {
     paddingHorizontal: 14,

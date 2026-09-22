@@ -1,28 +1,30 @@
+import { FunctionsHttpError } from '@supabase/supabase-js';
+
 import { supabase } from './supabase';
 
 /**
- * Verwijdert alle voortgangs- en profielgegevens van de ingelogde gebruiker
- * (concept_progress, lesson_progress, user_profiles). Werkt via de normale
- * Row Level Security-rechten van de gebruiker zelf — geen adminrechten nodig.
+ * Verwijdert het account van de ingelogde gebruiker volledig (D1), via de
+ * server-side delete-account Edge Function — het verwijderen van het
+ * inlogaccount vereist de service-role-sleutel, die nooit in de app-code
+ * mag staan. De ON DELETE CASCADE-koppelingen op user_profiles,
+ * lesson_progress, concept_progress en question_responses ruimen de rest
+ * van de gebruikersdata automatisch op zodra het inlogaccount weg is.
  *
- * Verwijdert NIET het inlogaccount zelf (auth.users): dat vereist een
- * geprivilegieerde server-side call (bijv. een Edge Function met de
- * service-role key) die hier bewust niet is gebouwd, omdat die key nooit
- * in client-code hoort. Dit is puur de "verwijder mijn data"-functie uit
- * §10 (AVG-lite); nog niet gekoppeld aan een UI-knop.
+ * Geeft bij een fout een gewone Error terug met het beste beschikbare
+ * bericht; de aanroeper zet dat zelf om naar een gebruikersvriendelijke
+ * melding via `toUserMessage` (zie networkError.ts), zoals overal elders.
  */
-export async function deleteMyData(): Promise<void> {
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-  if (!user) throw new Error('Niet ingelogd: geen data om te verwijderen.');
+export async function deleteAccount(): Promise<void> {
+  const { error } = await supabase.functions.invoke('delete-account', {
+    method: 'POST',
+  });
 
-  const [conceptResult, lessonResult, profileResult] = await Promise.all([
-    supabase.from('concept_progress').delete().eq('user_id', user.id),
-    supabase.from('lesson_progress').delete().eq('user_id', user.id),
-    supabase.from('user_profiles').delete().eq('user_id', user.id),
-  ]);
+  if (!error) return;
 
-  const error = conceptResult.error ?? lessonResult.error ?? profileResult.error;
-  if (error) throw error;
+  if (error instanceof FunctionsHttpError) {
+    const body = await error.context.json().catch(() => null);
+    throw new Error(body?.error ?? error.message);
+  }
+
+  throw error;
 }
