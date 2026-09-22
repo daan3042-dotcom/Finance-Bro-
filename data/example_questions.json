@@ -1,0 +1,204 @@
+{
+  "description": "Ankervragen per moeilijkheidstier voor Finance Bro. Per tier staan 3 voorbeelden met verschillend vraagformat en verschillend concept-domein, zodat automatische generatie niet in herhaling valt.",
+  "anchor_questions": [
+    {
+      "concept": "Rendement",
+      "tier": 1,
+      "format": "berekening",
+      "prerequisites": [],
+      "question": "Je zet €1.000 op een spaarrekening en na een jaar heb je €1.020. Wat is je rendement?",
+      "options": [
+        { "id": "a", "text": "2%" },
+        { "id": "b", "text": "20%" },
+        { "id": "c", "text": "€1.020" },
+        { "id": "d", "text": "€20" }
+      ],
+      "correct_option_id": "a",
+      "explanation": "Rendement is de winst uitgedrukt als percentage van je oorspronkelijke inleg: €20 winst op €1.000 inleg is 2%."
+    },
+    {
+      "concept": "Vraag en aanbod",
+      "tier": 1,
+      "format": "scenario-redenering",
+      "prerequisites": [],
+      "question": "De prijs van tomaten stijgt sterk nadat een misoogst het aanbod flink verkleint. Welke marktwerking verklaart dit het beste?",
+      "options": [
+        { "id": "a", "text": "Aanbod daalt terwijl de vraag gelijk blijft, dus stijgt de prijs" },
+        { "id": "b", "text": "Vraag daalt, dus stijgt de prijs" },
+        { "id": "c", "text": "Aanbod stijgt, dus stijgt de prijs" },
+        { "id": "d", "text": "Prijs en aanbod hebben geen verband met elkaar" }
+      ],
+      "correct_option_id": "a",
+      "explanation": "Bij een kleiner aanbod en gelijkblijvende vraag ontstaat schaarste, waardoor de prijs stijgt — de kern van vraag-en-aanbod."
+    },
+    {
+      "concept": "Balans",
+      "tier": 1,
+      "format": "wat-hoort-er-niet-bij",
+      "prerequisites": [],
+      "question": "Wat hoort NIET thuis op de balans van een bedrijf?",
+      "options": [
+        { "id": "a", "text": "Bezittingen (activa)" },
+        { "id": "b", "text": "Schulden (vreemd vermogen)" },
+        { "id": "c", "text": "Eigen vermogen" },
+        { "id": "d", "text": "Maandelijkse omzet" }
+      ],
+      "correct_option_id": "d",
+      "explanation": "Omzet is een stroomgrootheid over een periode en hoort op de resultatenrekening, niet op de balans, die een momentopname is van bezittingen en vermogen."
+    },
+
+    {
+      "concept": "Obligaties",
+      "tier": 2,
+      "format": "definitie-met-afleiders",
+      "prerequisites": ["Rente"],
+      "question": "Wat gebeurt er wanneer je een obligatie koopt?",
+      "options": [
+        { "id": "a", "text": "Je wordt mede-eigenaar van een bedrijf" },
+        { "id": "b", "text": "Je leent geld uit aan een bedrijf of overheid, dat het met rente terugbetaalt" },
+        { "id": "c", "text": "Je koopt een aandeel in een beursindex" },
+        { "id": "d", "text": "Je zet geld vast op een spaarrekening" }
+      ],
+      "correct_option_id": "b",
+      "explanation": "Een obligatie is een lening: de uitgever betaalt periodiek rente en lost de hoofdsom af op de vervaldatum. Dit onderscheidt een obligatie (lening) van een aandeel (eigenaarschap)."
+    },
+    {
+      "concept": "Rentabiliteit",
+      "tier": 2,
+      "format": "scenario-redenering",
+      "prerequisites": ["Balans", "Resultatenrekening"],
+      "question": "Een bedrijf boekt een flinke winst, maar heeft daarvoor maar weinig eigen vermogen ingezet. Wat zegt dit waarschijnlijk over de rentabiliteit?",
+      "options": [
+        { "id": "a", "text": "De rentabiliteit is laag, ondanks de winst" },
+        { "id": "b", "text": "De rentabiliteit is waarschijnlijk hoog, want de winst is groot ten opzichte van het ingezette vermogen" },
+        { "id": "c", "text": "Rentabiliteit heeft niets met winst te maken" },
+        { "id": "d", "text": "Rentabiliteit is alleen relevant voor beursgenoteerde bedrijven" }
+      ],
+      "correct_option_id": "b",
+      "explanation": "Rentabiliteit is winst als percentage van het ingezette vermogen. Een grote winst op een klein eigen vermogen levert een hoog percentage op."
+    },
+    {
+      "concept": "Diversificatie",
+      "tier": 2,
+      "format": "welk-voorbeeld-past",
+      "prerequisites": ["Risico"],
+      "question": "Welke van deze acties is een voorbeeld van diversificatie?",
+      "options": [
+        { "id": "a", "text": "Al je spaargeld in één aandeel steken" },
+        { "id": "b", "text": "Je geld verdelen over aandelen, obligaties en vastgoed" },
+        { "id": "c", "text": "Elke maand hetzelfde bedrag inleggen" },
+        { "id": "d", "text": "Kiezen voor de rekening met de hoogste rente" }
+      ],
+      "correct_option_id": "b",
+      "explanation": "Diversificatie betekent risico spreiden over verschillende soorten beleggingen, zodat een tegenvaller in één categorie minder impact heeft op het geheel."
+    },
+
+    {
+      "concept": "Obligatiekoersen vs rente (inverse relatie)",
+      "tier": 3,
+      "format": "scenario-redenering",
+      "prerequisites": ["Obligaties", "Rente"],
+      "question": "De centrale bank verhoogt de rente. Wat gebeurt er waarschijnlijk met de koers van bestaande obligaties met een vaste rente?",
+      "options": [
+        { "id": "a", "text": "De koers stijgt, want obligaties worden aantrekkelijker" },
+        { "id": "b", "text": "De koers daalt, want nieuwe obligaties bieden nu een hogere rente" },
+        { "id": "c", "text": "De koers blijft gelijk, rente heeft geen invloed" },
+        { "id": "d", "text": "De koers daalt tot nul" }
+      ],
+      "correct_option_id": "b",
+      "explanation": "Bestaande obligaties met een lagere vaste rente worden minder aantrekkelijk zodra nieuwe obligaties een hogere rente bieden, dus hun koers daalt totdat het effectieve rendement weer marktconform is."
+    },
+    {
+      "concept": "Cashflow vs winst",
+      "tier": 3,
+      "format": "scenario-redenering",
+      "prerequisites": ["Cashflow", "Resultatenrekening"],
+      "question": "Een bedrijf boekt winst op papier, maar heeft moeite om zijn facturen te betalen. Wat verklaart dit het beste?",
+      "options": [
+        { "id": "a", "text": "De winst is fout berekend" },
+        { "id": "b", "text": "Winst en cashflow zijn niet hetzelfde; de winst kan bestaan uit nog niet ontvangen betalingen" },
+        { "id": "c", "text": "Het bedrijf heeft te veel eigen vermogen" },
+        { "id": "d", "text": "De balans klopt niet" }
+      ],
+      "correct_option_id": "b",
+      "explanation": "Winst op de resultatenrekening houdt rekening met nog niet geïnde vorderingen, terwijl cashflow alleen het werkelijke geld dat binnenkomt en uitgaat meet. Een bedrijf kan dus winstgevend zijn maar toch een kasprobleem hebben."
+    },
+    {
+      "concept": "Volatiliteit",
+      "tier": 3,
+      "format": "vergelijking",
+      "prerequisites": ["Risico", "Diversificatie"],
+      "question": "Welke van deze twee beleggingen heeft doorgaans de hoogste volatiliteit: een staatsobligatie of een technologieaandeel?",
+      "options": [
+        { "id": "a", "text": "De staatsobligatie" },
+        { "id": "b", "text": "Het technologieaandeel" },
+        { "id": "c", "text": "Beide zijn even volatiel" },
+        { "id": "d", "text": "Volatiliteit is niet van toepassing op aandelen" }
+      ],
+      "correct_option_id": "b",
+      "explanation": "Technologieaandelen kennen doorgaans grotere koersschommelingen dan staatsobligaties, die als relatief stabiel gelden."
+    },
+
+    {
+      "concept": "Duration risk",
+      "tier": 4,
+      "format": "vergelijking",
+      "prerequisites": ["Obligatiekoersen vs rente (inverse relatie)"],
+      "question": "Twee obligaties hebben dezelfde rente, maar Obligatie A heeft een looptijd van 2 jaar en Obligatie B van 20 jaar. Bij een gelijke rentestijging, welke obligatie daalt sterker in koers?",
+      "options": [
+        { "id": "a", "text": "Obligatie A (kortere looptijd)" },
+        { "id": "b", "text": "Obligatie B (langere looptijd)" },
+        { "id": "c", "text": "Beide dalen precies even veel" },
+        { "id": "d", "text": "Geen van beide daalt, alleen de rente stijgt" }
+      ],
+      "correct_option_id": "b",
+      "explanation": "Duration meet de gevoeligheid van een obligatiekoers voor renteveranderingen en is hoger bij een langere looptijd. Obligatie B ondervindt daardoor een groter koersverlies bij dezelfde rentestijging."
+    },
+    {
+      "concept": "Portfolio-risicometrics (Sharpe ratio)",
+      "tier": 4,
+      "format": "vergelijking",
+      "prerequisites": ["Volatiliteit", "Asset allocation"],
+      "question": "Twee portefeuilles behalen hetzelfde rendement, maar Portefeuille A had een lagere volatiliteit dan Portefeuille B. Welke portefeuille heeft waarschijnlijk de hogere Sharpe ratio?",
+      "options": [
+        { "id": "a", "text": "Portefeuille A" },
+        { "id": "b", "text": "Portefeuille B" },
+        { "id": "c", "text": "Ze zijn gelijk" },
+        { "id": "d", "text": "De Sharpe ratio geldt niet voor portefeuilles" }
+      ],
+      "correct_option_id": "a",
+      "explanation": "De Sharpe ratio meet rendement per eenheid risico. Bij gelijk rendement en lager risico (volatiliteit) is de Sharpe ratio van Portefeuille A hoger."
+    },
+    {
+      "concept": "Macro-economische indicatoren",
+      "tier": 4,
+      "format": "keten-redenering",
+      "prerequisites": ["Rente & samengestelde interest", "Inflatie", "Obligatiekoersen vs rente (inverse relatie)"],
+      "question": "De inflatie stijgt sterk. Wat is de meest waarschijnlijke reactie van de centrale bank, en wat betekent dat voor bestaande obligatiekoersen?",
+      "options": [
+        { "id": "a", "text": "Rente verlagen, waardoor obligatiekoersen stijgen" },
+        { "id": "b", "text": "Rente verhogen, waardoor obligatiekoersen dalen" },
+        { "id": "c", "text": "Rente blijft gelijk, geen effect op obligaties" },
+        { "id": "d", "text": "Belastingen verlagen, geen effect op obligaties" }
+      ],
+      "correct_option_id": "b",
+      "explanation": "Centrale banken verhogen doorgaans de rente om inflatie af te remmen. Een hogere rente maakt nieuwe obligaties aantrekkelijker, waardoor bestaande obligaties met een lagere vaste rente in koers dalen — dit combineert twee eerder geleerde principes tot één keten."
+    }
+  ],
+  "format_rules": {
+    "options_per_question": 4,
+    "correct_answers": "exactly one",
+    "explanation_length": "1-2 zinnen, legt uit WAAROM het antwoord correct is, niet alleen WAT het antwoord is",
+    "format_variety": [
+      "berekening", "scenario-redenering", "definitie-met-afleiders", "wat-hoort-er-niet-bij",
+      "welk-voorbeeld-past", "vergelijking", "keten-redenering"
+    ],
+    "instructie_voor_generatie": "Gebruik nooit twee keer achter elkaar hetzelfde format voor dezelfde tier. Wissel binnen elke tier tussen minstens 3 van de bovenstaande formats en tussen verschillende concept-domeinen (niet alles over dezelfde onderwerpgroep zoals alleen obligaties/rente).",
+    "tier_calibration": {
+      "1": "Concrete voorbeelden, geen jargon, geen voorkennis van andere concepten. Dekt breed: rekenen, marktwerking, boekhoudkundige basisbegrippen, macro-basis.",
+      "2": "Definitie- of toepassingsvraag met afleiders die verwante tier-2-concepten gebruiken om onderscheid te testen.",
+      "3": "Scenario/toepassingsvraag die twee of meer tier-2-concepten combineert tot een redenering.",
+      "4": "Vereist de volledige conceptketen plus een tweede-orde-inzicht of het combineren van meerdere ketens (bijv. macro + obligaties)."
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "description": "Conceptgraaf voor Finance Bro. Tier 1 dekt brede financiele/bedrijfseconomische basisbegrippen (vergelijkbaar met jaar 1 HBO Bedrijfseconomie), zonder enige voorkennis. Tier 2-4 bouwen daarop voort richting beleggen.",
+  "concepts": [
+    { "id": "geld_waarde", "name": "Wat is geld / waarde", "tier": 1, "prerequisites": [] },
+    { "id": "sparen_vs_beleggen", "name": "Sparen vs beleggen", "tier": 1, "prerequisites": [] },
+    { "id": "rendement", "name": "Rendement", "tier": 1, "prerequisites": [] },
+    { "id": "risico", "name": "Risico", "tier": 1, "prerequisites": [] },
+    { "id": "inflatie", "name": "Inflatie", "tier": 1, "prerequisites": [] },
+    { "id": "tijdswaarde_geld", "name": "Tijdswaarde van geld", "tier": 1, "prerequisites": [] },
+    { "id": "liquiditeit", "name": "Liquiditeit", "tier": 1, "prerequisites": [] },
+    { "id": "vraag_en_aanbod", "name": "Vraag en aanbod", "tier": 1, "prerequisites": [] },
+    { "id": "bruto_netto", "name": "Bruto vs netto", "tier": 1, "prerequisites": [] },
+    { "id": "omzet_winst_marge", "name": "Omzet, winst en marge", "tier": 1, "prerequisites": [] },
+    { "id": "balans", "name": "Balans (activa, passiva, eigen vermogen)", "tier": 1, "prerequisites": [] },
+    { "id": "resultatenrekening", "name": "Resultatenrekening (winst-en-verliesrekening)", "tier": 1, "prerequisites": [] },
+    { "id": "cashflow", "name": "Cashflow (kasstroom)", "tier": 1, "prerequisites": [] },
+    { "id": "bbp", "name": "Bruto binnenlands product (BBP)", "tier": 1, "prerequisites": [] },
+    { "id": "begroten", "name": "Begroten / budgetteren", "tier": 1, "prerequisites": [] },
+
+    { "id": "rente_samengestelde_interest", "name": "Rente & samengestelde interest", "tier": 2, "prerequisites": ["rendement"] },
+    { "id": "aandelen", "name": "Aandelen (eigenaarschap)", "tier": 2, "prerequisites": ["risico", "rendement"] },
+    { "id": "obligaties", "name": "Obligaties", "tier": 2, "prerequisites": ["rente_samengestelde_interest"] },
+    { "id": "diversificatie", "name": "Diversificatie", "tier": 2, "prerequisites": ["risico"] },
+    { "id": "beurzen_indices", "name": "Beurzen & indices (AEX, S&P 500)", "tier": 2, "prerequisites": ["aandelen"] },
+    { "id": "rentabiliteit", "name": "Rentabiliteit (rendement op eigen vermogen)", "tier": 2, "prerequisites": ["balans", "resultatenrekening"] },
+    { "id": "solvabiliteit", "name": "Solvabiliteit", "tier": 2, "prerequisites": ["balans"] },
+
+    { "id": "obligatiekoersen_rente", "name": "Obligatiekoersen vs rente (inverse relatie)", "tier": 3, "prerequisites": ["obligaties", "rente_samengestelde_interest"] },
+    { "id": "pe_ratio", "name": "P/E-ratio & aandelenwaardering basis", "tier": 3, "prerequisites": ["aandelen"] },
+    { "id": "volatiliteit", "name": "Volatiliteit", "tier": 3, "prerequisites": ["risico", "diversificatie"] },
+    { "id": "dividend", "name": "Dividend", "tier": 3, "prerequisites": ["aandelen"] },
+    { "id": "asset_allocation", "name": "Asset allocation", "tier": 3, "prerequisites": ["diversificatie", "aandelen", "obligaties"] },
+    { "id": "lange_termijn_compounding", "name": "Lange termijn beleggen & compounding", "tier": 3, "prerequisites": ["rente_samengestelde_interest", "rendement"] },
+    { "id": "cashflow_vs_winst", "name": "Cashflow vs winst (het verschil)", "tier": 3, "prerequisites": ["cashflow", "resultatenrekening"] },
+
+    { "id": "macro_indicatoren", "name": "Macro-economische indicatoren", "tier": 4, "prerequisites": ["rente_samengestelde_interest", "inflatie"] },
+    { "id": "technische_analyse_basis", "name": "Technische analyse basis", "tier": 4, "prerequisites": ["beurzen_indices", "volatiliteit"] },
+    { "id": "duration_risk", "name": "Duration risk", "tier": 4, "prerequisites": ["obligatiekoersen_rente"] },
+    { "id": "portfolio_risicometrics", "name": "Portfolio-risicometrics (Sharpe ratio, drawdown)", "tier": 4, "prerequisites": ["volatiliteit", "asset_allocation"] },
+    { "id": "ict_methodologie_basics", "name": "ICT-methodologie basics (market structure, liquidity)", "tier": 4, "prerequisites": ["technische_analyse_basis"] }
+  ]
+}
