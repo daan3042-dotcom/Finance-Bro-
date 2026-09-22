@@ -75,6 +75,7 @@ Niels' eigen expertise (macro-analyse, opties, hedge fund) wordt **nog niet** ac
 - Marketing/groei-strategie (App Store SEO, social, mond-tot-mond)
 - Niels' eigen beleggingsexpertise als contentbron — §14
 - Volledig AVG/GDPR-traject (na lancering, lichte versie loopt al mee) — §10
+- Adaptief leerpad op basis van IRT (Item Response Theory) en Bayesian Knowledge Tracing — pas relevant zodra er een gebruikersbestand is dat voldoende antwoorddata genereert om moeilijkheids- en discriminatieparameters empirisch te kalibreren tegen de huidige rubriek-gebaseerde difficulty_prior. De concepts- en difficulty_prior-velden die nu al aan vragen worden toegevoegd, leggen hier de basis voor zonder de volledige architectuur nu te bouwen.
 
 ## 17. Besluiten-log
 - **21 sept 2026:** Stack bijgesteld van web-first (Next.js MVP) naar native mobile-first (React Native/Expo), iOS + Android gelijktijdig.

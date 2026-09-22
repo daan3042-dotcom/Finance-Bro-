@@ -11,3 +11,7 @@ Lees docs/project-instructions.md en docs/filosofie.md bij aanvang van elke sess
 ## Besluitenlog
 
 Besluit 21/22 sept 2026: voor nu wordt lokale opslag (AsyncStorage) gebruikt voor voortgang, zoals al gebouwd. Supabase wordt later toegevoegd, specifiek voor gebruikersaccounts en betaalstatus (freemium-laag), niet voor de huidige lokale testfase. Dit is een tijdelijke afwijking van §13 van project-instructions.md, geen permanente koerswijziging.
+
+## Contentregel: moeilijkheidsopbouw
+
+Moeilijkheidsgraad loopt op binnen elke les (lichtste vragen eerst, zwaarste als afsluiter) EN over de hele track heen (les 1 is de laagdrempeligste instap, latere lessen bouwen voort in complexiteit). Deze regel geldt voor alle modules, niet alleen macro.json.
