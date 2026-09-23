@@ -6,6 +6,12 @@ export type ModuleLessonProgress = {
   correctCount: number;
   incorrectCount: number;
   seenQuestionIndices: number[];
+  /**
+   * true als deze les als voltooid is gezet door de diagnosetoets-plaatsing
+   * (de gebruiker heeft de les zelf niet gespeeld), false als de gebruiker
+   * de les daadwerkelijk heeft doorlopen.
+   */
+  placedViaDiagnostic: boolean;
 };
 
 export type ModuleProgressState = {
@@ -17,6 +23,7 @@ const emptyLessonProgress: ModuleLessonProgress = {
   correctCount: 0,
   incorrectCount: 0,
   seenQuestionIndices: [],
+  placedViaDiagnostic: false,
 };
 
 type LessonProgressRow = {
@@ -27,6 +34,7 @@ type LessonProgressRow = {
   correct_count: number;
   incorrect_count: number;
   seen_question_indices: number[] | null;
+  placed_via_diagnostic: boolean;
 };
 
 function lessonKey(moduleId: string, track: ModuleTrack, lessonId: string): string {
@@ -50,7 +58,9 @@ export async function loadModuleProgress(): Promise<ModuleProgressState> {
 
   const { data, error } = await supabase
     .from('lesson_progress')
-    .select('module_id, track, lesson_id, completed, correct_count, incorrect_count, seen_question_indices')
+    .select(
+      'module_id, track, lesson_id, completed, correct_count, incorrect_count, seen_question_indices, placed_via_diagnostic'
+    )
     .eq('user_id', userId);
 
   if (error) throw error;
@@ -63,6 +73,7 @@ export async function loadModuleProgress(): Promise<ModuleProgressState> {
       correctCount: row.correct_count,
       incorrectCount: row.incorrect_count,
       seenQuestionIndices: row.seen_question_indices ?? [],
+      placedViaDiagnostic: row.placed_via_diagnostic,
     };
   }
   return { lessons };
@@ -83,6 +94,7 @@ export async function saveModuleProgress(state: ModuleProgressState): Promise<vo
       correct_count: progress.correctCount,
       incorrect_count: progress.incorrectCount,
       seen_question_indices: progress.seenQuestionIndices,
+      placed_via_diagnostic: progress.placedViaDiagnostic,
       updated_at: new Date().toISOString(),
     };
   });
@@ -156,6 +168,28 @@ export function withLessonCompleted(
   const current = getModuleLessonProgress(state, moduleId, track, lessonId);
   return {
     ...state,
-    lessons: { ...state.lessons, [key]: { ...current, completed: true } },
+    // Een echt doorlopen les telt altijd als "echt gedaan", ook als hij
+    // eerder via de diagnosetoets was overgeslagen.
+    lessons: { ...state.lessons, [key]: { ...current, completed: true, placedViaDiagnostic: false } },
+  };
+}
+
+/**
+ * Markeert een les als voltooid via de diagnosetoets-plaatsing (de gebruiker
+ * heeft de les zelf niet gespeeld). Overschrijft nooit een les die de
+ * gebruiker al daadwerkelijk heeft doorlopen.
+ */
+export function withLessonPlaced(
+  state: ModuleProgressState,
+  moduleId: string,
+  track: ModuleTrack,
+  lessonId: string
+): ModuleProgressState {
+  const key = lessonKey(moduleId, track, lessonId);
+  const current = getModuleLessonProgress(state, moduleId, track, lessonId);
+  if (current.completed) return state;
+  return {
+    ...state,
+    lessons: { ...state.lessons, [key]: { ...current, completed: true, placedViaDiagnostic: true } },
   };
 }

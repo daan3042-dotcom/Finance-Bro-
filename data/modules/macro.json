@@ -17,6 +17,7 @@
             "format": "definitie-met-afleiders",
             "concepts": ["macro-economie"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat bestudeert macro-economie?",
             "options": [
               { "id": "a", "text": "De economie van een land als geheel: groei, prijzen, werk en rente" },
@@ -32,6 +33,7 @@
             "format": "wat-hoort-er-niet-bij",
             "concepts": ["macro-economie"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat hoort NIET bij de pijlers van macro-economie die in deze module aan bod komen (BBP, inflatie, werkloosheid, rente)?",
             "options": [
               { "id": "a", "text": "Het bruto binnenlands product van een land" },
@@ -47,6 +49,7 @@
             "format": "welk-voorbeeld-past",
             "concepts": ["BBP"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Welke van deze activiteiten telt mee in het BBP van een land?",
             "options": [
               { "id": "a", "text": "Een kapper die een klant knipt en daarvoor betaald krijgt" },
@@ -62,6 +65,7 @@
             "format": "vergelijking",
             "concepts": ["BBP"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Land A heeft een groeiend BBP, land B een krimpend BBP. Welk land produceert relatief meer waarde ten opzichte van vorig jaar?",
             "options": [
               { "id": "a", "text": "Land A" },
@@ -77,6 +81,7 @@
             "format": "scenario-redenering",
             "concepts": ["BBP"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Fabrieken in een land draaien harder en winkels verkopen dit jaar meer dan vorig jaar. Wat betekent dit waarschijnlijk voor het BBP?",
             "options": [
               { "id": "a", "text": "Het BBP stijgt waarschijnlijk, want er wordt meer geproduceerd en verkocht" },
@@ -92,6 +97,7 @@
             "format": "berekening",
             "concepts": ["BBP"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Land X produceert in jaar 1 voor €500 miljard aan goederen en diensten. In jaar 2 is dat €520 miljard. Wat is er gebeurd met het BBP?",
             "options": [
               { "id": "a", "text": "Het BBP is gestegen, de economie is gegroeid" },
@@ -107,6 +113,7 @@
             "format": "keten-redenering",
             "concepts": ["BBP", "macro-economie"],
             "difficulty_prior": 4,
+            "cognitive_level": 4,
             "question": "Het BBP van een land stijgt drie jaar op rij. Wat vertelt dit, stap voor stap, over de economie als geheel?",
             "options": [
               { "id": "a", "text": "Eerst produceert het land elk jaar meer waarde (een hoger BBP); omdat macro-economie precies dit soort brede, landelijke patronen bestudeert, wijst dit op een groeiende economie als geheel" },
@@ -130,6 +137,7 @@
             "format": "definitie-met-afleiders",
             "concepts": ["inflatie"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat is inflatie?",
             "options": [
               { "id": "a", "text": "De gemiddelde stijging van prijzen in een land over een periode" },
@@ -145,6 +153,7 @@
             "format": "welk-voorbeeld-past",
             "concepts": ["inflatie"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Welke situatie leidt het meest waarschijnlijk tot inflatie?",
             "options": [
               { "id": "a", "text": "Veel mensen willen een product kopen, terwijl winkels er te weinig van hebben" },
@@ -160,6 +169,7 @@
             "format": "wat-hoort-er-niet-bij",
             "concepts": ["inflatie"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat hoort NIET bij de gevolgen van hoge inflatie?",
             "options": [
               { "id": "a", "text": "Je koopkracht daalt" },
@@ -175,6 +185,7 @@
             "format": "scenario-redenering",
             "concepts": ["inflatie", "koopkracht"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "Je verdient dit jaar hetzelfde salaris als vorig jaar, maar de gemiddelde prijzen zijn met 5% gestegen. Wat gebeurt er met je koopkracht?",
             "options": [
               { "id": "a", "text": "Je koopkracht daalt, want je kunt met hetzelfde geld minder kopen" },
@@ -190,6 +201,7 @@
             "format": "vergelijking",
             "concepts": ["inflatie", "koopkracht"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "Land A heeft een inflatie van 2% per jaar, land B van 15% per jaar. In welk land daalt de koopkracht van spaargeld het snelst?",
             "options": [
               { "id": "a", "text": "Land A" },
@@ -205,6 +217,7 @@
             "format": "berekening",
             "concepts": ["inflatie"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Een brood kostte vorig jaar €2,00. Door inflatie van 10% kost hetzelfde brood dit jaar meer. Wat is de nieuwe prijs?",
             "options": [
               { "id": "a", "text": "€2,20" },
@@ -220,6 +233,7 @@
             "format": "keten-redenering",
             "concepts": ["inflatie"],
             "difficulty_prior": 4,
+            "cognitive_level": 4,
             "question": "De vraag naar chips explodeert wereldwijd, maar fabrieken kunnen niet snel genoeg meer produceren. Wat is de meest waarschijnlijke keten van gevolgen?",
             "options": [
               { "id": "a", "text": "Chips worden schaars, prijzen stijgen, en dit draagt bij aan hogere inflatie" },
@@ -243,6 +257,7 @@
             "format": "definitie-met-afleiders",
             "concepts": ["werkloosheid"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat is werkloosheid, zoals gemeten in macro-economische cijfers?",
             "options": [
               { "id": "a", "text": "Het percentage van de beroepsbevolking dat kan en wil werken, maar geen baan heeft" },
@@ -258,6 +273,7 @@
             "format": "vergelijking",
             "concepts": ["werkloosheid"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Land A heeft een werkloosheidspercentage van 3%, land B van 12%. In welk land vinden relatief meer mensen die willen werken géén baan?",
             "options": [
               { "id": "a", "text": "Land A" },
@@ -273,6 +289,7 @@
             "format": "scenario-redenering",
             "concepts": ["BBP", "werkloosheid"],
             "difficulty_prior": 5,
+            "cognitive_level": 5,
             "question": "Een economie groeit sterk: bedrijven draaien op volle toeren en verkopen recordaantallen producten. Wat gebeurt er waarschijnlijk met de werkloosheid?",
             "options": [
               { "id": "a", "text": "De werkloosheid daalt, want bedrijven hebben meer personeel nodig" },
@@ -288,6 +305,7 @@
             "format": "welk-voorbeeld-past",
             "concepts": ["frictiewerkloosheid"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Welk voorbeeld past het beste bij structureel hoge werkloosheid, in plaats van normale frictiewerkloosheid?",
             "options": [
               { "id": "a", "text": "Een fabriekswerker die drie jaar lang geen vergelijkbare baan kan vinden nadat zijn hele sector is verdwenen" },
@@ -303,6 +321,7 @@
             "format": "wat-hoort-er-niet-bij",
             "concepts": ["frictiewerkloosheid"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat hoort NIET bij een normale, gezonde vorm van werkloosheid (frictiewerkloosheid)?",
             "options": [
               { "id": "a", "text": "Iemand die net is afgestudeerd en op zoek is naar een eerste baan" },
@@ -318,6 +337,7 @@
             "format": "berekening",
             "concepts": ["werkloosheid"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Een land heeft een beroepsbevolking van 1.000.000 mensen, waarvan er 40.000 geen baan hebben maar wel actief op zoek zijn. Wat is het werkloosheidspercentage?",
             "options": [
               { "id": "a", "text": "4%" },
@@ -333,6 +353,7 @@
             "format": "keten-redenering",
             "concepts": ["BBP", "werkloosheid"],
             "difficulty_prior": 5,
+            "cognitive_level": 5,
             "question": "Een recessie zorgt ervoor dat bedrijven minder verkopen. Wat is de meest waarschijnlijke keten van gevolgen voor de werkloosheid?",
             "options": [
               { "id": "a", "text": "Bedrijven verkopen minder, hebben minder personeel nodig, en ontslaan mensen, waardoor de werkloosheid stijgt" },
@@ -356,6 +377,7 @@
             "format": "definitie-met-afleiders",
             "concepts": ["rente"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat is de rol van de beleidsrente van een centrale bank?",
             "options": [
               { "id": "a", "text": "Een instrument om de economie bij te sturen door lenen duurder of goedkoper te maken" },
@@ -371,6 +393,7 @@
             "format": "vergelijking",
             "concepts": ["rente"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Land A verhoogt de rente, land B verlaagt de rente. In welk land wordt lenen voor consumenten en bedrijven duurder?",
             "options": [
               { "id": "a", "text": "Land A" },
@@ -386,6 +409,7 @@
             "format": "welk-voorbeeld-past",
             "concepts": ["rente"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Welke situatie past het beste bij een centrale bank die de rente verlaagt?",
             "options": [
               { "id": "a", "text": "Een recessie met hoge werkloosheid, waarbij de economie een impuls nodig heeft" },
@@ -401,6 +425,7 @@
             "format": "scenario-redenering",
             "concepts": ["inflatie", "rente"],
             "difficulty_prior": 5,
+            "cognitive_level": 5,
             "question": "De inflatie in een land loopt sterk op. Wat is de meest waarschijnlijke reactie van de centrale bank?",
             "options": [
               { "id": "a", "text": "De rente verhogen, om lenen en uitgeven af te remmen" },
@@ -416,6 +441,7 @@
             "format": "wat-hoort-er-niet-bij",
             "concepts": ["rente"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat hoort NIET bij het effect van een rentestijging door de centrale bank?",
             "options": [
               { "id": "a", "text": "Lenen wordt duurder voor consumenten en bedrijven" },
@@ -431,6 +457,7 @@
             "format": "berekening",
             "concepts": ["rente"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Je leent €10.000 tegen een rente van 5% per jaar. Hoeveel rente betaal je in het eerste jaar (zonder aflossing)?",
             "options": [
               { "id": "a", "text": "€500" },
@@ -446,6 +473,7 @@
             "format": "keten-redenering",
             "concepts": ["rente", "inflatie", "werkloosheid"],
             "difficulty_prior": 5,
+            "cognitive_level": 5,
             "question": "De centrale bank verhoogt de rente fors om hoge inflatie te bestrijden. Wat is de meest waarschijnlijke keten van gevolgen op de langere termijn?",
             "options": [
               { "id": "a", "text": "Lenen wordt duurder, bestedingen en investeringen nemen af, de economie groeit trager en de inflatie koelt af — maar de werkloosheid kan oplopen" },
@@ -469,6 +497,7 @@
             "format": "definitie-met-afleiders",
             "concepts": ["economische cyclus"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat is de economische cyclus?",
             "options": [
               { "id": "a", "text": "Het terugkerende patroon van groei en krimp, waarbij BBP, inflatie, werkloosheid en rente op elkaar inspelen" },
@@ -484,6 +513,7 @@
             "format": "vergelijking",
             "concepts": ["economische cyclus", "werkloosheid"],
             "difficulty_prior": 5,
+            "cognitive_level": 5,
             "question": "Vergelijk twee fases van de economische cyclus: expansie versus recessie. In welke fase is de werkloosheid doorgaans lager?",
             "options": [
               { "id": "a", "text": "Expansie" },
@@ -499,6 +529,7 @@
             "format": "welk-voorbeeld-past",
             "concepts": ["BBP", "werkloosheid", "rente"],
             "difficulty_prior": 5,
+            "cognitive_level": 5,
             "question": "Welke combinatie van signalen past het beste bij het begin van een recessie?",
             "options": [
               { "id": "a", "text": "Dalend BBP, stijgende werkloosheid, een centrale bank die de rente verlaagt" },
@@ -514,6 +545,7 @@
             "format": "scenario-redenering",
             "concepts": ["economische cyclus", "inflatie"],
             "difficulty_prior": 5,
+            "cognitive_level": 5,
             "question": "Een economie bevindt zich in een expansiefase: het BBP groeit hard en de werkloosheid is laag. Wat is een mogelijk risico dat hierbij kan ontstaan?",
             "options": [
               { "id": "a", "text": "Oplopende inflatie, doordat de vraag het aanbod overtreft" },
@@ -529,6 +561,7 @@
             "format": "wat-hoort-er-niet-bij",
             "concepts": ["recessie"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat hoort NIET bij de kenmerken van een recessiefase in de economische cyclus?",
             "options": [
               { "id": "a", "text": "Het BBP krimpt twee kwartalen op rij" },
@@ -544,6 +577,7 @@
             "format": "berekening",
             "concepts": ["recessie"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Het BBP van een land was €800 miljard, en daalt twee kwartalen op rij met in totaal 3% naar €776 miljard. Hoe zou een econoom deze situatie het meest waarschijnlijk noemen?",
             "options": [
               { "id": "a", "text": "Een recessie, want het BBP krimpt twee kwartalen op rij" },
@@ -559,6 +593,7 @@
             "format": "keten-redenering",
             "concepts": ["economische cyclus", "rente", "werkloosheid"],
             "difficulty_prior": 5,
+            "cognitive_level": 5,
             "question": "Een economie groeit te snel en de inflatie loopt op. De centrale bank verhoogt de rente flink. Wat is de meest waarschijnlijke keten van gevolgen voor BBP en werkloosheid op de langere termijn?",
             "options": [
               { "id": "a", "text": "Bestedingen en investeringen nemen af, de BBP-groei vertraagt, en de werkloosheid kan oplopen" },
@@ -584,6 +619,7 @@
             "format": "definitie-met-afleiders",
             "concepts": ["reëel BBP"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat is het verschil tussen nominaal en reëel BBP?",
             "options": [
               { "id": "a", "text": "Reëel BBP is gecorrigeerd voor inflatie, nominaal BBP niet" },
@@ -599,6 +635,7 @@
             "format": "wat-hoort-er-niet-bij",
             "concepts": ["reëel BBP"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat hoort NIET bij de redenen om reëel BBP te gebruiken in plaats van nominaal BBP?",
             "options": [
               { "id": "a", "text": "Reëel BBP filtert het effect van prijsstijgingen eruit" },
@@ -614,6 +651,7 @@
             "format": "welk-voorbeeld-past",
             "concepts": ["nominaal BBP"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Welk voorbeeld illustreert het beste waarom nominaal BBP misleidend kan zijn?",
             "options": [
               { "id": "a", "text": "Een land waar de prijzen dit jaar met 8% zijn gestegen, maar de productie exact gelijk is gebleven, ziet toch een stijging in het nominale BBP" },
@@ -629,6 +667,7 @@
             "format": "scenario-redenering",
             "concepts": ["BBP per hoofd"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Land X heeft een veel hoger totaal-BBP dan land Y, maar land Y heeft veel minder inwoners. Waarom zegt het totale BBP alleen niet genoeg over de welvaart van de gemiddelde inwoner?",
             "options": [
               { "id": "a", "text": "Omdat een land met veel inwoners een hoger totaal-BBP kan hebben zonder dat individuele inwoners rijker zijn — BBP per hoofd corrigeert hiervoor" },
@@ -644,6 +683,7 @@
             "format": "vergelijking",
             "concepts": ["nominaal BBP", "reëel BBP"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "Land A had dit jaar 3% prijsstijging en 3% extra productie. Land B had ook 3% prijsstijging, maar 0% extra productie. Beide landen tonen dus eenzelfde stijging in nominaal BBP. Welk land heeft een hogere groei in reëel BBP?",
             "options": [
               { "id": "a", "text": "Land A" },
@@ -659,6 +699,7 @@
             "format": "berekening",
             "concepts": ["reëel BBP", "BBP per hoofd"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "Land Q heeft een reëel BBP van €600 miljard en 20 miljoen inwoners. Wat is het reële BBP per hoofd?",
             "options": [
               { "id": "a", "text": "€30.000" },
@@ -674,6 +715,7 @@
             "format": "keten-redenering",
             "concepts": ["nominaal BBP", "reëel BBP", "inflatie"],
             "difficulty_prior": 5,
+            "cognitive_level": 5,
             "question": "Land Z heeft dit jaar 6% inflatie, en het nominale BBP steeg ook met 6%. Wat vertelt dit, stap voor stap, over de reële productie van het land?",
             "options": [
               { "id": "a", "text": "Aangezien de volledige nominale groei van 6% overeenkomt met de inflatie van 6%, is de reële BBP-groei ongeveer 0% — het land heeft dus niet daadwerkelijk meer geproduceerd, ook al lijkt het nominale cijfer op groei te wijzen" },
@@ -697,6 +739,7 @@
             "format": "definitie-met-afleiders",
             "concepts": ["prijzenmandje"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat is het prijzenmandje binnen de CPI-berekening?",
             "options": [
               { "id": "a", "text": "Een representatieve verzameling producten en diensten waarvan de prijsverandering wordt gevolgd om inflatie te meten" },
@@ -712,6 +755,7 @@
             "format": "wat-hoort-er-niet-bij",
             "concepts": ["kerninflatie"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat hoort NIET bij de reden waarom economen kerninflatie apart bijhouden naast de gewone CPI?",
             "options": [
               { "id": "a", "text": "Energie- en voedselprijzen schommelen sterk door tijdelijke factoren" },
@@ -727,6 +771,7 @@
             "format": "welk-voorbeeld-past",
             "concepts": ["CPI", "kerninflatie"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "Welk voorbeeld illustreert het beste waarom kerninflatie soms een ander beeld geeft dan de totale CPI?",
             "options": [
               { "id": "a", "text": "Een plotselinge oliecrisis laat de energieprijzen (en dus de totale CPI) fors stijgen, terwijl de prijzen van de meeste andere producten stabiel blijven" },
@@ -742,6 +787,7 @@
             "format": "vergelijking",
             "concepts": ["CPI", "kerninflatie"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "Land A heeft een totale CPI-inflatie van 6%, waarvan het grootste deel door een tijdelijke energieprijsstijging komt; de kerninflatie is 2%. Land B heeft een totale CPI van 4% én een kerninflatie van 4%. In welk land is de onderliggende, structurele prijsdruk waarschijnlijk het hoogst?",
             "options": [
               { "id": "a", "text": "Land B, want daar is de kerninflatie (zonder tijdelijke energie-effecten) hoger dan in land A" },
@@ -757,6 +803,7 @@
             "format": "scenario-redenering",
             "concepts": ["CPI", "kerninflatie"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "De prijzen van voedsel en energie in een land dalen dit kwartaal sterk door een goede oogst en lagere olieprijzen, terwijl de prijzen van de meeste andere producten en diensten gelijk blijven. Wat gebeurt er waarschijnlijk met de kerninflatie ten opzichte van de totale CPI?",
             "options": [
               { "id": "a", "text": "De kerninflatie blijft relatief stabiel, terwijl de totale CPI daalt door de goedkopere energie en voeding" },
@@ -772,6 +819,7 @@
             "format": "berekening",
             "concepts": ["CPI", "prijzenmandje"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "Het prijzenmandje van een land kost dit jaar €2.500 per maand voor een gemiddeld huishouden. Vorig jaar kostte hetzelfde mandje €2.400. Wat is de CPI-inflatie (procentuele stijging), afgerond?",
             "options": [
               { "id": "a", "text": "Ongeveer 4,2%" },
@@ -787,6 +835,7 @@
             "format": "keten-redenering",
             "concepts": ["kerninflatie", "rente"],
             "difficulty_prior": 5,
+            "cognitive_level": 5,
             "question": "Energieprijzen stijgen fors door een internationale crisis. Dit duwt de totale CPI flink omhoog, maar de kerninflatie blijft nagenoeg stabiel. Wat betekent dit, stap voor stap, voor hoe een centraal bankier deze inflatie zou moeten interpreteren?",
             "options": [
               { "id": "a", "text": "Omdat de kerninflatie stabiel blijft, wijst dit erop dat de prijsdruk vooral tijdelijk en energie-gedreven is, niet structureel — een centraal bankier zou dit signaal meewegen bij het besluit om al dan niet de rente te verhogen" },
@@ -810,6 +859,7 @@
             "format": "definitie-met-afleiders",
             "concepts": ["conjuncturele werkloosheid"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat is conjuncturele werkloosheid?",
             "options": [
               { "id": "a", "text": "Werkloosheid die ontstaat doordat de economie krimpt en bedrijven massaal minder personeel nodig hebben" },
@@ -825,6 +875,7 @@
             "format": "wat-hoort-er-niet-bij",
             "concepts": ["natuurlijke werkloosheidsvoet"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat hoort NIET bij de natuurlijke werkloosheidsvoet?",
             "options": [
               { "id": "a", "text": "Frictiewerkloosheid telt hierin mee" },
@@ -840,6 +891,7 @@
             "format": "welk-voorbeeld-past",
             "concepts": ["conjuncturele werkloosheid"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Welk voorbeeld illustreert het beste conjuncturele werkloosheid?",
             "options": [
               { "id": "a", "text": "Duizenden mensen raken hun baan kwijt doordat de economie in een recessie belandt en bedrijven minder verkopen" },
@@ -855,6 +907,7 @@
             "format": "vergelijking",
             "concepts": ["natuurlijke werkloosheidsvoet", "conjuncturele werkloosheid"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "Land A heeft een werkloosheidspercentage van 6%, waarvan naar schatting 4 procentpunt structureel/frictie is en 2 procentpunt conjunctureel (door een recessie). Land B heeft een werkloosheidspercentage van 5%, allemaal structureel/frictie, geen conjunctureel aandeel. Welk land zit dichter bij zijn natuurlijke werkloosheidsvoet?",
             "options": [
               { "id": "a", "text": "Land B, want daar bestaat de volledige 5% uit frictie/structurele werkloosheid — dat ís de natuurlijke voet in dat land" },
@@ -870,6 +923,7 @@
             "format": "scenario-redenering",
             "concepts": ["natuurlijke werkloosheidsvoet", "conjuncturele werkloosheid"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "Een economie krimpt sterk. Wat gebeurt er waarschijnlijk met het conjuncturele deel van de werkloosheid, en hoe verhoudt het totale werkloosheidspercentage zich dan tot de natuurlijke werkloosheidsvoet?",
             "options": [
               { "id": "a", "text": "Het conjuncturele deel stijgt, waardoor het totale werkloosheidspercentage boven de natuurlijke werkloosheidsvoet uitkomt" },
@@ -885,6 +939,7 @@
             "format": "berekening",
             "concepts": ["natuurlijke werkloosheidsvoet", "conjuncturele werkloosheid"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "Het totale werkloosheidspercentage van een land is 9%. Economen schatten de natuurlijke werkloosheidsvoet (frictie + structureel) op 5%. Hoeveel procentpunt van de werkloosheid is waarschijnlijk conjunctureel?",
             "options": [
               { "id": "a", "text": "4 procentpunt" },
@@ -900,6 +955,7 @@
             "format": "keten-redenering",
             "concepts": ["natuurlijke werkloosheidsvoet", "inflatie"],
             "difficulty_prior": 5,
+            "cognitive_level": 5,
             "question": "Een overheid probeert de werkloosheid via stimuleringsbeleid structureel onder de natuurlijke werkloosheidsvoet te duwen. Wat is, volgens veel economen, de meest waarschijnlijke keten van gevolgen op de langere termijn?",
             "options": [
               { "id": "a", "text": "De economie raakt oververhit: de vraag naar arbeid overtreft het aanbod, lonen en prijzen komen onder opwaartse druk, en de inflatie loopt op zonder dat de werkloosheid blijvend onder de natuurlijke voet blijft" },
@@ -923,6 +979,7 @@
             "format": "definitie-met-afleiders",
             "concepts": ["rentecurve"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat is de rentecurve?",
             "options": [
               { "id": "a", "text": "De grafiek die laat zien hoe de rente varieert met de looptijd van een lening, van kort tot lang" },
@@ -938,6 +995,7 @@
             "format": "wat-hoort-er-niet-bij",
             "concepts": ["rentecurve"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat hoort NIET bij een normale (niet-geïnverteerde) rentecurve?",
             "options": [
               { "id": "a", "text": "De rente op langlopende leningen ligt hoger dan op kortlopende" },
@@ -953,6 +1011,7 @@
             "format": "welk-voorbeeld-past",
             "concepts": ["geïnverteerde rentecurve"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Welke situatie past het beste bij een geïnverteerde rentecurve?",
             "options": [
               { "id": "a", "text": "Beleggers verwachten dat de centrale bank de rente op korte termijn nog verder verhoogt, maar op langere termijn weer moet verlagen vanwege een naderende economische vertraging" },
@@ -968,6 +1027,7 @@
             "format": "vergelijking",
             "concepts": ["rentecurve", "geïnverteerde rentecurve"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "Land A heeft een korte rente van 5% en een lange rente van 3%. Land B heeft een korte rente van 3% en een lange rente van 5%. Welk land heeft een geïnverteerde rentecurve?",
             "options": [
               { "id": "a", "text": "Land A, want daar ligt de korte rente hoger dan de lange" },
@@ -983,6 +1043,7 @@
             "format": "scenario-redenering",
             "concepts": ["rentecurve", "geïnverteerde rentecurve"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "Beleggers verwachten steeds vaker dat een recessie nadert. Wat gebeurt er, op basis daarvan, waarschijnlijk met de vorm van de rentecurve?",
             "options": [
               { "id": "a", "text": "De curve kan invers gaan lopen, doordat beleggers een toekomstige renteverlaging (bij een recessie) inprijzen in de lange rente, terwijl de korte rente nog hoog blijft" },
@@ -998,6 +1059,7 @@
             "format": "berekening",
             "concepts": ["rentecurve", "geïnverteerde rentecurve"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "De korte rente van een land is 4,5%. De lange rente is 4,5% min 1,2 procentpunt. Wat is de lange rente, en is de curve hiermee geïnverteerd?",
             "options": [
               { "id": "a", "text": "3,3%, en ja, de curve is geïnverteerd (korte rente hoger dan lange)" },
@@ -1013,6 +1075,7 @@
             "format": "keten-redenering",
             "concepts": ["geïnverteerde rentecurve", "BBP"],
             "difficulty_prior": 5,
+            "cognitive_level": 5,
             "question": "De rentecurve van een land inverteert. Historisch gezien gaat dit vaak een recessie vooraf. Wat is, stap voor stap, de meest waarschijnlijke keten van gebeurtenissen die hieraan ten grondslag ligt?",
             "options": [
               { "id": "a", "text": "Beleggers verwachten een economische vertraging, prijzen toekomstige renteverlagingen in via een lagere lange rente, de curve inverteert, en als de verwachte vertraging zich vervolgens voordoet, daalt het BBP en kan een recessie volgen" },
@@ -1036,6 +1099,7 @@
             "format": "definitie-met-afleiders",
             "concepts": ["leidende indicator"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat is een leidende indicator binnen de economische cyclus?",
             "options": [
               { "id": "a", "text": "Een indicator die verandert vóórdat de economie zelf omslaat, en zo een vroeg signaal geeft" },
@@ -1051,6 +1115,7 @@
             "format": "wat-hoort-er-niet-bij",
             "concepts": ["achterlopende indicator"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat hoort NIET bij een achterlopende indicator?",
             "options": [
               { "id": "a", "text": "Werkloosheid, omdat bedrijven pas ontslaan nadat de vraag al is teruggelopen" },
@@ -1066,6 +1131,7 @@
             "format": "welk-voorbeeld-past",
             "concepts": ["samenlopende indicator"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Welk voorbeeld past het beste bij een samenlopende indicator?",
             "options": [
               { "id": "a", "text": "Het BBP, dat de omvang van de economie meet terwijl die zich voordoet" },
@@ -1081,6 +1147,7 @@
             "format": "vergelijking",
             "concepts": ["leidende indicator", "achterlopende indicator"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "Vergelijk twee indicatoren binnen de economische cyclus: de rentecurve en werkloosheid. Welke van de twee geeft doorgaans het VROEGSTE signaal van een aankomende economische omslag?",
             "options": [
               { "id": "a", "text": "De rentecurve, want die is een leidende indicator" },
@@ -1096,6 +1163,7 @@
             "format": "scenario-redenering",
             "concepts": ["achterlopende indicator", "samenlopende indicator"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "Een economie is net een recessie ingegaan. Volgens het raamwerk van leidende, samenlopende en achterlopende indicatoren, wanneer zal het werkloosheidscijfer waarschijnlijk pas duidelijk gaan stijgen ten opzichte van het moment waarop het BBP al begint te dalen?",
             "options": [
               { "id": "a", "text": "Pas enige tijd NA het begin van de BBP-daling, omdat werkloosheid een achterlopende indicator is" },
@@ -1111,6 +1179,7 @@
             "format": "berekening",
             "concepts": ["leidende indicator", "achterlopende indicator"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "Een leidende indicator begint gemiddeld 6 maanden vóór een omslag te veranderen. Een achterlopende indicator reageert gemiddeld 9 maanden NA een omslag. Hoeveel maanden verschil zit er tussen het moment waarop de leidende indicator begint te bewegen en het moment waarop de achterlopende indicator reageert?",
             "options": [
               { "id": "a", "text": "15 maanden" },
@@ -1126,6 +1195,7 @@
             "format": "keten-redenering",
             "concepts": ["leidende indicator", "samenlopende indicator", "achterlopende indicator"],
             "difficulty_prior": 4,
+            "cognitive_level": 4,
             "question": "De rentecurve van een land begint te inverteren. Volgens het raamwerk van leidende/samenlopende/achterlopende indicatoren, wat is de meest waarschijnlijke keten van signalen die hierna volgt als de rentecurve gelijk heeft over een aankomende vertraging?",
             "options": [
               { "id": "a", "text": "Eerst reageert de leidende indicator (de rentecurve inverteert), vervolgens vertraagt de samenlopende indicator (het BBP begint te dalen), en pas daarna reageert de achterlopende indicator (de werkloosheid stijgt merkbaar)" },
@@ -1151,6 +1221,7 @@
             "format": "definitie-met-afleiders",
             "concepts": ["welvaartsmaatstaf"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat is de kern van de kritiek die critici op BBP als welvaartsmaatstaf hebben?",
             "options": [
               { "id": "a", "text": "BBP telt zaken als onbetaalde arbeid en milieuschade niet mee, terwijl die wel bijdragen aan (of afbreuk doen aan) welvaart" },
@@ -1166,6 +1237,7 @@
             "format": "wat-hoort-er-niet-bij",
             "concepts": ["welvaartsmaatstaf"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat hoort NIET bij de kritiekpunten die critici op BBP als welvaartsmaatstaf inbrengen?",
             "options": [
               { "id": "a", "text": "BBP telt onbetaalde arbeid zoals mantelzorg niet mee" },
@@ -1181,6 +1253,7 @@
             "format": "scenario-redenering",
             "concepts": ["welvaartsmaatstaf", "milieukosten"],
             "difficulty_prior": 3,
+            "cognitive_level": 6,
             "question": "Een land voert beleid door waarbij de lucht- en waterkwaliteit sterk verslechtert, maar de industriële productie fors toeneemt. Wat zou volgens critici van BBP als welvaartsmaatstaf het probleem zijn met alleen naar het BBP-cijfer kijken in dit geval?",
             "options": [
               { "id": "a", "text": "Het cijfer stijgt door de hogere productie, maar zegt niets over de milieuschade die de werkelijke welvaart kan aantasten" },
@@ -1196,6 +1269,7 @@
             "format": "vergelijking",
             "concepts": ["welvaartsmaatstaf", "verdeling"],
             "difficulty_prior": 3,
+            "cognitive_level": 6,
             "question": "Land A heeft een groeiend BBP, waarbij de welvaartswinst vrijwel volledig bij de rijkste 5% terechtkomt. Land B heeft een iets lager groeiend BBP, maar de welvaartswinst is breder verdeeld. Volgens critici van BBP als welvaartsmaatstaf, welk land laat het beste zien waarom BBP-groei alleen niet genoeg zegt?",
             "options": [
               { "id": "a", "text": "Land A, omdat het groeicijfer weinig zegt over hoe die groei verdeeld is over de bevolking" },
@@ -1211,6 +1285,7 @@
             "format": "welk-voorbeeld-past",
             "concepts": ["BBP", "milieukosten"],
             "difficulty_prior": 5,
+            "cognitive_level": 5,
             "question": "Welk voorbeeld illustreert het beste de kritiek dat BBP geen rekening houdt met milieuschade?",
             "options": [
               { "id": "a", "text": "Een land verkoopt hout uit zijn bossen; het BBP stijgt, terwijl het land feitelijk armer wordt aan natuurlijke hulpbronnen" },
@@ -1226,6 +1301,7 @@
             "format": "berekening",
             "concepts": ["BBP", "onbetaalde arbeid"],
             "difficulty_prior": 5,
+            "cognitive_level": 5,
             "question": "Land P had vorig jaar een BBP van €400 miljard. Schattingen wijzen erop dat onbetaalde huishoudelijke arbeid (zoals mantelzorg) een waarde van €40 miljard zou vertegenwoordigen als die werd meegeteld. Met hoeveel procent zou het officieel gemeten BBP van land P stijgen als deze arbeid werd meegerekend?",
             "options": [
               { "id": "a", "text": "10%" },
@@ -1241,6 +1317,7 @@
             "format": "keten-redenering",
             "concepts": ["BBP", "milieukosten"],
             "difficulty_prior": 5,
+            "cognitive_level": 6,
             "question": "Een land kapt een groot bos en verkoopt het hout voor de export. Wat gebeurt er, stap voor stap, met het BBP-cijfer en de daadwerkelijke welvaart van het land, volgens critici van BBP als welvaartsmaatstaf?",
             "options": [
               { "id": "a", "text": "Het BBP stijgt door de verkoop van het hout, maar de daadwerkelijke welvaart daalt mogelijk doordat een niet-hernieuwbare hulpbron verdwijnt zonder dat dit in het cijfer terugkomt — critici zien dit als bewijs dat BBP welvaart en productie met elkaar verwart" },
@@ -1264,6 +1341,7 @@
             "format": "definitie-met-afleiders",
             "concepts": ["werkloosheidsmaatstaf"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat is de kern van de kritiek dat het officiële werkloosheidscijfer de werkelijkheid onderschat?",
             "options": [
               { "id": "a", "text": "Het telt geen ontmoedigde werkzoekenden en onvrijwillige deeltijdwerkers apart mee, terwijl zij ook een onbenut arbeidspotentieel vertegenwoordigen" },
@@ -1279,6 +1357,7 @@
             "format": "wat-hoort-er-niet-bij",
             "concepts": ["werkloosheidsmaatstaf"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat hoort NIET bij de kritiekpunten op het officiële werkloosheidscijfer?",
             "options": [
               { "id": "a", "text": "Het telt ontmoedigde werkzoekenden niet mee" },
@@ -1294,6 +1373,7 @@
             "format": "welk-voorbeeld-past",
             "concepts": ["vraagtekort-visie"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Welk standpunt past het beste bij de Keynesiaanse visie op de oorzaak van werkloosheid?",
             "options": [
               { "id": "a", "text": "Werkloosheid ontstaat vooral door een tekort aan totale vraag in de economie, en de overheid kan dit oplossen door de bestedingen te stimuleren" },
@@ -1309,6 +1389,7 @@
             "format": "scenario-redenering",
             "concepts": ["werkloosheidsmaatstaf", "ontmoedigde werkzoekenden"],
             "difficulty_prior": 3,
+            "cognitive_level": 6,
             "question": "Iemand heeft een jaar lang actief naar werk gezocht zonder succes, en stopt vervolgens met zoeken omdat hij ervan overtuigd is geen baan te zullen vinden. Wat gebeurt er met zijn status in het officiële werkloosheidscijfer, en waarom is dit een punt van kritiek?",
             "options": [
               { "id": "a", "text": "Hij telt niet langer mee als werkloze, omdat hij niet meer actief zoekt — critici zien dit als een onderschatting, omdat hij feitelijk nog steeds geen baan heeft" },
@@ -1324,6 +1405,7 @@
             "format": "vergelijking",
             "concepts": ["vraagtekort-visie", "marktverstoring-visie"],
             "difficulty_prior": 3,
+            "cognitive_level": 7,
             "question": "Vergelijk twee verklaringen voor aanhoudend hoge werkloosheid in een land: verklaring A wijt dit aan te weinig totale bestedingen in de economie; verklaring B wijt dit aan een minimumloon dat boven het punt ligt waar vraag en aanbod van arbeid elkaar zouden ontmoeten. Welke economische school associeert het sterkst met verklaring B?",
             "options": [
               { "id": "a", "text": "De klassieke/Oostenrijkse school, die werkloosheid vooral ziet als gevolg van marktverstoringen zoals een te hoog minimumloon" },
@@ -1339,6 +1421,7 @@
             "format": "berekening",
             "concepts": ["werkloosheidsmaatstaf", "ontmoedigde werkzoekenden"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "In een land met een beroepsbevolking van 10 miljoen mensen telt het officiële cijfer 500.000 werklozen (een officieel percentage van 5%). Onderzoekers schatten dat daarnaast nog 200.000 ontmoedigde werkzoekenden zijn die niet in dit cijfer meetellen. Als je deze groep wél zou meetellen bij zowel de werklozen als de beroepsbevolking, wat zou het aangepaste werkloosheidspercentage dan ongeveer zijn?",
             "options": [
               { "id": "a", "text": "Ongeveer 6,9%" },
@@ -1354,6 +1437,7 @@
             "format": "keten-redenering",
             "concepts": ["marktverstoring-visie", "vraagtekort-visie"],
             "difficulty_prior": 4,
+            "cognitive_level": 7,
             "question": "Een overheid verhoogt het minimumloon fors. Volgens de klassieke/Oostenrijkse visie op werkloosheid, wat is de meest waarschijnlijke keten van gevolgen op de arbeidsmarkt, en hoe zou een Keynesiaans econoom dit weerleggen?",
             "options": [
               { "id": "a", "text": "Klassieke/Oostenrijkse economen verwachten dat een hoger minimumloon de vraag naar laagbetaalde arbeid doet dalen, wat werkloosheid onder deze groep verhoogt; Keynesianen zouden hiertegen inbrengen dat hogere lonen ook de totale bestedingen (en dus de vraag naar arbeid) kunnen stimuleren, wat het effect kan compenseren of zelfs omkeren" },
@@ -1377,6 +1461,7 @@
             "format": "definitie-met-afleiders",
             "concepts": ["monetaristische visie"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat stelt de monetaristische visie op inflatie, zoals verwoord door Milton Friedman?",
             "options": [
               { "id": "a", "text": "Inflatie is altijd en overal een monetair fenomeen: als de geldhoeveelheid sneller groeit dan de productie, ontstaat vroeg of laat inflatie" },
@@ -1392,6 +1477,7 @@
             "format": "wat-hoort-er-niet-bij",
             "concepts": ["kosten-inflatie"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat hoort NIET bij de kosten-inflatie-verklaring van prijsstijgingen?",
             "options": [
               { "id": "a", "text": "Stijgende energieprijzen die bedrijven doorberekenen in hun verkoopprijzen" },
@@ -1407,6 +1493,7 @@
             "format": "welk-voorbeeld-past",
             "concepts": ["verwachtingen-theorie"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Welk voorbeeld illustreert het beste de verwachtingen-theorie van inflatie?",
             "options": [
               { "id": "a", "text": "Werknemers eisen hogere lonen omdat ze verwachten dat de prijzen volgend jaar zullen stijgen, en bedrijven verhogen uit voorzorg alvast hun prijzen — waardoor de verwachte inflatie gedeeltelijk werkelijkheid wordt" },
@@ -1422,6 +1509,7 @@
             "format": "scenario-redenering",
             "concepts": ["verwachtingen-theorie"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Een centrale bank kondigt aan de inflatie voortaan zeer serieus te zullen bestrijden, en bouwt hiermee jarenlang geloofwaardigheid op. Hoe zou dit, volgens de verwachtingen-theorie, het gedrag van bedrijven en werknemers bij het vaststellen van lonen en prijzen kunnen beïnvloeden?",
             "options": [
               { "id": "a", "text": "Doordat mensen een lage toekomstige inflatie verwachten, vragen werknemers minder hoge looneisen en zijn bedrijven terughoudender met prijsverhogingen — de lage verwachting helpt daadwerkelijk lage inflatie te realiseren" },
@@ -1437,6 +1525,7 @@
             "format": "vergelijking",
             "concepts": ["monetaristische visie", "kosten-inflatie"],
             "difficulty_prior": 3,
+            "cognitive_level": 7,
             "question": "Een land ziet de prijzen fors stijgen. Verklaring A wijt dit aan een centrale bank die de afgelopen jaren de geldhoeveelheid veel sneller liet groeien dan de productie. Verklaring B wijt dit aan een internationale energiecrisis die de productiekosten van vrijwel alle bedrijven opdrijft. Welke verklaring past bij de monetaristische visie, en welke bij kosten-inflatie?",
             "options": [
               { "id": "a", "text": "Verklaring A is monetaristisch, verklaring B is kosten-inflatie" },
@@ -1452,6 +1541,7 @@
             "format": "berekening",
             "concepts": ["monetaristische visie", "kosten-inflatie"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "De geldhoeveelheid in een land groeit dit jaar met 8%, terwijl de productie (reëel BBP) met 3% groeit — volgens de eenvoudige monetaristische vuistregel (geldgroei min productiegroei ≈ inflatie) is de monetaire inflatiebijdrage dus ongeveer 5%. Als daarnaast stijgende energieprijzen (kosten-inflatie) nog eens voor 1,5 procentpunt extra prijsdruk zorgen, wat is de totale verwachte inflatie ongeveer volgens beide mechanismen samen?",
             "options": [
               { "id": "a", "text": "Ongeveer 6,5%" },
@@ -1467,6 +1557,7 @@
             "format": "keten-redenering",
             "concepts": ["monetaristische visie", "verwachtingen-theorie"],
             "difficulty_prior": 4,
+            "cognitive_level": 6,
             "question": "Een centrale bank laat de geldhoeveelheid jarenlang sterk groeien. Tegelijk beginnen mensen, na een tijd van stijgende prijzen, structureel hogere inflatie te verwachten. Wat is, volgens de combinatie van de monetaristische visie en de verwachtingen-theorie, de meest waarschijnlijke keten van gevolgen op de langere termijn?",
             "options": [
               { "id": "a", "text": "De snelle geldgroei zet de eerste prijsstijgingen in gang; naarmate mensen vervolgens hogere inflatie gaan verwachten, eisen ze hogere lonen en verhogen bedrijven uit voorzorg hun prijzen, wat de inflatie verder aanwakkert en hardnekkiger maakt dan de geldgroei alleen zou verklaren" },
@@ -1490,6 +1581,7 @@
             "format": "definitie-met-afleiders",
             "concepts": ["Phillips-curve"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat stelt de klassieke Phillips-curve?",
             "options": [
               { "id": "a", "text": "Een omgekeerd verband tussen inflatie en werkloosheid: lage werkloosheid gaat gepaard met hoge inflatie, en andersom" },
@@ -1505,6 +1597,7 @@
             "format": "wat-hoort-er-niet-bij",
             "concepts": ["verticale lange-termijn Phillips-curve"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat hoort NIET bij de kritiek van Friedman en Phelps op de klassieke Phillips-curve?",
             "options": [
               { "id": "a", "text": "De ruil tussen inflatie en werkloosheid bestaat volgens hen alleen op de korte termijn" },
@@ -1520,6 +1613,7 @@
             "format": "welk-voorbeeld-past",
             "concepts": ["stagflatie"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Welke historische gebeurtenis wordt vaak aangehaald als empirisch tegenbewijs voor de klassieke Phillips-curve?",
             "options": [
               { "id": "a", "text": "De stagflatie van de jaren zeventig, toen hoge inflatie en hoge werkloosheid tegelijk voorkwamen" },
@@ -1535,6 +1629,7 @@
             "format": "vergelijking",
             "concepts": ["Phillips-curve", "stagflatie"],
             "difficulty_prior": 3,
+            "cognitive_level": 7,
             "question": "Vergelijk twee periodes: periode A vertoont lage werkloosheid samen met hoge inflatie (klassiek Phillips-patroon); periode B vertoont hoge werkloosheid samen met hoge inflatie. Welke periode past bij stagflatie, en welke bij de klassieke Phillips-curve?",
             "options": [
               { "id": "a", "text": "Periode A past bij de klassieke Phillips-curve, periode B is een voorbeeld van stagflatie" },
@@ -1550,6 +1645,7 @@
             "format": "scenario-redenering",
             "concepts": ["verticale lange-termijn Phillips-curve", "natuurlijke werkloosheidsvoet"],
             "difficulty_prior": 5,
+            "cognitive_level": 6,
             "question": "Een overheid probeert de werkloosheid via aanhoudend stimuleringsbeleid structureel onder de natuurlijke werkloosheidsvoet te houden. Volgens Friedman en Phelps' kritiek op de Phillips-curve, wat gebeurt er dan waarschijnlijk op de lange termijn?",
             "options": [
               { "id": "a", "text": "De werkloosheid keert alsnog terug naar de natuurlijke voet, maar de inflatie blijft wel structureel hoger — het beleid 'koopt' geen blijvende banenwinst, alleen hogere inflatie" },
@@ -1565,6 +1661,7 @@
             "format": "berekening",
             "concepts": ["Phillips-curve", "stagflatie"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "In 1975 was de inflatie in een land 9% en de werkloosheid 8%. Volgens de klassieke Phillips-curve zou je bij 8% werkloosheid een relatief lage inflatie verwachten (bijvoorbeeld rond 2%). Hoeveel procentpunt hoger dan deze 'klassieke verwachting' lag de daadwerkelijke inflatie?",
             "options": [
               { "id": "a", "text": "Ongeveer 7 procentpunt hoger" },
@@ -1580,6 +1677,7 @@
             "format": "keten-redenering",
             "concepts": ["Phillips-curve", "verwachtingen-theorie"],
             "difficulty_prior": 5,
+            "cognitive_level": 7,
             "question": "Sommige economen stellen dat de Phillips-curve de afgelopen decennia 'platter' is geworden: inflatie reageert nauwelijks nog op veranderingen in werkloosheid. Wat zou, stap voor stap, een mogelijke verklaring hiervoor kunnen zijn, en hoe verhoudt dit zich tot de klassieke en de Friedman/Phelps-visie?",
             "options": [
               { "id": "a", "text": "Als centrale banken door hun geloofwaardigheid de inflatieverwachtingen stabiel weten te houden (zie de verwachtingen-theorie), reageert inflatie minder sterk op schommelingen in werkloosheid dan de klassieke curve voorspelt — dit weerlegt de klassieke Phillips-curve niet per se, maar suggereert dat verwachtingen een grotere rol spelen dan het model oorspronkelijk veronderstelde" },
@@ -1603,6 +1701,7 @@
             "format": "definitie-met-afleiders",
             "concepts": ["rentekanaal"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat is het rentekanaal, het schoolboek-mechanisme van rentebeleid?",
             "options": [
               { "id": "a", "text": "Een hogere rente maakt lenen direct duurder, waardoor consumenten en bedrijven minder uitgeven" },
@@ -1618,6 +1717,7 @@
             "format": "wat-hoort-er-niet-bij",
             "concepts": ["kredietkanaal"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat hoort NIET bij het kredietkanaal van rentebeleid?",
             "options": [
               { "id": "a", "text": "Banken worden voorzichtiger met uitlenen bij een hogere rente" },
@@ -1633,6 +1733,7 @@
             "format": "welk-voorbeeld-past",
             "concepts": ["signaalkanaal"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "Welk voorbeeld illustreert het beste het signaalkanaal van rentebeleid?",
             "options": [
               { "id": "a", "text": "Een bedrijf stelt een investering uit zodra de centrale bank aankondigt de rente te gaan verhogen, nog vóórdat de daadwerkelijke leenkosten zijn gestegen" },
@@ -1648,6 +1749,7 @@
             "format": "scenario-redenering",
             "concepts": ["transmissievertraging"],
             "difficulty_prior": 2,
+            "cognitive_level": 2,
             "question": "De centrale bank verhoogt de rente. Onderzoek laat zien dat de economie hierop pas na 18 maanden volledig reageert, met een onzekerheidsmarge van meerdere maanden. Wat betekent deze 'transmissievertraging' voor de moeilijkheid van het voeren van rentebeleid?",
             "options": [
               { "id": "a", "text": "De centrale bank moet beslissingen nemen op basis van een verwachting van de economie over anderhalf jaar, niet op basis van de huidige stand — wat het beleid foutgevoelig maakt als die verwachting niet uitkomt" },
@@ -1663,6 +1765,7 @@
             "format": "vergelijking",
             "concepts": ["rentekanaal", "kredietkanaal"],
             "difficulty_prior": 3,
+            "cognitive_level": 7,
             "question": "Vergelijk twee mechanismen waarmee een renteverhoging de economie afremt: het rentekanaal (directe leenkosten) en het kredietkanaal (voorzichtigere banken). Welk van de twee loopt NIET via de daadwerkelijke prijs van lenen, maar via de bereidheid van banken om te lenen?",
             "options": [
               { "id": "a", "text": "Het kredietkanaal" },
@@ -1678,6 +1781,7 @@
             "format": "berekening",
             "concepts": ["transmissievertraging", "rentekanaal"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "Een centrale bank verhoogt de rente in januari. Economen schatten dat het effect met een vertraging van 12 tot 24 maanden volledig doorwerkt. Als de centrale bank wil weten of het volledige effect uiterlijk in januari over twee jaar zichtbaar is, binnen welke marge (in maanden na de renteverhoging) moet de daadwerkelijke transmissie dan vallen?",
             "options": [
               { "id": "a", "text": "Tussen de 12 en 24 maanden" },
@@ -1693,6 +1797,7 @@
             "format": "keten-redenering",
             "concepts": ["rentekanaal", "kredietkanaal", "signaalkanaal"],
             "difficulty_prior": 4,
+            "cognitive_level": 7,
             "question": "Een centrale bank verhoogt de rente stevig om inflatie te bestrijden. Beschrijf, stap voor stap, hoe de drie kanalen (rentekanaal, kredietkanaal, signaalkanaal) hier gecombineerd aan zouden kunnen bijdragen, en waarom economen het oneens zijn over welk kanaal het zwaarst weegt.",
             "options": [
               { "id": "a", "text": "Het rentekanaal maakt lenen direct duurder, het kredietkanaal maakt banken voorzichtiger met uitlenen (los van de rente zelf), en het signaalkanaal verandert nu al het gedrag van bedrijven en consumenten die anticiperen op de aankondiging — economen zijn het oneens over de relatieve omvang van elk kanaal, mede omdat ze moeilijk afzonderlijk te meten zijn" },
@@ -1716,6 +1821,7 @@
             "format": "definitie-met-afleiders",
             "concepts": ["beleid onder onzekerheid"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Waarom is het voor centrale bankiers lastig om met zekerheid te bepalen hoe gezond een economie is?",
             "options": [
               { "id": "a", "text": "Omdat zelfs de basismaatstaven (zoals BBP en het werkloosheidscijfer) volgens critici beperkingen hebben, en de onderliggende oorzaken van inflatie en het effect van rentebeleid zelf ook omstreden zijn" },
@@ -1731,6 +1837,7 @@
             "format": "wat-hoort-er-niet-bij",
             "concepts": ["beleid onder onzekerheid"],
             "difficulty_prior": 1,
+            "cognitive_level": 1,
             "question": "Wat hoort NIET bij de bronnen van onzekerheid die in deze track aan bod zijn gekomen?",
             "options": [
               { "id": "a", "text": "Onzekerheid over of BBP en werkloosheidscijfers de werkelijke economische gezondheid goed weerspiegelen" },
@@ -1746,6 +1853,7 @@
             "format": "welk-voorbeeld-past",
             "concepts": ["beleid onder onzekerheid", "geleidelijk beleid"],
             "difficulty_prior": 3,
+            "cognitive_level": 3,
             "question": "Welk voorbeeld illustreert het beste hoe centrale bankiers in de praktijk met fundamentele onzekerheid omgaan?",
             "options": [
               { "id": "a", "text": "Ze passen de rente meestal in kleine, geleidelijke stappen aan in plaats van grote, abrupte sprongen, om de risico's van al die onzekerheden te beperken" },
@@ -1761,6 +1869,7 @@
             "format": "vergelijking",
             "concepts": ["geleidelijk beleid", "beleid onder onzekerheid"],
             "difficulty_prior": 3,
+            "cognitive_level": 7,
             "question": "Vergelijk twee centrale bankiers: bankier A past de rente in kleine, geleidelijke stappen aan en observeert tussentijds de effecten; bankier B verandert de rente in één keer drastisch op basis van één enkel model. Welke aanpak past beter bij de onzekerheden die in deze track zijn besproken (over maatstaven, inflatie-oorzaken en transmissiemechanismen)?",
             "options": [
               { "id": "a", "text": "Bankier A, omdat kleine stappen ruimte geven om bij te sturen als de onderliggende aannames (bijvoorbeeld over welke inflatietheorie dominant is) achteraf niet blijken te kloppen" },
@@ -1776,6 +1885,7 @@
             "format": "scenario-redenering",
             "concepts": ["monetaristische visie", "kosten-inflatie"],
             "difficulty_prior": 3,
+            "cognitive_level": 7,
             "question": "Een centrale bankier moet een rentebesluit nemen, maar weet niet zeker of de huidige inflatie vooral door kosten-inflatie (bijvoorbeeld een energieschok) of door aanhoudende monetaire groei wordt gedreven — de twee vragen om een verschillende beleidsreactie. Wat is een verstandige aanpak, gegeven deze onzekerheid?",
             "options": [
               { "id": "a", "text": "Voorzichtig reageren en de ontwikkeling van meerdere signalen (waaronder kerninflatie en geldgroei) blijven volgen, in plaats van blindelings op één verklaring te vertrouwen" },
@@ -1791,6 +1901,7 @@
             "format": "berekening",
             "concepts": ["welvaartsmaatstaf", "BBP"],
             "difficulty_prior": 5,
+            "cognitive_level": 5,
             "question": "Een land publiceert een BBP-groei van 3%. Critici van BBP als welvaartsmaatstaf wijzen erop dat een deel van deze groei welvaartsverlies verhult, bijvoorbeeld doordat de export van niet-hernieuwbare grondstoffen meetelt als positieve productie. Als economen schatten dat 1 procentpunt van de 3% groei op deze manier 'welvaart verhullende' groei is, hoeveel procentpunt reële welvaartswinst blijft er dan volgens deze kritiek over?",
             "options": [
               { "id": "a", "text": "Ongeveer 2 procentpunt" },
@@ -1806,6 +1917,7 @@
             "format": "keten-redenering",
             "concepts": ["werkloosheidsmaatstaf", "monetaristische visie", "transmissievertraging"],
             "difficulty_prior": 5,
+            "cognitive_level": 7,
             "question": "Een centrale bank moet een rentebesluit nemen tijdens een periode met: (1) twijfel of de officiële werkloosheidscijfers de arbeidsmarkt goed weerspiegelen, (2) onduidelijkheid of de inflatie vooral monetair of kosten-gedreven is, en (3) onzekerheid over hoe snel een renteverandering zal doorwerken. Beschrijf, stap voor stap, waarom dit de bank ertoe zou kunnen brengen om voorzichtig en geleidelijk te handelen in plaats van drastisch.",
             "options": [
               { "id": "a", "text": "Omdat elk van deze drie onzekerheden (meetkwesties, inflatie-oorzaken, en transmissietiming) apart al foutmarges met zich meebrengt, vergroot een drastische ingreep het risico dat de bank te hard of juist te weinig bijstuurt — geleidelijke stappen geven ruimte om onderweg bij te sturen als een van deze aannames niet blijkt te kloppen" },
@@ -1842,6 +1954,16 @@
       "3": "format is 'vergelijking' of 'scenario-redenering', concepts-array bevat precies 2 labels uit dezelfde les. Geldt ook wanneer format 'berekening' is en concepts-array precies 2 labels uit dezelfde les bevat → 3 (zelfde niveau als vergelijking/scenario-redenering met 2 labels).",
       "4": "format is 'keten-redenering' (ongeacht aantal labels, mits alle labels uit dezelfde les), of 'scenario-redenering' met 3 labels uit dezelfde les",
       "5": "concepts-array bevat labels die in verschillende lessen zijn geïntroduceerd (synthese-vragen / retentie over lessen heen) — deze regel gaat vóór de format-regels hierboven en geldt ongeacht format"
+    },
+    "cognitive_level_rubriek": {
+      "beschrijving": "cognitive_level (1-7) is een Bloom-taxonomie-geïnspireerde as, apart van difficulty_prior: het beschrijft welk type denkwerk een vraag vraagt, niet hoe zwaar de content is. Niveaus 1-5 zijn daarom mechanisch identiek afgeleid als difficulty_prior (dezelfde format+concepts-regels), omdat het denktype grotendeels samenvalt met vraagformat. Niveaus 6-7 zijn een uitbreiding die alleen in de expert-track voorkomt en per vraag inhoudelijk beoordeeld is (niet mechanisch af te leiden uit format/concepts alleen): ze markeren vragen die de gebruiker zelf een oordeel laten vellen (evalueren) of expliciet met naam genoemde concurrerende theorieën/visies tegen elkaar laten afwegen (synthese) — de diepere-niveau-epistemologie uit filosofie.md ('Content-epistemologie per niveau'). Gebruikt voor het spreiden van de diagnosetoets bij trackplaatsing.",
+      "1": "Onthouden — zelfde regel als difficulty_prior niveau 1 (definitie-met-afleiders/wat-hoort-er-niet-bij, 1 label).",
+      "2": "Begrijpen/eenvoudig toepassen — zelfde regel als difficulty_prior niveau 2 (berekening/welk-voorbeeld-past/vergelijking/scenario-redenering met 1 label; welk-voorbeeld-past met 2 labels valt op niveau 3, zie hieronder).",
+      "3": "Toepassen/verband leggen — zelfde regel als difficulty_prior niveau 3 (vergelijking, scenario-redenering of berekening met 2 labels uit dezelfde les; ook welk-voorbeeld-past met 2 labels uit dezelfde les).",
+      "4": "Analyseren (keten binnen les) — zelfde regel als difficulty_prior niveau 4 (keten-redenering, of scenario-redenering met 3 labels uit dezelfde les).",
+      "5": "Analyseren (retentie/synthese over lessen heen) — zelfde regel als difficulty_prior niveau 5 (labels uit verschillende lessen), ongeacht format; gaat vóór de regels hierboven.",
+      "6": "Evalueren — uitsluitend expert-track: de vraag laat de gebruiker een geldigheid, tekortkoming of toepasbaarheid van één concept/maatstaf beoordelen (bijv. de kritiek op BBP als welvaartsmaatstaf toepassen op een scenario), zonder dat twee met naam genoemde theorieën tegenover elkaar worden gezet. Content-oordeel per vraag, niet mechanisch afgeleid.",
+      "7": "Afwegen van concurrerende theorieën (synthese) — uitsluitend expert-track: de vraag laat de gebruiker expliciet twee of meer met naam genoemde theorieën/scholen/mechanismen tegen elkaar afwegen of confronteren (bijv. monetaristische visie vs. vraagtekort-visie, klassieke Phillips-curve vs. Friedman/Phelps-kritiek). Content-oordeel per vraag, niet mechanisch afgeleid."
     }
   }
 }

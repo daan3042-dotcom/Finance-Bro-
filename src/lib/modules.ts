@@ -4,6 +4,38 @@ import type { ModuleData, ModuleLesson, ModuleTrack } from './types';
 
 export const modules: ModuleData[] = [macroModuleData as ModuleData];
 
+// Vaste tracks-volgorde voor de canonieke lesvolgorde (los van de
+// `tracks`-array in de module-JSON, die alleen voor UI-weergave is).
+const CANONICAL_TRACK_ORDER: ModuleTrack[] = ['beginner', 'gevorderd', 'expert'];
+
+export type CanonicalLessonRef = {
+  track: ModuleTrack;
+  lesson: ModuleLesson;
+  /** Positie in de volledige, over alle tracks heen doorlopende lesvolgorde. */
+  index: number;
+};
+
+/**
+ * Alle lessen van een module in canonieke volgorde: eerst beginner, dan
+ * gevorderd, dan expert, en binnen elke track op `lesson.order`. Dit is de
+ * volgorde waarin een gebruiker de module normaal doorloopt, en is de basis
+ * voor de diagnosetoets-plaatsing (welke lessen liggen "voor" het
+ * voorgestelde startpunt).
+ */
+export function getCanonicalLessonSequence(moduleId: string): CanonicalLessonRef[] {
+  const module = getModule(moduleId);
+  if (!module) return [];
+
+  const sequence: CanonicalLessonRef[] = [];
+  for (const track of CANONICAL_TRACK_ORDER) {
+    const lessons = [...(module.lessons[track] ?? [])].sort((a, b) => a.order - b.order);
+    for (const lesson of lessons) {
+      sequence.push({ track, lesson, index: sequence.length });
+    }
+  }
+  return sequence;
+}
+
 export const modulesById: Record<string, ModuleData> = Object.fromEntries(
   modules.map((module) => [module.id, module])
 );

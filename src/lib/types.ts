@@ -24,6 +24,13 @@ export type ModuleTrack = 'beginner' | 'gevorderd' | 'expert';
 export type ModuleQuestion = Question & {
   concepts: string[];
   difficulty_prior: number;
+  /**
+   * Bloom-taxonomie-geïnspireerd denkniveau (1-7), apart van difficulty_prior.
+   * Zie format_rules.cognitive_level_rubriek in data/modules/macro.json.
+   * Gebruikt om de diagnosetoets bij trackplaatsing te spreiden over
+   * denkniveaus in plaats van alleen contentzwaarte.
+   */
+  cognitive_level: number;
   disclaimer?: string;
 };
 

@@ -18,5 +18,16 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-23
 
+- Screening/plaatsingsflow toegevoegd voor de macro-module: gebruikers geven bij
+  de start van een track hun voorkennis op (geen/enige/veel ervaring), krijgen
+  een korte diagnosetoets van 12 vragen uit de bestaande vraagbank (gespreid
+  over een nieuw `cognitive_level`-veld, 1-7, toegevoegd aan alle 112 vragen),
+  en krijgen op basis daarvan een track-aanbeveling die ze altijd handmatig
+  kunnen overrulen. Plaatsing schrijft weg in de bestaande `lesson_progress`
+  (nieuwe kolom `placed_via_diagnostic` onderscheidt "echt gedaan" van
+  "overgeslagen via de toets", migratie 0003) en `concept_progress` — geen
+  nieuwe tabellen. Contentregel-scan (geen lesverwijzingen in vraagstammen)
+  gedraaid over alle 112 vragen: 1 schending gevonden en gerapporteerd, niet
+  automatisch herschreven (contentbeslissing voor Niels).
 - Logboeksysteem opgezet: dit bestand plus een pre-commit hook die afdwingt
   dat elke functionele wijziging een logboekregel krijgt.
