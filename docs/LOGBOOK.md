@@ -18,6 +18,31 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-24
 
+- Vijfde module toegevoegd: "Risico en spreiding" (`data/modules/risico.json`,
+  module-id `risico`, order 5, alleen beginner-track). 67 lessen, 402 vragen:
+  Unit 1 (Risico in het dagelijks leven), Unit 2 (Soorten risico), Unit 3
+  (Verlies en herstel), Unit 4 (Kans en uitkomst), Unit 5 (Spreiding) en
+  Unit 6 (De grenzen van spreiding) volledig, Unit 7 (Tijd en risico)
+  alleen les 1-7 — het brondocument breekt daar af midden in les 8; les
+  8-10, het unit-checkpoint van Unit 7 en de unit-checkpoints van de
+  overige 6 units volgen later. Dit is de laatste van de vijf thema's uit
+  "deel 1" van de contentplanning (markt, aandelen, macro, gedrag, risico
+  zijn nu allemaal als beginner-module in de app aanwezig). Omdat dit hele
+  thema over risico en beleggen gaat, heeft elke vraag in deze module een
+  disclaimer ("Dit is geen beleggingsadvies."). Moeilijkheidsgraad liep
+  meteen goed op over de hele track (5-staps-profiel, net als bij de vorige
+  drie modules), en de a/b/c/d-verdeling van de juiste antwoorden was ook
+  nagenoeg perfect (101/101/100/100 over 402 vragen) zonder aparte
+  opschoonronde achteraf, omdat dit weer expliciet is meegegeven aan elke
+  subagent. Bijzonderheid: de brontekst had op meerdere plekken door de
+  PDF-kolomopmaak de feedback van een vraag fysiek verderop staan (soms na
+  de kop van de volgende les of zelfs na de "Unit-checkpoint"-kop) — telkens
+  succesvol gereconstrueerd op inhoudelijke logica, zonder iets te verzinnen.
+  Ook één inhoudelijke inconsistentie in de bron zelf gecorrigeerd (Unit 3,
+  les over hersteltijd na een koersdaling: de uitlegtekst noemde "ruim tien
+  jaar" terwijl de feedback en bronnotitie in dezelfde les "ruim veertien
+  jaar" noemden, wat ook wiskundig klopt bij 5% rente — gelijkgetrokken naar
+  het correcte cijfer).
 - Vierde module toegevoegd: "Gedrag en psychologie" (`data/modules/gedrag.json`,
   module-id `gedrag`, order 4, alleen beginner-track). 48 lessen, 288 vragen:
   Unit 1 (Waarom we niet rationeel zijn), Unit 2 (Verliesaversie), Unit 3
