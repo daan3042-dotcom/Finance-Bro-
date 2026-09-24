@@ -18,6 +18,32 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-24
 
+- Zevende module toegevoegd: "Geopolitiek en toeleveringsketens"
+  (`data/modules/geopolitiek.json`, module-id `geopolitiek`, order 7,
+  alleen beginner-track) — Thema 9 uit de contentplanning. Net als
+  "Technologie en innovatie" was ook dit brondocument volledig uitgeschreven:
+  alle 10 units en 100 lessen, geen open einden. 100 lessen, 600 vragen:
+  Unit 1 (waarom politiek de economie raakt), Unit 2 (toeleveringsketens en
+  knelpunten), Unit 3 (wie heeft de macht in een keten), Unit 4 (tarieven,
+  exportbeperkingen, sancties), Unit 5 (efficiënt of zeker: de afweging
+  tussen goedkoop en veilig inkopen), Unit 6 (hoe markten nieuws verwerken),
+  Unit 7 (risicopremie en landenrisico), Unit 8 (wisselkoersen en
+  valutareserves), Unit 9 (historische patronen: de oliecrisis van 1973, de
+  Suezcrisis van 1956, tarieven in de jaren dertig — met echte historische
+  feiten in plaats van de gebruikelijke fictieve voorbeelden, expliciet
+  gecontroleerd op trouw aan de bron) en Unit 10 (een 5-stappenmethode om
+  geopolitiek nieuws in de markt te lezen, afgesloten met een doorlopende
+  casus). Politiek-gevoelig materiaal (sancties, handelsconflicten,
+  verkiezingen) is overal strikt neutraal en beschrijvend gehouden: alleen
+  het economische mechanisme, nooit een politiek standpunt. Elke vraag heeft
+  de gebruikelijke disclaimer. De bron gebruikte weer maar 3 opties per
+  meerkeuzevraag; overal een plausibele 4e afleider toegevoegd. Moeilijkheid
+  en a/b/c/d-verdeling volgen het bekende profiel (149/150/151/150 over 600
+  vragen). Kleine opschoning na het samenvoegen: Unit 10 gebruikte op 10
+  plekken het format "meerkeuze" in plaats van het gebruikelijke
+  "welk-voorbeeld-past" voor scenariovragen — rechtgezet voor consistentie
+  met de rest van de app (het format-veld wordt nergens in de app-code
+  gebruikt, dus dit was puur data-netheid, geen functionele fix).
 - Zesde module toegevoegd: "Technologie en innovatie" (`data/modules/technologie.json`,
   module-id `technologie`, order 6, alleen beginner-track) — Thema 10 uit de
   contentplanning. In tegenstelling tot alle vorige modules was dit
