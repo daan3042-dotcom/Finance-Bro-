@@ -18,6 +18,19 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-24
 
+- Vierde module toegevoegd: "Gedrag en psychologie" (`data/modules/gedrag.json`,
+  module-id `gedrag`, order 4, alleen beginner-track). 48 lessen, 288 vragen:
+  Unit 1 (Waarom we niet rationeel zijn), Unit 2 (Verliesaversie), Unit 3
+  (Overmoed en zelfbevestiging) en Unit 4 (Kudde en hype) volledig, Unit 5
+  (Ankers en verhalen) alleen les 1-8 — het brondocument breekt daar af
+  (les 9 heeft alleen een uitlegtekst, geen oefeningen); les 9-10, het
+  unit-checkpoint en units 6-10 van dit thema volgen later. Deze module gaat
+  over denkfouten bij geld (Kahneman/Thaler-achtige concepten: snel/langzaam
+  denken, verliesaversie, overmoed, kuddegedrag, ankereffect) en is net als
+  de vorige modules steeds als tendens geformuleerd, nooit als wet of met
+  beloftes over beleggingsresultaat. Moeilijkheidsgraad en de a/b/c/d-verdeling
+  van de juiste antwoorden waren dit keer bij alle 5 units in één keer
+  perfect in orde.
 - Derde module toegevoegd: "Aandelen en bedrijven" (`data/modules/aandelen.json`,
   module-id `aandelen`, order 3, alleen beginner-track). 62 lessen, 372
   vragen: Unit 1 (Wat is een aandeel?), Unit 2 (Hoe een bedrijf geld

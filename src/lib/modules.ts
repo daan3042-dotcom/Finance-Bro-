@@ -1,4 +1,5 @@
 import aandelenModuleData from '../../data/modules/aandelen.json';
+import gedragModuleData from '../../data/modules/gedrag.json';
 import macroModuleData from '../../data/modules/macro.json';
 import marktModuleData from '../../data/modules/markt.json';
 import { getModuleLessonProgress, type ModuleProgressState } from './moduleProgress';
@@ -8,6 +9,7 @@ export const modules: ModuleData[] = [
   macroModuleData as ModuleData,
   marktModuleData as ModuleData,
   aandelenModuleData as ModuleData,
+  gedragModuleData as ModuleData,
 ];
 
 export const modulesById: Record<string, ModuleData> = Object.fromEntries(
