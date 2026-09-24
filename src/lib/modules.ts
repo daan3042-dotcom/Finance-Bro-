@@ -1,4 +1,5 @@
 import aandelenModuleData from '../../data/modules/aandelen.json';
+import energieModuleData from '../../data/modules/energie.json';
 import gedragModuleData from '../../data/modules/gedrag.json';
 import geopolitiekModuleData from '../../data/modules/geopolitiek.json';
 import macroModuleData from '../../data/modules/macro.json';
@@ -16,6 +17,7 @@ export const modules: ModuleData[] = [
   risicoModuleData as ModuleData,
   technologieModuleData as ModuleData,
   geopolitiekModuleData as ModuleData,
+  energieModuleData as ModuleData,
 ];
 
 export const modulesById: Record<string, ModuleData> = Object.fromEntries(

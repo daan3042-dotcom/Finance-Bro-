@@ -18,6 +18,30 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-24
 
+- Achtste module toegevoegd: "Energie en de transitie"
+  (`data/modules/energie.json`, module-id `energie`, order 8, alleen
+  beginner-track) — Thema 8 uit de contentplanning. Net als "Technologie en
+  innovatie" en "Geopolitiek en toeleveringsketens" was ook dit
+  brondocument volledig uitgeschreven: alle 10 units en 100 lessen, geen
+  open einden. 100 lessen, 600 vragen: Unit 1 (energie zit in bijna elk
+  product, als kostenpost), Unit 2 (eigenschappen van energiebronnen:
+  opslaanbaar versus direct verbruiken), Unit 3 (winnaars en verliezers bij
+  prijsschommelingen: marge, prijsmacht, contracten), Unit 4 (het
+  elektriciteitsnet: balans, netcongestie, negatieve prijzen), Unit 5
+  (opslag en flexibiliteit), Unit 6 (grondstoffen voor de transitie), Unit 7
+  (waarom energiesystemen traag veranderen: grote investeringen, lange
+  levensduur), Unit 8 (de afweging tussen betrouwbaar, betaalbaar en
+  duurzaam — CO2-beprijzing en subsidies, strikt politiek-neutraal
+  behandeld net als bij de geopolitiek-module), Unit 9 (energie en
+  inflatie: eerste- en tweede-ronde-effecten, loon-prijsspiraal) en Unit 10
+  (een methode om een energiemarkt te lezen, met een afsluitende
+  doorlopende casus). Elke vraag heeft de gebruikelijke disclaimer. De bron
+  gebruikte weer maar 3 opties per meerkeuzevraag; overal een plausibele 4e
+  afleider toegevoegd. Deze keer is elke subagent ook expliciet gevraagd
+  om alleen de 4 bestaande format-strings te gebruiken (na de kleine
+  opschoning die daarvoor nodig was bij de vorige module) — dat leverde nu
+  in één keer een schone dataset op. Moeilijkheid en a/b/c/d-verdeling
+  volgen het bekende profiel (151/150/150/149 over 600 vragen).
 - Zevende module toegevoegd: "Geopolitiek en toeleveringsketens"
   (`data/modules/geopolitiek.json`, module-id `geopolitiek`, order 7,
   alleen beginner-track) — Thema 9 uit de contentplanning. Net als
