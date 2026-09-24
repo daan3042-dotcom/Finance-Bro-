@@ -18,6 +18,18 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-24
 
+- Derde module toegevoegd: "Aandelen en bedrijven" (`data/modules/aandelen.json`,
+  module-id `aandelen`, order 3, alleen beginner-track). 62 lessen, 372
+  vragen: Unit 1 (Wat is een aandeel?), Unit 2 (Hoe een bedrijf geld
+  verdient), Unit 3 (Groeien en financieren), Unit 4 (De cijfers lezen),
+  Unit 5 (Waarom aandelenkoersen bewegen) en Unit 6 (Duur of goedkoop?)
+  volledig, Unit 7 (Soorten bedrijven) alleen les 1-2 (Groeibedrijven,
+  Waardebedrijven) — het brondocument breekt daar af, les 3-10, het
+  unit-checkpoint en units 8-10 van dit thema volgen later. Moeilijkheidsgraad
+  liep dit keer meteen goed op over de hele track (net als bij "Wat is de
+  markt"), en ook de a/b/c/d-verdeling van de juiste antwoorden was dit
+  keer bij alle 7 units meteen in orde omdat dat expliciet is meegegeven
+  aan elke subagent, zonder aparte opschoonronde achteraf.
 - Tweede module toegevoegd: "Wat is de markt" (`data/modules/markt.json`,
   module-id `markt`, order 2, alleen beginner-track — conform §4 van
   docs/project-instructions.md krijgt alleen het eerste onderwerp (macro)
