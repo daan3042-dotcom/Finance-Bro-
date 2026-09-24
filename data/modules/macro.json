@@ -423,7 +423,7 @@
             "id": "macro_beginner_nominaal_en_reeel_q2",
             "format": "berekening",
             "concepts": ["nominaal en reëel"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 1,
             "question": "Vorig jaar werden 100 broden verkocht à 2,00 euro. Dit jaar weer 100 broden, nu à 2,20 euro. Wat is de reële groei?",
             "options": [
               { "id": "a", "text": "10%" },
@@ -453,7 +453,7 @@
             "id": "macro_beginner_nominaal_en_reeel_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["nominaal en reëel"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 2,
             "question": "Nominale groei min de prijsstijging is ongeveer gelijk aan welke groei?",
             "options": [
               { "id": "a", "text": "De reële groei" },
@@ -521,7 +521,7 @@
             "id": "macro_beginner_economische_groei_q2",
             "format": "berekening",
             "concepts": ["economische groei"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 1,
             "question": "De productie is 200 en groeit met 5%. Wat is de nieuwe productie?",
             "options": [
               { "id": "a", "text": "210" },
@@ -551,7 +551,7 @@
             "id": "macro_beginner_economische_groei_q4",
             "format": "berekening",
             "concepts": ["economische groei"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 2,
             "question": "Een land groeit elk jaar met 2%. Ongeveer hoeveel jaar duurt het voordat de economie twee keer zo groot is?",
             "options": [
               { "id": "a", "text": "10 jaar" },
@@ -777,7 +777,7 @@
             "id": "macro_beginner_krimp_en_recessie_q6",
             "format": "keten-redenering",
             "concepts": ["recessie"],
-            "difficulty_prior": 5,
+            "difficulty_prior": 4,
             "question": "In een recessie ontslaan bedrijven mensen. Wat betekent dat voor de uitgaven van huishoudens, en wat kan daardoor gebeuren met de krimp zelf?",
             "options": [
               { "id": "a", "text": "De uitgaven dalen, wat de krimp verder kan versterken" },
@@ -914,7 +914,7 @@
             "id": "macro_beginner_economie_en_markten_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["markt en verwachting"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 1,
             "question": "Een economie groeit dit kwartaal, maar minder hard dan beleggers hadden verwacht. Kan de koers van aandelen dan toch dalen?",
             "options": [
               { "id": "a", "text": "Nee, een koers kan nooit dalen terwijl de economie groeit" },
@@ -1213,7 +1213,7 @@
             "id": "macro_beginner_prijzen_stijgen_door_vraag_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["vraaginflatie"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Bedrijven in een land hebben nog veel vrije productiecapaciteit staan. De vraag naar hun producten stijgt plotseling. Wat gebeurt er waarschijnlijk met de prijzen?",
             "options": [
               { "id": "a", "text": "Ze stijgen meteen sterk, want meer vraag betekent altijd hogere prijzen" },
@@ -1243,7 +1243,7 @@
             "id": "macro_beginner_prijzen_stijgen_door_vraag_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["vraaginflatie"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Bij vraaginflatie is er te veel geld gericht op te weinig ___.",
             "options": [
               { "id": "a", "text": "aanbod" },
@@ -1311,7 +1311,7 @@
             "id": "macro_beginner_prijzen_stijgen_door_kosten_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["kosteninflatie"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Twee bedrijven zien hun kosten stijgen. Het ene heeft veel concurrenten met vergelijkbare producten, het andere heeft een uniek product zonder alternatief. Kunnen beide bedrijven hun hogere kosten even makkelijk doorberekenen aan klanten?",
             "options": [
               { "id": "a", "text": "Ja, elk bedrijf kan gestegen kosten altijd volledig doorberekenen" },
@@ -1341,7 +1341,7 @@
             "id": "macro_beginner_prijzen_stijgen_door_kosten_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["marge"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Als een bedrijf hogere kosten niet doorberekent, daalt zijn ___.",
             "options": [
               { "id": "a", "text": "marge" },
@@ -1409,7 +1409,7 @@
             "id": "macro_beginner_verwachtingen_en_inflatie_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["verwachtingen inflatie"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Iedereen in een land begint te verwachten dat prijzen sterk gaan stijgen. Bedrijven verhogen daarop hun prijzen en werknemers vragen meer loon. Wat is het gevolg?",
             "options": [
               { "id": "a", "text": "Niets, verwachtingen hebben geen invloed op wat er echt gebeurt" },
@@ -1439,7 +1439,7 @@
             "id": "macro_beginner_verwachtingen_en_inflatie_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["verwachtingen inflatie"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Als mensen geloven dat inflatie laag blijft, helpt dat om haar ___ te houden.",
             "options": [
               { "id": "a", "text": "laag" },
@@ -1507,7 +1507,7 @@
             "id": "macro_beginner_inflatie_en_koopkracht_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["reële rente"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Je hebt spaargeld op een rekening met 1% rente, terwijl de inflatie 3% is. Wat gebeurt er met de koopkracht van dat spaargeld?",
             "options": [
               { "id": "a", "text": "Ze blijft precies gelijk, want er staat rente op" },
@@ -1537,7 +1537,7 @@
             "id": "macro_beginner_inflatie_en_koopkracht_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["nominaal en reëel"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Nominaal is het bedrag in geld; ___ is wat je ervoor kunt kopen.",
             "options": [
               { "id": "a", "text": "reëel" },
@@ -1605,7 +1605,7 @@
             "id": "macro_beginner_te_veel_of_te_weinig_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["deflatie"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "In een land dalen de prijzen breed en aanhoudend. Is dat sowieso goed nieuws voor de economie?",
             "options": [
               { "id": "a", "text": "Ja, lagere prijzen zijn altijd puur voordelig" },
@@ -1635,7 +1635,7 @@
             "id": "macro_beginner_te_veel_of_te_weinig_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["deflatie"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Dalende prijzen in het algemeen heten ___.",
             "options": [
               { "id": "a", "text": "deflatie" },
@@ -1703,7 +1703,7 @@
             "id": "macro_beginner_winnaars_en_verliezers_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["herverdeling inflatie"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Iemand bewaart het grootste deel van zijn vermogen als contant geld, zonder rente of waardestijging. De inflatie loopt op. Wat gebeurt er met zijn koopkracht?",
             "options": [
               { "id": "a", "text": "Die blijft precies gelijk, want het bedrag in euro's verandert niet" },
@@ -1733,7 +1733,7 @@
             "id": "macro_beginner_winnaars_en_verliezers_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["herverdeling inflatie"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Een inkomen dat niet meestijgt met de prijzen heet een ___ inkomen.",
             "options": [
               { "id": "a", "text": "vast" },
@@ -1801,7 +1801,7 @@
             "id": "macro_beginner_inflatie_en_bedrijfswinsten_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["prijszettingsmacht"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Een bedrijf heeft een sterk merk zonder echt alternatief voor klanten: het heeft prijszettingsmacht. De kosten stijgen. Hoe makkelijk kan dit bedrijf zijn hogere kosten doorberekenen, vergeleken met een bedrijf zonder die macht?",
             "options": [
               { "id": "a", "text": "Moeilijker, want klanten met een sterk merk zijn juist gevoeliger voor prijzen" },
@@ -1831,7 +1831,7 @@
             "id": "macro_beginner_inflatie_en_bedrijfswinsten_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["prijszettingsmacht"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Het vermogen om prijzen te verhogen zonder klanten te verliezen heet prijszettings___.",
             "options": [
               { "id": "a", "text": "macht" },
@@ -1900,7 +1900,7 @@
             "id": "macro_beginner_inflatie_en_de_markten_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["inflatie en markten"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Het gepubliceerde inflatiecijfer komt hoger uit dan beleggers hadden verwacht. Wat kan hiervan het gevolg zijn voor koersen?",
             "options": [
               { "id": "a", "text": "Koersen kunnen dalen, want het kan wijzen op hogere rente en lagere winsten" },
@@ -1932,7 +1932,7 @@
             "id": "macro_beginner_inflatie_en_de_markten_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["inflatie en markten"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Om inflatie te temperen verhogen centrale banken vaak de ___.",
             "options": [
               { "id": "a", "text": "rente" },
@@ -2003,7 +2003,7 @@
             "id": "macro_beginner_werk_en_werkloosheid_q2",
             "format": "berekening",
             "concepts": ["werkloosheidspercentage"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "De beroepsbevolking is 1.000 en 50 mensen zijn werkloos. Wat is het werkloosheidspercentage?",
             "options": [
               { "id": "a", "text": "50%" },
@@ -2033,7 +2033,7 @@
             "id": "macro_beginner_werk_en_werkloosheid_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["frictiewerkloosheid"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Werkloosheid tussen twee banen heet ___.",
             "options": [
               { "id": "a", "text": "frictiewerkloosheid" },
@@ -2101,7 +2101,7 @@
             "id": "macro_beginner_lonen_en_koopkracht_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["loonkosten per product", "productiviteit"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Bij Bakkerij X stijgen de lonen met 5%, terwijl elke bakker nog evenveel brood per uur bakt (de productiviteit blijft gelijk). Wat gebeurt er met de loonkosten per brood?",
             "options": [
               { "id": "a", "text": "Ze dalen" },
@@ -2131,7 +2131,7 @@
             "id": "macro_beginner_lonen_en_koopkracht_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["productiviteit", "loonruimte"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Op lange termijn kunnen lonen duurzaam stijgen als de ___ stijgt.",
             "options": [
               { "id": "a", "text": "productiviteit" },
@@ -2199,7 +2199,7 @@
             "id": "macro_beginner_vraag_naar_arbeid_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["krappe arbeidsmarkt"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "In sector X zijn nauwelijks werklozen te vinden en staan veel vacatures open. Zijn die vacatures dan moeilijk te vullen?",
             "options": [
               { "id": "a", "text": "Ja, er zijn weinig mensen beschikbaar om de vacatures te vervullen" },
@@ -2229,7 +2229,7 @@
             "id": "macro_beginner_vraag_naar_arbeid_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["krappe arbeidsmarkt"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Bij weinig werklozen en veel vacatures noemen we de arbeidsmarkt ___.",
             "options": [
               { "id": "a", "text": "krap" },
@@ -2282,7 +2282,7 @@
             "id": "macro_beginner_loon_prijsspiraal_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["loon-prijsspiraal"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Wat is een loon-prijsspiraal?",
             "options": [
               { "id": "a", "text": "Een daling van lonen en prijzen" },
@@ -2297,7 +2297,7 @@
             "id": "macro_beginner_loon_prijsspiraal_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["loon-prijsspiraal"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Zodra de lonen in een land stijgen, ontstaat er per definitie een loon-prijsspiraal. Klopt dat?",
             "options": [
               { "id": "a", "text": "Ja, het gebeurt altijd zodra lonen stijgen" },
@@ -2312,7 +2312,7 @@
             "id": "macro_beginner_loon_prijsspiraal_q3",
             "format": "volgorde",
             "concepts": ["loon-prijsspiraal"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Wat is de juiste volgorde van de loon-prijsspiraal?",
             "options": [
               { "id": "a", "text": "Prijzen stijgen → werknemers vragen meer loon → loonkosten stijgen → bedrijven verhogen prijzen" },
@@ -2327,7 +2327,7 @@
             "id": "macro_beginner_loon_prijsspiraal_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["loon-prijsspiraal"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Een loon-prijsspiraal is een mogelijk ___, geen vaste wet.",
             "options": [
               { "id": "a", "text": "mechanisme" },
@@ -2342,7 +2342,7 @@
             "id": "macro_beginner_loon_prijsspiraal_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["loon-prijsspiraal"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van schakel aan wat erop volgt klopt volledig? 1) prijzen stijgen; 2) lonen stijgen; 3) bedrijven verhogen prijzen.",
             "options": [
               { "id": "a", "text": "1 werknemers vragen meer loon, 2 bedrijven verhogen prijzen om kosten te dekken, 3 prijzen stijgen verder" },
@@ -2380,7 +2380,7 @@
             "id": "macro_beginner_productiviteit_en_loonruimte_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["productiviteit", "loonruimte"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Wat bepaalt de ruimte voor duurzaam hogere lonen?",
             "options": [
               { "id": "a", "text": "Productiviteit" },
@@ -2395,7 +2395,7 @@
             "id": "macro_beginner_productiviteit_en_loonruimte_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["productiviteit", "loonruimte", "marge"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Bij een bedrijf stijgen de lonen sneller dan de productiviteit. Wat gebeurt er met de marge, tenzij de prijzen stijgen?",
             "options": [
               { "id": "a", "text": "De marge komt onder druk, want de kosten per product lopen op" },
@@ -2410,7 +2410,7 @@
             "id": "macro_beginner_productiviteit_en_loonruimte_q3",
             "format": "welk-voorbeeld-past",
             "concepts": ["loonkosten per product", "productiviteit"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Productiviteit +10% en lonen +10%. Wat gebeurt er met de loonkosten per product?",
             "options": [
               { "id": "a", "text": "Ze stijgen" },
@@ -2425,7 +2425,7 @@
             "id": "macro_beginner_productiviteit_en_loonruimte_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["productiviteit"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Meer scholing en betere machines verhogen de ___.",
             "options": [
               { "id": "a", "text": "productiviteit" },
@@ -2440,7 +2440,7 @@
             "id": "macro_beginner_productiviteit_en_loonruimte_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["productiviteit"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van gebeurtenis aan het effect op productiviteit klopt volledig? 1) een nieuwe machine; 2) een betere organisatie van het werk; 3) minder scholing; 4) een storing in de productie.",
             "options": [
               { "id": "a", "text": "1 hoger, 2 hoger, 3 lager, 4 lager" },
@@ -2478,7 +2478,7 @@
             "id": "macro_beginner_oververhitting_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["oververhitting"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Wat is oververhitting?",
             "options": [
               { "id": "a", "text": "De vraag daalt sterk" },
@@ -2493,7 +2493,7 @@
             "id": "macro_beginner_oververhitting_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["oververhitting"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "De economie draait op volle toeren: fabrieken zitten aan hun grens en er zijn nauwelijks werklozen. Kunnen prijzen en lonen in die situatie nog stijgen?",
             "options": [
               { "id": "a", "text": "Nee, bij oververhitting kunnen prijzen en lonen niet meer stijgen" },
@@ -2508,7 +2508,7 @@
             "id": "macro_beginner_oververhitting_q3",
             "format": "welk-voorbeeld-past",
             "concepts": ["oververhitting", "capaciteit"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Een fabriek draait op volle capaciteit en heeft nog meer orders. Wat is een waarschijnlijk gevolg?",
             "options": [
               { "id": "a", "text": "Lagere prijzen" },
@@ -2523,7 +2523,7 @@
             "id": "macro_beginner_oververhitting_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["capaciteit"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Als bedrijven niet meer kunnen produceren dan ze doen, zitten ze aan hun ___.",
             "options": [
               { "id": "a", "text": "capaciteit" },
@@ -2538,7 +2538,7 @@
             "id": "macro_beginner_oververhitting_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["oververhitting", "krappe arbeidsmarkt", "inflatiedruk"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van signaal aan betekenis klopt volledig? 1) lange levertijden; 2) sterk stijgende lonen; 3) breed stijgende prijzen.",
             "options": [
               { "id": "a", "text": "1 vraag groter dan aanbod, 2 krappe arbeidsmarkt, 3 inflatiedruk" },
@@ -2576,7 +2576,7 @@
             "id": "macro_beginner_afkoeling_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["afkoeling", "vraag"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Wat gebeurt er meestal eerst als de vraag daalt?",
             "options": [
               { "id": "a", "text": "Bedrijven verhogen hun prijzen sterk" },
@@ -2591,7 +2591,7 @@
             "id": "macro_beginner_afkoeling_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["afkoeling"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "De vraag in een land daalt. Blijft dat effect meestal beperkt tot het eerste bedrijf dat minder verkoopt?",
             "options": [
               { "id": "a", "text": "Ja, andere bedrijven merken er niets van" },
@@ -2606,7 +2606,7 @@
             "id": "macro_beginner_afkoeling_q3",
             "format": "volgorde",
             "concepts": ["afkoeling"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Wat is de juiste volgorde waarin een daling van de vraag zich verspreidt?",
             "options": [
               { "id": "a", "text": "De vraag daalt → bedrijven ontslaan → inkomens dalen → huishoudens geven minder uit" },
@@ -2621,7 +2621,7 @@
             "id": "macro_beginner_afkoeling_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["afkoeling", "omzet"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Dalende uitgaven leiden tot minder ___ voor bedrijven.",
             "options": [
               { "id": "a", "text": "omzet" },
@@ -2636,7 +2636,7 @@
             "id": "macro_beginner_afkoeling_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["afkoeling"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van bedrijf aan hoe snel het de afkoeling merkt klopt volledig? 1) machineleverancier; 2) bakker; 3) bouwbedrijf; 4) supermarkt met basisvoeding.",
             "options": [
               { "id": "a", "text": "1 snel, 2 later, 3 snel, 4 later" },
@@ -2674,7 +2674,7 @@
             "id": "macro_beginner_investeringen_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["investeringen"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Welk deel van de bestedingen schommelt doorgaans het sterkst?",
             "options": [
               { "id": "a", "text": "Investeringen" },
@@ -2689,7 +2689,7 @@
             "id": "macro_beginner_investeringen_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["investeringen", "consumptie"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Een gezin blijft ondanks onzekere tijden gewoon eten, terwijl een bedrijf de aankoop van een nieuwe machine uitstelt. Kunnen huishoudens hun eten net zo makkelijk uitstellen als bedrijven hun investeringen?",
             "options": [
               { "id": "a", "text": "Ja, huishoudens stellen eten net zo makkelijk uit als bedrijven hun machines" },
@@ -2704,7 +2704,7 @@
             "id": "macro_beginner_investeringen_q3",
             "format": "definitie-met-afleiders",
             "concepts": ["investeringen"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Waarom schommelen investeringen sterk?",
             "options": [
               { "id": "a", "text": "Omdat machines gratis zijn" },
@@ -2719,7 +2719,7 @@
             "id": "macro_beginner_investeringen_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["investeringen"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Machines en gebouwen die bedrijven kopen, heten ___.",
             "options": [
               { "id": "a", "text": "investeringen" },
@@ -2734,7 +2734,7 @@
             "id": "macro_beginner_investeringen_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["investeringen"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van bedrijf aan hoe afhankelijk het is van investeringen van anderen klopt volledig? 1) machinefabrikant; 2) supermarkt met basisvoeding; 3) bouwmateriaalleverancier; 4) kapper.",
             "options": [
               { "id": "a", "text": "1 sterk, 2 weinig, 3 sterk, 4 weinig" },
@@ -2772,7 +2772,7 @@
             "id": "macro_beginner_consumptie_en_vertrouwen_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["consumptie", "vertrouwen"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Waarvan hangt consumptie behalve van inkomen ook af?",
             "options": [
               { "id": "a", "text": "Van het aantal beurzen" },
@@ -2787,7 +2787,7 @@
             "id": "macro_beginner_consumptie_en_vertrouwen_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["consumptie", "vertrouwen"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Familie De Vries maakt zich zorgen of hun baan behouden blijft. Wat doen ze waarschijnlijk met grote, uitstelbare aankopen zoals een nieuwe auto?",
             "options": [
               { "id": "a", "text": "Ze stellen die uit, want onzekerheid maakt uitstel aantrekkelijk" },
@@ -2802,7 +2802,7 @@
             "id": "macro_beginner_consumptie_en_vertrouwen_q3",
             "format": "definitie-met-afleiders",
             "concepts": ["vertrouwen"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Wat meet een vertrouwensenquête?",
             "options": [
               { "id": "a", "text": "De omzet van bedrijven" },
@@ -2817,7 +2817,7 @@
             "id": "macro_beginner_consumptie_en_vertrouwen_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["vertrouwen", "signaal"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Een enquête die verwachtingen meet, is een vroeg ___.",
             "options": [
               { "id": "a", "text": "signaal" },
@@ -2832,7 +2832,7 @@
             "id": "macro_beginner_consumptie_en_vertrouwen_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["vertrouwen", "consumptie"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van vertrouwensniveau aan verwachte uitgaven klopt volledig? 1) hoog vertrouwen; 2) laag vertrouwen; 3) gemiddeld vertrouwen.",
             "options": [
               { "id": "a", "text": "1 meer uitgaven aan uitstelbare zaken, 2 meer sparen, 3 rond het gebruikelijke" },
@@ -2870,7 +2870,7 @@
             "id": "macro_beginner_werk_groei_en_de_markten_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["arbeidsmarktcijfers", "markten"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Waarom letten beleggers op arbeidsmarktcijfers?",
             "options": [
               { "id": "a", "text": "Ze bepalen de koers rechtstreeks" },
@@ -2886,7 +2886,7 @@
             "id": "macro_beginner_werk_groei_en_de_markten_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["arbeidsmarktcijfers", "markten"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Een banenrapport valt veel sterker uit dan verwacht. Kunnen koersen dan nooit dalen?",
             "options": [
               { "id": "a", "text": "Ze kunnen nooit dalen na sterk nieuws" },
@@ -2902,7 +2902,7 @@
             "id": "macro_beginner_werk_groei_en_de_markten_q3",
             "format": "welk-voorbeeld-past",
             "concepts": ["arbeidsmarktcijfers", "rente"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Een banenrapport is veel sterker dan verwacht. Welke redenering past bij een koersdaling?",
             "options": [
               { "id": "a", "text": "Hogere rente wordt waarschijnlijker" },
@@ -2918,7 +2918,7 @@
             "id": "macro_beginner_werk_groei_en_de_markten_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["markten", "verwachtingen"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Markten reageren vooral op het verschil tussen verwachting en ___.",
             "options": [
               { "id": "a", "text": "uitkomst" },
@@ -2934,7 +2934,7 @@
             "id": "macro_beginner_werk_groei_en_de_markten_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["markten", "arbeidsmarktcijfers"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van situatie aan mogelijke marktreactie klopt volledig? 1) sterk banenrapport en de markt vreest hogere rente; 2) zwak banenrapport en de markt vreest krimp; 3) rapport zoals verwacht.",
             "options": [
               { "id": "a", "text": "1 vaak negatief door renteverwachting, 2 vaak negatief door groeizorg, 3 weinig beweging" },
@@ -2974,7 +2974,7 @@
             "id": "macro_beginner_wat_is_geld_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["functies van geld"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Welke drie taken heeft geld?",
             "options": [
               { "id": "a", "text": "Rente, winst, belasting" },
@@ -2989,7 +2989,7 @@
             "id": "macro_beginner_wat_is_geld_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["ruilhandel", "geld"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Bakker Anna wil haar brood ruilen voor schoenen bij een schoenmaker. De schoenmaker wil op dat moment geen brood. Wat illustreert dit over ruilhandel zonder geld?",
             "options": [
               { "id": "a", "text": "Ruilhandel werkt altijd soepel, ongeacht wat de ander wil" },
@@ -3004,7 +3004,7 @@
             "id": "macro_beginner_wat_is_geld_q3",
             "format": "definitie-met-afleiders",
             "concepts": ["vertrouwen in geld"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Waarom werkt geld?",
             "options": [
               { "id": "a", "text": "Omdat het altijd meer waard wordt" },
@@ -3019,7 +3019,7 @@
             "id": "macro_beginner_wat_is_geld_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["rekeneenheid"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Iets waarin je prijzen uitdrukt, heet een ___.",
             "options": [
               { "id": "a", "text": "Rekeneenheid" },
@@ -3034,7 +3034,7 @@
             "id": "macro_beginner_wat_is_geld_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["functies van geld"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van taak en voorbeeld bij geld klopt volledig? Taken: 1) ruilmiddel, 2) rekeneenheid, 3) waardeopslag.",
             "options": [
               { "id": "a", "text": "1 je betaalt een broodje met geld; 2 alle prijzen op het bord staan in dezelfde munt; 3 je bewaart geld om er later iets mee te kopen" },
@@ -3072,7 +3072,7 @@
             "id": "macro_beginner_soorten_geld_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["giraal geld"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Wat is giraal geld?",
             "options": [
               { "id": "a", "text": "Munten" },
@@ -3087,7 +3087,7 @@
             "id": "macro_beginner_soorten_geld_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["giraal geld", "contant geld"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Job telt op hoeveel geld er in de economie omgaat: contant geld in kassa's en portemonnees, en tegoeden op bankrekeningen. Welk deel is in een moderne economie doorgaans het grootst?",
             "options": [
               { "id": "a", "text": "Contant geld, want iedereen heeft cash nodig" },
@@ -3102,7 +3102,7 @@
             "id": "macro_beginner_soorten_geld_q3",
             "format": "definitie-met-afleiders",
             "concepts": ["overschrijving", "giraal geld"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Wat gebeurt er bij een overschrijving?",
             "options": [
               { "id": "a", "text": "Een tegoed verschuift van de ene rekening naar de andere" },
@@ -3117,7 +3117,7 @@
             "id": "macro_beginner_soorten_geld_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["giraal geld"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Geld op een bankrekening heet ___ geld.",
             "options": [
               { "id": "a", "text": "Giraal" },
@@ -3132,7 +3132,7 @@
             "id": "macro_beginner_soorten_geld_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["uitgifte van geld"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van geldvorm en uitgever klopt volledig? Vormen: 1) biljetten, 2) tegoed op jouw eigen bankrekening, 3) tegoed van een bank bij de centrale bank.",
             "options": [
               { "id": "a", "text": "1 wordt uitgegeven door de centrale bank (voor het publiek); 2 door een commerciële bank; 3 door de centrale bank (voor banken)" },
@@ -3170,7 +3170,7 @@
             "id": "macro_beginner_wat_banken_doen_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["functies van een bank"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Welke drie dingen doet een bank?",
             "options": [
               { "id": "a", "text": "Tegoeden aannemen, leningen verstrekken, betalingen verwerken" },
@@ -3200,7 +3200,7 @@
             "id": "macro_beginner_wat_banken_doen_q3",
             "format": "berekening",
             "concepts": ["renteverschil"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Een bank rekent 5% op een lening en betaalt 2% op spaargeld. Wat is het renteverschil?",
             "options": [
               { "id": "a", "text": "7 procentpunt" },
@@ -3230,7 +3230,7 @@
             "id": "macro_beginner_wat_banken_doen_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["functies van een bank"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van bankactiviteit en doel klopt volledig? Activiteiten: 1) tegoeden aannemen, 2) leningen verstrekken, 3) betalingen verwerken.",
             "options": [
               { "id": "a", "text": "1 veilig bewaren met rente; 2 geld beschikbaar maken voor wie het nodig heeft; 3 geld laten verplaatsen tussen rekeningen" },
@@ -3268,7 +3268,7 @@
             "id": "macro_beginner_hoe_geld_ontstaat_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["geldschepping"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Hoe ontstaat nieuw geld in een moderne economie vooral?",
             "options": [
               { "id": "a", "text": "Doordat spaarders geld storten" },
@@ -3298,7 +3298,7 @@
             "id": "macro_beginner_hoe_geld_ontstaat_q3",
             "format": "volgorde",
             "concepts": ["geldschepping"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Zet in de juiste volgorde: (a) de lener besteedt het geld; (b) een bank verstrekt een lening; (c) op de rekening van de lener verschijnt een tegoed; (d) de lening wordt afgelost en het geld verdwijnt.",
             "options": [
               { "id": "a", "text": "b, c, a, d" },
@@ -3328,7 +3328,7 @@
             "id": "macro_beginner_hoe_geld_ontstaat_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["geldschepping"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van gebeurtenis en effect op de geldhoeveelheid klopt volledig? Gebeurtenissen: 1) een bank verstrekt een lening, 2) een lening wordt afgelost, 3) je maakt een bedrag over aan een ander.",
             "options": [
               { "id": "a", "text": "1 neemt toe; 2 neemt af; 3 blijft gelijk" },
@@ -3479,7 +3479,7 @@
             "id": "macro_beginner_de_centrale_bank_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["centrale bank"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Commerciële banken houden tegoeden aan bij de centrale bank, en ook de overheid maakt gebruik van de centrale bank. Gewone burgers kunnen daar echter geen rekening openen. Wat zegt dit over de rol van de centrale bank?",
             "options": [
               { "id": "a", "text": "Ze is de bank van banken en van de overheid, niet van gewone klanten" },
@@ -3509,7 +3509,7 @@
             "id": "macro_beginner_de_centrale_bank_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["prijsstabiliteit"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Een centrale bank streeft naar ___stabiliteit.",
             "options": [
               { "id": "a", "text": "Prijs" },
@@ -3539,7 +3539,7 @@
             "id": "macro_beginner_de_centrale_bank_q6",
             "format": "keten-redenering",
             "concepts": ["onafhankelijkheid centrale bank", "markten"],
-            "difficulty_prior": 4,
+            "difficulty_prior": 5,
             "question": "Waarom is de onafhankelijkheid van een centrale bank belangrijk voor markten?",
             "options": [
               { "id": "a", "text": "Omdat markten dan geen rente hebben" },
@@ -3856,7 +3856,7 @@
             "id": "macro_beginner_geld_en_de_markten_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["krediet", "markten"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 2,
             "question": "Hoe kan ruim en goedkoop krediet koersen beïnvloeden?",
             "options": [
               { "id": "a", "text": "Het maakt koersen altijd lager" },
@@ -3888,7 +3888,7 @@
             "id": "macro_beginner_geld_en_de_markten_q3",
             "format": "definitie-met-afleiders",
             "concepts": ["liquiditeit"],
-            "difficulty_prior": 4,
+            "difficulty_prior": 3,
             "question": "Wat betekent liquiditeit in het financiële systeem?",
             "options": [
               { "id": "a", "text": "Hoeveel winst bedrijven maken" },
@@ -3920,7 +3920,7 @@
             "id": "macro_beginner_geld_en_de_markten_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["krediet", "markten"],
-            "difficulty_prior": 5,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van kredietconditie en tendens voor markten klopt volledig? Condities: 1) ruim en goedkoop krediet, 2) duur en schaars krediet, 3) ongewijzigde condities.",
             "options": [
               { "id": "a", "text": "1 kan koersen ondersteunen; 2 kan koersen drukken; 3 weinig verandering" },
@@ -3960,7 +3960,7 @@
             "id": "macro_beginner_wat_is_rente_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["rente"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Wat is rente?",
             "options": [
               { "id": "a", "text": "De prijs die je betaalt voor het lenen van geld" },
@@ -3975,7 +3975,7 @@
             "id": "macro_beginner_wat_is_rente_q2",
             "format": "berekening",
             "concepts": ["rente-berekening"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Je leent 200 euro tegen 4% per jaar. Hoeveel rente betaal je na een jaar?",
             "options": [
               { "id": "a", "text": "4" },
@@ -3990,7 +3990,7 @@
             "id": "macro_beginner_wat_is_rente_q3",
             "format": "welk-voorbeeld-past",
             "concepts": ["risico en rente"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Een bank leent geld uit aan twee bedrijven: één met een stabiele geschiedenis en één dat vaker op het randje balanceert. Past het bij hoe rente werkt dat de bank van het risicovolle bedrijf een hogere rente vraagt?",
             "options": [
               { "id": "a", "text": "Ja, rente is ook een vergoeding voor het risico dat de lener niet terugbetaalt" },
@@ -4005,7 +4005,7 @@
             "id": "macro_beginner_wat_is_rente_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["rente"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Rente wordt uitgedrukt als een percentage per ___.",
             "options": [
               { "id": "a", "text": "jaar" },
@@ -4020,7 +4020,7 @@
             "id": "macro_beginner_wat_is_rente_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["tijd, risico en inflatie"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van reden en uitleg klopt volledig? Redenen: 1) tijd; 2) risico; 3) inflatie.",
             "options": [
               { "id": "a", "text": "1 tijd: de uitlener kan het geld nu niet gebruiken; 2 risico: de lener betaalt misschien niet terug; 3 inflatie: het geld kan onderweg minder waard worden" },
@@ -4035,7 +4035,7 @@
             "id": "macro_beginner_wat_is_rente_q6",
             "format": "keten-redenering",
             "concepts": ["rente"],
-            "difficulty_prior": 4,
+            "difficulty_prior": 5,
             "question": "Waarom vraagt iemand rente als hij geld uitleent?",
             "options": [
               { "id": "a", "text": "Omdat de overheid dat verplicht" },
@@ -4058,7 +4058,7 @@
             "id": "macro_beginner_rente_en_tijd_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["tijdswaarde van geld"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Waarom is 100 euro nu meer waard dan 100 euro over een jaar?",
             "options": [
               { "id": "a", "text": "Omdat geld vanzelf meer waard wordt naarmate de tijd verstrijkt" },
@@ -4073,7 +4073,7 @@
             "id": "macro_beginner_rente_en_tijd_q2",
             "format": "berekening",
             "concepts": ["rente op rente"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Je spaart 100 euro tegen 5% per jaar en laat de rente staan. Hoeveel heb je na twee jaar?",
             "options": [
               { "id": "a", "text": "110,25" },
@@ -4088,7 +4088,7 @@
             "id": "macro_beginner_rente_en_tijd_q3",
             "format": "welk-voorbeeld-past",
             "concepts": ["rente op rente"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Je zet 100 euro weg tegen 5% per jaar en laat de rente elk jaar staan. Groeit dat bedrag daardoor jaar na jaar steeds sneller?",
             "options": [
               { "id": "a", "text": "Ja, want elke keer wordt de rente berekend over een steeds groter bedrag" },
@@ -4103,7 +4103,7 @@
             "id": "macro_beginner_rente_en_tijd_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["rente op rente"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Rente over eerder ontvangen rente heet rente op ___.",
             "options": [
               { "id": "a", "text": "rente" },
@@ -4118,7 +4118,7 @@
             "id": "macro_beginner_rente_en_tijd_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["rente op rente"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van situatie en effect klopt volledig? Situaties: 1) sparen met rente op rente; 2) een lopende schuld met rente op rente; 3) elk jaar de rente opnemen.",
             "options": [
               { "id": "a", "text": "1 sparen met rente op rente: het bedrag groeit steeds sneller; 2 een lopende schuld met rente op rente: de schuld groeit steeds sneller; 3 elk jaar de rente opnemen: het bedrag groeit langzamer" },
@@ -4133,7 +4133,7 @@
             "id": "macro_beginner_rente_en_tijd_q6",
             "format": "keten-redenering",
             "concepts": ["rente op rente"],
-            "difficulty_prior": 4,
+            "difficulty_prior": 5,
             "question": "Waarom groeit een bedrag met rente steeds sneller, jaar na jaar?",
             "options": [
               { "id": "a", "text": "Omdat de rente elk jaar stijgt" },
@@ -4156,7 +4156,7 @@
             "id": "macro_beginner_reele_en_nominale_rente_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["reële en nominale rente"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Wat is de reële rente ongeveer?",
             "options": [
               { "id": "a", "text": "De nominale rente plus de inflatie" },
@@ -4171,7 +4171,7 @@
             "id": "macro_beginner_reele_en_nominale_rente_q2",
             "format": "berekening",
             "concepts": ["reële en nominale rente"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Nominale rente 3%, inflatie 5%. Wat is de reële rente ongeveer?",
             "options": [
               { "id": "a", "text": "+8%" },
@@ -4186,7 +4186,7 @@
             "id": "macro_beginner_reele_en_nominale_rente_q3",
             "format": "welk-voorbeeld-past",
             "concepts": ["reële en nominale rente"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Je spaargeld staat tegen een rente die lager is dan de inflatie, dus de reële rente is negatief. Verlies je dan koopkracht, ondanks dat je rente ontvangt?",
             "options": [
               { "id": "a", "text": "Nee, de ontvangen rente compenseert de prijsstijging altijd volledig" },
@@ -4201,7 +4201,7 @@
             "id": "macro_beginner_reele_en_nominale_rente_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["reële en nominale rente"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Rente zonder rekening te houden met inflatie heet ___ rente.",
             "options": [
               { "id": "a", "text": "nominale" },
@@ -4216,7 +4216,7 @@
             "id": "macro_beginner_reele_en_nominale_rente_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["reële en nominale rente"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van situatie en de ongeveer reële rente klopt volledig? Situaties: 1) rente 5%, inflatie 2%; 2) rente 2%, inflatie 5%; 3) rente 4%, inflatie 4%.",
             "options": [
               { "id": "a", "text": "1 rente 5%, inflatie 2%: reële rente ongeveer +3%; 2 rente 2%, inflatie 5%: reële rente ongeveer −3%; 3 rente 4%, inflatie 4%: reële rente ongeveer 0%" },
@@ -4231,7 +4231,7 @@
             "id": "macro_beginner_reele_en_nominale_rente_q6",
             "format": "keten-redenering",
             "concepts": ["reële en nominale rente"],
-            "difficulty_prior": 4,
+            "difficulty_prior": 5,
             "question": "Waarom maakt een lage of negatieve reële rente lenen aantrekkelijker?",
             "options": [
               { "id": "a", "text": "Omdat je terugbetaalt met geld dat minder waard is geworden" },
@@ -4254,7 +4254,7 @@
             "id": "macro_beginner_wat_bepaalt_de_rente_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["rentevorming"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Wat bepaalt de rente onder meer?",
             "options": [
               { "id": "a", "text": "Vraag naar en aanbod van geld" },
@@ -4269,7 +4269,7 @@
             "id": "macro_beginner_wat_bepaalt_de_rente_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["risico en rente"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Twee leners vragen een lening aan: de een heeft een stabiel inkomen, de ander heeft vaker betalingsproblemen gehad. Betaalt de riskantere lener doorgaans minder rente dan de stabiele lener?",
             "options": [
               { "id": "a", "text": "Ja, banken belonen meer risico met een lagere rente" },
@@ -4284,7 +4284,7 @@
             "id": "macro_beginner_wat_bepaalt_de_rente_q3",
             "format": "definitie-met-afleiders",
             "concepts": ["rentevorming"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Er is veel spaargeld en weinig vraag om te lenen. Wat gebeurt er waarschijnlijk met de rente?",
             "options": [
               { "id": "a", "text": "Ze stijgt" },
@@ -4299,7 +4299,7 @@
             "id": "macro_beginner_wat_bepaalt_de_rente_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["risico en rente"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Een lener met een hoger risico betaalt meer ___.",
             "options": [
               { "id": "a", "text": "rente" },
@@ -4314,7 +4314,7 @@
             "id": "macro_beginner_wat_bepaalt_de_rente_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["rentevorming", "risico en rente", "inflatie en rente"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van oorzaak en effect op de rente klopt volledig? Oorzaken: 1) hoger risico bij de lener; 2) meer spaargeld dan vraag; 3) hogere verwachte inflatie.",
             "options": [
               { "id": "a", "text": "1 hoger risico bij de lener: hogere rente via risico; 2 meer spaargeld dan vraag: lagere rente; 3 hogere verwachte inflatie: hogere rente via inflatie" },
@@ -4329,7 +4329,7 @@
             "id": "macro_beginner_wat_bepaalt_de_rente_q6",
             "format": "keten-redenering",
             "concepts": ["risico en rente"],
-            "difficulty_prior": 4,
+            "difficulty_prior": 5,
             "question": "Waarom betaalt een riskante lener meer rente?",
             "options": [
               { "id": "a", "text": "Omdat banken hem dat niet mogen weigeren" },
@@ -4352,7 +4352,7 @@
             "id": "macro_beginner_de_beleidsrente_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["beleidsrente"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Wat is de beleidsrente?",
             "options": [
               { "id": "a", "text": "De rente op je spaarrekening" },
@@ -4367,7 +4367,7 @@
             "id": "macro_beginner_de_beleidsrente_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["beleidsrente"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "De centrale bank verhoogt de beleidsrente. Wordt lenen bij banken daardoor doorgaans duurder?",
             "options": [
               { "id": "a", "text": "Ja, banken berekenen hun hogere kosten door aan hun klanten" },
@@ -4382,7 +4382,7 @@
             "id": "macro_beginner_de_beleidsrente_q3",
             "format": "volgorde",
             "concepts": ["beleidsrente"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Wat is de juiste volgorde van deze keten?",
             "options": [
               { "id": "a", "text": "De centrale bank verhoogt de beleidsrente → banken vragen meer rente voor leningen → bedrijven en huishoudens lenen minder → de uitgaven dalen" },
@@ -4397,7 +4397,7 @@
             "id": "macro_beginner_de_beleidsrente_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["beleidsrente"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "De rente die de centrale bank vaststelt, heet de ___rente.",
             "options": [
               { "id": "a", "text": "beleids" },
@@ -4412,7 +4412,7 @@
             "id": "macro_beginner_de_beleidsrente_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["beleidsrente"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van besluit en effect klopt volledig? Besluiten: 1) verhoging; 2) verlaging; 3) ongewijzigd.",
             "options": [
               { "id": "a", "text": "1 verhoging: lenen duurder, sparen aantrekkelijker; 2 verlaging: lenen goedkoper, sparen minder aantrekkelijk; 3 ongewijzigd: weinig verandering" },
@@ -4427,7 +4427,7 @@
             "id": "macro_beginner_de_beleidsrente_q6",
             "format": "keten-redenering",
             "concepts": ["beleidsrente"],
-            "difficulty_prior": 4,
+            "difficulty_prior": 5,
             "question": "Hoe bereikt een besluit van de centrale bank een huishouden of bedrijf?",
             "options": [
               { "id": "a", "text": "Via de belasting" },
@@ -4450,7 +4450,7 @@
             "id": "macro_beginner_rente_en_uitgaven_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["rente en uitgaven"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 2,
             "question": "Wat doet een hogere rente met leningen?",
             "options": [
               { "id": "a", "text": "Ze worden goedkoper" },
@@ -4465,7 +4465,7 @@
             "id": "macro_beginner_rente_en_uitgaven_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["rente en uitgaven"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "De centrale bank verandert de rente. Is het effect daarvan meteen en volledig zichtbaar in de economie?",
             "options": [
               { "id": "a", "text": "Ja, het effect is direct en compleet zichtbaar" },
@@ -4480,7 +4480,7 @@
             "id": "macro_beginner_rente_en_uitgaven_q3",
             "format": "definitie-met-afleiders",
             "concepts": ["rentegevoelige sectoren"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 3,
             "question": "Welke sector reageert doorgaans sterk op renteveranderingen?",
             "options": [
               { "id": "a", "text": "De bouw" },
@@ -4495,7 +4495,7 @@
             "id": "macro_beginner_rente_en_uitgaven_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["rente en uitgaven"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Een renteverandering werkt met ___ door.",
             "options": [
               { "id": "a", "text": "vertraging" },
@@ -4510,7 +4510,7 @@
             "id": "macro_beginner_rente_en_uitgaven_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["rentegevoelige sectoren"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 4,
             "question": "Welke koppeling van sector en gevoeligheid voor renteveranderingen klopt volledig? Sectoren: 1) bouw; 2) basisvoeding; 3) auto's op afbetaling; 4) energie voor huishoudens.",
             "options": [
               { "id": "a", "text": "1 bouw: sterk; 2 basisvoeding: weinig; 3 auto's op afbetaling: sterk; 4 energie voor huishoudens: weinig" },
@@ -4525,7 +4525,7 @@
             "id": "macro_beginner_rente_en_uitgaven_q6",
             "format": "keten-redenering",
             "concepts": ["rentegevoelige sectoren"],
-            "difficulty_prior": 4,
+            "difficulty_prior": 5,
             "question": "Welke sectoren reageren het sterkst op renteveranderingen?",
             "options": [
               { "id": "a", "text": "Sectoren die veel met lenen werken" },
@@ -4548,7 +4548,7 @@
             "id": "macro_beginner_rente_en_sparen_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["rente en sparen"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Wie profiteert van een hogere rente?",
             "options": [
               { "id": "a", "text": "Spaarders" },
@@ -4563,7 +4563,7 @@
             "id": "macro_beginner_rente_en_sparen_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["variabele en vaste rente"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Iemand heeft een lening met een variabele rente, een ander heeft een lening met een vaste rente. De marktrente stijgt. Merkt de persoon met de variabele rente dat sneller dan de persoon met de vaste rente?",
             "options": [
               { "id": "a", "text": "Ja, de variabele rente past zich aan de markt aan" },
@@ -4578,7 +4578,7 @@
             "id": "macro_beginner_rente_en_sparen_q3",
             "format": "definitie-met-afleiders",
             "concepts": ["rente en sparen"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Wie verliest bij een hogere rente?",
             "options": [
               { "id": "a", "text": "Spaarders" },
@@ -4593,7 +4593,7 @@
             "id": "macro_beginner_rente_en_sparen_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["variabele en vaste rente"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Een rente die meebeweegt met de markt, heet een ___ rente.",
             "options": [
               { "id": "a", "text": "variabele" },
@@ -4608,7 +4608,7 @@
             "id": "macro_beginner_rente_en_sparen_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["rente en sparen", "variabele en vaste rente"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 5,
             "question": "Welke koppeling van partij en effect bij een renteverhoging klopt volledig? Partijen: 1) spaarder; 2) lener met variabele rente; 3) lener met vaste rente.",
             "options": [
               { "id": "a", "text": "1 spaarder: ontvangt meer; 2 lener met variabele rente: betaalt meer; 3 lener met vaste rente: merkt het pas bij verlenging" },
@@ -4623,7 +4623,7 @@
             "id": "macro_beginner_rente_en_sparen_q6",
             "format": "keten-redenering",
             "concepts": ["rente en sparen"],
-            "difficulty_prior": 4,
+            "difficulty_prior": 5,
             "question": "Wie wint en wie verliest als de rente stijgt?",
             "options": [
               { "id": "a", "text": "Iedereen wint" },
@@ -4646,7 +4646,7 @@
             "id": "macro_beginner_rentebeleid_en_doelen_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["rentebeleid en doelen"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Welke twee doelen moet een centrale bank vaak tegen elkaar afwegen?",
             "options": [
               { "id": "a", "text": "Winst maken en belasting innen" },
@@ -4661,7 +4661,7 @@
             "id": "macro_beginner_rentebeleid_en_doelen_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["rentebeleid en doelen"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "De centrale bank verhoogt de rente om de inflatie te temperen. Blijft de economische groei daarbij ongemoeid?",
             "options": [
               { "id": "a", "text": "Ja, een renteverhoging raakt alleen de inflatie, niets anders" },
@@ -4676,7 +4676,7 @@
             "id": "macro_beginner_rentebeleid_en_doelen_q3",
             "format": "definitie-met-afleiders",
             "concepts": ["timing van rentebeleid"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Waarom is de timing van rentebeleid moeilijk?",
             "options": [
               { "id": "a", "text": "Omdat rente altijd vastligt" },
@@ -4691,7 +4691,7 @@
             "id": "macro_beginner_rentebeleid_en_doelen_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["timing van rentebeleid"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Rentebeleid werkt met ___.",
             "options": [
               { "id": "a", "text": "vertraging" },
@@ -4706,7 +4706,7 @@
             "id": "macro_beginner_rentebeleid_en_doelen_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["rentebeleid en doelen"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 5,
             "question": "Welke koppeling van misstap en gevolg klopt volledig? Misstappen: 1) te laat verhogen; 2) te vroeg verlagen; 3) te sterk verhogen.",
             "options": [
               { "id": "a", "text": "1 te laat verhogen: inflatie kan blijven oplopen; 2 te vroeg verlagen: inflatie kan weer stijgen; 3 te sterk verhogen: groei kan te veel afremmen" },
@@ -4721,7 +4721,7 @@
             "id": "macro_beginner_rentebeleid_en_doelen_q6",
             "format": "keten-redenering",
             "concepts": ["timing van rentebeleid"],
-            "difficulty_prior": 4,
+            "difficulty_prior": 5,
             "question": "Waarom is de timing van rentebeleid zo moeilijk?",
             "options": [
               { "id": "a", "text": "Omdat inflatie niet bestaat" },
@@ -4744,7 +4744,7 @@
             "id": "macro_beginner_als_de_rente_niet_verder_kan_zakken_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["ondergrens van de rente"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Wat kan een centrale bank doen als de rente al erg laag is?",
             "options": [
               { "id": "a", "text": "Niets meer, de mogelijkheden zijn dan op" },
@@ -4759,7 +4759,7 @@
             "id": "macro_beginner_als_de_rente_niet_verder_kan_zakken_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["ondergrens van de rente"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "De rente staat al bijna op nul. Kan de centrale bank de rente daarna nog onbeperkt verder verlagen, ver onder nul?",
             "options": [
               { "id": "a", "text": "Ja, er is geen enkele praktische grens aan hoe laag de rente kan" },
@@ -4774,7 +4774,7 @@
             "id": "macro_beginner_als_de_rente_niet_verder_kan_zakken_q3",
             "format": "definitie-met-afleiders",
             "concepts": ["obligatie-opkoopbeleid"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Wat kan er met de lange rente gebeuren als de centrale bank op grote schaal obligaties koopt?",
             "options": [
               { "id": "a", "text": "Ze kan dalen" },
@@ -4789,7 +4789,7 @@
             "id": "macro_beginner_als_de_rente_niet_verder_kan_zakken_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["obligatie-opkoopbeleid"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Als een centrale bank obligaties koopt, komt er meer ___ in het stelsel.",
             "options": [
               { "id": "a", "text": "geld" },
@@ -4804,7 +4804,7 @@
             "id": "macro_beginner_als_de_rente_niet_verder_kan_zakken_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["obligatie-opkoopbeleid"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 5,
             "question": "Welke koppeling van maatregel en doel klopt volledig? Maatregelen: 1) obligaties kopen; 2) rente verlagen; 3) rente verhogen.",
             "options": [
               { "id": "a", "text": "1 obligaties kopen: lange rente omlaag en meer geld in het stelsel; 2 rente verlagen: lenen goedkoper; 3 rente verhogen: uitgaven temperen" },
@@ -4819,7 +4819,7 @@
             "id": "macro_beginner_als_de_rente_niet_verder_kan_zakken_q6",
             "format": "keten-redenering",
             "concepts": ["obligatie-opkoopbeleid"],
-            "difficulty_prior": 4,
+            "difficulty_prior": 5,
             "question": "Waarom kan goedkoop geld de prijzen van bezittingen omhoog duwen?",
             "options": [
               { "id": "a", "text": "Omdat lenen goedkoper wordt en kopers meer kunnen betalen" },
@@ -4842,7 +4842,7 @@
             "id": "macro_beginner_rente_en_verwachtingen_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["verwachtingen en koersen"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Waarom reageert een markt vaak al vóór een rentebesluit?",
             "options": [
               { "id": "a", "text": "Omdat verwachtingen over dat besluit al in de koers zitten" },
@@ -4858,7 +4858,7 @@
             "id": "macro_beginner_rente_en_verwachtingen_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["verwachtingen en koersen"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Een rentebesluit komt precies overeen met wat de markt al verwachtte. Geeft dat doorgaans veel koersbeweging?",
             "options": [
               { "id": "a", "text": "Ja, een bevestigd besluit geeft doorgaans de grootste beweging" },
@@ -4874,7 +4874,7 @@
             "id": "macro_beginner_rente_en_verwachtingen_q3",
             "format": "definitie-met-afleiders",
             "concepts": ["communicatie centrale bank"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Wat kan een centrale bank doen om verrassingen te beperken?",
             "options": [
               { "id": "a", "text": "Nooit iets communiceren over haar plannen" },
@@ -4890,7 +4890,7 @@
             "id": "macro_beginner_rente_en_verwachtingen_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["verwachtingen en koersen"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Wat de markt verwacht, zit al in de ___.",
             "options": [
               { "id": "a", "text": "koers" },
@@ -4906,7 +4906,7 @@
             "id": "macro_beginner_rente_en_verwachtingen_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["verwachtingen en koersen"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 5,
             "question": "Welke koppeling van situatie en waarschijnlijke reactie klopt volledig? Situaties: 1) besluit zoals verwacht; 2) verrassend hogere rente; 3) verrassend lagere rente. Dit zijn tendensen, geen regels.",
             "options": [
               { "id": "a", "text": "1 besluit zoals verwacht: weinig beweging; 2 verrassend hogere rente: vaak negatief voor koersen; 3 verrassend lagere rente: vaak positief voor koersen" },
@@ -4946,7 +4946,7 @@
             "id": "macro_beginner_obligaties_de_basis_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["obligatie"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Wat is een obligatie?",
             "options": [
               { "id": "a", "text": "Een aandeel in een bedrijf" },
@@ -4962,7 +4962,7 @@
             "id": "macro_beginner_obligaties_de_basis_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["obligatie", "schuldeiser"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Iemand koopt een obligatie van een bedrijf. Is die persoon daarmee mede-eigenaar van het bedrijf?",
             "options": [
               { "id": "a", "text": "Nee, hij is schuldeiser; eigenaar zijn aandeelhouders" },
@@ -4978,7 +4978,7 @@
             "id": "macro_beginner_obligaties_de_basis_q3",
             "format": "berekening",
             "concepts": ["coupon"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Een obligatie heeft een nominale waarde van 1.000 en een coupon van 4% per jaar. Hoeveel rente krijg je per jaar?",
             "options": [
               { "id": "a", "text": "40" },
@@ -4994,7 +4994,7 @@
             "id": "macro_beginner_obligaties_de_basis_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["coupon"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "De periodieke rente op een obligatie heet de ___.",
             "options": [
               { "id": "a", "text": "coupon" },
@@ -5010,7 +5010,7 @@
             "id": "macro_beginner_obligaties_de_basis_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["coupon", "looptijd", "aflossing"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 5,
             "question": "Welke koppeling van term en betekenis klopt volledig? Termen: coupon, looptijd, aflossing.",
             "options": [
               { "id": "a", "text": "Coupon: periodieke rente; looptijd: tijd tot de einddatum; aflossing: terugbetaling van het geleende bedrag" },
@@ -5026,7 +5026,7 @@
             "id": "macro_beginner_obligaties_de_basis_q6",
             "format": "keten-redenering",
             "concepts": ["obligatie"],
-            "difficulty_prior": 4,
+            "difficulty_prior": 5,
             "question": "Wat krijgt een belegger die een obligatie koopt?",
             "options": [
               { "id": "a", "text": "Rente en aan het eind het geleende bedrag terug" },
@@ -5050,7 +5050,7 @@
             "id": "macro_beginner_rente_en_obligatiekoersen_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["obligatiekoers", "marktrente"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Wat gebeurt er met de koers van een bestaande obligatie als de marktrente stijgt?",
             "options": [
               { "id": "a", "text": "Ze daalt" },
@@ -5066,7 +5066,7 @@
             "id": "macro_beginner_rente_en_obligatiekoersen_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["obligatiekoers", "marktrente"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "De marktrente daalt. Wat gebeurt er met de koers van een bestaande obligatie met een hogere coupon?",
             "options": [
               { "id": "a", "text": "Ze daalt, want de coupon wordt minder waard" },
@@ -5082,7 +5082,7 @@
             "id": "macro_beginner_rente_en_obligatiekoersen_q3",
             "format": "berekening",
             "concepts": ["obligatiekoers"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Een obligatie betaalt over een jaar 105. De markt eist 10% rendement. Wat is de koers ongeveer?",
             "options": [
               { "id": "a", "text": "100" },
@@ -5098,7 +5098,7 @@
             "id": "macro_beginner_rente_en_obligatiekoersen_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["obligatiekoers", "marktrente"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Rente en obligatiekoers bewegen in ___ richting.",
             "options": [
               { "id": "a", "text": "tegengestelde" },
@@ -5114,7 +5114,7 @@
             "id": "macro_beginner_rente_en_obligatiekoersen_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["obligatiekoers", "marktrente"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 5,
             "question": "Welke koppeling van marktrente-beweging en effect op de koers klopt volledig?",
             "options": [
               { "id": "a", "text": "Marktrente stijgt: koers daalt; marktrente daalt: koers stijgt; marktrente blijft gelijk: koers blijft ongeveer gelijk" },
@@ -5130,7 +5130,7 @@
             "id": "macro_beginner_rente_en_obligatiekoersen_q6",
             "format": "keten-redenering",
             "concepts": ["obligatiekoers", "marktrente"],
-            "difficulty_prior": 4,
+            "difficulty_prior": 5,
             "question": "Waarom daalt de koers van een bestaande obligatie als de rente stijgt?",
             "options": [
               { "id": "a", "text": "Omdat de uitgever failliet gaat" },
@@ -5154,7 +5154,7 @@
             "id": "macro_beginner_looptijd_en_rentegevoeligheid_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["looptijd", "rentegevoeligheid"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Welke obligatie schommelt bij renteverandering doorgaans het sterkst?",
             "options": [
               { "id": "a", "text": "Een met een korte looptijd" },
@@ -5170,7 +5170,7 @@
             "id": "macro_beginner_looptijd_en_rentegevoeligheid_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["looptijd"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Een obligatie heeft een lange looptijd. Kun je bij een renteverandering snel opnieuw beleggen tegen de nieuwe rente?",
             "options": [
               { "id": "a", "text": "Nee, het geld zit lang vast; pas bij een korte looptijd komt het snel vrij" },
@@ -5186,7 +5186,7 @@
             "id": "macro_beginner_looptijd_en_rentegevoeligheid_q3",
             "format": "definitie-met-afleiders",
             "concepts": ["looptijd", "rentegevoeligheid"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Waarom reageert een obligatie met een lange looptijd sterker op een renteverandering?",
             "options": [
               { "id": "a", "text": "Omdat de coupon hoger is" },
@@ -5202,7 +5202,7 @@
             "id": "macro_beginner_looptijd_en_rentegevoeligheid_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["rentegevoeligheid"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Hoe langer de looptijd, hoe ___ gevoelig voor rente.",
             "options": [
               { "id": "a", "text": "meer" },
@@ -5218,7 +5218,7 @@
             "id": "macro_beginner_looptijd_en_rentegevoeligheid_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["looptijd", "rentegevoeligheid"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 5,
             "question": "Welke koppeling van looptijd en rentegevoeligheid klopt volledig?",
             "options": [
               { "id": "a", "text": "Looptijd 1 jaar: weinig gevoelig; looptijd 10 jaar: middel gevoelig; looptijd 30 jaar: sterk gevoelig" },
@@ -5234,7 +5234,7 @@
             "id": "macro_beginner_looptijd_en_rentegevoeligheid_q6",
             "format": "keten-redenering",
             "concepts": ["looptijd", "rentegevoeligheid"],
-            "difficulty_prior": 4,
+            "difficulty_prior": 5,
             "question": "Welke obligaties schommelen het sterkst bij een renteverandering?",
             "options": [
               { "id": "a", "text": "Obligaties met een korte looptijd" },
@@ -5258,7 +5258,7 @@
             "id": "macro_beginner_kredietrisico_en_rentetoeslag_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["rentetoeslag"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Wat is de rentetoeslag?",
             "options": [
               { "id": "a", "text": "De belasting op rente" },
@@ -5274,7 +5274,7 @@
             "id": "macro_beginner_kredietrisico_en_rentetoeslag_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["kredietrisico", "rentetoeslag"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Moet een riskantere uitgever meestal meer of minder rente bieden dan een zeer veilige uitgever?",
             "options": [
               { "id": "a", "text": "Meer, anders koopt niemand zijn obligaties" },
@@ -5290,7 +5290,7 @@
             "id": "macro_beginner_kredietrisico_en_rentetoeslag_q3",
             "format": "definitie-met-afleiders",
             "concepts": ["kredietrisico", "obligatiekoers"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Wat gebeurt er met de koers van een obligatie als de zorgen over de uitgever toenemen?",
             "options": [
               { "id": "a", "text": "Ze daalt" },
@@ -5306,7 +5306,7 @@
             "id": "macro_beginner_kredietrisico_en_rentetoeslag_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["rentetoeslag"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Het extra rendement voor extra risico heet de rente___.",
             "options": [
               { "id": "a", "text": "toeslag" },
@@ -5322,7 +5322,7 @@
             "id": "macro_beginner_kredietrisico_en_rentetoeslag_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["rentetoeslag"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 5,
             "question": "Welke koppeling van situatie en effect op de rentetoeslag klopt volledig?",
             "options": [
               { "id": "a", "text": "Zorgen over de uitgever nemen toe: toeslag stijgt; vertrouwen groeit: toeslag daalt; niets verandert: toeslag blijft gelijk" },
@@ -5338,7 +5338,7 @@
             "id": "macro_beginner_kredietrisico_en_rentetoeslag_q6",
             "format": "keten-redenering",
             "concepts": ["rentetoeslag", "kredietrisico"],
-            "difficulty_prior": 4,
+            "difficulty_prior": 5,
             "question": "Waarom stijgt de rentetoeslag als de zorgen over een uitgever toenemen?",
             "options": [
               { "id": "a", "text": "Omdat beleggers meer vergoeding eisen voor meer risico" },
@@ -5362,7 +5362,7 @@
             "id": "macro_beginner_de_rentecurve_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["rentecurve"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Wat is de rentecurve?",
             "options": [
               { "id": "a", "text": "De rente per looptijd naast elkaar gezet" },
@@ -5378,7 +5378,7 @@
             "id": "macro_beginner_de_rentecurve_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["rentecurve"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "De rentecurve is omgekeerd: de korte rente ligt boven de lange. Betekent dat met zekerheid dat er een recessie komt?",
             "options": [
               { "id": "a", "text": "Nee, het is een signaal van verwachtingen, geen garantie" },
@@ -5394,7 +5394,7 @@
             "id": "macro_beginner_de_rentecurve_q3",
             "format": "definitie-met-afleiders",
             "concepts": ["rentecurve"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Wat is een normale rentecurve?",
             "options": [
               { "id": "a", "text": "Korte rente hoger dan lange" },
@@ -5410,7 +5410,7 @@
             "id": "macro_beginner_de_rentecurve_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["rentecurve"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Bij een omgekeerde curve ligt de ___ rente boven de lange rente.",
             "options": [
               { "id": "a", "text": "korte" },
@@ -5426,7 +5426,7 @@
             "id": "macro_beginner_de_rentecurve_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["rentecurve"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 5,
             "question": "Welke koppeling van vorm van de rentecurve en betekenis klopt volledig?",
             "options": [
               { "id": "a", "text": "Normaal: lange rente hoger dan korte; omgekeerd: korte rente hoger dan lange; vlak: korte en lange rente bijna gelijk" },
@@ -5442,7 +5442,7 @@
             "id": "macro_beginner_de_rentecurve_q6",
             "format": "keten-redenering",
             "concepts": ["rentecurve"],
-            "difficulty_prior": 4,
+            "difficulty_prior": 5,
             "question": "Wat zegt het verschil tussen korte en lange rente over verwachtingen?",
             "options": [
               { "id": "a", "text": "Het bepaalt de groei" },
@@ -5466,7 +5466,7 @@
             "id": "macro_beginner_rente_en_aandelenwaardering_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["aandelenwaardering", "rente"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Waarom kan een hogere rente aandelenkoersen drukken?",
             "options": [
               { "id": "a", "text": "Omdat bedrijven dan geen winst maken" },
@@ -5482,7 +5482,7 @@
             "id": "macro_beginner_rente_en_aandelenwaardering_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["aandelenwaardering", "rente"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Twee bedrijven: het ene maakt winst nu, het andere pas ver in de toekomst. Welk bedrijf is gevoeliger voor een rentestijging?",
             "options": [
               { "id": "a", "text": "Het bedrijf waarvan de winst pas ver in de toekomst komt; hun waarde zit grotendeels in de verre toekomst" },
@@ -5498,7 +5498,7 @@
             "id": "macro_beginner_rente_en_aandelenwaardering_q3",
             "format": "definitie-met-afleiders",
             "concepts": ["aandelenwaardering"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Wat is winst nu waard vergeleken met dezelfde winst over vijf jaar?",
             "options": [
               { "id": "a", "text": "Minder" },
@@ -5514,7 +5514,7 @@
             "id": "macro_beginner_rente_en_aandelenwaardering_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["aandelenwaardering", "rente"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Toekomstige winst wordt bij hogere rente sterker ___.",
             "options": [
               { "id": "a", "text": "afgewaardeerd" },
@@ -5530,7 +5530,7 @@
             "id": "macro_beginner_rente_en_aandelenwaardering_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["aandelenwaardering", "rente"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 5,
             "question": "Welke koppeling van situatie en tendens voor de waardering klopt volledig?",
             "options": [
               { "id": "a", "text": "Hogere rente met winst ver weg: sterke druk op waardering; hogere rente met winst nu: minder druk; lagere rente: waardering wordt ondersteund" },
@@ -5570,7 +5570,7 @@
             "id": "macro_beginner_rente_en_bedrijven_met_schulden_q1",
             "format": "definitie-met-afleiders",
             "concepts": ["herfinanciering"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Wat is herfinanciering?",
             "options": [
               { "id": "a", "text": "Een lening kwijtschelden" },
@@ -5586,7 +5586,7 @@
             "id": "macro_beginner_rente_en_bedrijven_met_schulden_q2",
             "format": "welk-voorbeeld-past",
             "concepts": ["rentelasten", "schuld"],
-            "difficulty_prior": 1,
+            "difficulty_prior": 3,
             "question": "Zijn bedrijven met weinig schulden gevoeliger voor een rentestijging dan bedrijven met veel schulden?",
             "options": [
               { "id": "a", "text": "Nee, bedrijven met veel schulden hebben juist sterker stijgende rentelasten" },
@@ -5602,7 +5602,7 @@
             "id": "macro_beginner_rente_en_bedrijven_met_schulden_q3",
             "format": "berekening",
             "concepts": ["rentelasten", "herfinanciering"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Een bedrijf heeft 1.000 schuld tegen 4%. Bij herfinanciering wordt de rente 6%. Hoeveel meer rentelast per jaar?",
             "options": [
               { "id": "a", "text": "20" },
@@ -5618,7 +5618,7 @@
             "id": "macro_beginner_rente_en_bedrijven_met_schulden_q4",
             "format": "definitie-met-afleiders",
             "concepts": ["herfinanciering"],
-            "difficulty_prior": 2,
+            "difficulty_prior": 4,
             "question": "Als een lening afloopt en een nieuwe wordt afgesloten, heet dat ___.",
             "options": [
               { "id": "a", "text": "herfinanciering" },
@@ -5634,7 +5634,7 @@
             "id": "macro_beginner_rente_en_bedrijven_met_schulden_q5",
             "format": "welk-voorbeeld-past",
             "concepts": ["schuld", "kwetsbaarheid"],
-            "difficulty_prior": 3,
+            "difficulty_prior": 5,
             "question": "Welke koppeling van situatie en kwetsbaarheid voor rentestijging klopt volledig?",
             "options": [
               { "id": "a", "text": "Veel schuld en weinig winst: kwetsbaar; weinig schuld: minder kwetsbaar; veel schuld met een lage vaste rente tot ver in de toekomst: kwetsbaar pas bij herfinanciering" },
@@ -5650,7 +5650,7 @@
             "id": "macro_beginner_rente_en_bedrijven_met_schulden_q6",
             "format": "keten-redenering",
             "concepts": ["schuld", "rentelasten"],
-            "difficulty_prior": 4,
+            "difficulty_prior": 5,
             "question": "Welke bedrijven hebben last van hogere rente?",
             "options": [
               { "id": "a", "text": "Bedrijven met veel schulden en weinig winst" },

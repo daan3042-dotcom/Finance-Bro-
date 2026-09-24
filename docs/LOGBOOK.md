@@ -18,6 +18,14 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-24
 
+- Moeilijkheidsgraad van de macro-beginnervragen herijkt: de vragen liepen
+  al netjes op binnen elke les, maar niet over de hele track van 57 lessen
+  heen (elke les begon steeds weer even makkelijk, op Unit 4 na). Nu stijgt
+  het gemiddelde moeilijkheidscijfer per les geleidelijk van les 1 tot les
+  57, in 5 stappen, net zoals Unit 4 dat al organisch deed. Alleen de
+  moeilijkheidscijfers zijn aangepast, geen enkele vraagtekst, optie of
+  uitleg is gewijzigd. Gecontroleerd met een script dat het gemiddelde per
+  les nooit meer daalt ten opzichte van de vorige les.
 - Beginner-track van macro-economie vervangen: de oude 5 lessen (BBP,
   inflatie, werkloosheid, rente, cyclus) zijn eruit gehaald en vervangen door
   10 nieuwe, gedetailleerdere lessen (60 vragen) op basis van "Unit 1 — De
