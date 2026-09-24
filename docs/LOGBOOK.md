@@ -18,6 +18,23 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-24
 
+- Antwoordopties worden nu geshuffeld getoond: een gebruiker die dezelfde
+  vraag later opnieuw krijgt (bijv. bij een herkansing van een les) ziet de
+  opties in een andere volgorde, zodat je niet de vorige positie van het
+  juiste antwoord kunt onthouden. Nieuwe seeded-shuffle-functie
+  (`lib/shuffle.ts`) bepaalt de volgorde op basis van gebruiker + vraag +
+  hoe vaak die vraag al eerder is beantwoord (attemptNumber) — dezelfde
+  combinatie geeft dus altijd dezelfde volgorde, een nieuwe poging een
+  andere. Verwerkt in zowel de module-lesschermen als de losse
+  concept-oefeningen. Het bestaande vraagschema had al stabiele
+  optie-ID's los van hun weergavepositie, dus daar was geen aanpassing voor
+  nodig; het loggen naar `question_responses` matchte ook al op optie-ID in
+  plaats van positie, dus scores blijven correct ongeacht de shuffle. Één
+  kleine toevoeging: een index-migratie op `question_responses` zodat het
+  opzoeken van eerdere pogingen per vraag snel blijft. Gevalideerd met een
+  los script (`scripts/validate-shuffle.ts`, `npx tsx` — er is nog geen
+  testrunner in dit project) dat determinisme, verschillende volgorde per
+  poging, en correcte score-logica ongeacht volgorde aantoont.
 - Moeilijkheidsgraad van de macro-beginnervragen herijkt: de vragen liepen
   al netjes op binnen elke les, maar niet over de hele track van 57 lessen
   heen (elke les begon steeds weer even makkelijk, op Unit 4 na). Nu stijgt

@@ -5,6 +5,7 @@ import * as Crypto from 'expo-crypto';
 
 import { LoadErrorState } from '../../../../components/LoadErrorState';
 import { SaveWarningBanner } from '../../../../components/SaveWarningBanner';
+import { useAuth } from '../../../../lib/auth-context';
 import { conceptsById } from '../../../../lib/concepts';
 import { toUserMessage } from '../../../../lib/networkError';
 import {
@@ -17,7 +18,13 @@ import {
   type ProgressState,
 } from '../../../../lib/progress';
 import { getQuestionPool, pickNextQuestionIndex, QUESTIONS_PER_LESSON } from '../../../../lib/questions';
-import { elapsedMs, logQuestionResponse, nowMs } from '../../../../lib/questionResponses';
+import {
+  elapsedMs,
+  getAttemptCounts,
+  logQuestionResponse,
+  nowMs,
+} from '../../../../lib/questionResponses';
+import { seededShuffle } from '../../../../lib/shuffle';
 import { useAutoHideFlag } from '../../../../lib/useAutoHideFlag';
 
 // Kiest de volgende vraag lokaal (heeft geen netwerk nodig) en probeert de
@@ -49,6 +56,9 @@ export default function LessonScreen() {
   const concept = conceptId ? conceptsById[conceptId] : undefined;
   const pool = conceptId ? getQuestionPool(conceptId) : [];
 
+  const { session } = useAuth();
+  const userId = session?.user.id ?? null;
+
   const [isLoading, setIsLoading] = useState(() => Boolean(conceptId) && pool.length > 0);
   const [loadErrorMessage, setLoadErrorMessage] = useState<string | null>(null);
   const [reloadToken, setReloadToken] = useState(0);
@@ -59,8 +69,22 @@ export default function LessonScreen() {
   const [correctInLesson, setCorrectInLesson] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
   const [sessionId, setSessionId] = useState<string | null>(null);
+  // Attemptnummer van de huidige vraag, voor de geseede optie-shuffle. De
+  // pool is vaak kleiner dan QUESTIONS_PER_LESSON, dus dezelfde vraag kan
+  // binnen één sessie terugkomen — daarom houden we in een ref bij hoe
+  // vaak elke vraag al getoond is (eerdere pogingen uit de database plus
+  // pogingen deze sessie), in plaats van dit maar één keer per sessie op
+  // te halen zoals bij een module-les kan.
+  const [currentAttemptNumber, setCurrentAttemptNumber] = useState(1);
+  const attemptTrackingRef = useRef<Record<string, number>>({});
   const [saveWarningVisible, showSaveWarning] = useAutoHideFlag(4000);
   const questionStartedAtRef = useRef<number | null>(null);
+
+  function nextAttemptNumber(questionId: string): number {
+    const attemptNumber = (attemptTrackingRef.current[questionId] ?? 0) + 1;
+    attemptTrackingRef.current[questionId] = attemptNumber;
+    return attemptNumber;
+  }
 
   useEffect(() => {
     if (!conceptId || pool.length === 0) {
@@ -73,6 +97,9 @@ export default function LessonScreen() {
       try {
         const loaded = await loadProgress();
         if (!isActive) return;
+        const priorCounts = await getAttemptCounts(pool.map((q) => q.id));
+        if (!isActive) return;
+        attemptTrackingRef.current = priorCounts;
         const { index, progress: updated } = pickAndPersistNext(
           loaded,
           conceptId,
@@ -84,6 +111,7 @@ export default function LessonScreen() {
         );
         setProgress(updated);
         setPoolIndex(index);
+        setCurrentAttemptNumber(nextAttemptNumber(pool[index].id));
         setSessionId(Crypto.randomUUID());
         setIsLoading(false);
       } catch (error) {
@@ -134,6 +162,16 @@ export default function LessonScreen() {
   const hasAnswered = selectedOptionId !== null;
   const isCorrect = selectedOptionId === question.correct_option_id;
 
+  // Zie de toelichting bij attemptTrackingRef hierboven: currentAttemptNumber
+  // is al bepaald op het moment dat deze vraag werd gekozen.
+  const shuffledOptions = userId
+    ? seededShuffle(question.options, {
+        userId,
+        questionId: question.id,
+        attemptNumber: currentAttemptNumber,
+      })
+    : question.options;
+
   const handleNext = () => {
     const justCorrect = selectedOptionId === question.correct_option_id;
 
@@ -174,6 +212,7 @@ export default function LessonScreen() {
     );
     setProgress(updatedAfterPick);
     setPoolIndex(index);
+    setCurrentAttemptNumber(nextAttemptNumber(pool[index].id));
     setSelectedOptionId(null);
     setAnsweredCount(newAnsweredCount);
     setCorrectInLesson(newCorrectInLesson);
@@ -189,6 +228,8 @@ export default function LessonScreen() {
 
     try {
       const loaded = await loadProgress();
+      const priorCounts = await getAttemptCounts(pool.map((q) => q.id));
+      attemptTrackingRef.current = priorCounts;
       const { index, progress: updated } = pickAndPersistNext(
         loaded,
         conceptId,
@@ -198,6 +239,7 @@ export default function LessonScreen() {
       );
       setProgress(updated);
       setPoolIndex(index);
+      setCurrentAttemptNumber(nextAttemptNumber(pool[index].id));
       setSessionId(Crypto.randomUUID());
       setIsLoading(false);
     } catch (error) {
@@ -266,7 +308,7 @@ export default function LessonScreen() {
         <Text style={styles.question}>{question.question}</Text>
 
         <View style={styles.options}>
-          {question.options.map((option) => {
+          {shuffledOptions.map((option) => {
             const isSelected = option.id === selectedOptionId;
             const isCorrectOption = option.id === question.correct_option_id;
 

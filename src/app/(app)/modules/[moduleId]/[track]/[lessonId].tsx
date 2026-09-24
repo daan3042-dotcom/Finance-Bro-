@@ -5,6 +5,7 @@ import * as Crypto from 'expo-crypto';
 
 import { LoadErrorState } from '../../../../../components/LoadErrorState';
 import { SaveWarningBanner } from '../../../../../components/SaveWarningBanner';
+import { useAuth } from '../../../../../lib/auth-context';
 import { getLesson, getModule, TRACK_LABELS } from '../../../../../lib/modules';
 import {
   createEmptyModuleProgress,
@@ -16,7 +17,13 @@ import {
   type ModuleProgressState,
 } from '../../../../../lib/moduleProgress';
 import { toUserMessage } from '../../../../../lib/networkError';
-import { elapsedMs, logQuestionResponse, nowMs } from '../../../../../lib/questionResponses';
+import {
+  elapsedMs,
+  getAttemptCounts,
+  logQuestionResponse,
+  nowMs,
+} from '../../../../../lib/questionResponses';
+import { seededShuffle } from '../../../../../lib/shuffle';
 import type { ModuleTrack } from '../../../../../lib/types';
 import { useAutoHideFlag } from '../../../../../lib/useAutoHideFlag';
 
@@ -36,6 +43,9 @@ export default function ModuleLessonScreen() {
   const module = moduleId ? getModule(moduleId) : undefined;
   const lesson = moduleId && track && lessonId ? getLesson(moduleId, track, lessonId) : undefined;
 
+  const { session } = useAuth();
+  const userId = session?.user.id ?? null;
+
   const [isLoading, setIsLoading] = useState(true);
   const [loadErrorMessage, setLoadErrorMessage] = useState<string | null>(null);
   const [reloadToken, setReloadToken] = useState(0);
@@ -45,6 +55,12 @@ export default function ModuleLessonScreen() {
   const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
   const [correctCount, setCorrectCount] = useState(0);
   const [sessionId, setSessionId] = useState<string | null>(null);
+  // Aantal eerdere keren dat elke vraag van deze les al is beantwoord, per
+  // vraag-id — bepaalt de attemptNumber voor de geseede optie-shuffle (zie
+  // handleStart en lib/shuffle.ts). Eén keer opgehaald bij de start van de
+  // les, want binnen één doorloop komt elke vraag van een module-les maar
+  // één keer voor.
+  const [attemptCounts, setAttemptCounts] = useState<Record<string, number>>({});
   const [saveWarningVisible, showSaveWarning] = useAutoHideFlag(4000);
   const questionStartedAtRef = useRef<number | null>(null);
 
@@ -120,7 +136,17 @@ export default function ModuleLessonScreen() {
     saveModuleProgress(state).catch(() => showSaveWarning());
   };
 
-  const handleStart = () => {
+  // Haalt eerst de attemptCounts op (hoe vaak is elke vraag hiervoor al
+  // beantwoord) vóórdat de eerste vraag getoond wordt, zodat de opties
+  // meteen in hun definitieve, geseede volgorde verschijnen — anders zouden
+  // ze na het laden kunnen "herschudden" onder de vingers van de
+  // gebruiker. Mislukt het ophalen (bijv. offline), dan valt
+  // getAttemptCounts terug op een lege map en dus op attemptNumber 1.
+  const handleStart = async () => {
+    const questionIds = lesson.questions.map((q) => q.id);
+    const counts = await getAttemptCounts(questionIds);
+    setAttemptCounts(counts);
+
     const updated = withLessonQuestionSeen(progress, moduleId, track, lessonId, 0);
     setProgress(updated);
     setSessionId(Crypto.randomUUID());
@@ -184,6 +210,18 @@ export default function ModuleLessonScreen() {
   const hasAnswered = selectedOptionId !== null;
   const isCorrect = selectedOptionId === question.correct_option_id;
 
+  // Attemptnummer = hoe vaak deze specifieke vraag hiervoor al is
+  // beantwoord, plus 1 voor deze keer. Zonder ingelogde gebruiker (zou
+  // hier niet moeten voorkomen, dit scherm zit achter de auth-guard) tonen
+  // we de opties in hun opgeslagen volgorde als veilige terugval.
+  const shuffledOptions = userId
+    ? seededShuffle(question.options, {
+        userId,
+        questionId: question.id,
+        attemptNumber: (attemptCounts[question.id] ?? 0) + 1,
+      })
+    : question.options;
+
   const handleNext = () => {
     const justCorrect = selectedOptionId === question.correct_option_id;
     setCorrectCount((count) => count + (justCorrect ? 1 : 0));
@@ -246,7 +284,7 @@ export default function ModuleLessonScreen() {
         ) : null}
 
         <View style={styles.options}>
-          {question.options.map((option) => {
+          {shuffledOptions.map((option) => {
             const isSelected = option.id === selectedOptionId;
             const isCorrectOption = option.id === question.correct_option_id;
 

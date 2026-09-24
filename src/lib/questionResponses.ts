@@ -12,6 +12,45 @@ export function elapsedMs(startedAtMs: number): number {
   return Date.now() - startedAtMs;
 }
 
+/**
+ * Aantal keer dat deze gebruiker elk van de gegeven vragen al heeft
+ * beantwoord (op basis van bestaande rijen in `question_responses`),
+ * gebruikt om per vraag een `attemptNumber` te bepalen voor de geseede
+ * shuffle van antwoordopties (zie `lib/shuffle.ts`). Faalt stil naar een
+ * lege map: de aanroeper valt dan terug op attemptNumber 1 (eerste-keer-
+ * volgorde), wat een veilige default is bij een offline/mislukte query.
+ */
+export async function getAttemptCounts(questionIds: string[]): Promise<Record<string, number>> {
+  if (questionIds.length === 0) return {};
+
+  try {
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    if (!user) return {};
+
+    const { data, error } = await supabase
+      .from('question_responses')
+      .select('question_id')
+      .eq('user_id', user.id)
+      .in('question_id', questionIds);
+
+    if (error) {
+      console.warn('getAttemptCounts: ophalen mislukt', error.message);
+      return {};
+    }
+
+    const counts: Record<string, number> = {};
+    for (const row of data ?? []) {
+      counts[row.question_id] = (counts[row.question_id] ?? 0) + 1;
+    }
+    return counts;
+  } catch (err) {
+    console.warn('getAttemptCounts: onverwachte fout', err);
+    return {};
+  }
+}
+
 export type LogQuestionResponseInput = {
   questionId: string;
   lessonId: string | null;
