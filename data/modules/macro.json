@@ -7,567 +7,988 @@
   "lessons": {
     "beginner": [
       {
-        "id": "wat_is_macro_economie_bbp",
-        "title": "Wat is macro-economie & hoe meet je de economie (BBP)",
+        "id": "wat_is_een_economie",
+        "title": "Wat is een economie?",
         "order": 1,
-        "explanation": "Macro-economie kijkt niet naar één bedrijf, maar naar de hele economie van een land: hoeveel er wordt geproduceerd, wat spullen kosten, hoeveel mensen werk hebben en hoe duur lenen is. Het is het grote plaatje achter nieuws als 'de economie groeit'.\n\nOm dat grote plaatje te kunnen meten, gebruiken economen een vaste meetlat: het bruto binnenlands product, oftewel BBP. Dat is de totale waarde van alles wat een land in een jaar produceert, van brood tot software.\n\nStijgt het BBP? Dan heeft een land in totaal meer geproduceerd dan het jaar ervoor — de economie groeit. In de komende lessen ontdek je de andere pijlers die samen met BBP het volledige verhaal van een economie vertellen: inflatie, werkloosheid en rente.",
+        "explanation": "Een economie is alles wat mensen in een land maken, kopen en verkopen. Vier spelers doen mee: huishoudens, bedrijven, de overheid en het buitenland. Huishoudens werken bij bedrijven en krijgen loon. Dat loon geven ze uit aan producten van bedrijven, en zo komt het als omzet terug. Geld gaat de ene kant op, goederen en diensten de andere kant. Dat heet de kringloop. Stokt één schakel, dan voelen alle anderen dat.",
         "questions": [
           {
-            "id": "macro_beginner_wat_is_macro_economie_bbp_q1",
+            "id": "macro_beginner_wat_is_een_economie_q1",
             "format": "definitie-met-afleiders",
-            "concepts": ["macro-economie"],
+            "concepts": ["kringloop"],
             "difficulty_prior": 1,
-            "question": "Wat bestudeert macro-economie?",
+            "question": "Welke vier partijen vormen samen de kringloop van de economie?",
             "options": [
-              { "id": "a", "text": "De economie van een land als geheel: groei, prijzen, werk en rente" },
-              { "id": "b", "text": "Alleen de financiële cijfers van één specifiek bedrijf" },
-              { "id": "c", "text": "Alleen de koers van één aandeel" },
-              { "id": "d", "text": "Alleen het spaargedrag van één huishouden" }
+              { "id": "a", "text": "Banken, beurzen, verzekeraars en pensioenfondsen" },
+              { "id": "b", "text": "Huishoudens, bedrijven, de overheid en het buitenland" },
+              { "id": "c", "text": "Werknemers, werkgevers, klanten en leveranciers" },
+              { "id": "d", "text": "Alleen huishoudens en bedrijven; overheid en buitenland spelen geen rol" }
             ],
-            "correct_option_id": "a",
-            "explanation": "Macro-economie kijkt naar de economie als geheel, niet naar individuele bedrijven, aandelen of huishoudens."
+            "correct_option_id": "b",
+            "explanation": "Dit zijn bekende vormen, maar de kringloop draait om wie inkomen ontvangt en uitgeeft: huishoudens, bedrijven, overheid en buitenland."
           },
           {
-            "id": "macro_beginner_wat_is_macro_economie_bbp_q2",
-            "format": "wat-hoort-er-niet-bij",
-            "concepts": ["macro-economie"],
+            "id": "macro_beginner_wat_is_een_economie_q2",
+            "format": "definitie-met-afleiders",
+            "concepts": ["kringloop"],
             "difficulty_prior": 1,
-            "question": "Wat hoort NIET bij de pijlers van macro-economie die in deze module aan bod komen (BBP, inflatie, werkloosheid, rente)?",
+            "question": "Geld stroomt van huishoudens naar bedrijven. In welke richting stromen goederen en diensten?",
             "options": [
-              { "id": "a", "text": "Het bruto binnenlands product van een land" },
-              { "id": "b", "text": "De inflatie in een land" },
-              { "id": "c", "text": "De winstmarge van één specifiek bedrijf" },
-              { "id": "d", "text": "De rente die een centrale bank vaststelt" }
+              { "id": "a", "text": "Van bedrijven naar huishoudens" },
+              { "id": "b", "text": "Van huishoudens naar de overheid" },
+              { "id": "c", "text": "Van bedrijven naar het buitenland" },
+              { "id": "d", "text": "Ze stromen niet, alleen geld beweegt" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Wat bedrijven maken, gaat naar huishoudens; geld en goederen lopen tegen elkaar in."
+          },
+          {
+            "id": "macro_beginner_wat_is_een_economie_q3",
+            "format": "welk-voorbeeld-past",
+            "concepts": ["kringloop"],
+            "difficulty_prior": 2,
+            "question": "Een huishouden geeft 50 euro uit aan boodschappen bij de supermarkt. Wat gebeurt er met dat geld in de kringloop?",
+            "options": [
+              { "id": "a", "text": "Het verdwijnt uit de economie zodra het is uitgegeven" },
+              { "id": "b", "text": "Het komt als omzet bij de supermarkt terecht" },
+              { "id": "c", "text": "Het gaat rechtstreeks naar de overheid als belasting" },
+              { "id": "d", "text": "Het heeft geen effect op andere partijen in de economie" }
+            ],
+            "correct_option_id": "b",
+            "explanation": "Elke euro die een huishouden uitgeeft, komt als omzet bij een bedrijf terecht — zo sluit de kringloop."
+          },
+          {
+            "id": "macro_beginner_wat_is_een_economie_q4",
+            "format": "volgorde",
+            "concepts": ["kringloop"],
+            "difficulty_prior": 2,
+            "question": "Wat is de juiste volgorde van de kringloop, te beginnen bij het huishouden dat gaat werken?",
+            "options": [
+              { "id": "a", "text": "Huishouden werkt bij bedrijf → bedrijf betaalt loon → huishouden geeft loon uit → bedrijf ontvangt omzet" },
+              { "id": "b", "text": "Bedrijf ontvangt omzet → huishouden werkt bij bedrijf → bedrijf betaalt loon → huishouden geeft loon uit" },
+              { "id": "c", "text": "Huishouden geeft loon uit → bedrijf betaalt loon → huishouden werkt bij bedrijf → bedrijf ontvangt omzet" },
+              { "id": "d", "text": "Bedrijf betaalt loon → bedrijf ontvangt omzet → huishouden werkt bij bedrijf → huishouden geeft loon uit" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Het loon dat een bedrijf betaalt, komt terug als omzet zodra het huishouden het uitgeeft — dat is de vaste volgorde van de kringloop."
+          },
+          {
+            "id": "macro_beginner_wat_is_een_economie_q5",
+            "format": "welk-voorbeeld-past",
+            "concepts": ["kringloop"],
+            "difficulty_prior": 3,
+            "question": "Welke koppeling van speler en rol in de kringloop klopt volledig?",
+            "options": [
+              { "id": "a", "text": "Huishouden werkt en consumeert; bedrijf produceert en betaalt loon; overheid int belasting en verzorgt voorzieningen; buitenland koopt onze export en levert onze import" },
+              { "id": "b", "text": "Huishouden produceert en betaalt loon; bedrijf werkt en consumeert; overheid koopt onze export; buitenland int belasting" },
+              { "id": "c", "text": "Huishouden int belasting; bedrijf koopt onze export; overheid werkt en consumeert; buitenland produceert" },
+              { "id": "d", "text": "Alle spelers hebben precies dezelfde rol: alleen kopen en verkopen" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Elke speler heeft een eigen rol: huishoudens werken en consumeren, bedrijven produceren en betalen loon, de overheid int belasting en verzorgt voorzieningen, en het buitenland koopt onze export en levert onze import."
+          },
+          {
+            "id": "macro_beginner_wat_is_een_economie_q6",
+            "format": "keten-redenering",
+            "concepts": ["kringloop"],
+            "difficulty_prior": 4,
+            "question": "Huishoudens gaan minder uitgeven. Wat is het eerste gevolg voor Bakkerij Bloem?",
+            "options": [
+              { "id": "a", "text": "Meer omzet" },
+              { "id": "b", "text": "Geen verandering" },
+              { "id": "c", "text": "Minder omzet" },
+              { "id": "d", "text": "De rente van de centrale bank daalt automatisch" }
             ],
             "correct_option_id": "c",
-            "explanation": "De winstmarge van één bedrijf is een bedrijfseconomisch (micro-)gegeven, geen macro-economische pijler die iets zegt over de hele economie."
-          },
-          {
-            "id": "macro_beginner_wat_is_macro_economie_bbp_q3",
-            "format": "welk-voorbeeld-past",
-            "concepts": ["BBP"],
-            "difficulty_prior": 2,
-            "question": "Welke van deze activiteiten telt mee in het BBP van een land?",
-            "options": [
-              { "id": "a", "text": "Een kapper die een klant knipt en daarvoor betaald krijgt" },
-              { "id": "b", "text": "Het schoonmaken van je eigen huis, zonder dat je ervoor betaalt" },
-              { "id": "c", "text": "Een tweedehands fiets die je doorverkoopt aan een buurman" },
-              { "id": "d", "text": "Onbetaald vrijwilligerswerk" }
-            ],
-            "correct_option_id": "a",
-            "explanation": "Het BBP telt betaalde diensten net zo goed mee als fysieke goederen. Onbetaalde activiteiten zoals zelf schoonmaken of vrijwilligerswerk, en de doorverkoop van iets dat al bestond (geen nieuwe productie), tellen niet mee."
-          },
-          {
-            "id": "macro_beginner_wat_is_macro_economie_bbp_q4",
-            "format": "vergelijking",
-            "concepts": ["BBP"],
-            "difficulty_prior": 2,
-            "question": "Land A heeft een groeiend BBP, land B een krimpend BBP. Welk land produceert relatief meer waarde ten opzichte van vorig jaar?",
-            "options": [
-              { "id": "a", "text": "Land A" },
-              { "id": "b", "text": "Land B" },
-              { "id": "c", "text": "Beide evenveel" },
-              { "id": "d", "text": "BBP zegt hier niets over" }
-            ],
-            "correct_option_id": "a",
-            "explanation": "Een groeiend BBP betekent dat een land meer waarde produceert dan het jaar ervoor; bij land B is dat juist minder."
-          },
-          {
-            "id": "macro_beginner_wat_is_macro_economie_bbp_q5",
-            "format": "scenario-redenering",
-            "concepts": ["BBP"],
-            "difficulty_prior": 2,
-            "question": "Fabrieken in een land draaien harder en winkels verkopen dit jaar meer dan vorig jaar. Wat betekent dit waarschijnlijk voor het BBP?",
-            "options": [
-              { "id": "a", "text": "Het BBP stijgt waarschijnlijk, want er wordt meer geproduceerd en verkocht" },
-              { "id": "b", "text": "Het BBP daalt automatisch" },
-              { "id": "c", "text": "Het BBP blijft altijd exact gelijk, ongeacht productie" },
-              { "id": "d", "text": "Productie en verkoop hebben geen invloed op het BBP" }
-            ],
-            "correct_option_id": "a",
-            "explanation": "Meer productie en verkoop betekent dat een land in totaal meer waarde creëert, en dat is precies wat het BBP meet."
-          },
-          {
-            "id": "macro_beginner_wat_is_macro_economie_bbp_q6",
-            "format": "berekening",
-            "concepts": ["BBP"],
-            "difficulty_prior": 2,
-            "question": "Land X produceert in jaar 1 voor €500 miljard aan goederen en diensten. In jaar 2 is dat €520 miljard. Wat is er gebeurd met het BBP?",
-            "options": [
-              { "id": "a", "text": "Het BBP is gestegen, de economie is gegroeid" },
-              { "id": "b", "text": "Het BBP is gedaald" },
-              { "id": "c", "text": "Het BBP is precies gelijk gebleven" },
-              { "id": "d", "text": "BBP zegt niets over groei" }
-            ],
-            "correct_option_id": "a",
-            "explanation": "Een stijging in de totale waarde van geproduceerde goederen en diensten betekent economische groei."
-          },
-          {
-            "id": "macro_beginner_wat_is_macro_economie_bbp_q7",
-            "format": "keten-redenering",
-            "concepts": ["BBP", "macro-economie"],
-            "difficulty_prior": 4,
-            "question": "Het BBP van een land stijgt drie jaar op rij. Wat vertelt dit, stap voor stap, over de economie als geheel?",
-            "options": [
-              { "id": "a", "text": "Eerst produceert het land elk jaar meer waarde (een hoger BBP); omdat macro-economie precies dit soort brede, landelijke patronen bestudeert, wijst dit op een groeiende economie als geheel" },
-              { "id": "b", "text": "Het betekent vooral dat één specifiek bedrijf veel winst heeft gemaakt" },
-              { "id": "c", "text": "Het zegt niets over de economie, alleen over de overheidsfinanciën" },
-              { "id": "d", "text": "Het BBP en de bredere economie hebben geen enkel verband met elkaar" }
-            ],
-            "correct_option_id": "a",
-            "explanation": "Een stijgend BBP laat zien dat een land in totaal meer waarde produceert; omdat macro-economie precies dit soort brede, landelijke patronen bestudeert, is een gestaag stijgend BBP een teken van een groeiende economie als geheel — dit verbindt BBP terug aan de kern van macro-economie."
+            "explanation": "Minder uitgaven van huishoudens betekent minder omzet; dat is de eerste schakel in de keten."
           }
         ]
       },
       {
-        "id": "inflatie_koopkracht",
-        "title": "Inflatie: waarom prijzen stijgen",
+        "id": "micro_en_macro",
+        "title": "Micro en macro",
         "order": 2,
-        "explanation": "Je merkt inflatie in de supermarkt: hetzelfde boodschappenmandje kost dit jaar meer dan vorig jaar. Inflatie is de gemiddelde prijsstijging van goederen en diensten in een land over een bepaalde periode, meestal gemeten per jaar.\n\nWaardoor ontstaat het? Vaak doordat de vraag naar producten groter is dan het aanbod — winkels kunnen dan hogere prijzen vragen. Ook stijgende kosten, zoals duurdere energie of grondstoffen, werken door in prijzen.\n\nHet gevolg is dat je koopkracht daalt: met hetzelfde bedrag kun je minder kopen dan voorheen. Een beetje inflatie (rond 2% per jaar) zien centrale banken als teken van een gezond groeiende economie. Te hoge inflatie holt spaargeld snel uit; te lage of negatieve inflatie (deflatie) brengt weer andere problemen met zich mee.",
+        "explanation": "Micro-economie kijkt naar één huishouden of één bedrijf. Macro-economie kijkt naar het geheel: alle bedrijven, alle huishoudens, het hele land. Die twee kijken kunnen botsen. Als jij spaart, is dat verstandig voor jou. Maar als alle huishoudens tegelijk veel minder uitgeven, dalen de omzetten van bedrijven, en daarmee ook de inkomens. Het geheel is dus meer dan de som van de delen.",
         "questions": [
           {
-            "id": "macro_beginner_inflatie_koopkracht_q1",
+            "id": "macro_beginner_micro_en_macro_q1",
             "format": "definitie-met-afleiders",
-            "concepts": ["inflatie"],
+            "concepts": ["macro-economie"],
             "difficulty_prior": 1,
-            "question": "Wat is inflatie?",
+            "question": "Welke vraag is een macrovraag?",
             "options": [
-              { "id": "a", "text": "De gemiddelde stijging van prijzen in een land over een periode" },
-              { "id": "b", "text": "De daling van de rente door de centrale bank" },
-              { "id": "c", "text": "De groei van het BBP" },
-              { "id": "d", "text": "Het totale bedrag dat een land uitgeeft aan importgoederen" }
-            ],
-            "correct_option_id": "a",
-            "explanation": "Inflatie is de gemiddelde prijsstijging van goederen en diensten, meestal gemeten per jaar."
-          },
-          {
-            "id": "macro_beginner_inflatie_koopkracht_q2",
-            "format": "welk-voorbeeld-past",
-            "concepts": ["inflatie"],
-            "difficulty_prior": 2,
-            "question": "Welke situatie leidt het meest waarschijnlijk tot inflatie?",
-            "options": [
-              { "id": "a", "text": "Veel mensen willen een product kopen, terwijl winkels er te weinig van hebben" },
-              { "id": "b", "text": "Een winkel verlaagt haar prijzen tijdens de uitverkoop" },
-              { "id": "c", "text": "Een land importeert goedkopere producten uit het buitenland" },
-              { "id": "d", "text": "Een bedrijf verhoogt zijn productie zonder dat de vraag stijgt" }
-            ],
-            "correct_option_id": "a",
-            "explanation": "Wanneer de vraag naar een product groter is dan het aanbod, kunnen verkopers hogere prijzen vragen — een klassieke oorzaak van inflatie."
-          },
-          {
-            "id": "macro_beginner_inflatie_koopkracht_q3",
-            "format": "wat-hoort-er-niet-bij",
-            "concepts": ["inflatie"],
-            "difficulty_prior": 1,
-            "question": "Wat hoort NIET bij de gevolgen van hoge inflatie?",
-            "options": [
-              { "id": "a", "text": "Je koopkracht daalt" },
-              { "id": "b", "text": "Spaargeld is na verloop van tijd minder waard" },
-              { "id": "c", "text": "Het BBP daalt hierdoor automatisch mee" },
-              { "id": "d", "text": "Centrale banken grijpen vaak in met rentebeleid" }
+              { "id": "a", "text": "Hoeveel pizza's verkoopt Marco per dag?" },
+              { "id": "b", "text": "Wat kost mijn boodschappenmandje?" },
+              { "id": "c", "text": "Hoe snel groeit de productie van het hele land?" },
+              { "id": "d", "text": "Hoeveel personeel heeft bakkerij Bloem in dienst?" }
             ],
             "correct_option_id": "c",
-            "explanation": "Hoge inflatie zegt op zichzelf niets zeker over het BBP — een economie kan tegelijk groeien én hoge inflatie hebben. De andere drie zijn wel directe gevolgen van inflatie."
+            "explanation": "Macro kijkt naar het geheel; een vraag over één winkel, één huishouden of één bedrijf is micro."
           },
           {
-            "id": "macro_beginner_inflatie_koopkracht_q4",
-            "format": "scenario-redenering",
-            "concepts": ["inflatie", "koopkracht"],
-            "difficulty_prior": 3,
-            "question": "Je verdient dit jaar hetzelfde salaris als vorig jaar, maar de gemiddelde prijzen zijn met 5% gestegen. Wat gebeurt er met je koopkracht?",
+            "id": "macro_beginner_micro_en_macro_q2",
+            "format": "definitie-met-afleiders",
+            "concepts": ["macro-economie", "micro-economie"],
+            "difficulty_prior": 1,
+            "question": "Macro-economie kijkt naar het geheel van een land. Waar kijkt micro-economie dan naar?",
             "options": [
-              { "id": "a", "text": "Je koopkracht daalt, want je kunt met hetzelfde geld minder kopen" },
-              { "id": "b", "text": "Je koopkracht stijgt" },
-              { "id": "c", "text": "Je koopkracht blijft precies gelijk" },
-              { "id": "d", "text": "Koopkracht heeft niets met prijzen te maken" }
+              { "id": "a", "text": "Naar één huishouden of één bedrijf" },
+              { "id": "b", "text": "Naar de rente van de centrale bank" },
+              { "id": "c", "text": "Naar de export van het hele land" },
+              { "id": "d", "text": "Naar de totale belastinginkomsten van de overheid" }
             ],
             "correct_option_id": "a",
-            "explanation": "Als prijzen stijgen terwijl je inkomen gelijk blijft, kun je met hetzelfde bedrag minder kopen — je koopkracht daalt."
+            "explanation": "Macro betekent letterlijk 'groot': het gaat om het geheel. Micro kijkt juist naar één huishouden of bedrijf."
           },
           {
-            "id": "macro_beginner_inflatie_koopkracht_q5",
-            "format": "vergelijking",
-            "concepts": ["inflatie", "koopkracht"],
-            "difficulty_prior": 3,
-            "question": "Land A heeft een inflatie van 2% per jaar, land B van 15% per jaar. In welk land daalt de koopkracht van spaargeld het snelst?",
+            "id": "macro_beginner_micro_en_macro_q3",
+            "format": "welk-voorbeeld-past",
+            "concepts": ["micro-economie", "macro-economie"],
+            "difficulty_prior": 2,
+            "question": "Eén huishouden besluit fors meer te sparen. Dat is voor dat huishouden verstandig. Klopt het dat dit daarom ook automatisch goed is voor de hele economie?",
             "options": [
-              { "id": "a", "text": "Land A" },
-              { "id": "b", "text": "Land B" },
-              { "id": "c", "text": "In beide landen even snel" },
-              { "id": "d", "text": "Inflatie heeft geen effect op koopkracht van spaargeld" }
+              { "id": "a", "text": "Ja, wat goed is voor één huishouden is altijd goed voor de hele economie" },
+              { "id": "b", "text": "Nee, als alle huishoudens dat tegelijk doen, kan de omzet van bedrijven juist dalen" },
+              { "id": "c", "text": "Ja, want sparen verhoogt altijd de productie" },
+              { "id": "d", "text": "Nee, want sparen is nooit verstandig voor een huishouden" }
             ],
             "correct_option_id": "b",
-            "explanation": "Hoe hoger de inflatie, hoe sneller geld zijn waarde verliest — bij 15% inflatie daalt de koopkracht van spaargeld veel sneller dan bij 2%."
+            "explanation": "Wat voor één huishouden verstandig is, kan bij alle huishoudens tegelijk de omzet van bedrijven drukken — het geheel werkt anders dan de delen."
           },
           {
-            "id": "macro_beginner_inflatie_koopkracht_q6",
-            "format": "berekening",
-            "concepts": ["inflatie"],
+            "id": "macro_beginner_micro_en_macro_q4",
+            "format": "definitie-met-afleiders",
+            "concepts": ["macro-economie"],
             "difficulty_prior": 2,
-            "question": "Een brood kostte vorig jaar €2,00. Door inflatie van 10% kost hetzelfde brood dit jaar meer. Wat is de nieuwe prijs?",
+            "question": "Alle huishoudens in een land gaan tegelijk fors minder uitgeven. Wat gebeurt er waarschijnlijk met de omzetten van bedrijven?",
             "options": [
-              { "id": "a", "text": "€2,20" },
-              { "id": "b", "text": "€2,10" },
-              { "id": "c", "text": "€2,00" },
-              { "id": "d", "text": "€3,00" }
+              { "id": "a", "text": "Ze dalen" },
+              { "id": "b", "text": "Ze stijgen" },
+              { "id": "c", "text": "Ze blijven gelijk" },
+              { "id": "d", "text": "Dat hangt alleen af van de rente" }
             ],
             "correct_option_id": "a",
-            "explanation": "10% van €2,00 is €0,20 extra, dus de nieuwe prijs is €2,00 + €0,20 = €2,20."
+            "explanation": "Wat huishoudens niet uitgeven, is omzet die bedrijven missen."
           },
           {
-            "id": "macro_beginner_inflatie_koopkracht_q7",
+            "id": "macro_beginner_micro_en_macro_q5",
+            "format": "welk-voorbeeld-past",
+            "concepts": ["micro-economie", "macro-economie"],
+            "difficulty_prior": 3,
+            "question": "Welke indeling van deze vier voorbeelden in micro of macro klopt volledig? 1) alle prijzen in het land stijgen, 2) een bakker verhoogt zijn prijs, 3) alle gezinnen sparen meer, 4) een gezin besluit te sparen.",
+            "options": [
+              { "id": "a", "text": "1 macro, 2 micro, 3 macro, 4 micro" },
+              { "id": "b", "text": "1 micro, 2 macro, 3 micro, 4 macro" },
+              { "id": "c", "text": "1 macro, 2 macro, 3 micro, 4 micro" },
+              { "id": "d", "text": "1 micro, 2 micro, 3 macro, 4 macro" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Zodra het over één partij gaat, is het micro; gaat het over allemaal tegelijk, dan is het macro."
+          },
+          {
+            "id": "macro_beginner_micro_en_macro_q6",
             "format": "keten-redenering",
-            "concepts": ["inflatie"],
+            "concepts": ["macro-economie"],
             "difficulty_prior": 4,
-            "question": "De vraag naar chips explodeert wereldwijd, maar fabrieken kunnen niet snel genoeg meer produceren. Wat is de meest waarschijnlijke keten van gevolgen?",
+            "question": "Alle bedrijven in een land besluiten tegelijk personeel te ontslaan om kosten te besparen — voor elk bedrijf apart lijkt dat goed nieuws voor de winst. Waarom kan dat toch slecht zijn voor de hele economie?",
             "options": [
-              { "id": "a", "text": "Chips worden schaars, prijzen stijgen, en dit draagt bij aan hogere inflatie" },
-              { "id": "b", "text": "Chips worden vanzelf goedkoper door de hogere vraag" },
-              { "id": "c", "text": "De rente daalt automatisch als reactie" },
-              { "id": "d", "text": "Er is geen enkel effect op prijzen" }
+              { "id": "a", "text": "Omdat winst altijd slecht is voor een economie" },
+              { "id": "b", "text": "Omdat bedrijven nooit met elkaar samenwerken" },
+              { "id": "c", "text": "Omdat de inkomens en bestedingen in totaal dalen, wat weer omzet kost" },
+              { "id": "d", "text": "Omdat de overheid dit per direct verbiedt" }
             ],
-            "correct_option_id": "a",
-            "explanation": "Een tekort ten opzichte van de vraag (schaarste) drijft de prijs omhoog; wanneer dit voor veel producten tegelijk gebeurt, draagt het bij aan de algehele inflatie."
+            "correct_option_id": "c",
+            "explanation": "Wat voor één bedrijf een besparing is, is voor anderen minder inkomen en dus minder omzet — zo kan een voordeel voor één bedrijf een nadeel voor de hele economie worden."
           }
         ]
       },
       {
-        "id": "werkloosheid",
-        "title": "Werkloosheid: de vierde pijler van macro-economie",
+        "id": "productie_en_bbp",
+        "title": "Productie en BBP",
         "order": 3,
-        "explanation": "Werkloosheid is de vierde pijler van macro-economie: het percentage van de beroepsbevolking dat kan en wil werken, maar geen betaalde baan heeft. Dit heet het werkloosheidspercentage.\n\nWerkloosheid hangt nauw samen met hoe het met de economie gaat. Groeit het BBP, dan produceren bedrijven meer en hebben ze vaak extra personeel nodig — de werkloosheid daalt. Krimpt de economie, dan verkopen bedrijven minder, en worden er soms mensen ontslagen — de werkloosheid stijgt.\n\nEen beetje werkloosheid is normaal: mensen wisselen van baan, studeren af, of zoeken bewust een tijdje. Economen noemen dit 'frictiewerkloosheid'. Pas wanneer werkloosheid structureel hoog is, wijst dat op een zwakke economie waar te weinig banen worden gecreëerd voor iedereen die wil werken.",
+        "explanation": "Het bruto binnenlands product, kortweg BBP, is de waarde van alle goederen en diensten die in een land in een periode worden geproduceerd, bijvoorbeeld een jaar. Alleen nieuwe productie telt, en alleen het eindproduct, anders tel je dubbel: het brood telt, niet ook nog het meel. BBP is een stroom: iets wat over een periode gebeurt, zoals inkomen. Een voorraad, zoals spaargeld, is een bedrag op één moment.",
         "questions": [
           {
-            "id": "macro_beginner_werkloosheid_q1",
+            "id": "macro_beginner_productie_en_bbp_q1",
             "format": "definitie-met-afleiders",
-            "concepts": ["werkloosheid"],
+            "concepts": ["BBP"],
             "difficulty_prior": 1,
-            "question": "Wat is werkloosheid, zoals gemeten in macro-economische cijfers?",
+            "question": "Wat meet het BBP?",
             "options": [
-              { "id": "a", "text": "Het percentage van de beroepsbevolking dat kan en wil werken, maar geen baan heeft" },
-              { "id": "b", "text": "Het aantal mensen dat met pensioen is" },
-              { "id": "c", "text": "Het aantal bedrijven dat failliet gaat" },
-              { "id": "d", "text": "Het percentage van het BBP dat naar lonen gaat" }
+              { "id": "a", "text": "De waarde van alles wat een land in een periode produceert" },
+              { "id": "b", "text": "Het spaargeld van alle inwoners" },
+              { "id": "c", "text": "De winst van alle beurzen" },
+              { "id": "d", "text": "De totale schuld van de overheid" }
             ],
             "correct_option_id": "a",
-            "explanation": "Werkloosheid meet specifiek mensen die beschikbaar zijn voor werk en actief zoeken, maar geen betaalde baan hebben."
+            "explanation": "BBP meet nieuwe productie in een periode, niet bezit, spaargeld of beurswaarde."
           },
           {
-            "id": "macro_beginner_werkloosheid_q2",
-            "format": "vergelijking",
-            "concepts": ["werkloosheid"],
-            "difficulty_prior": 2,
-            "question": "Land A heeft een werkloosheidspercentage van 3%, land B van 12%. In welk land vinden relatief meer mensen die willen werken géén baan?",
+            "id": "macro_beginner_productie_en_bbp_q2",
+            "format": "definitie-met-afleiders",
+            "concepts": ["BBP", "stroom en voorraad"],
+            "difficulty_prior": 1,
+            "question": "BBP is een stroom: iets wat over een periode gebeurt. Wat is een voorbeeld van een voorraad?",
             "options": [
-              { "id": "a", "text": "Land A" },
-              { "id": "b", "text": "Land B" },
-              { "id": "c", "text": "In beide landen evenveel" },
-              { "id": "d", "text": "Werkloosheidspercentages zijn niet vergelijkbaar tussen landen" }
+              { "id": "a", "text": "Het spaargeld op een bankrekening" },
+              { "id": "b", "text": "Het inkomen dat je dit jaar verdient" },
+              { "id": "c", "text": "Het BBP van afgelopen jaar" },
+              { "id": "d", "text": "De omzet van een bakkerij dit kwartaal" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Spaargeld is een bedrag op één moment — dat is een voorraad. Inkomen en BBP zijn stromen: ze gaan over een periode."
+          },
+          {
+            "id": "macro_beginner_productie_en_bbp_q3",
+            "format": "welk-voorbeeld-past",
+            "concepts": ["BBP"],
+            "difficulty_prior": 2,
+            "question": "Een tweedehands auto wisselt van eigenaar. Telt de waarde van die auto opnieuw mee in het BBP van dit jaar?",
+            "options": [
+              { "id": "a", "text": "Ja, elke verkoop telt volledig mee" },
+              { "id": "b", "text": "Nee, de auto is al eerder geproduceerd; hooguit de dienst van de handelaar telt mee" },
+              { "id": "c", "text": "Ja, maar alleen als de auto duurder wordt doorverkocht" },
+              { "id": "d", "text": "Nee, tweedehands spullen tellen nooit mee, ook niet de handelsdienst" }
             ],
             "correct_option_id": "b",
-            "explanation": "Een hoger werkloosheidspercentage betekent dat een groter deel van de beroepsbevolking geen baan heeft, ondanks dat ze willen en kunnen werken."
+            "explanation": "Alleen nieuwe productie telt mee; bij doorverkoop van een bestaande auto telt hooguit de dienst van de handelaar."
           },
           {
-            "id": "macro_beginner_werkloosheid_q3",
-            "format": "scenario-redenering",
-            "concepts": ["BBP", "werkloosheid"],
-            "difficulty_prior": 5,
-            "question": "Een economie groeit sterk: bedrijven draaien op volle toeren en verkopen recordaantallen producten. Wat gebeurt er waarschijnlijk met de werkloosheid?",
-            "options": [
-              { "id": "a", "text": "De werkloosheid daalt, want bedrijven hebben meer personeel nodig" },
-              { "id": "b", "text": "De werkloosheid stijgt automatisch mee met groei" },
-              { "id": "c", "text": "Werkloosheid heeft geen relatie met economische groei" },
-              { "id": "d", "text": "De werkloosheid blijft altijd exact gelijk" }
-            ],
-            "correct_option_id": "a",
-            "explanation": "Bij economische groei hebben bedrijven vaak meer mensen nodig om aan de vraag te voldoen, waardoor de werkloosheid doorgaans daalt."
-          },
-          {
-            "id": "macro_beginner_werkloosheid_q4",
-            "format": "welk-voorbeeld-past",
-            "concepts": ["frictiewerkloosheid"],
-            "difficulty_prior": 2,
-            "question": "Welk voorbeeld past het beste bij structureel hoge werkloosheid, in plaats van normale frictiewerkloosheid?",
-            "options": [
-              { "id": "a", "text": "Een fabriekswerker die drie jaar lang geen vergelijkbare baan kan vinden nadat zijn hele sector is verdwenen" },
-              { "id": "b", "text": "Een student die tijdens de zomervakantie geen baan zoekt" },
-              { "id": "c", "text": "Iemand die twee weken tussen twee banen in zit" },
-              { "id": "d", "text": "Iemand die net is verhuisd en nog op zoek is naar werk in de nieuwe stad" }
-            ],
-            "correct_option_id": "a",
-            "explanation": "Langdurig geen vergelijkbaar werk kunnen vinden nadat een hele sector is verdwenen wijst op een dieper, structureel probleem in de economie — niet op de korte, normale overgangsperiode van frictiewerkloosheid."
-          },
-          {
-            "id": "macro_beginner_werkloosheid_q5",
-            "format": "wat-hoort-er-niet-bij",
-            "concepts": ["frictiewerkloosheid"],
-            "difficulty_prior": 1,
-            "question": "Wat hoort NIET bij een normale, gezonde vorm van werkloosheid (frictiewerkloosheid)?",
-            "options": [
-              { "id": "a", "text": "Iemand die net is afgestudeerd en op zoek is naar een eerste baan" },
-              { "id": "b", "text": "Iemand die tussen twee banen in bewust een paar weken pauze neemt" },
-              { "id": "c", "text": "Iemand die van baan wisselt omdat een betere kans zich voordoet" },
-              { "id": "d", "text": "Duizenden mensen die hun baan verliezen omdat een hele sector instort tijdens een recessie" }
-            ],
-            "correct_option_id": "d",
-            "explanation": "De eerste drie zijn voorbeelden van normale, tijdelijke frictiewerkloosheid. Grootschalig banenverlies door een instortende sector wijst juist op een dieper economisch probleem, niet op gewone frictiewerkloosheid."
-          },
-          {
-            "id": "macro_beginner_werkloosheid_q6",
+            "id": "macro_beginner_productie_en_bbp_q4",
             "format": "berekening",
-            "concepts": ["werkloosheid"],
+            "concepts": ["BBP"],
             "difficulty_prior": 2,
-            "question": "Een land heeft een beroepsbevolking van 1.000.000 mensen, waarvan er 40.000 geen baan hebben maar wel actief op zoek zijn. Wat is het werkloosheidspercentage?",
+            "question": "Een bakkerij koopt meel voor 20 euro en verkoopt het brood dat ervan gemaakt wordt voor 100 euro. Wat telt voor het BBP van dit brood?",
             "options": [
-              { "id": "a", "text": "4%" },
-              { "id": "b", "text": "40%" },
-              { "id": "c", "text": "0,4%" },
-              { "id": "d", "text": "25%" }
+              { "id": "a", "text": "120 euro" },
+              { "id": "b", "text": "100 euro, de waarde van het eindproduct" },
+              { "id": "c", "text": "20 euro, de waarde van het meel" },
+              { "id": "d", "text": "80 euro, het verschil tussen meel en brood" }
             ],
-            "correct_option_id": "a",
-            "explanation": "40.000 gedeeld door 1.000.000 is 0,04, oftewel 4%."
+            "correct_option_id": "b",
+            "explanation": "Het meel zit al verwerkt in de prijs van het brood; tel je het los mee, dan tel je hetzelfde twee keer."
           },
           {
-            "id": "macro_beginner_werkloosheid_q7",
-            "format": "keten-redenering",
-            "concepts": ["BBP", "werkloosheid"],
-            "difficulty_prior": 5,
-            "question": "Een recessie zorgt ervoor dat bedrijven minder verkopen. Wat is de meest waarschijnlijke keten van gevolgen voor de werkloosheid?",
+            "id": "macro_beginner_productie_en_bbp_q5",
+            "format": "welk-voorbeeld-past",
+            "concepts": ["stroom en voorraad"],
+            "difficulty_prior": 3,
+            "question": "Welke indeling van stroom en voorraad klopt volledig? 1) spaargeld op de bank, 2) inkomen per jaar, 3) totale schuld van een land, 4) BBP van één jaar.",
             "options": [
-              { "id": "a", "text": "Bedrijven verkopen minder, hebben minder personeel nodig, en ontslaan mensen, waardoor de werkloosheid stijgt" },
-              { "id": "b", "text": "Bedrijven verkopen minder, maar nemen juist extra personeel aan" },
-              { "id": "c", "text": "Werkloosheid daalt automatisch tijdens een recessie" },
-              { "id": "d", "text": "Er is geen enkel verband tussen verkopen en personeel" }
+              { "id": "a", "text": "1 voorraad, 2 stroom, 3 voorraad, 4 stroom" },
+              { "id": "b", "text": "1 stroom, 2 voorraad, 3 stroom, 4 voorraad" },
+              { "id": "c", "text": "1 voorraad, 2 voorraad, 3 stroom, 4 stroom" },
+              { "id": "d", "text": "1 stroom, 2 stroom, 3 voorraad, 4 voorraad" }
             ],
             "correct_option_id": "a",
-            "explanation": "Minder verkopen betekent vaak minder productie en dus minder behoefte aan personeel, wat bedrijven ertoe kan brengen mensen te ontslaan — de werkloosheid stijgt."
+            "explanation": "Vraag jezelf af: gaat het over wat er in een periode gebeurt (stroom) of over wat er op één moment is (voorraad)?"
+          },
+          {
+            "id": "macro_beginner_productie_en_bbp_q6",
+            "format": "keten-redenering",
+            "concepts": ["BBP"],
+            "difficulty_prior": 4,
+            "question": "Het BBP van een land daalt. Welk bedrijf merkt dat doorgaans het eerst?",
+            "options": [
+              { "id": "a", "text": "Een bedrijf dat basisvoedsel verkoopt" },
+              { "id": "b", "text": "Een bouwbedrijf dat afhankelijk is van investeringen" },
+              { "id": "c", "text": "Geen enkel bedrijf merkt daar iets van" },
+              { "id": "d", "text": "Alleen bedrijven die aan de overheid verkopen" }
+            ],
+            "correct_option_id": "b",
+            "explanation": "Uitgaven aan investeringen en grote aankopen worden als eerste uitgesteld; basisbehoeften blijven nodig."
           }
         ]
       },
       {
-        "id": "rente_centrale_bank",
-        "title": "Rente en de rol van de centrale bank",
+        "id": "drie_manieren_bbp",
+        "title": "Drie manieren om het BBP te zien",
         "order": 4,
-        "explanation": "Rente is de prijs van geld lenen: hoeveel je extra betaalt (of ontvangt) boven op een geleend of gespaard bedrag. Een groot deel van deze prijs wordt beïnvloed door de centrale bank, zoals de Europese Centrale Bank (ECB) in de eurozone.\n\nDe centrale bank stelt een beleidsrente vast en gebruikt die als knop om de economie bij te sturen. Is de inflatie te hoog? Dan verhoogt de centrale bank de rente. Lenen wordt duurder, mensen en bedrijven geven minder uit, en de vraag — en daarmee de prijsdruk — neemt af.\n\nDreigt juist een recessie met hoge werkloosheid? Dan verlaagt de centrale bank de rente. Lenen wordt goedkoper, mensen besteden en investeren meer, en de economie krijgt een duwtje in de rug. Rente is zo het belangrijkste sturingsinstrument van de centrale bank.",
+        "explanation": "Je kunt het BBP op drie manieren bekijken. Productie: wat is er gemaakt. Bestedingen: wat is er uitgegeven. Inkomens: wat is er verdiend. Alle drie geven hetzelfde totaal, want wat de één uitgeeft, is voor de ander inkomen. Bestedingen hebben vier delen: consumptie (huishoudens), investeringen (bedrijven), overheidsuitgaven en netto export (export min import).",
         "questions": [
           {
-            "id": "macro_beginner_rente_centrale_bank_q1",
+            "id": "macro_beginner_drie_manieren_bbp_q1",
             "format": "definitie-met-afleiders",
-            "concepts": ["rente"],
+            "concepts": ["BBP"],
             "difficulty_prior": 1,
-            "question": "Wat is de rol van de beleidsrente van een centrale bank?",
+            "question": "Welke drie invalshoeken geven samen hetzelfde BBP?",
             "options": [
-              { "id": "a", "text": "Een instrument om de economie bij te sturen door lenen duurder of goedkoper te maken" },
-              { "id": "b", "text": "Een belasting die bedrijven betalen over hun winst" },
-              { "id": "c", "text": "Het percentage van het BBP dat de overheid uitgeeft" },
-              { "id": "d", "text": "De waarde van de nationale munt ten opzichte van de dollar" }
+              { "id": "a", "text": "Spaargeld, schuld, rente" },
+              { "id": "b", "text": "Productie, bestedingen, inkomens" },
+              { "id": "c", "text": "Prijzen, lonen, winsten" },
+              { "id": "d", "text": "Import, export, belasting" }
             ],
-            "correct_option_id": "a",
-            "explanation": "De beleidsrente is het belangrijkste instrument waarmee een centrale bank leningen duurder of goedkoper maakt om de economie te sturen."
+            "correct_option_id": "b",
+            "explanation": "Het BBP is één totaal dat je kunt bekijken vanuit wat er gemaakt, uitgegeven of verdiend wordt."
           },
           {
-            "id": "macro_beginner_rente_centrale_bank_q2",
-            "format": "vergelijking",
-            "concepts": ["rente"],
-            "difficulty_prior": 2,
-            "question": "Land A verhoogt de rente, land B verlaagt de rente. In welk land wordt lenen voor consumenten en bedrijven duurder?",
+            "id": "macro_beginner_drie_manieren_bbp_q2",
+            "format": "definitie-met-afleiders",
+            "concepts": ["bestedingen"],
+            "difficulty_prior": 1,
+            "question": "Netto export is export min ___.",
             "options": [
-              { "id": "a", "text": "Land A" },
-              { "id": "b", "text": "Land B" },
-              { "id": "c", "text": "In beide landen even duur" },
-              { "id": "d", "text": "Renteveranderingen hebben geen invloed op leenkosten" }
+              { "id": "a", "text": "import" },
+              { "id": "b", "text": "belasting" },
+              { "id": "c", "text": "investeringen" },
+              { "id": "d", "text": "consumptie" }
             ],
             "correct_option_id": "a",
-            "explanation": "Een hogere rente betekent direct hogere kosten voor het lenen van geld; in land A wordt lenen dus duurder dan in land B."
+            "explanation": "Wat je invoert, tel je niet als eigen productie; daarom trek je de import van de export af."
           },
           {
-            "id": "macro_beginner_rente_centrale_bank_q3",
+            "id": "macro_beginner_drie_manieren_bbp_q3",
             "format": "welk-voorbeeld-past",
-            "concepts": ["rente"],
+            "concepts": ["bestedingen"],
             "difficulty_prior": 2,
-            "question": "Welke situatie past het beste bij een centrale bank die de rente verlaagt?",
+            "question": "Welke koppeling van bestedingsdeel en voorbeeld klopt volledig? Delen: consumptie, investeringen, overheid, netto export.",
             "options": [
-              { "id": "a", "text": "Een recessie met hoge werkloosheid, waarbij de economie een impuls nodig heeft" },
-              { "id": "b", "text": "Snel oplopende inflatie die moet worden afgeremd" },
-              { "id": "c", "text": "Een oververhitte economie met te veel bestedingen" },
-              { "id": "d", "text": "Een sterk stijgend BBP dat afgekoeld moet worden" }
+              { "id": "a", "text": "Consumptie: een huishouden koopt kleding; investeringen: een bedrijf koopt een machine; overheid: de overheid laat een school bouwen; netto export: export min import" },
+              { "id": "b", "text": "Consumptie: een bedrijf koopt een machine; investeringen: een huishouden koopt kleding; overheid: export min import; netto export: de overheid laat een school bouwen" },
+              { "id": "c", "text": "Consumptie: export min import; investeringen: de overheid laat een school bouwen; overheid: een bedrijf koopt een machine; netto export: een huishouden koopt kleding" },
+              { "id": "d", "text": "Alle vier de delen zijn hetzelfde: geld dat de overheid uitgeeft" }
             ],
             "correct_option_id": "a",
-            "explanation": "Bij een recessie en hoge werkloosheid verlaagt de centrale bank de rente om lenen goedkoper te maken en de economie te stimuleren."
+            "explanation": "De vier delen zijn de vier plekken waar geld kan worden uitgegeven: huishoudens, bedrijven, overheid en het buitenland."
           },
           {
-            "id": "macro_beginner_rente_centrale_bank_q4",
-            "format": "scenario-redenering",
-            "concepts": ["inflatie", "rente"],
-            "difficulty_prior": 5,
-            "question": "De inflatie in een land loopt sterk op. Wat is de meest waarschijnlijke reactie van de centrale bank?",
+            "id": "macro_beginner_drie_manieren_bbp_q4",
+            "format": "welk-voorbeeld-past",
+            "concepts": ["bestedingen"],
+            "difficulty_prior": 2,
+            "question": "Een huishouden geeft 40 euro uit aan kleding bij een winkel. Wat is die 40 euro voor de winkel?",
             "options": [
-              { "id": "a", "text": "De rente verhogen, om lenen en uitgeven af te remmen" },
-              { "id": "b", "text": "De rente verlagen, om de inflatie verder aan te wakkeren" },
-              { "id": "c", "text": "Niets doen, rente heeft geen effect op inflatie" },
-              { "id": "d", "text": "Belastingen verlagen in plaats van de rente aan te passen" }
+              { "id": "a", "text": "Inkomen" },
+              { "id": "b", "text": "Een schuld" },
+              { "id": "c", "text": "Een investering" },
+              { "id": "d", "text": "Belasting" }
             ],
             "correct_option_id": "a",
-            "explanation": "Centrale banken verhogen doorgaans de rente om inflatie af te remmen: duurder lenen betekent minder bestedingen en dus minder opwaartse prijsdruk."
+            "explanation": "Wat een huishouden uitgeeft, is voor een ander inkomen — daarom komen de drie invalshoeken op hetzelfde totaal uit."
           },
           {
-            "id": "macro_beginner_rente_centrale_bank_q5",
-            "format": "wat-hoort-er-niet-bij",
-            "concepts": ["rente"],
-            "difficulty_prior": 1,
-            "question": "Wat hoort NIET bij het effect van een rentestijging door de centrale bank?",
-            "options": [
-              { "id": "a", "text": "Lenen wordt duurder voor consumenten en bedrijven" },
-              { "id": "b", "text": "Mensen en bedrijven geven gemiddeld minder uit" },
-              { "id": "c", "text": "De inflatie wordt doorgaans afgeremd" },
-              { "id": "d", "text": "De werkloosheid daalt automatisch en direct" }
-            ],
-            "correct_option_id": "d",
-            "explanation": "Een rentestijging remt juist de economie af, wat eerder tot hogere dan tot lagere werkloosheid kan leiden — het is geen automatisch effect dat werkloosheid laat dalen."
-          },
-          {
-            "id": "macro_beginner_rente_centrale_bank_q6",
+            "id": "macro_beginner_drie_manieren_bbp_q5",
             "format": "berekening",
-            "concepts": ["rente"],
-            "difficulty_prior": 2,
-            "question": "Je leent €10.000 tegen een rente van 5% per jaar. Hoeveel rente betaal je in het eerste jaar (zonder aflossing)?",
+            "concepts": ["bestedingen", "BBP"],
+            "difficulty_prior": 3,
+            "question": "Consumptie is 60, investeringen zijn 20, overheidsuitgaven zijn 15, export is 30 en import is 25. Wat is het BBP?",
             "options": [
-              { "id": "a", "text": "€500" },
-              { "id": "b", "text": "€50" },
-              { "id": "c", "text": "€5.000" },
-              { "id": "d", "text": "€100" }
+              { "id": "a", "text": "100" },
+              { "id": "b", "text": "125" },
+              { "id": "c", "text": "150" },
+              { "id": "d", "text": "85" }
             ],
             "correct_option_id": "a",
-            "explanation": "5% van €10.000 is €500."
+            "explanation": "Netto export is 30 min 25 = 5. Dus 60 + 20 + 15 + 5 = 100."
           },
           {
-            "id": "macro_beginner_rente_centrale_bank_q7",
+            "id": "macro_beginner_drie_manieren_bbp_q6",
             "format": "keten-redenering",
-            "concepts": ["rente", "inflatie", "werkloosheid"],
-            "difficulty_prior": 5,
-            "question": "De centrale bank verhoogt de rente fors om hoge inflatie te bestrijden. Wat is de meest waarschijnlijke keten van gevolgen op de langere termijn?",
+            "concepts": ["bestedingen"],
+            "difficulty_prior": 4,
+            "question": "Investeringen dalen sterk in een land. Welke bedrijven merken dat doorgaans direct?",
             "options": [
-              { "id": "a", "text": "Lenen wordt duurder, bestedingen en investeringen nemen af, de economie groeit trager en de inflatie koelt af — maar de werkloosheid kan oplopen" },
-              { "id": "b", "text": "Lenen wordt goedkoper en de economie groeit sneller" },
-              { "id": "c", "text": "Er is geen enkel effect op bestedingen of werkgelegenheid" },
-              { "id": "d", "text": "De inflatie stijgt hierdoor juist verder" }
+              { "id": "a", "text": "Bakkers" },
+              { "id": "b", "text": "Niemand merkt daar iets van" },
+              { "id": "c", "text": "Producenten van machines en bouwmaterialen" },
+              { "id": "d", "text": "Alleen bedrijven die exporteren" }
             ],
-            "correct_option_id": "a",
-            "explanation": "Een hogere rente remt bestedingen en investeringen af, wat de inflatie doorgaans laat dalen, maar als bijeffect ook de economische groei vertraagt en de werkloosheid kan doen oplopen — de klassieke afweging bij renteverhogingen."
+            "correct_option_id": "c",
+            "explanation": "Investeringen zijn aankopen bij andere bedrijven; vallen die weg, dan verliezen hun leveranciers direct omzet."
           }
         ]
       },
       {
-        "id": "economische_cyclus",
-        "title": "De economische cyclus: hoe alles samenhangt",
+        "id": "nominaal_en_reeel",
+        "title": "Nominaal en reëel",
         "order": 5,
-        "explanation": "De vier pijlers die je nu kent — BBP, inflatie, werkloosheid en rente — bewegen niet los van elkaar. Samen vormen ze de economische cyclus: het min of meer terugkerende patroon van groei en krimp dat elke economie doormaakt.\n\nIn de expansiefase groeit het BBP, daalt de werkloosheid en stijgt het consumentenvertrouwen. Groeit de economie te snel, dan kan de inflatie oplopen — de centrale bank verhoogt dan de rente om af te koelen. Groeit de economie te langzaam, of krimpt het BBP twee kwartalen op rij, dan spreken we van een recessie: bedrijven verkopen minder, werkloosheid stijgt, en de centrale bank verlaagt juist de rente om de economie weer aan te jagen.\n\nZo grijpen BBP, inflatie, werkloosheid en rente voortdurend op elkaar in — dat samenspel ís de economische cyclus.",
+        "explanation": "Nominaal is in geld van dat moment. Reëel is gecorrigeerd voor prijsstijgingen. Als prijzen stijgen, kan het BBP in geld groeien zonder dat er meer is gemaakt. Stel: Land A maakt 100 broden voor 1 euro, en het jaar erna weer 100 broden, nu voor 1,10 euro. Nominaal is dat 10% erbij, reëel is er niets gegroeid. Daarom wordt groei meestal reëel uitgedrukt.",
         "questions": [
           {
-            "id": "macro_beginner_economische_cyclus_q1",
+            "id": "macro_beginner_nominaal_en_reeel_q1",
             "format": "definitie-met-afleiders",
-            "concepts": ["economische cyclus"],
+            "concepts": ["nominaal en reëel"],
             "difficulty_prior": 1,
-            "question": "Wat is de economische cyclus?",
+            "question": "Wat is reële groei?",
             "options": [
-              { "id": "a", "text": "Het terugkerende patroon van groei en krimp, waarbij BBP, inflatie, werkloosheid en rente op elkaar inspelen" },
-              { "id": "b", "text": "Een vaste jaarlijkse stijging van het BBP" },
-              { "id": "c", "text": "Het proces waarbij een land altijd blijft groeien" },
-              { "id": "d", "text": "Een systeem waarbij de rente nooit verandert" }
+              { "id": "a", "text": "Groei van de winst" },
+              { "id": "b", "text": "Groei van de rente" },
+              { "id": "c", "text": "Groei gecorrigeerd voor prijsstijgingen" },
+              { "id": "d", "text": "Groei van het aantal werknemers" }
             ],
-            "correct_option_id": "a",
-            "explanation": "De economische cyclus is het patroon van afwisselende groei en krimp waarin BBP, inflatie, werkloosheid en rente elkaar beïnvloeden."
+            "correct_option_id": "c",
+            "explanation": "Reëel betekent: wat is er echt méér gemaakt, zonder het effect van hogere prijzen."
           },
           {
-            "id": "macro_beginner_economische_cyclus_q2",
-            "format": "vergelijking",
-            "concepts": ["economische cyclus", "werkloosheid"],
-            "difficulty_prior": 5,
-            "question": "Vergelijk twee fases van de economische cyclus: expansie versus recessie. In welke fase is de werkloosheid doorgaans lager?",
+            "id": "macro_beginner_nominaal_en_reeel_q2",
+            "format": "berekening",
+            "concepts": ["nominaal en reëel"],
+            "difficulty_prior": 2,
+            "question": "Vorig jaar werden 100 broden verkocht à 2,00 euro. Dit jaar weer 100 broden, nu à 2,20 euro. Wat is de reële groei?",
             "options": [
-              { "id": "a", "text": "Expansie" },
-              { "id": "b", "text": "Recessie" },
-              { "id": "c", "text": "In beide fases even hoog" },
-              { "id": "d", "text": "Werkloosheid hangt niet samen met de economische cyclus" }
+              { "id": "a", "text": "10%" },
+              { "id": "b", "text": "0%" },
+              { "id": "c", "text": "20%" },
+              { "id": "d", "text": "2%" }
             ],
-            "correct_option_id": "a",
-            "explanation": "Tijdens een expansiefase groeien bedrijven en hebben ze meer personeel nodig, waardoor de werkloosheid doorgaans lager is dan tijdens een recessie."
+            "correct_option_id": "b",
+            "explanation": "Er zijn evenveel broden gemaakt; alleen de prijs steeg. De nominale groei is 10%, de reële groei is 0%."
           },
           {
-            "id": "macro_beginner_economische_cyclus_q3",
+            "id": "macro_beginner_nominaal_en_reeel_q3",
             "format": "welk-voorbeeld-past",
-            "concepts": ["BBP", "werkloosheid", "rente"],
-            "difficulty_prior": 5,
-            "question": "Welke combinatie van signalen past het beste bij het begin van een recessie?",
+            "concepts": ["nominaal en reëel"],
+            "difficulty_prior": 2,
+            "question": "De omzet van een bedrijf steeg met 5%, terwijl de prijzen ook met 5% stegen. Is dat bedrijf ook in volume (het aantal verkochte producten) met 5% gegroeid?",
             "options": [
-              { "id": "a", "text": "Dalend BBP, stijgende werkloosheid, een centrale bank die de rente verlaagt" },
-              { "id": "b", "text": "Stijgend BBP, dalende werkloosheid, oplopende inflatie" },
-              { "id": "c", "text": "Stabiel BBP, stabiele werkloosheid, ongewijzigde rente" },
-              { "id": "d", "text": "Dalende inflatie zonder enige verandering in BBP of werkloosheid" }
+              { "id": "a", "text": "Ja, omzet en volume groeien altijd gelijk op" },
+              { "id": "b", "text": "Nee, de extra omzet komt volledig uit hogere prijzen; het volume is gelijk gebleven" },
+              { "id": "c", "text": "Ja, want prijsstijgingen tellen niet mee in de omzet" },
+              { "id": "d", "text": "Nee, het volume is juist gedaald" }
             ],
-            "correct_option_id": "a",
-            "explanation": "Een dalend BBP samen met stijgende werkloosheid en een rentverlaging door de centrale bank is precies het samenspel dat een beginnende recessie kenmerkt."
+            "correct_option_id": "b",
+            "explanation": "De extra omzet komt volledig uit hogere prijzen, niet uit méér verkocht; het volume is gelijk gebleven."
           },
           {
-            "id": "macro_beginner_economische_cyclus_q4",
-            "format": "scenario-redenering",
-            "concepts": ["economische cyclus", "inflatie"],
-            "difficulty_prior": 5,
-            "question": "Een economie bevindt zich in een expansiefase: het BBP groeit hard en de werkloosheid is laag. Wat is een mogelijk risico dat hierbij kan ontstaan?",
+            "id": "macro_beginner_nominaal_en_reeel_q4",
+            "format": "definitie-met-afleiders",
+            "concepts": ["nominaal en reëel"],
+            "difficulty_prior": 3,
+            "question": "Nominale groei min de prijsstijging is ongeveer gelijk aan welke groei?",
             "options": [
-              { "id": "a", "text": "Oplopende inflatie, doordat de vraag het aanbod overtreft" },
-              { "id": "b", "text": "Een directe recessie zonder enige aanleiding" },
-              { "id": "c", "text": "Een blijvend dalende rente zonder ingrijpen" },
-              { "id": "d", "text": "Werkloosheid die vanzelf verder daalt tot 0%" }
+              { "id": "a", "text": "De reële groei" },
+              { "id": "b", "text": "De winstgroei" },
+              { "id": "c", "text": "De rentegroei" },
+              { "id": "d", "text": "De exportgroei" }
             ],
             "correct_option_id": "a",
-            "explanation": "Snelle groei en lage werkloosheid kunnen de vraag naar producten en diensten flink opdrijven, wat het risico op oplopende inflatie vergroot."
+            "explanation": "Trek de prijsstijging van de nominale groei af om te zien hoeveel er echt bij is gekomen."
           },
           {
-            "id": "macro_beginner_economische_cyclus_q5",
-            "format": "wat-hoort-er-niet-bij",
+            "id": "macro_beginner_nominaal_en_reeel_q5",
+            "format": "welk-voorbeeld-past",
+            "concepts": ["nominaal en reëel"],
+            "difficulty_prior": 3,
+            "question": "Welke koppeling van situatie en uitkomst klopt volledig? 1) omzet +8%, prijzen +8%; 2) omzet +8%, prijzen +2%; 3) omzet +2%, prijzen +8%; 4) omzet 0%, prijzen 0%.",
+            "options": [
+              { "id": "a", "text": "1: geen reële groei door gelijke stijging; 2: reële groei ongeveer 6%; 3: reële krimp ongeveer 6%; 4: alles blijft gelijk" },
+              { "id": "b", "text": "1: reële groei ongeveer 6%; 2: reële krimp ongeveer 6%; 3: geen reële groei; 4: alles blijft gelijk" },
+              { "id": "c", "text": "1: alles blijft gelijk; 2: geen reële groei; 3: reële groei ongeveer 6%; 4: reële krimp ongeveer 6%" },
+              { "id": "d", "text": "1: reële krimp ongeveer 6%; 2: alles blijft gelijk; 3: reële groei ongeveer 6%; 4: geen reële groei" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Ongeveer geldt: reële groei is nominale groei min prijsstijging."
+          },
+          {
+            "id": "macro_beginner_nominaal_en_reeel_q6",
+            "format": "keten-redenering",
+            "concepts": ["nominaal en reëel"],
+            "difficulty_prior": 4,
+            "question": "Waarom lijkt een bedrijf in geld sneller te groeien dan het in werkelijkheid doet?",
+            "options": [
+              { "id": "a", "text": "Omdat prijsstijgingen meetellen in de omzet, zonder dat er meer is verkocht" },
+              { "id": "b", "text": "Omdat winst altijd sneller groeit dan omzet" },
+              { "id": "c", "text": "Omdat bedrijven hun cijfers verzinnen" },
+              { "id": "d", "text": "Omdat de rente automatisch meegroeit met de omzet" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Hogere prijzen verhogen de omzet zonder dat er meer is verkocht — dat is nominale groei zonder reële groei."
+          }
+        ]
+      },
+      {
+        "id": "economische_groei",
+        "title": "Groei",
+        "order": 6,
+        "explanation": "Economische groei is de toename van de reële productie in een periode, uitgedrukt in procenten. Kleine verschillen stapelen zich op: groeit een economie elk jaar met 2%, dan is ze na ongeveer 35 jaar twee keer zo groot; bij 3,5% duurt dat ongeveer 20 jaar. Een handige vuistregel is 70 gedeeld door het groeipercentage. Daarom maakt één procentpunt verschil op de lange termijn veel uit.",
+        "questions": [
+          {
+            "id": "macro_beginner_economische_groei_q1",
+            "format": "definitie-met-afleiders",
+            "concepts": ["economische groei"],
+            "difficulty_prior": 1,
+            "question": "Wat is economische groei?",
+            "options": [
+              { "id": "a", "text": "Toename van de reële productie in een periode" },
+              { "id": "b", "text": "Toename van de rente" },
+              { "id": "c", "text": "Toename van de belastingen" },
+              { "id": "d", "text": "Toename van het spaargeld van huishoudens" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Groei gaat over méér produceren, gecorrigeerd voor prijzen."
+          },
+          {
+            "id": "macro_beginner_economische_groei_q2",
+            "format": "berekening",
+            "concepts": ["economische groei"],
+            "difficulty_prior": 2,
+            "question": "De productie is 200 en groeit met 5%. Wat is de nieuwe productie?",
+            "options": [
+              { "id": "a", "text": "210" },
+              { "id": "b", "text": "205" },
+              { "id": "c", "text": "250" },
+              { "id": "d", "text": "195" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "5% van 200 is 10, dus 200 + 10 = 210."
+          },
+          {
+            "id": "macro_beginner_economische_groei_q3",
+            "format": "welk-voorbeeld-past",
+            "concepts": ["economische groei"],
+            "difficulty_prior": 2,
+            "question": "Twee landen groeien allebei structureel, het ene met 2% per jaar en het andere met 3% per jaar. Kan dat kleine verschil van één procentpunt op lange termijn veel uitmaken?",
+            "options": [
+              { "id": "a", "text": "Nee, één procentpunt is te klein om ooit merkbaar te worden" },
+              { "id": "b", "text": "Ja, door het opstapelen kan één procentpunt over tientallen jaren tot een groot verschil leiden" },
+              { "id": "c", "text": "Nee, groeipercentages tellen alleen mee in het eerste jaar" },
+              { "id": "d", "text": "Ja, maar alleen als de rente ook stijgt" }
+            ],
+            "correct_option_id": "b",
+            "explanation": "Door het opstapelen kan één procentpunt verschil per jaar over tientallen jaren tot een groot verschil leiden."
+          },
+          {
+            "id": "macro_beginner_economische_groei_q4",
+            "format": "berekening",
+            "concepts": ["economische groei"],
+            "difficulty_prior": 3,
+            "question": "Een land groeit elk jaar met 2%. Ongeveer hoeveel jaar duurt het voordat de economie twee keer zo groot is?",
+            "options": [
+              { "id": "a", "text": "10 jaar" },
+              { "id": "b", "text": "70 jaar" },
+              { "id": "c", "text": "35 jaar" },
+              { "id": "d", "text": "2 jaar" }
+            ],
+            "correct_option_id": "c",
+            "explanation": "Vuistregel: 70 gedeeld door 2 is 35."
+          },
+          {
+            "id": "macro_beginner_economische_groei_q5",
+            "format": "welk-voorbeeld-past",
+            "concepts": ["economische groei"],
+            "difficulty_prior": 3,
+            "question": "Welke koppeling van groeipercentage en ongeveer de tijd tot verdubbeling klopt volledig? 1) 1%, 2) 2%, 3) 3,5%, 4) 7%.",
+            "options": [
+              { "id": "a", "text": "1: ongeveer 70 jaar; 2: ongeveer 35 jaar; 3: ongeveer 20 jaar; 4: ongeveer 10 jaar" },
+              { "id": "b", "text": "1: ongeveer 10 jaar; 2: ongeveer 20 jaar; 3: ongeveer 35 jaar; 4: ongeveer 70 jaar" },
+              { "id": "c", "text": "1: ongeveer 35 jaar; 2: ongeveer 70 jaar; 3: ongeveer 10 jaar; 4: ongeveer 20 jaar" },
+              { "id": "d", "text": "1: ongeveer 20 jaar; 2: ongeveer 10 jaar; 3: ongeveer 70 jaar; 4: ongeveer 35 jaar" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Deel 70 door het percentage: 70/1 = 70, 70/2 = 35, 70/3,5 = 20, 70/7 = 10."
+          },
+          {
+            "id": "macro_beginner_economische_groei_q6",
+            "format": "keten-redenering",
+            "concepts": ["economische groei"],
+            "difficulty_prior": 4,
+            "question": "Wat betekent een structureel hoger groeitempo voor de omzetten van bedrijven op lange termijn?",
+            "options": [
+              { "id": "a", "text": "Altijd meer winst voor elk bedrijf" },
+              { "id": "b", "text": "Gemiddeld meer ruimte voor omzet, zonder garantie per bedrijf" },
+              { "id": "c", "text": "Niets, groei en omzet staan los van elkaar" },
+              { "id": "d", "text": "Minder omzet, want groei drijft de prijzen omhoog" }
+            ],
+            "correct_option_id": "b",
+            "explanation": "Meer groei betekent gemiddeld meer bestedingen, maar niet elk bedrijf profiteert daar evenveel van."
+          }
+        ]
+      },
+      {
+        "id": "wat_drijft_groei",
+        "title": "Wat drijft groei?",
+        "order": 7,
+        "explanation": "Een economie kan op drie manieren meer produceren. Meer arbeid: meer mensen of meer uren aan het werk. Meer kapitaal: meer machines, gebouwen en gereedschap. Slimmer werken: betere technologie en methoden, waardoor je met dezelfde inzet meer maakt. Dat laatste heet productiviteit: de output per gewerkt uur. Op lange termijn is productiviteit meestal de belangrijkste motor, want het aantal werkenden kan niet eindeloos groeien.",
+        "questions": [
+          {
+            "id": "macro_beginner_wat_drijft_groei_q1",
+            "format": "definitie-met-afleiders",
+            "concepts": ["groeibronnen"],
+            "difficulty_prior": 1,
+            "question": "Welke drie bronnen laten een economie groeien?",
+            "options": [
+              { "id": "a", "text": "Rente, inflatie, belasting" },
+              { "id": "b", "text": "Arbeid, kapitaal, productiviteit" },
+              { "id": "c", "text": "Beurzen, banken, verzekeraars" },
+              { "id": "d", "text": "Export, import, belasting" }
+            ],
+            "correct_option_id": "b",
+            "explanation": "Meer inzet van mensen of machines, of slimmer werken — dat zijn de drie bronnen van groei."
+          },
+          {
+            "id": "macro_beginner_wat_drijft_groei_q2",
+            "format": "definitie-met-afleiders",
+            "concepts": ["productiviteit"],
+            "difficulty_prior": 1,
+            "question": "Output per gewerkt uur heet ook wel...",
+            "options": [
+              { "id": "a", "text": "Productiviteit" },
+              { "id": "b", "text": "Inflatie" },
+              { "id": "c", "text": "Netto export" },
+              { "id": "d", "text": "Bruto binnenlands product" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Productiviteit is de maat voor hoe efficiënt er wordt gewerkt: hoeveel je maakt met dezelfde inzet."
+          },
+          {
+            "id": "macro_beginner_wat_drijft_groei_q3",
+            "format": "definitie-met-afleiders",
+            "concepts": ["productiviteit"],
+            "difficulty_prior": 2,
+            "question": "Wat is productiviteit?",
+            "options": [
+              { "id": "a", "text": "Het aantal werknemers van een bedrijf" },
+              { "id": "b", "text": "De winst van een bedrijf" },
+              { "id": "c", "text": "Output per gewerkt uur" },
+              { "id": "d", "text": "De rente die een bedrijf betaalt op leningen" }
+            ],
+            "correct_option_id": "c",
+            "explanation": "Productiviteit meet hoeveel je maakt met dezelfde inzet."
+          },
+          {
+            "id": "macro_beginner_wat_drijft_groei_q4",
+            "format": "welk-voorbeeld-past",
+            "concepts": ["groeibronnen"],
+            "difficulty_prior": 2,
+            "question": "Een land probeert alleen te groeien door steeds meer mensen aan het werk te zetten. Kan dat op de lange termijn eindeloos doorgaan?",
+            "options": [
+              { "id": "a", "text": "Ja, het aantal werkenden kan altijd blijven stijgen" },
+              { "id": "b", "text": "Nee, het aantal werkenden en gewerkte uren is begrensd; daarom is productiviteit op lange termijn belangrijk" },
+              { "id": "c", "text": "Ja, zolang de rente laag blijft" },
+              { "id": "d", "text": "Nee, want arbeid telt niet mee als groeibron" }
+            ],
+            "correct_option_id": "b",
+            "explanation": "Het aantal werkenden en gewerkte uren is begrensd; daarom is productiviteit op lange termijn belangrijk."
+          },
+          {
+            "id": "macro_beginner_wat_drijft_groei_q5",
+            "format": "welk-voorbeeld-past",
+            "concepts": ["groeibronnen", "productiviteit"],
+            "difficulty_prior": 3,
+            "question": "Welke koppeling van voorbeeld en groeibron klopt volledig? 1) een fabriek koopt een nieuwe machine, 2) een bedrijf neemt extra personeel aan, 3) een nieuwe werkwijze bespaart tijd.",
+            "options": [
+              { "id": "a", "text": "1 kapitaal, 2 arbeid, 3 productiviteit" },
+              { "id": "b", "text": "1 arbeid, 2 kapitaal, 3 productiviteit" },
+              { "id": "c", "text": "1 productiviteit, 2 arbeid, 3 kapitaal" },
+              { "id": "d", "text": "1 kapitaal, 2 productiviteit, 3 arbeid" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Machines zijn kapitaal, extra mensen zijn arbeid, en slimmere methoden verhogen de productiviteit."
+          },
+          {
+            "id": "macro_beginner_wat_drijft_groei_q6",
+            "format": "keten-redenering",
+            "concepts": ["productiviteit"],
+            "difficulty_prior": 4,
+            "question": "Een bedrijf maakt met dezelfde mensen meer producten tegen dezelfde kosten. Wat gebeurt er met de kosten per product?",
+            "options": [
+              { "id": "a", "text": "Ze stijgen" },
+              { "id": "b", "text": "Geen verandering" },
+              { "id": "c", "text": "Ze dalen" },
+              { "id": "d", "text": "Dat hangt alleen af van de rente" }
+            ],
+            "correct_option_id": "c",
+            "explanation": "Dezelfde kosten worden gedeeld over meer producten; dat geeft ruimte voor lagere prijzen of meer marge."
+          }
+        ]
+      },
+      {
+        "id": "krimp_en_recessie",
+        "title": "Krimp en recessie",
+        "order": 8,
+        "explanation": "Krimp betekent dat de reële productie daalt. Een recessie is een aanhoudende krimp. Een gebruikelijke vuistregel is twee kwartalen achter elkaar krimp, maar niet iedereen hanteert die, en de vuistregel is niet perfect: sommigen kijken ook naar hoe diep en hoe breed de daling is. In een recessie verkopen bedrijven minder, stellen ze investeringen uit en ontslaan ze soms mensen, waardoor huishoudens minder uitgeven. Niet elk bedrijf wordt even hard geraakt.",
+        "questions": [
+          {
+            "id": "macro_beginner_krimp_en_recessie_q1",
+            "format": "definitie-met-afleiders",
             "concepts": ["recessie"],
             "difficulty_prior": 1,
-            "question": "Wat hoort NIET bij de kenmerken van een recessiefase in de economische cyclus?",
+            "question": "Wat is een recessie?",
             "options": [
-              { "id": "a", "text": "Het BBP krimpt twee kwartalen op rij" },
-              { "id": "b", "text": "De werkloosheid stijgt doorgaans" },
-              { "id": "c", "text": "De centrale bank verlaagt vaak de rente" },
-              { "id": "d", "text": "De inflatie loopt doorgaans sterk op" }
+              { "id": "a", "text": "Eén slechte dag op de beurs" },
+              { "id": "b", "text": "Een stijging van de prijzen" },
+              { "id": "c", "text": "Een aanhoudende krimp van de reële productie" },
+              { "id": "d", "text": "Een daling van de rente" }
             ],
-            "correct_option_id": "d",
-            "explanation": "Tijdens een recessie neemt de vraag juist af, waardoor de inflatie doorgaans afzwakt in plaats van sterk oploopt — de andere drie kenmerken horen wél bij een typische recessiefase."
+            "correct_option_id": "c",
+            "explanation": "Een recessie gaat over de productie van de economie, niet over één dag of over prijzen."
           },
           {
-            "id": "macro_beginner_economische_cyclus_q6",
-            "format": "berekening",
+            "id": "macro_beginner_krimp_en_recessie_q2",
+            "format": "definitie-met-afleiders",
+            "concepts": ["recessie"],
+            "difficulty_prior": 1,
+            "question": "Een aanhoudende krimp van de economie heet een...",
+            "options": [
+              { "id": "a", "text": "Recessie" },
+              { "id": "b", "text": "Correctie" },
+              { "id": "c", "text": "Devaluatie" },
+              { "id": "d", "text": "Deflatie" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Kort dalen is nog geen recessie; het gaat om aanhouden."
+          },
+          {
+            "id": "macro_beginner_krimp_en_recessie_q3",
+            "format": "welk-voorbeeld-past",
             "concepts": ["recessie"],
             "difficulty_prior": 2,
-            "question": "Het BBP van een land was €800 miljard, en daalt twee kwartalen op rij met in totaal 3% naar €776 miljard. Hoe zou een econoom deze situatie het meest waarschijnlijk noemen?",
+            "question": "Een economie krimpt twee kwartalen achter elkaar. Is dat automatisch overal officieel een recessie?",
             "options": [
-              { "id": "a", "text": "Een recessie, want het BBP krimpt twee kwartalen op rij" },
-              { "id": "b", "text": "Een sterke expansiefase" },
-              { "id": "c", "text": "Hyperinflatie" },
-              { "id": "d", "text": "Een renteverlaging" }
+              { "id": "a", "text": "Ja, dat is een vaste, overal gebruikte wettelijke regel" },
+              { "id": "b", "text": "Nee, het is een vuistregel; verschillende instanties gebruiken verschillende criteria" },
+              { "id": "c", "text": "Ja, maar alleen als de beurs ook daalt" },
+              { "id": "d", "text": "Nee, krimp bestaat niet als apart begrip" }
             ],
-            "correct_option_id": "a",
-            "explanation": "Een BBP-daling gedurende twee opeenvolgende kwartalen is de klassieke definitie van een recessie."
+            "correct_option_id": "b",
+            "explanation": "Het is een vuistregel; verschillende instanties gebruiken verschillende criteria, zoals diepte en breedte van de daling."
           },
           {
-            "id": "macro_beginner_economische_cyclus_q7",
-            "format": "keten-redenering",
-            "concepts": ["economische cyclus", "rente", "werkloosheid"],
-            "difficulty_prior": 5,
-            "question": "Een economie groeit te snel en de inflatie loopt op. De centrale bank verhoogt de rente flink. Wat is de meest waarschijnlijke keten van gevolgen voor BBP en werkloosheid op de langere termijn?",
+            "id": "macro_beginner_krimp_en_recessie_q4",
+            "format": "definitie-met-afleiders",
+            "concepts": ["recessie"],
+            "difficulty_prior": 2,
+            "question": "Welke producten worden in een krimp doorgaans het snelst uitgesteld?",
             "options": [
-              { "id": "a", "text": "Bestedingen en investeringen nemen af, de BBP-groei vertraagt, en de werkloosheid kan oplopen" },
-              { "id": "b", "text": "Het BBP blijft ongewijzigd groeien en de werkloosheid daalt verder" },
-              { "id": "c", "text": "De inflatie loopt juist verder op door de renteverhoging" },
-              { "id": "d", "text": "Er is geen enkel effect op BBP of werkloosheid" }
+              { "id": "a", "text": "Luxe reizen en grote aankopen" },
+              { "id": "b", "text": "Basisvoeding" },
+              { "id": "c", "text": "Beide even snel" },
+              { "id": "d", "text": "Medicijnen" }
             ],
             "correct_option_id": "a",
-            "explanation": "Een hogere rente remt bestedingen en investeringen af, wat de BBP-groei vertraagt en de werkloosheid kan doen oplopen — de vier pijlers werken hier samen."
+            "explanation": "Wat je kunt uitstellen, stel je uit; basisbehoeften blijven nodig."
+          },
+          {
+            "id": "macro_beginner_krimp_en_recessie_q5",
+            "format": "welk-voorbeeld-past",
+            "concepts": ["recessie"],
+            "difficulty_prior": 3,
+            "question": "Welke indeling van gevoeligheid voor krimp klopt volledig? 1) basisvoeding, 2) luxe vakantie, 3) nieuwe machines, 4) medicijnen.",
+            "options": [
+              { "id": "a", "text": "1 weinig gevoelig, 2 sterk gevoelig, 3 sterk gevoelig, 4 weinig gevoelig" },
+              { "id": "b", "text": "1 sterk gevoelig, 2 weinig gevoelig, 3 weinig gevoelig, 4 sterk gevoelig" },
+              { "id": "c", "text": "1 weinig gevoelig, 2 weinig gevoelig, 3 sterk gevoelig, 4 sterk gevoelig" },
+              { "id": "d", "text": "1 sterk gevoelig, 2 sterk gevoelig, 3 weinig gevoelig, 4 weinig gevoelig" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Wat nodig blijft, is weinig gevoelig; wat uitgesteld kan worden, is sterk gevoelig. Dit is een tendens, geen wet."
+          },
+          {
+            "id": "macro_beginner_krimp_en_recessie_q6",
+            "format": "keten-redenering",
+            "concepts": ["recessie"],
+            "difficulty_prior": 5,
+            "question": "In een recessie ontslaan bedrijven mensen. Wat betekent dat voor de uitgaven van huishoudens, en wat kan daardoor gebeuren met de krimp zelf?",
+            "options": [
+              { "id": "a", "text": "De uitgaven dalen, wat de krimp verder kan versterken" },
+              { "id": "b", "text": "De uitgaven stijgen, wat de krimp afzwakt" },
+              { "id": "c", "text": "De uitgaven veranderen niet, dus er is geen effect" },
+              { "id": "d", "text": "De uitgaven dalen, maar dat heeft geen invloed op andere bedrijven" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Minder inkomen betekent minder uitgaven, wat weer minder omzet betekent voor andere bedrijven. Zo kan een neergang zichzelf versterken."
+          }
+        ]
+      },
+      {
+        "id": "wat_bbp_niet_meet",
+        "title": "Wat het BBP niet meet",
+        "order": 9,
+        "explanation": "Het BBP telt betaalde productie. Wat het niet telt: onbetaald werk zoals zorgen voor familie of huishoudelijk werk, hoe de welvaart is verdeeld, schade aan het milieu, en zaken als vrije tijd of gezondheid. Het BBP per inwoner is een gemiddelde en zegt dus niets over wie wat krijgt. Toch wordt het veel gebruikt, omdat het meetbaar en vergelijkbaar is en samenhangt met werk en inkomen. Een economie kan groeien terwijl veel mensen dat niet merken.",
+        "questions": [
+          {
+            "id": "macro_beginner_wat_bbp_niet_meet_q1",
+            "format": "definitie-met-afleiders",
+            "concepts": ["wat BBP niet meet"],
+            "difficulty_prior": 1,
+            "question": "Wat telt het BBP niet mee?",
+            "options": [
+              { "id": "a", "text": "Onbetaald zorgwerk thuis" },
+              { "id": "b", "text": "Betaald werk" },
+              { "id": "c", "text": "De verkoop van nieuw gebouwde woningen" },
+              { "id": "d", "text": "Lonen die bedrijven betalen" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Het BBP telt betaalde productie; onbetaald werk blijft buiten beeld."
+          },
+          {
+            "id": "macro_beginner_wat_bbp_niet_meet_q2",
+            "format": "definitie-met-afleiders",
+            "concepts": ["wat BBP niet meet"],
+            "difficulty_prior": 1,
+            "question": "Het BBP per inwoner is een...",
+            "options": [
+              { "id": "a", "text": "Gemiddelde" },
+              { "id": "b", "text": "Mediaan" },
+              { "id": "c", "text": "Optelling van alle spaargeld" },
+              { "id": "d", "text": "Percentage van de export" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Bij een gemiddelde verdwijnen de verschillen tussen mensen, dus het zegt niets over de verdeling."
+          },
+          {
+            "id": "macro_beginner_wat_bbp_niet_meet_q3",
+            "format": "welk-voorbeeld-past",
+            "concepts": ["wat BBP niet meet"],
+            "difficulty_prior": 2,
+            "question": "Het BBP per inwoner van een land stijgt dit jaar. Betekent dat automatisch dat de welvaart eerlijker verdeeld is dan vorig jaar?",
+            "options": [
+              { "id": "a", "text": "Ja, een stijgend gemiddelde betekent altijd een eerlijkere verdeling" },
+              { "id": "b", "text": "Nee, een gemiddelde zegt niets over de verdeling: dezelfde waarde kan gelijk of heel ongelijk verdeeld zijn" },
+              { "id": "c", "text": "Ja, maar alleen als ook de export stijgt" },
+              { "id": "d", "text": "Nee, want het BBP kan nooit stijgen" }
+            ],
+            "correct_option_id": "b",
+            "explanation": "Een gemiddelde zegt niets over de verdeling: dezelfde waarde kan gelijk of heel ongelijk verdeeld zijn."
+          },
+          {
+            "id": "macro_beginner_wat_bbp_niet_meet_q4",
+            "format": "definitie-met-afleiders",
+            "concepts": ["wat BBP niet meet"],
+            "difficulty_prior": 2,
+            "question": "Waarom wordt het BBP toch veel gebruikt, ondanks wat het niet meet?",
+            "options": [
+              { "id": "a", "text": "Het meet welzijn perfect" },
+              { "id": "b", "text": "Het is meetbaar en vergelijkbaar, en hangt samen met werk en inkomen" },
+              { "id": "c", "text": "Het meet alles wat ertoe doet" },
+              { "id": "d", "text": "Het is de enige beschikbare economische maat" }
+            ],
+            "correct_option_id": "b",
+            "explanation": "Het BBP is een praktische maat, geen complete maat."
+          },
+          {
+            "id": "macro_beginner_wat_bbp_niet_meet_q5",
+            "format": "welk-voorbeeld-past",
+            "concepts": ["wat BBP niet meet"],
+            "difficulty_prior": 3,
+            "question": "Welke indeling van 'wel of niet meetbaar in het BBP' klopt volledig? 1) betaalde loonarbeid, 2) onbetaald thuiswerk, 3) verkoop van nieuw gebouwde woningen, 4) de schoonheid van het landschap.",
+            "options": [
+              { "id": "a", "text": "1 ja, 2 nee, 3 ja, 4 nee" },
+              { "id": "b", "text": "1 nee, 2 ja, 3 nee, 4 ja" },
+              { "id": "c", "text": "1 ja, 2 ja, 3 nee, 4 nee" },
+              { "id": "d", "text": "1 nee, 2 nee, 3 ja, 4 ja" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Wat betaald wordt en een prijs heeft, telt mee; wat geen prijs heeft, blijft buiten beeld."
+          },
+          {
+            "id": "macro_beginner_wat_bbp_niet_meet_q6",
+            "format": "keten-redenering",
+            "concepts": ["wat BBP niet meet"],
+            "difficulty_prior": 4,
+            "question": "Waarom kan een economie groeien terwijl veel mensen dat niet merken?",
+            "options": [
+              { "id": "a", "text": "Groei is altijd eerlijk verdeeld over iedereen" },
+              { "id": "b", "text": "De groei kan ongelijk verdeeld zijn, en een gemiddeld cijfer verbergt dat" },
+              { "id": "c", "text": "Het BBP telt geen bedrijven mee" },
+              { "id": "d", "text": "Groei betekent automatisch hogere lonen voor iedereen" }
+            ],
+            "correct_option_id": "b",
+            "explanation": "Een gemiddeld cijfer kan stijgen terwijl een deel van de mensen er niets van merkt."
+          }
+        ]
+      },
+      {
+        "id": "economie_en_markten",
+        "title": "De economie en de markten",
+        "order": 10,
+        "explanation": "Beleggers kijken naar economische groei, omdat bedrijfswinsten vaak meebewegen met de economie. Maar markten prijzen verwachtingen al vooraf in. Wordt 2% groei verwacht en komt er 1%, dan is dat een tegenvaller, en koersen kunnen dalen, ook al groeit de economie nog. Wat telt is niet alleen de uitkomst, maar het verschil met de verwachting. Niet elke sector reageert hetzelfde. Dit is uitleg over hoe markten werken, geen voorspelling en geen beleggingsadvies.",
+        "questions": [
+          {
+            "id": "macro_beginner_economie_en_markten_q1",
+            "format": "definitie-met-afleiders",
+            "concepts": ["markt en verwachting"],
+            "difficulty_prior": 1,
+            "question": "Waarom letten beleggers op economische groei?",
+            "options": [
+              { "id": "a", "text": "Groei bepaalt rechtstreeks de rente" },
+              { "id": "b", "text": "Bedrijfswinsten bewegen vaak mee met de economie" },
+              { "id": "c", "text": "Groei maakt beleggen risicoloos" },
+              { "id": "d", "text": "Groei bepaalt de belastingtarieven van bedrijven" }
+            ],
+            "correct_option_id": "b",
+            "explanation": "Meer bestedingen betekenen doorgaans meer omzet en winst; daar zijn koersen gevoelig voor.",
+            "disclaimer": "Dit is geen beleggingsadvies."
+          },
+          {
+            "id": "macro_beginner_economie_en_markten_q2",
+            "format": "welk-voorbeeld-past",
+            "concepts": ["markt en verwachting"],
+            "difficulty_prior": 2,
+            "question": "Een economie groeit dit kwartaal, maar minder hard dan beleggers hadden verwacht. Kan de koers van aandelen dan toch dalen?",
+            "options": [
+              { "id": "a", "text": "Nee, een koers kan nooit dalen terwijl de economie groeit" },
+              { "id": "b", "text": "Ja, het gaat om het verschil tussen verwachting en uitkomst; een tegenvallende groei kan koersen drukken, ook als de economie groeit" },
+              { "id": "c", "text": "Nee, koersen reageren alleen op de rente, nooit op groei" },
+              { "id": "d", "text": "Ja, maar alleen als de groei negatief wordt" }
+            ],
+            "correct_option_id": "b",
+            "explanation": "Het gaat om het verschil tussen verwachting en uitkomst; een tegenvallende groei kan koersen drukken, ook als de economie groeit.",
+            "disclaimer": "Dit is geen beleggingsadvies."
+          },
+          {
+            "id": "macro_beginner_economie_en_markten_q3",
+            "format": "definitie-met-afleiders",
+            "concepts": ["markt en verwachting"],
+            "difficulty_prior": 2,
+            "question": "Er werd 2% groei verwacht en het werd 1%. Hoe noemt de markt dat doorgaans?",
+            "options": [
+              { "id": "a", "text": "Een meevaller" },
+              { "id": "b", "text": "Geen nieuws" },
+              { "id": "c", "text": "Een tegenvaller" },
+              { "id": "d", "text": "Een crash" }
+            ],
+            "correct_option_id": "c",
+            "explanation": "Onder de verwachting is een tegenvaller, ook al blijft de groei positief.",
+            "disclaimer": "Dit is geen beleggingsadvies."
+          },
+          {
+            "id": "macro_beginner_economie_en_markten_q4",
+            "format": "definitie-met-afleiders",
+            "concepts": ["markt en verwachting"],
+            "difficulty_prior": 2,
+            "question": "Markten reageren vooral op het verschil tussen verwachting en...",
+            "options": [
+              { "id": "a", "text": "Uitkomst" },
+              { "id": "b", "text": "Rente" },
+              { "id": "c", "text": "Belasting" },
+              { "id": "d", "text": "Vorig jaar" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Wat verwacht wordt, zit al in de koers; een verrassing verandert die.",
+            "disclaimer": "Dit is geen beleggingsadvies."
+          },
+          {
+            "id": "macro_beginner_economie_en_markten_q5",
+            "format": "welk-voorbeeld-past",
+            "concepts": ["markt en verwachting"],
+            "difficulty_prior": 3,
+            "question": "Welke koppeling van situatie en gebruikelijke marktreactie klopt het best? 1) groei hoger dan verwacht, 2) groei lager dan verwacht, 3) groei precies zoals verwacht.",
+            "options": [
+              { "id": "a", "text": "1 vaak positief voor koersen, 2 vaak negatief voor koersen, 3 meestal weinig beweging" },
+              { "id": "b", "text": "1 vaak negatief voor koersen, 2 vaak positief voor koersen, 3 meestal weinig beweging" },
+              { "id": "c", "text": "1 meestal weinig beweging, 2 vaak positief voor koersen, 3 vaak negatief voor koersen" },
+              { "id": "d", "text": "1 vaak positief voor koersen, 2 meestal weinig beweging, 3 vaak negatief voor koersen" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "Dit zijn tendensen, geen regels: markten kunnen ook anders reageren.",
+            "disclaimer": "Dit is geen beleggingsadvies."
+          },
+          {
+            "id": "macro_beginner_economie_en_markten_q6",
+            "format": "keten-redenering",
+            "concepts": ["markt en verwachting"],
+            "difficulty_prior": 4,
+            "question": "Waarom kan een koers dalen als de groei tegenvalt, ook al blijft de economie groeien?",
+            "options": [
+              { "id": "a", "text": "Omdat de verwachting hoger lag dan de uitkomst" },
+              { "id": "b", "text": "Omdat groei altijd slecht is voor koersen" },
+              { "id": "c", "text": "Omdat koersen niets met groei te maken hebben" },
+              { "id": "d", "text": "Omdat de rente dan automatisch stijgt" }
+            ],
+            "correct_option_id": "a",
+            "explanation": "De koers bevatte al een hoger groeiscenario; een lager cijfer is een negatieve verrassing. Dit is een tendens, geen voorspelling.",
+            "disclaimer": "Dit is geen beleggingsadvies."
           }
         ]
       }
