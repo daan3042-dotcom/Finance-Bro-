@@ -18,6 +18,25 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-24
 
+- Tweede module toegevoegd: "Wat is de markt" (`data/modules/markt.json`,
+  module-id `markt`, order 2, alleen beginner-track — conform §4 van
+  docs/project-instructions.md krijgt alleen het eerste onderwerp (macro)
+  meerdere niveaus). 48 lessen, 288 vragen, gebaseerd op het lessendocument
+  van Niels: Unit 1 (Waarom bestaan markten?), Unit 2 (De deelnemers), Unit
+  3 (Wat wordt er verhandeld?) en Unit 4 (Hoe een koers ontstaat) volledig,
+  Unit 5 (Wat beweegt de koers?) alleen les 1-8 — het brondocument breekt
+  daar af, les 9-10 en het unit-checkpoint volgen later, net als units
+  6-10 van dit thema. Moeilijkheidsgraad loopt net als bij macro op over
+  de hele track heen, dit keer meteen goed ingesteld bij het schrijven in
+  plaats van achteraf hersteld. Nieuw: `src/lib/modules.ts` registreert nu
+  twee modules in plaats van één — de rest van de app (modulelijst,
+  routing) was al generiek genoeg om dit zonder verdere aanpassingen te
+  ondersteunen. Kleine dataschoonmaak: in drie van de vijf units stond het
+  juiste antwoord te vaak op optie "a" (voorspelbaar als je de rauwe data
+  zou lezen); deterministisch herverdeeld over a/b/c/d zonder de inhoud te
+  wijzigen — functioneel was dit al onschadelijk dankzij de shuffle-feature
+  die vragen toont in een per-gebruiker geseede volgorde, maar nette
+  brondata is netjes.
 - Antwoordopties worden nu geshuffeld getoond: een gebruiker die dezelfde
   vraag later opnieuw krijgt (bijv. bij een herkansing van een les) ziet de
   opties in een andere volgorde, zodat je niet de vorige positie van het

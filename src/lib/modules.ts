@@ -1,8 +1,9 @@
 import macroModuleData from '../../data/modules/macro.json';
+import marktModuleData from '../../data/modules/markt.json';
 import { getModuleLessonProgress, type ModuleProgressState } from './moduleProgress';
 import type { ModuleData, ModuleLesson, ModuleTrack } from './types';
 
-export const modules: ModuleData[] = [macroModuleData as ModuleData];
+export const modules: ModuleData[] = [macroModuleData as ModuleData, marktModuleData as ModuleData];
 
 export const modulesById: Record<string, ModuleData> = Object.fromEntries(
   modules.map((module) => [module.id, module])
