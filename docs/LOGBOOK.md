@@ -18,6 +18,30 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-24
 
+- Zesde module toegevoegd: "Technologie en innovatie" (`data/modules/technologie.json`,
+  module-id `technologie`, order 6, alleen beginner-track) — Thema 10 uit de
+  contentplanning. In tegenstelling tot alle vorige modules was dit
+  brondocument voor het eerst volledig: alle 10 units en alle 100 lessen
+  waren al helemaal uitgeschreven, dus deze module heeft (voorlopig) geen
+  losse eindjes. 100 lessen, 600 vragen: Unit 1 (Van uitvinding naar
+  massamarkt: adoptiecurve, vroege gebruikers versus de massa), Unit 2 (Wie
+  profiteert van innovatie: waardeketen, winstmarge), Unit 3 (Gevestigde
+  bedrijven onder druk: disruptie), Unit 4 (Hype en werkelijkheid), Unit 5
+  (Groei waarderen: rentegevoeligheid van toekomstige winst), Unit 6
+  (Kosten, schaal en leercurves), Unit 7 (Platformen en netwerkeffecten),
+  Unit 8 (Standaarden en intellectueel eigendom), Unit 9 (Grondstoffen en
+  toeleveringsketens) en Unit 10 (een doorlopende afsluitende casus die alle
+  voorgaande units samenbrengt rond één fictief bedrijf, "Technologie X").
+  Net als bij de risico-module heeft elke vraag een disclaimer ("Dit is geen
+  beleggingsadvies."), specifiek belangrijk bij Unit 4 (hype) waar expliciet
+  is opgelet dat niets suggereert dat hype vooraf te herkennen of timen is.
+  Bijzonderheid in de brondata: dit brondocument gebruikte voor meerkeuzevragen
+  steeds maar 3 opties (A/B/C) in plaats van 4 — bij elke vraag is zelf een
+  plausibele 4e afleider bedacht (een geloofwaardige denkfout, geen nieuw
+  feit) om op het vaste 4-opties-schema van de app uit te komen. Moeilijkheids-
+  graad volgt het bekende 5-staps-profiel en de a/b/c/d-verdeling van de
+  juiste antwoorden is nagenoeg perfect (150/149/151/150 over 600 vragen),
+  in één keer goed via de subagent-instructies.
 - Vijfde module toegevoegd: "Risico en spreiding" (`data/modules/risico.json`,
   module-id `risico`, order 5, alleen beginner-track). 67 lessen, 402 vragen:
   Unit 1 (Risico in het dagelijks leven), Unit 2 (Soorten risico), Unit 3

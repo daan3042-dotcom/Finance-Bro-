@@ -3,6 +3,7 @@ import gedragModuleData from '../../data/modules/gedrag.json';
 import macroModuleData from '../../data/modules/macro.json';
 import marktModuleData from '../../data/modules/markt.json';
 import risicoModuleData from '../../data/modules/risico.json';
+import technologieModuleData from '../../data/modules/technologie.json';
 import { getModuleLessonProgress, type ModuleProgressState } from './moduleProgress';
 import type { ModuleData, ModuleLesson, ModuleTrack } from './types';
 
@@ -12,6 +13,7 @@ export const modules: ModuleData[] = [
   aandelenModuleData as ModuleData,
   gedragModuleData as ModuleData,
   risicoModuleData as ModuleData,
+  technologieModuleData as ModuleData,
 ];
 
 export const modulesById: Record<string, ModuleData> = Object.fromEntries(
