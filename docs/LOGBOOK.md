@@ -18,6 +18,43 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-24
 
+- Negende en tiende module toegevoegd, in één sessie: "Grondstoffen: hoe hun
+  markt werkt" (`data/modules/grondstoffen.json`, module-id `grondstoffen`,
+  order 9, Thema 6) en "Metalen: edel, industrieel en kritiek"
+  (`data/modules/metalen.json`, module-id `metalen`, order 10, Thema 7).
+  Beide alleen beginner-track, elk 100 lessen / 600 vragen, en (net als
+  technologie/geopolitiek/energie) beide met een volledig uitgeschreven
+  brondocument — geen open einden. Grondstoffen behandelt wat een grondstof
+  is (geen winst/dividend, uitwisselbaarheid), de drie families
+  (energie/metalen/landbouw), waarom aanbod traag reageert op prijs,
+  prijsgevoeligheid van vraag, kleine tekorten/grote prijssprongen,
+  voorraden/transport, spotprijs versus termijnprijs en indekken (hedgen)
+  als risicomechanisme, wie in de keten verdient bij prijsveranderingen, de
+  grondstoffencyclus (boom en bust), en grondstoffen in bredere economische
+  context (inflatie, conjunctuur, valuta, beleggingsproducten). Metalen
+  bouwt daarop voort en past dezelfde mechanismen toe op metalen specifiek:
+  edelmetalen als bewaarmiddel, metalen met een dubbele rol (bewaar- én
+  industriële vraag), industriële metalen als conjunctuur-graadmeter,
+  kritieke metalen (zoals lithium), de productieketen van erts tot metaal,
+  bijproducten/prijskoppeling, substitutie en recycling, technologie die de
+  vraag bepaalt, en een afsluitende methode om een metaalmarkt te lezen.
+  Deze keer kwam de bron uit Drive als PDF in plaats van als geüpload
+  Word-bestand; de standaard PDF-tekstextractie van Drive bleek zelf
+  afgekapt (~130.000 tekens in plaats van de volledige ~300.000), dus is in
+  plaats daarvan de ruwe PDF gedownload en zelf met `pypdf` volledig
+  uitgelezen. Beide brondocumenten bleken zwaardere PDF-kolomlayout-
+  artefacten te hebben dan de vorige Word-gebaseerde bronnen (oefeningen die
+  stelselmatig verschoven naar het begin van de vólgende les in de tekst,
+  en losse restanten van al verwijderde unit-checkpoints) — dit is overal
+  op inhoud (niet op tekstpositie) hersteld door elke subagent, met een
+  paar lessen waarbij de bron uiteindelijk net te weinig oefeningen overhad
+  en er een klein aantal otherwise-ontbrekende vragen zelf is opgesteld,
+  steeds strikt gebaseerd op reeds in diezelfde les vastgestelde feiten.
+  Disclaimer op elke vraag, en de investering-gerelateerde slotlessen van
+  beide modules (grondstoffenbeleggingsproducten, indekken/hedgen, de
+  goudspaarpot-casus) leggen uitsluitend het mechanisme uit, nooit een
+  aanbeveling. Moeilijkheid en a/b/c/d-verdeling volgen het bekende profiel
+  voor beide modules.
 - Achtste module toegevoegd: "Energie en de transitie"
   (`data/modules/energie.json`, module-id `energie`, order 8, alleen
   beginner-track) — Thema 8 uit de contentplanning. Net als "Technologie en

@@ -2,8 +2,10 @@ import aandelenModuleData from '../../data/modules/aandelen.json';
 import energieModuleData from '../../data/modules/energie.json';
 import gedragModuleData from '../../data/modules/gedrag.json';
 import geopolitiekModuleData from '../../data/modules/geopolitiek.json';
+import grondstoffenModuleData from '../../data/modules/grondstoffen.json';
 import macroModuleData from '../../data/modules/macro.json';
 import marktModuleData from '../../data/modules/markt.json';
+import metalenModuleData from '../../data/modules/metalen.json';
 import risicoModuleData from '../../data/modules/risico.json';
 import technologieModuleData from '../../data/modules/technologie.json';
 import { getModuleLessonProgress, type ModuleProgressState } from './moduleProgress';
@@ -18,6 +20,8 @@ export const modules: ModuleData[] = [
   technologieModuleData as ModuleData,
   geopolitiekModuleData as ModuleData,
   energieModuleData as ModuleData,
+  grondstoffenModuleData as ModuleData,
+  metalenModuleData as ModuleData,
 ];
 
 export const modulesById: Record<string, ModuleData> = Object.fromEntries(
