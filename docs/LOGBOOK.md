@@ -18,6 +18,27 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-25
 
+- Gevorderd-track toegevoegd aan "Grondstoffen: hoe hun markt werkt"
+  (`data/modules/grondstoffen.json`, `tracks` uitgebreid met `"gevorderd"`),
+  100 lessen / 600 vragen over 10 units, gebouwd uit een volledig
+  uitgeschreven Word-brondocument. De beginner-track blijft ongewijzigd. De
+  gevorderd-track bouwt door met echt rekenwerk: elasticiteit doorgerekend
+  (unit 1), de kostencurve en marginale kosten (unit 2), voorraden als
+  schokdemper (unit 3), de termijncurve met contango/backwardation (unit 4),
+  indekken met futures/opties inclusief margin calls en hedge ratio's
+  (unit 5), grondstof-beleggingsproducten zoals trackers en
+  hefboomproducten (unit 6), speculanten en financialisering (unit 7),
+  overheidsingrijpen op de grondstofmarkt (unit 8), lange golven en
+  schaarste-economie (unit 9), en een afsluitende synthese-slotcasus die
+  inflatie, rente, valuta en portefeuille-correlatie combineert (unit 10).
+  Unit 5 en 6 (derivaten/beleggingsproducten) kregen extra nadruk op het
+  strikt uitleggen van het rekenmechanisme zonder ooit een productadvies te
+  geven. Net als bij de andere gevorderd-tracks bleek het brondocument geen
+  vaste 6 oefeningen per les te hebben; per les is de sterkste selectie van
+  6 gemaakt zonder feiten toe te voegen, en alle "berekening"-vragen zijn
+  door de bouwende subagents zelf nagerekend met Python (incl. margin-call-
+  reeksen dag voor dag). Disclaimer op elke vraag. Moeilijkheid en
+  a/b/c/d-verdeling (perfect 150/150/150/150) volgen het bekende profiel.
 - Gevorderd-track toegevoegd aan "Geopolitiek en toeleveringsketens"
   (`data/modules/geopolitiek.json`, `tracks` uitgebreid met `"gevorderd"`),
   100 lessen / 600 vragen over 10 units, gebouwd uit een volledig
