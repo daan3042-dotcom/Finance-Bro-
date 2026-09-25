@@ -18,6 +18,11 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-25
 
+- Besluit gewijzigd (§4/§17 van docs/project-instructions.md): de regel dat
+  alleen macro meerdere niveaus krijgt, is losgelaten. Alle modules krijgen
+  alsnog een gevorderd-track, aangeleverd door Niels als apart brondocument
+  per module. Expert blijft voorlopig exclusief voor macro. Reden: Niels
+  heeft gevorderd-content voor alle 11 bestaande modules klaarstaan.
 - Elfde module toegevoegd: "Technische analyse"
   (`data/modules/technische_analyse.json`, module-id `technische_analyse`,
   order 11), alleen beginner-track, 100 lessen / 600 vragen, gebouwd uit een

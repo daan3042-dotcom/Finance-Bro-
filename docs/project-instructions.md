@@ -18,8 +18,8 @@ Claude neemt binnen dit project drie rollen tegelijk aan: productstrateeg, conte
 - Launch-doelgroep: complete beginners, geen voorkennis. Content en toon blijven voor de eindgebruiker in het algemeen op beginner-niveau geschreven.
 - **Nooit doelgroep:** professionals — content en toon blijven daarop afgestemd, **behalve** voor de uitzondering hieronder.
 - **Uitzondering — eerste onderwerp:** voor het allereerste onderwerp (bijv. macro) worden bewust **meerdere niveaus** gebouwd, van beginner tot expertniveau. Dit is een expliciete uitzondering op de beginner-only regel. De diepere niveaus van dit onderwerp vormen tevens de eerste freemium-betaalcontent (zie §9).
-- Overige onderwerpen/modules blijven bij launch beginner-only; de niveau-uitbreiding wordt per onderwerp opnieuw beoordeeld, niet automatisch toegepast op alles.
-- Toekomstige uitbreiding: een bredere gevorderden-track over meerdere onderwerpen.
+- **Koerswijziging 25 sept 2026:** de "alleen macro krijgt meerdere niveaus"-regel is losgelaten. Alle modules krijgen alsnog een **gevorderd**-track, aangeleverd als apart brondocument per module (zie §17). Expert blijft vooralsnog exclusief voor macro, tenzij hier later opnieuw over besloten wordt.
+- Toekomstige uitbreiding: een bredere gevorderden-track over meerdere onderwerpen (voor het overgrote deel al gerealiseerd door bovenstaande koerswijziging).
 
 ## 5. Contentstandaard
 Het huidige format (Module 1: 1 uitlegscherm + 6-8 vragen, gemengde vraagtypes, JSON-structuur) is de standaard voor alle volgende modules. Claude mag verbeteringen aandragen wanneer die zich voordoen, maar wijkt niet af zonder dit te melden.
@@ -84,3 +84,4 @@ Niels' eigen expertise (macro-analyse, opties, hedge fund) wordt **nog niet** ac
 - **21 sept 2026:** Lanceercriterium v1 vastgesteld: eerste onderwerp volledig uitgewerkt inclusief meerdere niveaus (beginner t/m expert).
 - **21 sept 2026:** Doelgroep-regel bijgesteld: meerdere-niveaus-aanpak is een bevestigde uitzondering op "beginners-only", specifiek voor het eerste onderwerp (niet automatisch voor alle onderwerpen).
 - **22 sept 2026:** Elke vraag in `data/modules/*.json` en `data/questions.json` heeft een verplicht, stabiel `id`-veld (bijv. `macro_beginner_wat_is_macro_economie_bbp_q1`, `geld_waarde_q1`), nodig als fundament voor antwoordlogging (`question_responses`, stap C5) en latere IRT/BKT-analyse (§16). Regel: een bestaand vraag-ID wordt nooit hergebruikt of hernummerd, ook niet als de vraag verplaatst of de omliggende les/pool gewijzigd wordt — een nieuwe vraag krijgt altijd een nieuw, nog niet gebruikt ID.
+- **25 sept 2026:** §4 bijgesteld: de "alleen macro krijgt meerdere niveaus"-regel is losgelaten. Alle modules krijgen een **gevorderd**-track, aangeleverd door Niels als apart brondocument per module. Expert blijft vooralsnog exclusief voor macro. Reden: Niels heeft gevorderd-content voor alle 11 op dat moment bestaande modules klaarstaan; het beperken tot alleen macro paste niet meer bij wat er daadwerkelijk aangeleverd wordt.
