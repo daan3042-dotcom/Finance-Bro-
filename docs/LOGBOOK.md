@@ -18,6 +18,25 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-25
 
+- Gevorderd-track toegevoegd aan "Aandelen en bedrijven" (`data/modules/aandelen.json`,
+  `tracks` uitgebreid met `"gevorderd"`), 100 lessen / 600 vragen over 10 units,
+  gebouwd uit een volledig uitgeschreven Word-brondocument. De beginner-track
+  blijft ongewijzigd (incl. het bekende gat vanaf unit 7). De gevorderd-track
+  bouwt door op discontering/waardering-op-kasstromen (unit 1), rendement en
+  risico meten (unit 2), winstkwaliteit doorgronden (unit 3), rendement op
+  kapitaal/ROE/ROIC (unit 4), waarderingsmultiples zoals K/W en EV/EBITDA
+  (unit 5), schuld en kapitaalstructuur (unit 6), kapitaalallocatie door het
+  bestuur (unit 7), corporate governance (unit 8), koersreacties op
+  bedrijfsnieuws (unit 9), en een afsluitende synthese-unit waarin alles
+  wordt gecombineerd tot een oordeel over een fictief bedrijf zonder concreet
+  koop/verkoopadvies (unit 10). Rekenintensiever en preciezer geschreven dan
+  de beginner-track — toon gekalibreerd op de bestaande macro-gevorderd-
+  lessen. Alle "berekening"-vragen zijn door de bouwende subagents zelf
+  nagerekend met Python; het brondocument bleek per les geen vaste 6
+  oefeningen te hebben zoals verwacht (vaak 6-8), dus is per les steeds de
+  inhoudelijk sterkste selectie van 6 gemaakt zonder feiten toe te voegen.
+  Disclaimer op elke vraag. Moeilijkheid en a/b/c/d-verdeling (perfect
+  150/150/150/150) volgen het bekende profiel.
 - Besluit gewijzigd (§4/§17 van docs/project-instructions.md): de regel dat
   alleen macro meerdere niveaus krijgt, is losgelaten. Alle modules krijgen
   alsnog een gevorderd-track, aangeleverd door Niels als apart brondocument
