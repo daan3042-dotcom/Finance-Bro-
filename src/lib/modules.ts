@@ -7,6 +7,7 @@ import macroModuleData from '../../data/modules/macro.json';
 import marktModuleData from '../../data/modules/markt.json';
 import metalenModuleData from '../../data/modules/metalen.json';
 import risicoModuleData from '../../data/modules/risico.json';
+import technischeAnalyseModuleData from '../../data/modules/technische_analyse.json';
 import technologieModuleData from '../../data/modules/technologie.json';
 import { getModuleLessonProgress, type ModuleProgressState } from './moduleProgress';
 import type { ModuleData, ModuleLesson, ModuleTrack } from './types';
@@ -22,6 +23,7 @@ export const modules: ModuleData[] = [
   energieModuleData as ModuleData,
   grondstoffenModuleData as ModuleData,
   metalenModuleData as ModuleData,
+  technischeAnalyseModuleData as ModuleData,
 ];
 
 export const modulesById: Record<string, ModuleData> = Object.fromEntries(

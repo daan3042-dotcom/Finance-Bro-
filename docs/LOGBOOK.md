@@ -16,6 +16,34 @@ weten wat er de vorige keren is gebeurd.
 
 ---
 
+## 2026-09-25
+
+- Elfde module toegevoegd: "Technische analyse"
+  (`data/modules/technische_analyse.json`, module-id `technische_analyse`,
+  order 11), alleen beginner-track, 100 lessen / 600 vragen, gebouwd uit een
+  volledig uitgeschreven Word-brondocument (geen open einden). De module
+  behandelt het lezen van prijsgrafieken als hulpmiddel naast fundamentele
+  analyse: wat TA wel en niet kan, candlesticks en prijsgrafieken, trends en
+  trendlijnen, steun en weerstand, volume als bevestigingsinstrument,
+  voortzettings- en omkeerpatronen (hoofd-schouders, driehoeken, vlaggen),
+  voortschrijdende gemiddelden, momentum-indicatoren (RSI, MACD, stochastic),
+  risicomanagement en discipline (stop-loss, risk/reward, positiegrootte,
+  handelsplan), en tot slot een kritische afsluitende unit over de grenzen
+  van TA: efficiënte-markthypothese, random walk-theorie, wetenschappelijk
+  onderzoek, databias/overfitting, en "wie verdient eraan" (kritisch op
+  cursus-/signaalaanbieders die gegarandeerde winst beloven). Omdat het
+  onderwerp zelf over handelstechnieken gaat, is er extra op gelet dat geen
+  enkele vraag of afleider een patroon/indicator/signaal voorstelt als een
+  betrouwbare voorspeller of manier om de markt te verslaan — de nuchtere,
+  kritische toon van het brondocument (TA is een hulpmiddel, geen garantie)
+  is overal behouden, inclusief in de losse "Terugblik"-lessen. Het
+  brondocument had voor een deel van de lessen 7-8 in plaats van 6
+  oefeningen; per les zijn de meest overlappende/redundante oefeningen
+  weggelaten zonder nieuwe feiten toe te voegen, zodat elke les op exact 6
+  vragen uitkomt volgens het vaste moeilijkheidsprofiel. Disclaimer op elke
+  vraag. Moeilijkheid en a/b/c/d-verdeling (150/149/151/150) volgen het
+  bekende profiel.
+
 ## 2026-09-24
 
 - Negende en tiende module toegevoegd, in één sessie: "Grondstoffen: hoe hun
