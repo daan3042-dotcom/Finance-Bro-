@@ -61,6 +61,7 @@
 <li><input disabled="" type="checkbox"> Eventueel extra vraagtypes (numerieke invoer, waar/onwaar) op basis van gebruikersfeedback</li>
 <li><input disabled="" type="checkbox"> Vraagtype "stappen ordenen" voor level 4 (ketenredenering, bijv. Fed verhoogt rente → … → …): automatisch na te kijken en blijft goed/fout, dus compatibel met IRT/BKT</li>
 <li><input disabled="" type="checkbox"> Open antwoorden voor level 7 met AI-beoordeling — mogelijk als premium-functie (AI-kosten per antwoord vallen dan onder de betaalmuur); let op: past niet in het goed/fout-model van IRT/BKT</li>
+<li><input disabled="" type="checkbox"> Confidence-veld bij <code>question_responses</code>: gebruiker geeft naast het antwoord ook aan hoe zeker die is (bijv. laag/gemiddeld/hoog). Combinatie hoge zekerheid + fout antwoord is een signaal voor een misconceptie in plaats van een kennishiaat — nuttig aanvullend signaal voor het latere IRT/BKT-model. Voortgekomen uit een externe brainstormsessie (ChatGPT, 25 sept 2026) die verder vooral bevestigde dat de al gekozen route (concepts/difficulty_prior nu, IRT/BKT later) klopt; dit was het enige element dat nog niet in het schema zat. Nu alleen vastgelegd als toekomstig item, nog niet geïmplementeerd — schema-wijziging (nieuwe kolom) en logging-aanpassing (<code>questionResponses.ts</code>) volgen pas als dit item wordt opgepakt</li>
 </ul>
 
 </body></html>

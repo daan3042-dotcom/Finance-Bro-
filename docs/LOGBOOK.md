@@ -18,6 +18,17 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-25
 
+- Roadmap (`Roadmap tot lancering.html`, sectie I) aangevuld met een nieuw
+  toekomstig item: een confidence-veld bij `question_responses`, zodat een
+  gebruiker naast het antwoord ook aangeeft hoe zeker die ervan is. Hoge
+  zekerheid gecombineerd met een fout antwoord is een signaal voor een
+  misconceptie in plaats van een kennishiaat — een nuttig extra signaal
+  voor het latere IRT/BKT-model uit hetzelfde roadmap-onderdeel. Idee kwam
+  uit een externe ChatGPT-brainstormsessie die is beoordeeld tegen het
+  bestaande plan; de rest van die sessie bevestigde vooral de al gekozen
+  architectuur (concepts/difficulty_prior nu, IRT/BKT later) zonder nieuwe
+  aanvullingen op te leveren. Alleen als roadmap-item vastgelegd, nog geen
+  schema- of codewijziging.
 - Gevorderd-track van "Macro-economie" volledig vervangen
   (`data/modules/macro.json`): de oude 5 losse verdiepingslessen zijn
   vervangen door een nieuwe 100-lessen-structuur (10 units), gebouwd uit een
