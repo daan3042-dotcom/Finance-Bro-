@@ -18,6 +18,30 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-25
 
+- Gevorderd-track toegevoegd aan "Geopolitiek en toeleveringsketens"
+  (`data/modules/geopolitiek.json`, `tracks` uitgebreid met `"gevorderd"`),
+  100 lessen / 600 vragen over 10 units, gebouwd uit een volledig
+  uitgeschreven Word-brondocument. De beginner-track blijft ongewijzigd. De
+  gevorderd-track bouwt door met echt rekenwerk: kostenopbouw en
+  tariefincidentie (unit 1), ketens en concentratie (unit 2), tarieven en
+  handelsbeleid doorgerekend (unit 3), sancties en exportcontroles inclusief
+  een expliciet tweezijdige "werken sancties?"-les (unit 4), zekerheid en
+  kosten/veerkracht (unit 5), grondstoffenschokken en prijsvorming (unit 6),
+  politiek risico in prijzen meten (unit 7), valuta/reserves/financiële
+  macht (unit 8), ketens die verschuiven met een tweezijdige
+  globaliseringsles (unit 9), en een afsluitende synthese-eindcasus die
+  tarief, sanctie en valuta combineert (unit 10). Gezien het gevoelige
+  onderwerp (met name unit 8, financiële sancties/ontdollarisering) is elke
+  vraag extra gecontroleerd op politieke neutraliteit en het uitsluitend
+  gebruiken van fictieve landen/bedrijven — een geautomatiseerde
+  nacontrole op namen van echte landen/instellingen/politici leverde geen
+  treffers op. Net als bij de andere gevorderd-tracks bleek het
+  brondocument geen vaste 6 oefeningen per les te hebben; per les is de
+  sterkste selectie van 6 gemaakt zonder feiten toe te voegen, en zijn twee
+  kleine source-inconsistenties (een Koppelen-antwoordsleutel die de eigen
+  feedbacktekst tegensprak) opgelost door de feedbacktekst te volgen.
+  Disclaimer op elke vraag. Moeilijkheid en a/b/c/d-verdeling (perfect
+  150/150/150/150) volgen het bekende profiel.
 - Gevorderd-track toegevoegd aan "Energie en de transitie" (`data/modules/energie.json`,
   `tracks` uitgebreid met `"gevorderd"`), 100 lessen / 600 vragen over 10 units,
   gebouwd uit een volledig uitgeschreven Word-brondocument. De beginner-track
