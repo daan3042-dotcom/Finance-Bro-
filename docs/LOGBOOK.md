@@ -18,6 +18,29 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-25
 
+- Gevorderd-track van "Macro-economie" volledig vervangen
+  (`data/modules/macro.json`): de oude 5 losse verdiepingslessen zijn
+  vervangen door een nieuwe 100-lessen-structuur (10 units), gebouwd uit een
+  volledig uitgeschreven Word-brondocument, conform het besluit van vandaag
+  om de "alleen macro krijgt meerdere niveaus"-uitzondering los te laten.
+  Beginner-track (57 lessen) en expert-track (6 lessen) zijn ongewijzigd
+  gebleven; het `format_rules`-blok in macro.json is behouden. De nieuwe
+  gevorderd-track bouwt met echt rekenwerk door op: BBP/groei doorgerekend
+  (unit 1), inflatie en haar oorzaken (unit 2), groei/productiviteit/
+  arbeidsmarkt (unit 3), geldschepping en bankstabiliteit (unit 4), monetair
+  beleid inclusief kritische blik op kwantitatieve verruiming (unit 5),
+  rente/obligatiewaardering (unit 6), conjunctuurcycli (unit 7), valuta/
+  handel/kapitaalstromen inclusief het trilemma (unit 8), overheidsfinanciën
+  inclusief een strikt tweezijdig gehouden les over "geld drukken voor de
+  overheid" (MMT versus de conventionele visie, unit 9), en een afsluitende
+  synthese-unit (unit 10). Politiek-gevoelige lessen zijn extra gecontroleerd
+  op evenwichtige, niet-partijdige framing. Net als bij de andere
+  gevorderd-tracks bleek het brondocument geen vaste 6 oefeningen per les te
+  hebben; per les is de sterkste selectie van 6 gemaakt zonder feiten toe te
+  voegen, en alle "berekening"-vragen zijn door de bouwende subagents zelf
+  nagerekend met Python. Disclaimer op elke vraag. Moeilijkheid en
+  a/b/c/d-verdeling (perfect 150/150/150/150) volgen het bekende profiel.
+  Hiermee zijn nu alle 11 modules uitgebreid met een gevorderd-track.
 - Gevorderd-track toegevoegd aan "Grondstoffen: hoe hun markt werkt"
   (`data/modules/grondstoffen.json`, `tracks` uitgebreid met `"gevorderd"`),
   100 lessen / 600 vragen over 10 units, gebouwd uit een volledig
