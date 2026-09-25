@@ -18,6 +18,27 @@ weten wat er de vorige keren is gebeurd.
 
 ## 2026-09-25
 
+- Gevorderd-track toegevoegd aan "Energie en de transitie" (`data/modules/energie.json`,
+  `tracks` uitgebreid met `"gevorderd"`), 100 lessen / 600 vragen over 10 units,
+  gebouwd uit een volledig uitgeschreven Word-brondocument. De beginner-track
+  blijft ongewijzigd (ook die was al volledig, 100 lessen). De gevorderd-track
+  bouwt door met echt rekenwerk: prijsgevoeligheid van de kostprijs (unit 1),
+  groothandelsprijsvorming zoals merit-order en spark/dark spread (unit 2),
+  termijnprijzen en indekken (unit 3), marktontwerp van de stroommarkt van
+  dagmarkt tot balancering (unit 4), investeringsrekenkunde voor opwek
+  (unit 5), opslag en flexibiliteit doorgerekend (unit 6), koolstofprijs en
+  beleid (unit 7), metalen voor de transitie (unit 8), energie en de brede
+  macro-economie (unit 9), en een afsluitende synthese-unit (unit 10). Net
+  als bij aandelen-gevorderd bleek het brondocument geen vaste 6 oefeningen
+  per les te hebben (vaak 6-8), dus is per les de sterkste selectie van 6
+  gemaakt zonder feiten toe te voegen; alle "berekening"-vragen zijn door de
+  bouwende subagents zelf nagerekend met Python. Eén source-inconsistentie
+  in de bron (een Waar/Onwaar-label dat de eigen toelichting tegensprak, in
+  de systeemkosten-les van unit 5) is opgelost door de toelichting te volgen
+  in plaats van het foutieve label. Disclaimer op elke vraag; de
+  beleidslessen (CO2-beprijzing, monetair beleid) blijven strikt
+  politiek-neutraal. Moeilijkheid en a/b/c/d-verdeling (perfect
+  150/150/150/150) volgen het bekende profiel.
 - Gevorderd-track toegevoegd aan "Aandelen en bedrijven" (`data/modules/aandelen.json`,
   `tracks` uitgebreid met `"gevorderd"`), 100 lessen / 600 vragen over 10 units,
   gebouwd uit een volledig uitgeschreven Word-brondocument. De beginner-track
